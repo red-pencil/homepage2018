@@ -9,23 +9,55 @@ body {
 }
 
 #mySVG {
+
   position: fixed;
   top: 15%;
-  width: 400px;
-  height: 210px;
-  margin-left:-50px;
+  width: 600px;
+  height: 600px;
+    display: block;
+     margin: auto;
 }
-</style>
+
+svg {
+  max-height: 600px;
+  max-width: 800px;
+  margin: auto;
+  display: block;
+}
+
+div {
+  /* ensure that all of the viewport is used */
+  width: 100%;
+  height: 100%;
+  /* ensure that no scrollbars appear */
+  margin: 0;
+  padding: 0;
+  
+  /* center SVG horizontally and vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style> 
 </head>
 <body>
 
 <h2>Scroll down this window to draw a triangle.</h2>
 <p>Scroll back up to reverse the drawing.</p>
+<div>
+<svg id="mySVG" viewBox="0 0 800 800">
+    
+    <path fill="none" stroke="black" stroke-width="8" id="triangle" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49  M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03"/>
+<!--
+<path fill="none" stroke="black" stroke-width="8" id="triangle" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
 
-<svg id="mySVG">
-  <path fill="none" stroke="red" stroke-width="3" id="triangle" d="M150 0 L75 200 L225 200 Z" />
+  <path fill="none" stroke="black" stroke-width="30" id="triangle" d="M0 67.9 L156.8 67.9 L125 165.8 M125 0 L54.5 217.1" />
+   
+    <polygon class="cls-1" points="367.47 417.49 459.5 134.24 26.52 134.24 2.06 209.49 355.92 209.49 288.34 417.49 367.47 417.49"/><polygon class="cls-1" points="111.41 546.03 288.34 1.5 367.47 1.5 190.54 546.03 111.41 546.03"/>
+-->
   Sorry, your browser does not support inline SVG.
 </svg>
+    </div>
 
 <script>
 // Get the id of the <path> element and the length of <path>
