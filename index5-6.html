@@ -4,7 +4,10 @@
 <style>
 .item1 {
     grid-area: header;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 5px 5px 5px 5px;
     }
 .item2 { grid-area: tile1; }
 .item3 { grid-area: tile2; }
@@ -24,13 +27,13 @@
     'tile1 tile3 tile5'
     'tile1 tile4 tile6'
     'tile2 tile4 tile6'
-    'tile2 . .';
+    'tile2 footer footer';
 
   padding: 20px;
   max-width: 800px;
   margin-right: auto; margin-left: auto;
 
-      grid-gap: 0px;
+      grid-gap: 10px;
   background-color: #2196F3;
 }
 @media screen and (max-width: 980px) {
@@ -42,7 +45,7 @@
     'tile2 tile5'
     'tile2 tile6'
     'tile3 tile6'
-    'tile3 .';
+    'tile3 footer';
     max-width: 100%;
          
     }
@@ -54,7 +57,7 @@
   /*padding:20px 0;
   font-size: 30px;*/
     border: 0px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 00px;
     align-items: center;
     display: flex;
     vertical-align: middle;
@@ -90,6 +93,7 @@
   <div class="item5"><img src="ggrey.png"></div>
   <div class="item6"><img src="ggrey.png"></div>
     <div class="item7"><img src="ggrey.png"></div>
+    <div class="item8">Footer</div>
    
  
 </div>
