@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  height: 2000px;
+  height: 1500px;
   background: #f1f1f1;
 }
 
@@ -15,22 +15,22 @@ body {
   width: 600px;
   height: 600px;
     display: block;
-     margin: auto;
+     margin: 0 auto;
 }
 
 svg {
-  max-height: 600px;
-  max-width: 800px;
+  max-height: 300px;
+  max-width: 300px;
   margin: auto;
   display: block;
 }
 
-div {
+.svg-container {
   /* ensure that all of the viewport is used */
   width: 100%;
   height: 100%;
   /* ensure that no scrollbars appear */
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   
   /* center SVG horizontally and vertically */
@@ -44,10 +44,14 @@ div {
 
 <h2>Scroll down this window to draw a triangle.</h2>
 <p>Scroll back up to reverse the drawing.</p>
-<div>
-<svg id="mySVG" viewBox="0 0 800 800">
+<div class="svg-container">
+<svg id="mySVG" viewBox="0 0 540 600">
     
     <path fill="none" stroke="black" stroke-width="8" id="triangle" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49  M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03"/>
+    <circle cx=0 cy=0 r=50></circle>
+    <circle cx=600 cy=0 r=50></circle>
+    <circle cx=0 cy=600 r=50></circle>
+    <circle cx=600 cy=600 r=50></circle>
 <!--
 <path fill="none" stroke="black" stroke-width="8" id="triangle" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
 
