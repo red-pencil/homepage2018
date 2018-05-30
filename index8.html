@@ -2,45 +2,45 @@
 <html>
 <head>
 <style>
-.item1 {
-    grid-area: header;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 20px;
+    
 
-    }
-.item2 { grid-area: tile1; }
-.item3 { grid-area: tile2; }
-.item4 { grid-area: tile3; }
-.item5 { grid-area: tile4; }
-.item6 { grid-area: tile5; }
-.item7 { grid-area: tile6; }
-.item8 { grid-area: footer; }
+@import url("https://fonts.googleapis.com/css?family=Palanquin:300,400,500,600");
 
+html,
+body {
+  /*display: flex;*/
+  /*justify-content: center;*/
+  align-items: center;
+  /*width: 100%;
+  height: 100%;
+  background: #e3e3e3;*/
+  color: #333;
+  font-family: "Palanquin", Helvetica, sans-serif;
+  font-size: 15px;
+}
+    
 .grid-container {
-    /*
   display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr 1.58fr; /*1.55-1.6
+    grid-auto-rows: auto;/*1.55-1.6*/
   grid-template-areas:
     'header tile3 tile5'
     'tile1 tile3 tile5'
     'tile1 tile4 tile6'
     'tile2 tile4 tile6'
-    'tile2 . .';*/
-    
-display: grid;
-    position: relative;
-    grid-template-columns: 1fr 1fr 1fr;
-    
+    'tile2 footer footer';
+
   padding: 20px;
   max-width: 800px;
   margin-right: auto; margin-left: auto;
 
-  grid-gap: 10px;
+      grid-gap: 0px;
   background-color: #2196F3;
 }
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+    }
 @media screen and (max-width: 980px) {
 .grid-container {
     grid-template-areas:
@@ -50,66 +50,138 @@ display: grid;
     'tile2 tile5'
     'tile2 tile6'
     'tile3 tile6'
-    'tile3 .';
+    'tile3 footer';
     max-width: 100%;
          
     }
 }
 
-.grid-container>div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  /*padding:20px 0;
-  font-size: 30px;*/
-    border: 2px solid rgba(0, 0, 0, 0.8);
-    padding: 0px;
-    align-items: center;
-    display: flex;
-    vertical-align: middle;
-}
+.item1 {
+    grid-area: header;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 00px;
+    margin-bottom:  0px;
+    grid-auto-flow: dense;
+    }
+.item2 { grid-area: tile1; }
+.item3 { grid-area: tile2; }
+.item4 { grid-area: tile3; }
+.item5 { grid-area: tile4; }
+.item6 { grid-area: tile5; }
+.item7 { grid-area: tile6; }
+.item8 { grid-area: footer; }
 
-.dummy {
-    
-  margin-top: 75%;
-  /* 4:3 aspect ratio */
-    background-color: coral;
-}
-.element {
-  position: relative;
-  top: 0px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: silver/* show me! */;
-
-    text-align: center;
-    vertical-align: middle;
-    
-
-}
-    
-    
-    
 .grid-container img{
         display: flex;
      padding: 0px;
         max-width: 100%;
-width: 100%;
-    height: 75%;
     vertical-align: middle;
-       
-    }   
+   
+        
+    } 
+    
+
+</style>
+<style>
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 1s;
+    width: 100%;
+    
+    }
+    
+.card__info {
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 6% 8%;
+        
+    }    
+.video {
+  width: 100%;
+}
+.video__container0 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 162%;
+}
+
+.video__container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 62%;
+}
+
+.video__embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img__embed{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.card__embed {
+    
+    width: 90%;
+    height:90%;
+    margin-bottom:50px;
+    background-color: hotpink;
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+   position:  absolute;
+   top: 5%;
+   left: 5%;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+    padding-left: auto;
+    padding-right: auto;
+
+        
+}
 </style>
 </head>
 <body>
+    
+    
+<div class="grid-container">
+  <div class="item1">
+              <div class="video__container">
+                  <div class="card__embed">
+                      <img src="grey.png" style="height:100%;">
+                  
+                  </div>
+            
+                  
+              </div>
+<!--<img src="ggreen.png">-->
 
-<h1>The grid-area Property</h1>
+  </div>
+  <div class="item2"><img src="ggrey.png"></div>
+  <div class="item3"><img src="ggrey.png"></div>  
+  <div class="item4"><img src="ggrey.png"></div>
+  <div class="item5"><img src="ggrey.png"></div>
+  <div class="item6"><img src="ggrey.png"></div>
+  <div class="item7"><img src="ggrey.png"></div>
+  <div class="item8">Footer</div>
+</div>
+    
 
-<p>You can use the <em>grid-area</em> property to name grid items.</p>
 
-<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+<!--
 
-<p>This grid layout contains six columns and three rows:</p>
 
 <div class="grid-container">
     
@@ -129,7 +201,7 @@ width: 100%;
 
         </div>
     </div>
-  
+-->  
 <!--
     <div class="item1"><img src="ggreen.png"></div>
   <div class="item2"><img src="ggrey.png"></div>
@@ -141,6 +213,56 @@ width: 100%;
    -->
    
  
+
+    
+<div class="card">
+    <div class="video">
+        <div class="video__container">
+            <!--<iframe class="video__embed" src="https://www.youtube.com/embed/upPCohrJcbw?showinfo=0&modestbranding=1" frameborder="0" allowfullscreen></iframe>-->
+            <img class="img__embed" src="ggreen.png">
+        </div>
+    </div>
+        <div class="card__info">
+            <h4><b>John Doe</b></h4> 
+            <p>Architect  Engineer</p> 
+        </div>       
+</div>
+    
+<div class="card">
+    <div class="video">
+        <div class="video__container">
+            <img class="img__embed" src="ggreen.png">
+        </div>
+        <div class="card__info">
+            <h4><b>John Doe</b></h4> 
+            <p>Architect  Engineer</p> 
+        </div> 
+    </div>    
+</div>
+
+<div class="card" style="background-color: brown">
+    <div class="video">
+        <div class="video__container">
+            <div class="card__embed">
+            <img class="img__embed" src="ggrey.png" style="width:100%;">
+    
+            <h4><b>Test</b></h4> 
+            <p>Test Test Test</p> 
+
+            </div>          
+        </div>  
+    </div>    
+</div>
+    
+<div class="video__container" style="">
+  <div class="card__embed" style="max-height: 100%;">
+      <h4><b>Test</b></h4> 
+            <p>Test Test Test</p>
+    <img src="grey.png" style="display: block; height: inherit;">
+    
+      
+                  
+  </div>
 </div>
 
 </body>

@@ -4,6 +4,9 @@
 <style>
 .item1 {
     grid-area: header;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
 
     }
 .item2 { grid-area: tile1; }
@@ -18,7 +21,7 @@
   display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    grid-auto-rows: 1fr 1.62fr;
+    grid-auto-rows: 1fr 1.62fr; /*1.55-1.6*/
   grid-template-areas:
     'header tile3 tile5'
     'tile1 tile3 tile5'
@@ -30,7 +33,7 @@
   max-width: 800px;
   margin-right: auto; margin-left: auto;
 
-      grid-gap: 0px;
+      grid-gap: 10px;
   background-color: #2196F3;
 }
 @media screen and (max-width: 980px) {
@@ -54,9 +57,9 @@
   /*padding:20px 0;
   font-size: 30px;*/
     border: 0px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
+    padding: 0px;
     align-items: center;
-    display: flex;
+    display: block;
     vertical-align: middle;
 }
     
