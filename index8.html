@@ -23,7 +23,7 @@ body {
   display: grid;
     grid-template-columns: 1fr 1fr;
     grid-auto-columns: 1fr;
-    grid-auto-rows: auto;/*1.55-1.6*/
+    grid-auto-rows: 1fr 1.62fr;/*1.55-1.6*/
   grid-template-areas:
     'header tile3 tile5'
     'tile1 tile3 tile5'
@@ -63,7 +63,8 @@ body {
     top: 0;
     margin-top: 00px;
     margin-bottom:  0px;
-    grid-auto-flow: dense;
+    z-index: 1;
+
     }
 .item2 { grid-area: tile1; }
 .item3 { grid-area: tile2; }
@@ -133,22 +134,20 @@ body {
 
 .card__embed {
     
-    width: 90%;
-    height:90%;
-    margin-bottom:50px;
-    background-color: hotpink;
+    width: 100%;
+    height:100%;
+    margin-bottom:0px;
+    background-color: lightcoral;
+    border: 1px solid rgba(0, 0, 0, 0.8);
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     
    position:  absolute;
-   top: 5%;
-   left: 5%;
+   top: 0;
+   left: 0;
    bottom: 0;
    right: 0;
    text-align: center;
-    padding-left: auto;
-    padding-right: auto;
-
         
 }
 </style>
@@ -157,24 +156,29 @@ body {
     
     
 <div class="grid-container">
-  <div class="item1">
-              <div class="video__container">
-                  <div class="card__embed">
-                      <img src="grey.png" style="height:100%;">
-                  
-                  </div>
-            
-                  
-              </div>
-<!--<img src="ggreen.png">-->
-
-  </div>
-  <div class="item2"><img src="ggrey.png"></div>
-  <div class="item3"><img src="ggrey.png"></div>  
-  <div class="item4"><img src="ggrey.png"></div>
-  <div class="item5"><img src="ggrey.png"></div>
-  <div class="item6"><img src="ggrey.png"></div>
-  <div class="item7"><img src="ggrey.png"></div>
+    <div class="item1">
+        <div class="video__container">
+            <div class="card__embed"></div>             
+        </div>
+    </div>
+  <div class="item2"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>
+  <div class="item3"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>  
+  <div class="item4"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>
+  <div class="item5"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>
+  <div class="item6"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>
+  <div class="item7"><div class="video__container0">
+            <div class="card__embed"></div>             
+        </div></div>
   <div class="item8">Footer</div>
 </div>
     
