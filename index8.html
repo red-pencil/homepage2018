@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.item1 {
+    grid-area: header;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+
+    }
+.item2 { grid-area: tile1; }
+.item3 { grid-area: tile2; }
+.item4 { grid-area: tile3; }
+.item5 { grid-area: tile4; }
+.item6 { grid-area: tile5; }
+.item7 { grid-area: tile6; }
+.item8 { grid-area: footer; }
+
+.grid-container {
+    /*
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr 1.58fr; /*1.55-1.6
+  grid-template-areas:
+    'header tile3 tile5'
+    'tile1 tile3 tile5'
+    'tile1 tile4 tile6'
+    'tile2 tile4 tile6'
+    'tile2 . .';*/
+    
+display: grid;
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+  padding: 20px;
+  max-width: 800px;
+  margin-right: auto; margin-left: auto;
+
+  grid-gap: 10px;
+  background-color: #2196F3;
+}
+@media screen and (max-width: 980px) {
+.grid-container {
+    grid-template-areas:
+    'header tile4'
+    'tile1 tile4'
+    'tile1 tile5'
+    'tile2 tile5'
+    'tile2 tile6'
+    'tile3 tile6'
+    'tile3 .';
+    max-width: 100%;
+         
+    }
+}
+
+.grid-container>div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  /*padding:20px 0;
+  font-size: 30px;*/
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    padding: 0px;
+    align-items: center;
+    display: flex;
+    vertical-align: middle;
+}
+
+.dummy {
+    
+  margin-top: 75%;
+  /* 4:3 aspect ratio */
+    background-color: coral;
+}
+.element {
+  position: relative;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: silver/* show me! */;
+
+    text-align: center;
+    vertical-align: middle;
+    
+
+}
+    
+    
+    
+.grid-container img{
+        display: flex;
+     padding: 0px;
+        max-width: 100%;
+width: 100%;
+    height: 75%;
+    vertical-align: middle;
+       
+    }   
+</style>
+</head>
+<body>
+
+<h1>The grid-area Property</h1>
+
+<p>You can use the <em>grid-area</em> property to name grid items.</p>
+
+<p>You can refer to the name when you set up the grid layout, by using the <em>grid-template-areas</em> property on the grid container.</p>
+
+<p>This grid layout contains six columns and three rows:</p>
+
+<div class="grid-container">
+    
+    <div class="dummy">
+
+        some text;
+       
+
+    </div>
+    <div class="dummy">
+    <div class="element">
+        some text;
+        </div>
+    </div>
+    <div class="dummy">
+    <div class="element">
+
+        </div>
+    </div>
+  
+<!--
+    <div class="item1"><img src="ggreen.png"></div>
+  <div class="item2"><img src="ggrey.png"></div>
+  <div class="item3"><img src="ggrey.png"></div>  
+  <div class="item4"><img src="ggrey.png"></div>
+  <div class="item5"><img src="ggrey.png"></div>
+  <div class="item6"><img src="ggrey.png"></div>
+    <div class="item7"><img src="ggrey.png"></div>
+   -->
+   
+ 
+</div>
+
+</body>
+</html>
