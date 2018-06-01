@@ -4,7 +4,7 @@
 <style>
 .flex-container {
   display: flex;
-  height: 600px;
+  height: 1500px;
     max-width: 800px;
   margin-right: auto; margin-left: auto;
     flex-direction: column;
@@ -20,12 +20,15 @@
 
 .cell {
   background-color: #f1f1f1;
-  width: 30%;
+  width: 33%;
   /*margin: 10px;*/
-    margin: 1px 1px 1px 1px;
+    margin: 2px;
   text-align: center;
-  line-height: 162px;
+  line-height: auto;
   font-size: 30px;
+    float: left;
+    display: block;
+    padding: 0;
 }
 @media (max-width: 800px) {
 .cell {
@@ -33,12 +36,46 @@
         
     }
 .flex-container{
-        height: 850px;
+        height: 2400px;
     }
 }
 
+.ratio-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 162%;
+}
 
-
+.ratio-container0 {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-top: 62%;
+}
+.card-embed {
+    
+    width: 100%;
+    height:100%;
+    margin-bottom:0px;
+    background-color: lightcoral;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    
+   position:  absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   text-align: center;
+    margin: 10px;
+        
+}
+.cell img{
+        
+        display: block;/*important*/
+}
 
 </style>
 </head>
@@ -73,16 +110,20 @@
 </div>
 -->
 <div class="flex-container">
-    <div class="cell" style="height: 62px;"><img src="ggreen.png" style="width:100%;height: 100%; display: block;"></div>
-  <div class="cell">2</div>
-  <div class="cell">3</div>  
-  <div class="cell">4</div>
-  <div class="cell">5</div>
-  <div class="cell">6</div>  
-  <div class="cell">7</div>
-  <div class="cell">8</div>
-  <div class="cell">9</div>  
-  <div class="cell">10</div>
+    <div class="cell" style="height: auto;">
+   
+       <img src="ggreen.png" style="width: 100%">
+
+    </div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>  
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>  
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>  
+  <div class="cell"><img src="ggrey.png" style="width: 100%"></div>
     <!--
   <div class="cell">11</div>
   <div class="cell">12</div>  

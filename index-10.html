@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<style>
+body{
+     min-width:500px;        /* Suppose you want minimum width of 1000px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:500px;
+    }
+    /*
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(25vh - 9px));
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+    grid-auto-rows: calc(50vh - 18px);
+   max-width: 80vh;
+
+    margin: 0 auto 0;
+    justify-content:center;
+}*/
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, calc(20vh));
+    grid-auto-flow: column;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+    grid-template-columns: repeat(3, 32vh);
+
+height: 100vh;
+    max-width: 150vh;
+    margin: auto;
+    justify-content:center;
+    align-content: center;
+}
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+
+}
+@media screen and (max-device-width: 420px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: aqua;
+  padding: 10px;
+    grid-auto-rows: calc(50vh - 18px);
+}    
+    
+    }
+    /*
+.item1 {
+  grid-row: 1 / 4;
+}
+    */
+</style>
+</head>
+<body>
+<!--
+<h1>The grid-row Property</h1>
+
+<p>Use the <em>grid-row</em> property to specify where to place an item.</p>
+<p>Item1 will start on row-line 1 and end on row-line 4:</p>
+-->
+<div class="grid-container">
+  <div class="item1">1</div>
+  <div class="item2">2</div>
+  <div class="item3">3</div>  
+  <div class="item4">4</div>
+  <div class="item5">5</div>
+  <div class="item6">6</div>
+  <div class="item7">7</div>
+  <div class="item8">8</div>  
+  <div class="item9">9</div>
+    <!--
+  <div class="item10">10</div>
+  <div class="item11">11</div>
+  <div class="item12">12</div>
+-->
+</div>
+
+</body>
+</html>

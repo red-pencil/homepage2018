@@ -1,0 +1,52 @@
+<!-- Learn about this code on MDN: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Auto-placement_in_CSS_Grid_Layout -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {box-sizing: border-box;}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /*至少保持150px否则少一conlumn。或者说每增加150px多一个conlumn，保持至少150px情况下平分*/
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    list-style: none;
+    margin: 1em auto;
+    padding: 0;
+    max-width: 800px;
+}
+.wrapper li {
+    border: 1px solid #ccc;
+}
+.wrapper li.landscape {
+    grid-column-end: span 2;
+}
+.wrapper li img {
+   display: block;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+}
+
+
+       
+</style>
+</head>
+<body>
+    
+<ul class="wrapper">
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+   <li class="landscape"><img src="http://placehold.it/350x200" alt="placeholder"></li>
+   <li class="landscape"><img src="http://placehold.it/350x200" alt="placeholder"></li>
+   <li class="landscape"><img src="http://placehold.it/350x200" alt="placeholder"></li>
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+   <li class="landscape"><img src="http://placehold.it/350x200" alt="placeholder"></li>
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+   <li><img src="http://placehold.it/200x300" alt="placeholder"></li>
+</ul>
+
+</body>
+<html>
