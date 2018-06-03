@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homepage of Shen Lichao</title>
+      <link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+      <link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+
+    <style>
+        * {box-sizing: border-box;}
+        
+      html {
+        margin: 0;
+        padding: 0;
+          font-size: 1vmin;
+          background-color: #f0f0f0;
+
+      }
+        body {
+        margin: 0;
+        padding: 0;
+    }
+      .wrapper {
+        /* color *//*
+        border: 2px solid #f76707;
+        background-color: #fff4e6;
+      }
+
+      .wrapper {*/
+        display: -ms-grid;
+        display: grid;
+        /*
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 20.2vw 31.7vw; /* (100 - 2*1) / 3 * 0.618 
+        grid-gap: 1vw; vh*/
+          /*
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 148px 235px;
+        grid-gap: 5px; 
+        max-width: 730px;*/
+          grid-template-columns: repeat(3, 30vh);
+        grid-auto-rows: 18.5vh 28vh;
+        grid-gap: 2vh; 
+          width: 100vh;
+          align-content: center;
+          justify-content: center;
+
+        margin-left: auto;
+          margin-right: auto;
+          margin-top: 0.5vh;
+          margin-bottom: 2vh;
+          padding-left: 1vw;
+            padding-right: 1vw;
+          font-size: 8vh;
+          
+          text-decoration: none;
+
+      }
+
+    
+      .wrapper a:nth-child(n), .wrapper div:nth-child(n), .wrapper button:nth-child(n) {
+        grid-row-end: span 2;
+        }
+        
+      .wrapper a:nth-child(1), .wrapper div:nth-child(1) {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        /*background-color: greenyellow;*/
+        }
+        /*
+        .wrapper div:nth-last-child(2) {
+        grid-column: span 1;
+        grid-row: span 1;
+        background-color: greenyellow;
+        }*/
+        .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+            background-color: transparent;
+            box-shadow: none;
+            /*
+        background-color: greenyellow;*/
+        }
+              @media screen and (max-width: 730px) {
+        .wrapper {
+          grid-template-columns: repeat(2, 48vw);
+            
+          grid-auto-rows: 29.7vw 46vw;
+            grid-gap: 2vw;
+            width: 100%;
+          }
+          .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
+        grid-column: span 1;
+              
+          }
+        }
+      
+      .cell {
+          position: relative;
+        border-radius: 15px;
+        background-color: white;
+        text-align: center;
+          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    margin: 0;
+    width: 100%; 
+          display: flex;
+          vertical-align: middle;
+          justify-content: center;
+          align-items: flex-start;
+        
+      }
+        #key {
+             position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+            background-color: #79c753;
+            
+            
+        }
+        .cell p{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            font-family: 'Carrois Gothic SC';
+            font-size: 3rem;
+            text-align: center;
+                        color: black;
+            padding: 0 1vw 0;
+
+        }
+        .cell a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            text-decoration: none; /* No underlines on the link */
+            z-index: 10; /* Places the link above everything else in the div */
+            background-color: #FFF; /* Fix to make div clickable in IE */
+            opacity: 0; /* Fix to make div clickable in IE */
+            filter: alpha(opacity=1); /* Fix to make div clickable in IE */
+        }
+       a {
+            text-decoration:none;
+            
+        }
+    
+    
+            svg {
+            width: 100%;
+            height: 80%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        
+        
+        .cell i {
+            
+                        color: black;
+            text-decoration: none;
+            position: absolute;
+            display: block;
+            top: 2vh;
+            
+      
+      
+      }
+        .material-icons { font-size: 2rem; }
+        .myfooter {
+            
+            height: 5vh;
+            width: 100vw;
+            box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+            background-color: darkgrey;
+            /*padding: 2%;*/
+            margin-top: 2vh;
+            padding-right: 2vw;
+
+    display: none;
+
+    flex-direction: row-reverse;
+
+    align-items: center;
+            
+        }
+        
+    </style>
+      
+
+    <script>
+    
+    
+    </script>
+
+  </head>
+  <body>
+
+      <div class="wrapper">
+          <a href="#" class="cell" id="key">
+              <!--
+          <object data="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">Your browser does not support SVGs</object>-->
+              <img src="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">
+            
+          </a>
+          <a href="http://red-pencil.github.io/cv/" class="cell"><i class="material-icons">face</i><p><!--1-->履历</p></a>
+          <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re" style="text-decoration:none" class="cell"><i class="material-icons">business_center</i><p><!--2-->作品集</p></a>
+          <a href="mailto:lichao.shen@hotmail.com?Subject=Hello" class="cell"><i class="material-icons">message</i><p><!--3-->联系方式</p></a>
+          <div class="cell"><i class="material-icons">favorite</i><p>Hey, you'll never walk alone</p></div>
+          <a href="social.html" class="cell"><i class="material-icons">alternate_email</i><p><!--5-->社交账号</p></a>
+          <a href="http://blog.shenlichao.com" class="cell"><i class="material-icons">book</i><p><!--6-->博客</p></a>
+          <a href="https://500px.com/hx470000/galleries/redheart" style="text-decoration:none" class="cell"><i class="material-icons">camera</i><p><!--7-->摄影</p></a>
+          <a href="#footer1" class="cell" onclick="myFunction()" style="cursor: pointer;"><i class="material-icons">info</i><p><!--8-->关于</p></a>
+          <a href="index2.html" class="cell"><i class="material-icons">settings</i><p><!--9-->切换主题</p></a>
+          <a href="#" class="cell" id="Chosen Child">
+              <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
+                    <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+                </svg></a>
+       </div>
+
+      <div class="myfooter" id="footer1">
+    <p style="display: block; color:white; font-family:'Carrois Gothic SC'; font-size: 2rem; text-align:right; vertical-align: middle; top:1vh;">Designed and made by Lichao.</p>
+      </div>
+      <script>
+function myFunction() {
+    var x = document.getElementById("footer1");
+    if (x.style.display === "none") {
+        x.style.display = "flex";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+      
+
+
+
+  </body>
+</html>
