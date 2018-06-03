@@ -41,12 +41,12 @@
         --main-padding: 15px;    
 }
     .wrapper {
-        /* color *//*
+        /* color */
         border: 2px solid #f76707;
         background-color: #fff4e6;
     }
 
-    .wrapper {*/
+    .wrapper {
         /*layout*/
         display: -ms-grid;
         display: grid;
@@ -59,26 +59,34 @@
         grid-auto-rows: 148px 235px;
         grid-gap: 5px; 
         max-width: 730px;*/
-        grid-template-columns: repeat(3, 1fr);
+        -ms-grid-template-columns: repeat(3, 1fr);
+        -ms-grid-auto-rows: 48vh;
+        -ms-grid-gap: 2vmin;
+        grid-template-columns: repeat(3, 32vh);
         grid-auto-rows: 48vh;
-        grid-gap: 2vmin; 
-        padding: 1vmin 2vmin 1vmin;
-        width: 100vh;
-        align-content: center;
-        justify-content: center;
+        grid-gap: 2vh;
+        padding: 1vh;
+        max-width: 100vh;
 
         margin-left: auto;
         margin-right: auto;
         font-size: 2rem;
+        justify-content: center;
+        align-content: center;
+        
     }
     
     @media screen and (max-width: 730px) {
         .wrapper {
             grid-template-columns: repeat(2, 1fr);
-            grid-gap: 1vmin;
-            padding: 1vmin;
-            width: 100%;
             grid-auto-rows: 49vh;
+            grid-gap: 1vh;
+            -ms-grid-template-columns: repeat(2, 1fr);
+            -ms-grid-auto-rows: 49vh;
+            -ms-grid-gap: 1vmin;
+            padding: 0.5vh;
+            width: 100%;
+            
         }
         .cell p {
             font-size: 3rem;

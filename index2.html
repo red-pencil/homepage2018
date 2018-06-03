@@ -47,9 +47,12 @@
         grid-auto-rows: 148px 235px;
         grid-gap: 5px; 
         max-width: 730px;*/
-          grid-template-columns: repeat(3, 30vh);
+        grid-template-columns: repeat(3, 30vh);
         grid-auto-rows: 18.5vh 28vh;
-        grid-gap: 2vh; 
+        grid-gap: 2vh;
+        -ms-grid-template-columns: repeat(3, 30vh);
+        -ms-grid-auto-rows: 18.5vh 28vh;
+        -ms-grid-gap: 2vh; 
           width: 100vh;
           align-content: center;
           justify-content: center;
@@ -69,11 +72,14 @@
     
       .wrapper a:nth-child(n), .wrapper div:nth-child(n), .wrapper button:nth-child(n) {
         grid-row-end: span 2;
+        -ms-grid-row-end: span 2;
         }
         
       .wrapper a:nth-child(1), .wrapper div:nth-child(1) {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        -ms-grid-column: 1 / 2;
+        -ms-grid-row: 1 / 2;
         /*background-color: greenyellow;*/
         }
         /*
@@ -85,6 +91,8 @@
         .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
         grid-column: span 2;
         grid-row: span 1;
+        -ms-grid-column: span 2;
+        -ms-grid-row: span 1;
             background-color: transparent;
             box-shadow: none;
             /*
@@ -92,15 +100,17 @@
         }
               @media screen and (max-width: 730px) {
         .wrapper {
-          grid-template-columns: repeat(2, 48vw);
-            
+          grid-template-columns: repeat(2, 48vw);  
           grid-auto-rows: 29.7vw 46vw;
             grid-gap: 2vw;
+          -ms-grid-template-columns: repeat(2, 48vw);  
+          -ms-grid-auto-rows: 29.7vw 46vw;
+          -ms-grid-gap: 2vw;
             width: 100%;
           }
           .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
         grid-column: span 1;
-              
+           -ms-grid-column: span 1;
           }
         }
       
@@ -238,10 +248,10 @@
       <script>
 function myFunction() {
     var x = document.getElementById("footer1");
-    if (x.style.display === "none") {
-        x.style.display = "flex";
-    } else {
+    if (x.style.display === "flex") {
         x.style.display = "none";
+    } else {
+        x.style.display = "flex";
     }
 }
 </script>
