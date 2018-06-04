@@ -47,30 +47,27 @@
         grid-auto-rows: 148px 235px;
         grid-gap: 5px; 
         max-width: 730px;*/
-        grid-template-columns: repeat(3, 30vh);
-        grid-auto-rows: 18.5vh 28vh;
-        grid-gap: 2vh;
+       
         -ms-grid-template-columns: repeat(3, 30vh);
         -ms-grid-auto-rows: 18.5vh 28vh;
         -ms-grid-gap: 2vh; 
-          width: 100vh;
+           grid-template-columns: repeat(3, 30vh);  /* auto|0 |30vh|2vmin|30vh|2vmin|30vh| 0|auto*/
+        grid-template-rows: repeat(3, 18.5vh 28vh); /* 0.5vh|0 |18.5vh|2vmin|28vh|2vmin|18.5vh|2vmin|28vh| 0|2vh*/
+          padding: 0;
+          grid-auto-rows: 18.5vh;
+        grid-gap: 2vmin;
+          width: 100vmin;
+          margin: 0.5vh auto 2vh;
+
+          
+          font-size: 4rem;
+          text-decoration: none;
           align-content: center;
           justify-content: center;
 
-        margin-left: auto;
-          margin-right: auto;
-          margin-top: 0.5vh;
-          margin-bottom: 2vh;
-          padding-left: 1vw;
-            padding-right: 1vw;
-          font-size: 8vh;
-          
-          text-decoration: none;
-
       }
-
-    
-      .wrapper a:nth-child(n), .wrapper div:nth-child(n), .wrapper button:nth-child(n) {
+        
+              .wrapper a:nth-child(n), .wrapper div:nth-child(n), .wrapper button:nth-child(n) {
         grid-row-end: span 2;
         -ms-grid-row-end: span 2;
         }
@@ -98,21 +95,23 @@
             /*
         background-color: greenyellow;*/
         }
-              @media screen and (max-width: 730px) {
+            
+        @media screen and (max-width: 730px) {
         .wrapper {
-          grid-template-columns: repeat(2, 48vw);  
-          grid-auto-rows: 29.7vw 46vw;
-            grid-gap: 2vw;
+          grid-template-columns: repeat(2, 47vw);   /* auto|0 |47vw|2vmin|47vw| 0|auto*/
+          grid-template-rows: repeat(5, 29vw 45vw); /* auto|0 |29vw|2vmin|45vw */
           -ms-grid-template-columns: repeat(2, 48vw);  
           -ms-grid-auto-rows: 29.7vw 46vw;
           -ms-grid-gap: 2vw;
-            width: 100%;
           }
           .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
         grid-column: span 1;
            -ms-grid-column: span 1;
           }
         }
+
+    
+
       
       .cell {
           position: relative;
@@ -143,7 +142,6 @@
             left: 0;
             right: 0;
             font-family: 'Carrois Gothic SC';
-            font-size: 3rem;
             text-align: center;
                         color: black;
             padding: 0 1vw 0;
@@ -161,11 +159,6 @@
             opacity: 0; /* Fix to make div clickable in IE */
             filter: alpha(opacity=1); /* Fix to make div clickable in IE */
         }
-       a {
-            text-decoration:none;
-            
-        }
-    
     
             svg {
             width: 100%;
@@ -190,16 +183,16 @@
       
       
       }
-        .material-icons { font-size: 2rem; }
-        .myfooter {
+        .material-icons { font-size: 3rem; }
+        #myfooter {
             
-            height: 5vh;
+            height: 8vh;
             width: 100vw;
             box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2);
             background-color: darkgrey;
             /*padding: 2%;*/
             margin-top: 2vh;
-            padding-right: 2vw;
+            padding-right: 8vw;
 
     display: none;
 
@@ -228,26 +221,35 @@
             
           </a>
           <a href="http://red-pencil.github.io/cv/" class="cell"><i class="material-icons">face</i><p><!--1-->Resume</p></a>
+          
           <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re" style="text-decoration:none" class="cell"><i class="material-icons">business_center</i><p><!--2-->Portfolio</p></a>
+          
           <a href="mailto:lichao.shen@hotmail.com?Subject=Hello" class="cell"><i class="material-icons">message</i><p><!--3-->Contact</p></a>
+          
           <div class="cell"><i class="material-icons">favorite</i><p>Hey, you'll never walk alone</p></div>
+          
           <a href="social.html" class="cell"><i class="material-icons">alternate_email</i><p><!--5-->Social</p></a>
+          
           <a href="http://blog.shenlichao.com" class="cell"><i class="material-icons">book</i><p><!--6-->Blog</p></a>
-          <a href="https://500px.com/hx470000/galleries/redheart" style="text-decoration:none" class="cell"><i class="material-icons">camera</i><p><!--7-->Photography</p></a>
-          <a href="#footer1" class="cell" onclick="myFunction()" style="cursor: pointer;"><i class="material-icons">info</i><p><!--8-->About</p></a>
+          
+          <a href="https://500px.com/hx470000/galleries/redheart" style="text-decoration:none" class="cell"><img src="icon/blank-01.png" style="width: 100%;display: block;"><i class="material-icons">camera</i><p><!--7-->Photography</p></a>
+          
           <a href="index.html" class="cell"><i class="material-icons">settings</i><p><!--9-->Themes</p></a>
+          
+          <a href="#myfooter" class="cell" onclick="myFunction()"><i class="material-icons">info</i><p><!--8-->About</p></a>
+          
           <a href="#" class="cell" id="Chosen Child">
               <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
                     <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
                 </svg></a>
        </div>
 
-      <div class="myfooter" id="footer1">
-    <p style="display: block; color:white; font-family:'Carrois Gothic SC'; font-size: 2rem; text-align:right; vertical-align: middle; top:1vh;">Designed and made by Lichao.</p>
+      <div id="myfooter">
+    <p style="display: block; color: white; font-family:'Carrois Gothic SC'; font-size: 3rem; text-align: right; vertical-align: middle;">Designed and coded by Lichao.</p>
       </div>
       <script>
 function myFunction() {
-    var x = document.getElementById("footer1");
+    var x = document.getElementById("myfooter");
     if (x.style.display === "flex") {
         x.style.display = "none";
     } else {
