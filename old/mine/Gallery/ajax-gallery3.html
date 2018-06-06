@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PhotoSwipe</title> 
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	
+	<link rel="stylesheet" href="../lib/jquery.mobile-1.0b1/jquery.mobile-1.0b1.min.css" />
+	<link href="../photoswipe.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+		div.gallery-item { float: left; width: 33.333333%; }
+		div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+		div.gallery-item img { display: block; width: 100%; height: auto; }
+		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow: hidden; }
+	</style>
+	
+	<script type="text/javascript" src="../lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.mobile-1.0b1/jquery.mobile-1.0b1.min.js"></script>
+	
+	<script type="text/javascript" src="../lib/simple-inheritance.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.animate-enhanced.min.js"></script>
+	
+	<script type="text/javascript" src="../code-photoswipe-jQuery-1.0.19.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		
+		/*
+			This example shows how to set up PhotoSwipe using jQuery Mobile.
+		*/
+		
+		$(document).ready(function(){
+			
+			$('div.gallery-page').live('pageshow', function(e){
+					
+				// Re-initialize with the photos for the current page
+				$("div.gallery a", e.target).photoSwipe();
+				return true;
+				
+			})
+				
+		});
+	
+	</script>
+	
+</head> 
+<body>
+<div data-role="page" id="Gallery2" class="gallery-page">
+
+	<div data-role="header">
+		<h1>Dododo</h1>
+	</div>
+
+	<div data-role="content">	
+		
+        <h3>Dododo</h3>
+		<div class="gallery">
+	
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/full/019.jpg" rel="external"><img src="images/thumb/019.jpg" alt="Image 010" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/020.jpg" rel="external"><img src="images/thumb/020.jpg" alt="Image 011" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/021.jpg" rel="external"><img src="images/thumb/021.jpg" alt="Image 012" /></a></div>
+		
+			</div>
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/full/022.jpg" rel="external"><img src="images/thumb/022.jpg" alt="Image 013" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/023.jpg" rel="external"><img src="images/thumb/023.jpg" alt="Image 014" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/024.jpg" rel="external"><img src="images/thumb/024.jpg" alt="Image 015" /></a></div>
+		
+			</div>
+			
+			<div class="gallery-row">
+	
+				<div class="gallery-item"><a href="images/full/025.jpg" rel="external"><img src="images/thumb/025.jpg" alt="Image 016" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/026.jpg" rel="external"><img src="images/thumb/026.jpg" alt="Image 017" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/027.jpg" rel="external"><img src="images/thumb/027.jpg" alt="Image 018" /></a></div>
+		
+			</div>
+		
+		</div>
+		
+	</div>
+
+	<div data-role="footer">
+		<h4>by SHEN LICHAO</h4>
+	</div>
+
+</div>
+</body>
+</html>

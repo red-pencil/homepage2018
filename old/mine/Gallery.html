@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Gallery</title>
+	<link rel="stylesheet" href="themes/slc.css" />
+    <link href="themes/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   
+</head>
+<body>
+		<div data-role="page" id="page1">
+  <div data-role="header">
+    <a href="#defaultpanel" data-role="button" data-inline="true" data-icon="grid" data-theme="c">Navi</a>
+    <h1>Gallery</h1>
+  </div>
+  <div role="main" class="ui-content" >
+  <!--content-->
+  <h2>我的作品</h2>
+  <div align="center">
+  <a href="Gallery/ajax-gallery1.html" data-role="button" data-inline="true" rel="external" data-theme="f"><img src="Gallery/images/thumb/001.png" ><br>AERO 2013</br>
+    </a> 
+    <a href="Gallery/ajax-gallery2.html" data-role="button" data-inline="true" rel="external" data-theme="f"><img src="Gallery/images/thumb/017.png"><br>Ringkey</br>
+      </a>
+        
+  </div>
+        <ul data-role="listview" data-inset="true" data-theme="f">
+			<li>
+            <a href="Gallery/ajax-gallery3.html" rel="external"><img src="Gallery/images/thumb/023.png">平面设计</a></li> 
+			<li><a href="Gallery/ajax-gallery4.html" rel="external"><img src="Gallery/images/thumb/032.png">手工制作</a></li> 
+		</ul> 
+		
+		
+		<ul data-role="listview" data-inset="true">
+			<li><a href="http://shenlichao.weebly.com">More Design</a></li> 
+		</ul> 
+  </div>		 
+  <!-- defaultpanel  -->
+  <div data-role="panel" id="defaultpanel" data-theme="f">
+     <div class="panel-content">
+      <h2>Navigation Panel</h2>
+             <ul data-role="listview" data-inset="true" data-theme="a">
+				<li><a href="index.html">Homepage</a> 
+                <li><a href="Resume.html">Résumé</a> 
+                <li><a href="Portfolio.html">Portfolio</a> 
+                <li><a data-rel="close" class="ui-btn-active">Gallary</a> 
+                <li><a href="Aboutme.html">About Me</a></li>
+             </ul>
+     
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /defaultpanel -->
+</div>
+
+</body>
+</html>

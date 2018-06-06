@@ -1,0 +1,105 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>PhotoSwipe</title> 
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+	
+	<link rel="stylesheet" href="../lib/jquery.mobile-1.0b1/jquery.mobile-1.0b1.min.css" />
+	<link href="../photoswipe.css" type="text/css" rel="stylesheet" />
+	<style type="text/css">
+		div.gallery-row:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+		div.gallery-item { float: left; width: 33.333333%; }
+		div.gallery-item a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+		div.gallery-item img { display: block; width: 100%; height: auto; }
+		#Gallery1 .ui-content, #Gallery2 .ui-content { overflow: hidden; }
+	</style>
+	
+	<script type="text/javascript" src="../lib/jquery-1.6.2.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.mobile-1.0b1/jquery.mobile-1.0b1.min.js"></script>
+	
+	<script type="text/javascript" src="../lib/simple-inheritance.min.js"></script>
+	<script type="text/javascript" src="../lib/jquery.animate-enhanced.min.js"></script>
+	
+	<script type="text/javascript" src="../code-photoswipe-jQuery-1.0.19.min.js"></script>
+	
+	
+	<script type="text/javascript">
+		
+		/*
+			This example shows how to set up PhotoSwipe using jQuery Mobile.
+		*/
+		
+		$(document).ready(function(){
+			
+			$('div.gallery-page').live('pageshow', function(e){
+					
+				// Re-initialize with the photos for the current page
+				$("div.gallery a", e.target).photoSwipe();
+				return true;
+				
+			})
+				
+		});
+	
+	</script>
+	
+</head> 
+<body>
+
+<div data-role="page" id="Gallery1" class="gallery-page">
+
+	<div data-role="header" >
+		<h1>AERO 2013</h1>
+	</div>
+
+	<div data-role="content">	
+	  <h3>全新设计的AERO FSAE赛车！</h3>
+	  <p>AERO意为飞行器的，全新的赛车融合了飞行器的元素，飞驰如同贴地飞行。参考了最新的战斗机的线条，侧箱宛如宽大飞翼，菱形的开口如同发动机的进气口，车头和侧箱融为一体，圆润的车头冲开了空气的屏障，每一条锋利的曲线都为切割气流而生。。虽然参考了飞行器的空气动力学外形，还根据车的特点进行了针对性的改进。侧箱内部形成空气扩散的空间，有助于水箱散热。侧箱弯曲的外部引导空气流动，整齐的气流有助于减少阻力，保持稳定。而且保持车身上表面平整一体化，减少升力的产生。 </p>
+		
+        <div class="gallery">
+	
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/full/001.jpg" rel="external"><img src="images/thumb/001.jpg" alt="Image 001" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/002.jpg" rel="external"><img src="images/thumb/002.jpg" alt="Image 002" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/003.jpg" rel="external"><img src="images/thumb/003.jpg" alt="Image 003" /></a></div>
+				
+			</div>
+
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/full/004.jpg" rel="external"><img src="images/thumb/004.jpg" alt="Image 004" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/005.jpg" rel="external"><img src="images/thumb/005.jpg" alt="Image 005" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/006.jpg" rel="external"><img src="images/thumb/006.jpg" alt="Image 006" /></a></div>
+		
+			</div>
+		
+			<div class="gallery-row">
+		
+				<div class="gallery-item"><a href="images/full/007.jpg" rel="external"><img src="images/thumb/007.jpg" alt="Image 007" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/008.jpg" rel="external"><img src="images/thumb/008.jpg" alt="Image 008" /></a></div>
+				
+				<div class="gallery-item"><a href="images/full/009.jpg" rel="external"><img src="images/thumb/009.jpg" alt="Image 009" /></a></div>
+
+			</div>
+		
+		
+		</div>
+		
+	</div>
+	
+	
+<div data-role="footer">
+    <h4>by SHEN LICHAO</h4>
+	</div>
+	
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>About me</title>
+	<link rel="stylesheet" href="themes/slc.css" />
+    <link href="themes/jquery.mobile.structure-1.3.2.min.css" rel="stylesheet" type="text/css" /> 
+	<script type="text/javascript" src="lib/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="lib/jquery.mobile-1.3.2.min.js"></script>
+    <script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <style>
+  .panel-content {
+    padding: 0em;
+  }
+  </style>
+</head>
+<body>
+		<div data-role="page" id="page1">
+  <div data-role="header">
+    <a href="#defaultpanel" data-role="button" data-inline="true" data-theme="c" data-icon="grid">Navi</a>
+    <h1>About Me</h1>
+  </div>
+  <div role="main" class="ui-content">
+  		<h2>Say Hello</h2>
+    		<img src/><img src="images/Avatar.JPG" width="50%">
+        <h2>Contact Me</h2>
+             <ul data-role="listview" data-inset="true" data-theme="a">
+                <li><a href="tel:+08615201366175">Call</a>
+         		<li><a href="mailto:info@mobilexweb.com">Email</a>
+         		<li><a href="sms://+8615201366175">Message</a>
+                <li><a href="weixin://addfriend/shenlichao0416">Weixin:shenlichao0416</a>
+               </ul>
+   	 	
+			<img src="https://maps.googleapis.com/maps/api/staticmap?center=Xueyuan Lu, Beijing, China&amp;zoom=15&amp;size=500x300&amp;markers=Xueyuan Lu, Beijing, China.&amp;sensor=false" width=100%/>
+  </div>
+ 
+  <!-- defaultpanel  -->
+  <div data-role="panel" id="defaultpanel" data-theme="f">
+ 
+    <div class="panel-content">
+      <h2>Navigation Panel</h2>
+          <!--<p>This panel has all the default options: positioned on the left with the reveal display mode. The panel markup is <em>before</em> the header, content and footer in the source order.</p>
+      <p>To close, click off the panel, swipe left or right, hit the Esc key, or use the button below:</p>
+      -->
+            <ul data-role="listview" data-inset="true" data-theme="a">
+				<li><a href="index.html">Homepage</a> 
+                <li><a href="Resume.html">Résumé</a> 
+                <li><a href="Portfolio.html">Portfolio</a> 
+                <li><a href="Gallery.html">Gallary</a> 
+                <li><a data-rel="close" data-theme="c" class=ui-btn-active>About Me</a></li>
+      </ul>
+      <!--    
+      <a href="#demo-links" data-rel="close" data-role="button" data-theme="a" data-icon="delete" data-inline="false"   data-iconpos="notext" >Close</a>
+      -->
+    </div><!-- /content wrapper for padding -->
+  </div><!-- /defaultpanel -->
+</div>
+        
+        
+         
+
+</body>
+</html>
