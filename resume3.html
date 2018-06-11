@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     
-    <script>
-        function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';}
-    </script>
         
     <style>
         
@@ -35,11 +31,13 @@
         code {font-family: monospace;}
 
         .container {
+            /*
             display: flex;
             vertical-align: middle;
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            */
         }
         
         .card {
@@ -53,14 +51,16 @@
             max-width: 3000px;
             height: 90vh;
 
-            padding: 50px;
-            margin-bottom: 5vh;
-            margin-top: 5vh;
+            padding: 5vmin;
+            margin: 5vh auto;
 
             border-radius: 15px;
             box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
             background-color: white;
             /*background-color: brown;*/
+            
+            overflow:hidden;
+            position: relative;
         }
 
         .card.long { height: auto;}
@@ -74,10 +74,25 @@
               margin: 10px;
           }*/
 
-        .card div, .card p {
+        .card-text {
             display: inline;
             font-family: 'Roboto';
             font-size: 12pt;
+        }
+        
+        .button {
+            
+           position: absolute;
+            bottom: 0;
+            height: 10vh;
+            width: 100vw;
+            background-color: yellowgreen;
+            line-height: 10vh;
+            text-align: center;
+            font-family: 'Roboto';
+            font-size: 5em;
+            color:aliceblue;
+            
         }
 
 
@@ -87,14 +102,23 @@
 <body>
     <div class="container">
         
-        <div class="card">
-        <p>
+        
+        
+        <div class="card" style="position: sticky; top: -80vh; z-index:1;">
+            
+            <a href="index2.html" class="button">
+             
+             Back
+            </a>
+        <p class="card-text">
             Hi, this is Lichao. This website is designed and coded by me from <code>&lt;!DOCTYPE html&gt;;</code>, hopefully it can help.
             <br><br><br><br>
             Icon credits: ProSymbols from the Noun Project
             <br><br><br><br><br><br><br><br><br><br>
             All Rights Reserved. 2018
         </p>
+         
+        
         </div>
 
 

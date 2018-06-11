@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
+
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,143 +15,149 @@
 
     <style>
 
-      * {box-sizing: border-box;}
-        
-      html {
-        margin: 0;
-        padding: 0;
-        font-size: 1vmin;
-        background-color: #f0f0f0;
-      }
-
-      body {
-        margin: 0;
-        padding: 0;
-      }
-
-      .wrapper {
-        /* color *//*
-        border: 2px solid #f76707;
-        background-color: #fff4e6;
-        
-        /* layout */
-        display: -ms-grid;
-        display: grid;
-        /*
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 20.2vw 31.7vw; /* (100 - 2*1) / 3 * 0.618 
-        grid-gap: 1vw; vh*/
-          /*
-        grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: 148px 235px;
-        grid-gap: 5px; 
-        max-width: 730px;*/
-       
-        -ms-grid-template-columns: repeat(3, 30vh);
-        -ms-grid-template-rows: repeat(3, 17.9vh 27vh);
-        -ms-grid-gap: 2vh; 
-        grid-template-columns: repeat(3, 29vh);  /* auto|0 |30vh|2vh|30vh|2vh|30vh| 0|auto*/
-        grid-template-rows: repeat(3, 17.9vh 27vh); /* 2vh|0 |17.9vh|2vh|27vh|2vh|17.9vh|2vh|27vh| 0|1vh*/
-        padding: 0;
-        grid-auto-rows: 18.5vh;
-        grid-gap: 2vh;
-        width: 100vmin;
-        margin: 2vh auto 2vh;
-
+        * {box-sizing: border-box;}
           
-        font-size: 18px;
-        text-decoration: none;
-        align-content: center;
-        justify-content: center;
+        html {
+            margin: 0;
+            padding: 0;
+            font-size: 1vmin;
+            background-color: #f0f0f0;
+        }
 
-      }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrapper {
+            /* color *//*
+            border: 2px solid #f76707;
+            background-color: #fff4e6;
+            
+            /* layout */
+            display: -ms-grid;
+            display: grid;
+            /*
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 20.2vw 31.7vw; /* (100 - 2*1) / 3 * 0.618 
+            grid-gap: 1vw; vh*/
+            /*
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 148px 235px;
+            grid-gap: 5px; 
+            max-width: 730px;*/
+        
+            -ms-grid-template-columns: repeat(3, 30vh);
+            -ms-grid-template-rows: repeat(3, 17.9vh 27vh);
+            -ms-grid-gap: 2vh; 
+            grid-template-columns: repeat(3, 29vh);  /* auto|0 |30vh|2vh|30vh|2vh|30vh| 0|auto*/
+            grid-template-rows: repeat(3, 17.9vh 27vh); /* 2vh|0 |17.9vh|2vh|27vh|2vh|17.9vh|2vh|27vh| 0|1vh*/
+            grid-auto-rows: 18.5vh;
+            grid-gap: 2vh;
+
+            width: 100vmin;
+            padding: 0;
+            margin: 2vh auto 2vh;
+
+            align-content: center;
+            justify-content: center;
+
+            font-size: 18px;
+            text-decoration: none;
+
+        }
         
         .wrapper a:nth-child(n), .wrapper div:nth-child(n), .wrapper button:nth-child(n) {
-          grid-row-end: span 2;
-          -ms-grid-row-end: span 2;
+            grid-row-end: span 2;
+            -ms-grid-row-end: span 2;
         }
         
         .wrapper a:nth-child(1), .wrapper div:nth-child(1) {
-          grid-column: 1 / 2;
-          grid-row: 1 / 2;
-          -ms-grid-column: 1 / 2;
-          -ms-grid-row: 1 / 2;
-          /*background-color: greenyellow;*/
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            -ms-grid-column: 1 / 2;
+            -ms-grid-row: 1 / 2;
+            /*background-color: greenyellow;*/
         }
         /*
         .wrapper div:nth-last-child(2) {
-        grid-column: span 1;
-        grid-row: span 1;
-        background-color: greenyellow;
-        }*/
+            grid-column: span 1;
+            grid-row: span 1;
+            background-color: greenyellow;
+        }
+        */
         .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
-          grid-column: span 2;
-          grid-row: span 1;
-          -ms-grid-column: span 2;
-          -ms-grid-row: span 1;
-          background-color: transparent;
-          box-shadow: none;
-          /*background-color: greenyellow;*/
+            grid-column: span 2;
+            grid-row: span 1;
+            -ms-grid-column: span 2;
+            -ms-grid-row: span 1;
+            background-color: transparent;
+            box-shadow: none;
+            /*background-color: greenyellow;*/
         }
             
-      @media screen and (max-width: 730px) {
+    @media screen and (max-width: 730px) {
+
         .wrapper {
-          -ms-grid-template-columns: repeat(2, 48vw);  
-          -ms-grid-template-rows: repeat(5, 29vw 45vw);
-          -ms-grid-gap: 2vw;
-            
-          grid-template-columns: repeat(2, 47vw);   /* auto|0 |47vw|2vmin|47vw| 0|auto*/
-          grid-template-rows: repeat(5, 29vw 45vw); /* auto|0 |29vw|2vmin|45vw|2vmin */
-          grid-gap: 2vmin;
-            
-          margin-top: 1vh;
-          font-size: 4rem;
-          }
+            -ms-grid-template-columns: repeat(2, 48vw);  
+            -ms-grid-template-rows: repeat(5, 29vw 45vw);
+            -ms-grid-gap: 2vw;
+            grid-template-columns: repeat(2, 47vw);   /* auto|0 |47vw|2vmin|47vw| 0|auto*/
+            grid-template-rows: repeat(5, 29vw 45vw); /* auto|0 |29vw|2vmin|45vw|2vmin */
+            grid-gap: 2vmin;
+                
+            margin-top: 1vh;
+            font-size: 4rem;
+        }
         
         .wrapper a:nth-last-child(1), .wrapper div:nth-last-child(1) {
-          grid-column: span 1;
-          -ms-grid-column: span 1;
-          }
-        
+            grid-column: span 1;
+            -ms-grid-column: span 1;
         }
 
-    
+    }
 
-      
-      .cell {
-          position: relative;
-        border-radius: 15px;
-        background-color: white;
-        text-align: center;
-          box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    margin: 0;
-    width: 100%; 
-          display: flex;
-          vertical-align: middle;
-          justify-content: center;
-          align-items: flex-start;
-        
-      }
+        .cell {
+            position: relative;
+            border-radius: 15px;
+            background-color: white;
+
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+
+            margin: 0;
+            width: 100%;
+
+            display: flex;
+            vertical-align: middle;
+            justify-content: center;
+            align-items: flex-start;
+
+            text-align: center;
+        }
+
         #key {
-             position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            z-index: 1;
             background-color: #79c753;
             
-            
         }
+        
         .cell p{
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            font-family: 'Carrois Gothic SC';
+            
             text-align: center;
-                        color: black;
             padding: 0 1vw 0;
 
+            font-family: 'Carrois Gothic SC';
+            color: black;
+
         }
+
         .cell a {
             position: absolute;
             width: 100%;
@@ -166,15 +172,14 @@
         }
 
         .cell i {
-            
             color: black;
-          text-decoration: none;
-          position: absolute;
-          display: block;
-          top: 2vh;
+            text-decoration: none;
+            position: absolute;
+            display: block;
+            top: 2vh;
         }
     
-            svg {
+        svg {
             width: 100%;
             height: 80%;
             position: absolute;
@@ -184,80 +189,77 @@
             bottom: 0;
             margin: auto;
         }
-        
-        
-        
+
         .material-icons { font-size: 3rem; }
+
         #myfooter {
-            
             height: 8vh;
             width: 100vw;
             box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2);
             background-color: darkgrey;
+
             /*padding: 2%;*/
             margin-top: 2vh;
             padding-right: 8vw;
 
-    display: none;
+            flex-direction: row-reverse;
+            align-items: center;
 
-    flex-direction: row-reverse;
-
-    align-items: center;
-            
+            display: none;
         }
         
     </style>
-      
+
 
     <script>
     
     
     </script>
 
-  </head>
-  <body>
+</head>
+<body>
 
     <div class="wrapper">
 
 
-      <a href="#" class="cell" id="key">
-              <!--
-          <object data="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">Your browser does not support SVGs</object>-->
-              <img src="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">
+        <a href="#" class="cell" id="key">
+                <!--
+            <object data="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">Your browser does not support SVGs</object>-->
+                <img src="icon/logo-1-3.svg" style="position: absolute; width: 50%; height:100%; top: 20%; bottom: 0; left: 0; right: 0; margin: auto;">
+                
+        </a>
+      
+        <a href="http://red-pencil.github.io/cv/" class="cell"><i class="material-icons">face</i><p><!--1-->Resume</p></a>
             
-      </a>
-      
-      <a href="http://red-pencil.github.io/cv/" class="cell"><i class="material-icons">face</i><p><!--1-->Resume</p></a>
-          
-      <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re" style="text-decoration:none" class="cell"><i class="material-icons">business_center</i><p><!--2-->Portfolio</p></a>
-      
-      <a href="mailto:lichao.shen@hotmail.com?Subject=Hello" class="cell"><i class="material-icons">message</i><p><!--3-->Contact</p></a>
-      
-      <div class="cell"><i class="material-icons">favorite</i><p>Hey, you'll never walk alone</p></div>
-      
-      <a href="social.html" class="cell"><i class="material-icons">alternate_email</i><p><!--5-->Social</p></a>
-      
-      <a href="http://blog.shenlichao.com" class="cell"><i class="material-icons">book</i><p><!--6-->Blog</p></a>
-      
-      <a href="https://500px.com/hx470000/galleries/redheart" style="text-decoration:none" class="cell"><i class="material-icons">camera</i><p><!--7-->Photography</p></a>
-      
-      <a href="index.html" class="cell"><i class="material-icons">settings</i><p><!--9-->Themes</p></a>
-      
-      <a href="#myfooter" class="cell" onclick="myFunction()"><i class="material-icons">info</i><p><!--8-->About</p></a>
-      
-      <a href="#" class="cell" id="Chosen Child">
-        <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
-          <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
-        </svg></a>
+        <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re" style="text-decoration:none" class="cell"><i class="material-icons">business_center</i><p><!--2-->Portfolio</p></a>
+        
+        <a href="mailto:lichao.shen@hotmail.com?Subject=Hello" class="cell"><i class="material-icons">message</i><p><!--3-->Contact</p></a>
+        
+        <div class="cell"><i class="material-icons">favorite</i><p>Hey, you'll never walk alone</p></div>
+        
+        <a href="social.html" class="cell"><i class="material-icons">alternate_email</i><p><!--5-->Social</p></a>
+        
+        <a href="http://blog.shenlichao.com" class="cell"><i class="material-icons">book</i><p><!--6-->Blog</p></a>
+        
+        <a href="https://500px.com/hx470000/galleries/redheart" style="text-decoration:none" class="cell"><i class="material-icons">camera</i><p><!--7-->Photography</p></a>
+        
+        <a href="index.html" class="cell"><i class="material-icons">settings</i><p><!--9-->Themes</p></a>
+        
+        <a href="#myfooter" class="cell" onclick="myFunction()"><i class="material-icons">info</i><p><!--8-->About</p></a>
+        
+        <a href="#" class="cell" id="Chosen Child">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
+            <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+            </svg></a>
       
       
-      </div>
+    </div>
 
-      <div id="myfooter">
+    <div id="myfooter">
         <p style="display: block; color: white; font-family:'Carrois Gothic SC'; font-size: 3rem; text-align: right; vertical-align: middle;">Designed and coded by Lichao.</p>
-      </div>
+    </div>
 
-      <script>
+    <script>
         function myFunction() {
         var x = document.getElementById("myfooter");
         if (x.style.display === "flex") {
@@ -266,9 +268,9 @@
             x.style.display = "flex";
         }
         }
-      </script>
+    </script>
 
 
-  </body>
+</body>
 
 </html>

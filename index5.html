@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homepage of Shen Lichao</title>
+    <!--<link href='https://fonts.googleapis.com/css?family=Alegreya Sans SC' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Carrois Gothic SC' rel='stylesheet'>-->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:500,600,700,100,800,900,400,200,300' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat Subrayada:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Megrim:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poiret One:100,200,300,400,500,600,700,800,900' rel='stylesheet'>
+    
+    
+    <style>
+        
+        * {box-sizing: border-box;}
+        
+        :root {
+        --main-bg-color: rgba(106,222,173,1);
+        --main-txt-color: rgba(47,47,120,1);
+        --main-line-color: rgba(190,190,190,1);
+        --main-content-color: white;
+        }
+    
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
+            font-size: 1vmin;
+            /*background-color: var(--main-bg-color);*/
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            background:  var(--main-line-color);
+            
+            
+        }
+        
+        .wrapper {
+            /* color */
+            border: 0vmin solid var(--main-line-color);
+            background-color: white;
+            width: 90vw;
+            height: 90vh;
+            display: block;
+            vertical-align: middle;
+            text-align: center;
+            font-size: 10rem;
+            margin: 5vh auto 5vh;
+            
+    
+        }
+        
+        .row {
+            
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .cell {
+            
+            height: 30vh;
+            width: 30%;
+            background: white;
+            display: inline-block;
+            padding: auto;
+            /*border: 1vmin solid var(--main-line-color);*/
+            cursor: pointer;
+            position: relative;
+            border-bottom: var(--main-line-color) solid 3px;
+            /* box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
+            
+            
+            
+        }
+        
+        .cell-text {
+            
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            font-size: 5rem;
+            margin: 0 2vw 1vh 0;
+            /*color: white;
+            text-shadow: 0px 3px 5px rgba(0,0,0,0.3);*/
+            color: var(--main-line-color);
+            
+            font-family: 'Raleway', sans-serif;
+            font-weight: 100;
+        }
+        
+         .cell2 {
+            
+            height: 30vmin;
+            width: 30vmin;
+            background: rgba(50,50,50,1);
+            display: inline-block;
+            padding: auto;
+            /* border: 1vmin solid var(--main-line-color); */
+            cursor: pointer;
+            position: relative;
+            border-radius: 50%;
+            /* box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
+             text-align: center;
+             vertical-align: middle;
+            
+        }
+        
+        .cell-text2 {
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 5rem;
+            margin: auto 0 auto;
+            /*color: white;
+            text-shadow: 0px 3px 5px rgba(0,0,0,0.3);*/
+            color: white;
+            
+            font-family: 'Megrim', sans-serif;
+            font-weight: 100;
+        }
+        
+        #overlay {
+            position: fixed; /* Sit on top of the page content */
+            /*display: none; /* Hidden by default */
+            width: 100%; /* Full width (cover the whole page) */
+            height: 100%; /* Full height (cover the whole page) */
+            top: 0; 
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255,255,255,1); /* Black background with opacity */
+            z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+            /*cursor: pointer; /* Add a pointer on hover */
+        }
+        
+        #overlay-text {
+            
+            position: absolute;
+            top: 61.8%;
+            left: 61.8%;
+            font-size: 8rem;
+            cursor: pointer;
+            /*color: rgba(230,230,230,1);*/
+            color: white;
+            text-shadow: 1px 3px 10px rgba(0,0,0,0.3);
+            transform: translate(-50%, -50%);
+            margin-right: -50%;
+            font-weight: 800;
+            font-family: 'Raleway', sans-serif;
+        }
+        
+        
+    
+    
+    </style>
+    
+    
+    
+</head>
+    
+<body>
+    
+    <div id="overlay" onclick="off()">
+    <div id="overlay-text">Lichao Shen</div>
+    
+    </div>
+    
+    <div class="wrapper">
+        
+        <div class="row">
+            <div class="cell2"><p class="cell-text2">Résumé</p></div>
+            <div class="cell2"><p class="cell-text2">Portfolio</p></div>
+            <div class="cell2"><p class="cell-text2">Contact</p></div>
+        </div>
+    
+        
+        <div class="row">
+            <div class="cell"><p class="cell-text">Blog</p></div>
+            <div class="cell"><p class="cell-text">About</p></div>
+            <div class="cell"><p class="cell-text">Social</p></div>
+        </div>
+        
+        <div class="row">
+            <div class="cell"><p class="cell-text">Photos</p></div>
+            <div class="cell"><p class="cell-text">中文</p></div>
+            <div class="cell" onclick="on()"><p class="cell-text">Whois</p></div>
+        </div>
+        
+    </div>
+    
+    <script>
+        function on() {
+            document.getElementById("overlay").style.display = "block";
+        }
+
+        function off() {
+            document.getElementById("overlay").style.display = "none";
+        }
+    </script>
+    
+
+    
+    
+</body>
+</html>
+    
