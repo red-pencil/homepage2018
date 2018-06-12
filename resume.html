@@ -1,45 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-        
+
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1">
-    <meta name="description" content="resume">
-    <meta name="author" content="Lichao">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Homepage of Shen Lichao</title>
     
-    <title>Resume</title>
-    
+    <link href='https://fonts.googleapis.com/css?family=Mako' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     
-    <script>
-        function resizeIframe(obj) {
-        obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';}
-    </script>
-        
     <style>
         
         * {box-sizing: border-box;}
+    
+        html {
+            margin: 0;
+            padding: 0;
+            font-size: 1vmin; 
+        }
         
         body {
-        background-color:#f0f0f0;
-        margin: 0 0 0 0;
-        padding: 0 0 0 0;
-        font-size: 1vmin;
+            margin: 0;
+            padding: 0;
+            background-color: #020322;
+            font-family: 'Mako';
         }
         
-        html, body {
-              height: 100%;
+        @media only screen and (min-device-width: 768px) {
+            html {
+                font-size: 0.6vmin;}
         }
+            
+        :root {
+            --main-bg-color: coral;
+            --main-txt-color: white;
+        }
+        
+        .wrapper { 
+            /* color *//*
+            border: 2px solid #f76707;
+            background-color: #fff4e6;
 
-        code {font-family: monospace;}
+            /*layout*/
+            display: -ms-grid;
+            display: grid;
+          
+            grid-template-columns: 1fr;     /* |1vh |32vh|1vh|32vh|1vh|32vh 1vh| */
+            grid-template-rows: 98vh;                       /* |1vh |48vh|2vh|48vh| 1vh| */
+            grid-auto-rows: auto;
+            grid-gap: 2vh;
+            
+            padding: 1vh;
+            max-width: 100vh;
+            width: 100%;
 
-        .container {
-            display: flex;
-            vertical-align: middle;
+            margin-left: auto;
+            margin-right: auto;
+            
             justify-content: center;
-            flex-direction: column;
-            align-items: center;
+            align-content: center;
+
+            font-size: 2rem;
+        
+        }
+        
+        .cell {
+            position: relative;
+            margin: 0;
+            /*width: 100%;*/
+            height: 100%;
+            /*cursor: pointer;*/
+
+            border-radius: 15px;
+            background-color: white;
+            /*box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);*/
+
+            /* text-align: center; */
         }
         
         .card {
@@ -48,85 +88,113 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-
-            width: 90vw;
-            max-width: 3000px;
-            height: 90vh;
-
-            padding: 50px;
-            margin-bottom: 5vh;
-            margin-top: 5vh;
-
-            border-radius: 15px;
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-            background-color: white;
-            /*background-color: brown;*/
+            
+             overflow:hidden;
+            padding: 20% 5%;
         }
-
-        .card.long { height: auto;}
-
-          /*.card div {
-              padding: 100px;
-              max-height: 500px;
-              max-width: 500px;
-              background-color: fuchsia;
-              display: block;
-              margin: 10px;
-          }*/
-
-        .card div, .card p {
+        
+        .card>p {
             display: inline;
-            font-family: 'Roboto';
-            font-size: 12pt;
+            
+            font-size: 2rem;
+            color: var(--main-txt-color);
+            margin: 5vh 5vw;
+        }
+        
+        p>a {
+color: var(--main-txt-color);            
+        }
+        
+        .back {
+            position: fixed;
+            bottom: 10%;
+            /*
+            right: calc(50vw - 50vh);
+            transform: translate(50%,0);*/
+            right: 10%;
+            background-color: coral;
+            border-radius: 50%;
+            /*
+            line-height: 15rem;
+            width: 15rem;
+            height: 15rem;
+            */
+            
+            line-height: 20rem;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        .back>p {
+            
+            color: var(--main-txt-color); 
+            margin: 0;
+            font-size: 5rem;
+            
+        }
+        
+        .download {
+            
+            left: 10%;;
+            
+        }
+        .back.download> p{
+            
+            font-size: 8rem;
+            display: inline-block;
+            line-height: 1.3;
+            vertical-align: middle;
+            
         }
 
-
+    
     </style>
+
+    
+
 </head>
-
 <body>
-    <div class="container">
+    
+    <div class="wrapper">
         
-        <div class="card">
-        <p>
-            Hi, this is Lichao. This website is designed and coded by me from <code>&lt;!DOCTYPE html&gt;;</code>, hopefully it can help.
-            <br><br><br><br>
-            Icon credits: ProSymbols from the Noun Project
-            <br><br><br><br><br><br><br><br><br><br>
-            All Rights Reserved. 2018
-        </p>
-        </div>
-
-
-        <div class="card">
+        <div class="cell card" style="background-color: rgba(68,145,130,1); padding: 0;
+                                     
+                    overflow:auto;-webkit-overflow-scrolling:touch;">  
+       
+                <iframe src="https://red-pencil.github.io/cv" style="
+                   position: absolute;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  top: 0;
+                  width: 100%;
+                  height: 98vh;
+                  border: none; 
+                  background-color: white;
+                  "></iframe>
             
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xq5xTcrdzXU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             
-        </div>
-
-
-        <div class="card">
-        
-            <iframe style="width:100%; height:100%;" src="//e.issuu.com/embed.html#8269283/31529558" frameborder="0" allowfullscreen></iframe>
         
         </div>
-
-
-        <div class="card long" style="height:3000px;">
-            
-            <iframe src="https://red-pencil.github.io/cv" width="100%" height="100%" style="position: relative; border: none" allowfullscreen scrolling="yes"></iframe>
-            
-        </div>
-        
-        
-        <div class="card">
-        <object data="cv-one-page.pdf" type="application/pdf" width="100%" height="100%">
-  <p>Alternative text - include a link <a href="cv-one-page.pdf">to the PDF!</a></p>
-</object>
     </div>
-</div>
-
-
-
+    
+    <a href="index.html" class="back">
+    <p>Back</p> <!-- &larr; -->
+    </a>
+    
+    <!--
+    <a href="https://red-pencil.github.io/cv/pdf/cv.pdf" class="back download">
+    <p>Download<br>.pdf</p>
+    </a>
+    -->
+    <a href="https://red-pencil.github.io/cv" class="back download">
+    <p><i class="fa fa-external-link"></i></p>
+        </a>
 </body>
+    
 </html>
+    
+        
+    

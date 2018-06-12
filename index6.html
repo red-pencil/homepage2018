@@ -56,6 +56,7 @@
             url('font/iconfont.ttf') format('truetype'),
             url('font/iconfont.svg#iconfont') format('svg');
         }
+        
         .iconfont {
             font-family:"iconfont" !important;
             font-size:5rem;font-style:normal;
@@ -71,72 +72,65 @@
             display: grid;
             
             grid-template-columns: repeat(3, 1fr);
-          justify-content: end;
+            grid-auto-rows: auto;
+            justify-content: end;
          
-          grid-gap: 5vmin;
-          /*background: yellowgreen;*/
+            grid-gap: 5vmin;
+            /*background: yellowgreen;*/
             
-            width: 100%;
+            /*width: 100%;*/
             padding: 2vh 5vw 5vh 20vw;
-            
             grid-auto-flow: dense;
             
-            
-
-}
-        
-        .wrapper > a {
-    
-          background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255,0.15));
-        /* border: rgba(255, 255, 255,0.15) solid  0.5px; */
-            
-          text-align: center;
-
-          /*
-          padding: 20px 0;
-          font-size: 30px;*/
-
-          position: relative;
-            width: 100%;
-           padding-top: 61.8%;
-            border-radius: 10px;
-            
-        
-        }
-        .cell:nth-last-child(1) {
-    grid-column-start: 3;
-            background-color: aqua;
-}
-        
-        
-        @media screen and (max-width: 900px) {
-         .wrapper {   
-            grid-template-columns: repeat(2, 1fr);/*Make the grid smaller than the container*/
             }
-            
-            .wrapper > a {
-                width: 100%;
-             padding-top: 100%;
         
+        .cell {
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255,0.15));
+            /* border: rgba(255, 255, 255,0.15) solid  0.5px; */
+            text-align: center;
+            /*
+            padding: 20px 0;
+            font-size: 30px;
+            */
+            position: relative;
+            width: 100%;
+            padding-top: 61.8%;
+            height: 0;
+            border-radius: 10px;
+
         }
-            .cell:nth-last-child(1) {
-    grid-column-start: 2;
-            background-color: aqua;
-}
+
+
+        .wrapper a:nth-last-child(1) {
+            grid-column-start: 3;
+            /* background-color: aqua; */
+        }
+
+
+    @media screen and (max-width: 900px) {
+        .wrapper {   
+            grid-template-columns: repeat(2, 1fr);/*Make the grid smaller than the container*/
+        }
             
+        .cell {
+            width: 100%;
+            padding-top: 100%;
         }
-       
         
+        .wrapper a:nth-last-child(1) {
+            grid-column-start: 2;
+            /* background-color: aqua; */
+        }
+            
+    }
+
         .wrapper i {
-            
             position: absolute;
             top: 5%;
             right: 5%;
-            
         }
         
         .wrapper p {
-            
             position: absolute;
             bottom: 7%;
             left: 10%;
@@ -146,64 +140,63 @@
             font-family: 'Mako';
         }
         
-        .header p, .header0 p {
+    
+        .wrapper h1 {
             
-            position: absolute;
-            right: 5vw;
-            font-size: 5vh;
-            margin: 0;
+           margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+            
+            margin-right: -45%; 
+            
+            font-size: 4rem;
             color: var(--line-color);
             font-family: 'Mako';
-        }
-
-        .header {
             
-            position: -webkit-sticky;
-            position: sticky;
-            top:0;
-            width: 100%;
-            height: 8vh;
-            
-            background: rgba(255, 255, 255, 0.2);
-            border-bottom: rgba(255, 255, 255,0.15) solid 2px;
-            z-index: 1;
-            line-height: 8vh;
-            
-        }
+            line-height: 1.2;
         
-        .header0 {
-            
-            
-            
         }
         
         #myheader {
-            
-            position:sticky;
+            position: -webkit-sticky;
+            position: sticky;
             top:0;
-            width: 100%;
-            height: 30vmin;
-            margin-bottom: 3vmin;
-            border-bottom: transparent solid 2px;
             z-index: 1;
-            line-height: 25vmin;
+
+            width: 100%;
+            height: 30vh;
+            
+            margin-bottom: 1vh;
+            border-bottom: transparent solid 2px;
+            
+            /*line-height: 25vmin;*/
             /*opacity: 0.9;*/
-            
+        }
         
-            
+        #logosvg {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            /* margin: auto 5vw 0.5vh auto; */
+            margin-right: 5vw;
+            /* border: red solid 1px; */
+            height: 100%;
         }
 
-
+/*
         svg {
             max-width: 100%;
             height: 80%;
             position: absolute;
             /*top: 0;
-            left: 0;*/
+            left: 0;*//*
             right: 0;
             bottom: 0;
             margin: auto 5vw 0.2% auto;
         }
+*/
         
         svg path {
             /*
@@ -221,10 +214,12 @@
             animation: draw 8s infinite linear;
             */
         }
-
-        #logo {
-              
+        
+        #logopath {
+            
+           stroke-width: 12; 
         }
+
 
     </style>
 
@@ -236,104 +231,122 @@
 #f36d64 #c26967 #657266 #425a62	#554866
 #23c9ff #7cc6fe #ccd5ff #e7bbe3 #c884a6
 -->
-
+<!--
     <div id="mytest" style="height: 30vmin; width: 100%;background-color: darkred; display: none;">
         </div>
-    
+    -->
 
-    <div class="header0" id="myheader">
-    <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg"  x="0px" y="0px" viewBox="-20 0 580 600">
-                <path fill="none" stroke="black" stroke-width="12" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
-            </svg>
-
+    <div id="myheader">
+        <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" viewBox="-20 0 580 600">
+            <path fill="none" stroke="black" stroke-width="12" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+        </svg>
     </div>
         
         
     <div class="wrapper">
         
-        <a href="#" id="logo" class="cell">
-            
-            <i class="cell" style="width:6rem; height: 6rem; margin: 0; ">
+        <a href="#">
+            <div id="logo" class="cell">
+
+            <i style="width:6rem; height: 6rem; margin: 0;">
             <svg style="margin: 0; height: 100%;" xmlns="http://www.w3.org/2000/svg" id="logosvgX"  x="0px" y="0px" viewBox="-20 0 580 600">
-                <path fill="none" stroke="black" stroke-width="22" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+                <path fill="none" stroke="black" stroke-width="22" id="logopathX" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
             </svg>
-            <!--
-            <object data="icon/logo-1-3.svg" style="animation: shiftlogo 8s infinite linear; height:100%; opacity:1;">Your browser does not support SVGs</object>
---></i>
-<p><!--1-->Lichao</p>
-
+            </i>
+            <p><!--1-->Lichao</p>
         
+            </div>
         </a>
-          
-        <a href="http://red-pencil.github.io/cv/" class="cell"><i class="iconfont">&#xe657;</i><p><!--1-->Resume</p></a>
-          
-        <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re" class="cell"><i class="iconfont">&#xe674;</i><p><!--2-->Portfolio</p></a>
-          
-        <a href="mailto:lichao.shen@hotmail.com?Subject=Hello" class="cell"><i class="iconfont">&#xe647;</i><p><!--3-->Contact</p></a>
-          
-        <a href="" class="cell">
-            <!--<h1 class="embed">Hey,<br>you'll never walk alone</h1>-->
+        
+        <a herf="https://red-pencil.github.io/cv">
+            <div class="cell"><i class="iconfont">&#xe657;</i><p><!--1-->Resume</p></div>
+        </a>
+       
+        <a href="https://issuu.com/lichaoshen/docs/portfolio3.3re">
+            <div class="cell"><i class="iconfont">&#xe674;</i><p><!--2-->Portfolio</p></div>
+        </a>
+        
+        <a href="mailto:lichao.shen@hotmail.com?Subject=Hello">
+            <div class="cell"><i class="iconfont">&#xe647;</i><p><!--3-->Contact</p></div>
+        </a>
+        
+        <a href="">
+            <div class="cell"><div class="embed"><h1>Hey,<br>you'll never walk alone</h1></div></div>
+        </a>
+            
+        <a href="social.html">
+            <div class="cell"><i class="iconfont">&#xe661;</i><p><!--5-->Social</p></div>
+        </a>
+         
+        <a href="http://blog.shenlichao.com">
+            <div  class="cell"><i class="iconfont">&#xe675;</i><p><!--6-->Blog</p></div>
+        </a>
+        
+        <a href="https://500px.com/hx470000/galleries/redheart">
+            <div class="cell"><i class="iconfont">&#xe672;</i><p><!--7-->Photography</p></div>
+        </a>
+        
+        <a href="">
+            <div class="cell"><i class="iconfont">&#xe666;</i><p><!--8-->About</p></div>
+        </a>
+         
+        <a href="index.html">
+            <div class="cell"><i class="iconfont">&#xe68f;</i><p><!--9-->Themes</p></div>
         </a>
 
-        <a href="social.html" class="cell"><i class="iconfont">&#xe661;</i><p><!--5-->Social</p></a>
-          
-        <a href="http://blog.shenlichao.com" class="cell"><i class="iconfont">&#xe675;</i><p><!--6-->Blog</p></a>
-          
-        <a href="https://500px.com/hx470000/galleries/redheart" class="cell"><i class="iconfont">&#xe672;</i><p><!--7-->Photography</p></a>
-          
-        <a href="" class="cell"><i class="iconfont">&#xe666;</i><p><!--8-->About</p></a>
-          
-        <a href="index2.html" class="cell"><i class="iconfont">&#xe68f;</i><p><!--9-->Themes</p></a>
-            
-        <a href="index1_cn.html" class="cell"><i class="iconfont">&#xe654;</i><p>中文</p></a>
-          
-        <a class="cell" style="background-color: #f36d64; background-image: none;"></a>
+        <a href="index1_cn.html">
+            <div class="cell"><i class="iconfont">&#xe654;</i><p>中文</p></div>
+        </a>
+        
+        <a>
+            <div class="cell" style="background-color: #f36d64; background-image: none;"><p></p></div>
+        </a>
+        
+        
 
     </div>
 
 <script>
-        
-        window.addEventListener('scroll', resizeHeaderOnScroll);
-        
-    var K = document.getElementById('myheader').clientHeight;
+
+    window.addEventListener('scroll', resizeHeaderOnScroll);
+
+    hHeaderOrigin = document.getElementById('myheader').clientHeight; 
         
     function resizeHeaderOnScroll() {
-        var scrollD = document.documentElement.scrollTop;
-  var headerX = document.getElementById('myheader');
-        var heightD =  document.getElementById('myheader').clientHeight;
+        /* var scrollD = document.documentElement.scrollTop || document.body.scrollTop; */
+        var hScroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0; /* number or scrollY */
+        var myHeader = document.getElementById('myheader'); /* number */
+        var hHeaderNow =  document.getElementById('myheader').clientHeight; /* number */
   
-      if ((heightD - scrollD) > 50) {
-          /*
-    document.getElementById('myheader').style.height = (heightD - scrollD).toString() + "px";
-           console.log("scrollD:" + scrollD + "heightD:" + heightD);
+        /*if ((hHeaderOrigin - hScroll) > 50) { /* header at least 50px */
+       
+          if ((hScroll / hHeaderOrigin) > 0.75) {
+              hScroll = 0.75 * hHeaderOrigin;
+          }
+              
+              /* header at least 25% or hScroll < 0.75 * hHeaderOrigin*/
+              
+              /* document.getElementById('myheader').style.height = (heightD - scrollD).toString() + "px";
+           
           console.log(heightD - scrollD);
           */
-          document.getElementById('myheader').style.top = (-scrollD).toString() + "px";
-          document.getElementById('myheader').style.backgroundColor= 'rgba(243, 109, 100,' + ( 1.2 * scrollD / K).toString() + ')';
-          document.getElementById('myheader').style.borderBottomColor= 'rgba(255, 255, 255,' + ( 0.5 * scrollD / K).toString() + ')';
-          /*
-          document.getElementById('myheader').style.padding-top = (scrollD).toString() + "px";
-          */
-          
-          document.getElementById('logosvg').style.height = ( (1-scrollD / K) * 90).toString() + "%";
-
-          console.log(( (1.2 * scrollD / K) ).toString() + "%");
-          
-      }
-        
-        if (scrollD < 1) {
-            document.getElementById('myheader').style.height = K.toString() + "px";
             
-            document.getElementById('myheader').style.backgroundColor= 'transparent';
+           /* CHANGE POSITION AND SIZE */
+            document.getElementById('myheader').style.top = (-hScroll).toString() + "px"; /* header move up same distance*/
+            document.getElementById('logosvg').style.height = ( (1 - hScroll / hHeaderOrigin) * 100).toString() + "%"; /* svg shrink */
+            document.getElementById('logopath').style.strokeWidth = (12 + 8 * (hScroll / hHeaderOrigin)).toString();
+        
+            /* CHANGE COLOR */
+            document.getElementById('myheader').style.backgroundColor= 'rgba(243, 109, 100,' + ( 1.2 * hScroll / hHeaderOrigin).toString() + ')';
+            document.getElementById('myheader').style.borderBottomColor= 'rgba(255, 255, 255,' + ( 0.5 * hScroll / hHeaderOrigin).toString() + ')';
             
-        }
-        
-       
-        
-}
-
-
+            console.log(( hScroll / hHeaderOrigin).toString() + "%");
+            console.log("height_Scroll:" + hScroll + "\nheight_Header_Now:" + hHeaderNow);
+          
+      
     
+    }
+
     </script>
 
   </body>

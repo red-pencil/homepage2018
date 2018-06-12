@@ -24,13 +24,12 @@
         :root {
             --main-bg-color: #020322;
             --main-txt-color: white;
-            --card-1: rgba(68,145,130,1);
-            --card-2: rgba(68, 67, 72, 1);
-            --card-3: rgba(85,181,162,1);
+            --main-card-color: coral;
+            --main-cd-color: rgba(68, 67, 72, 1);
         }
         
         body {
-        background-color: var(--main-bg-color);
+        background-color: var(--main-card-color);
         margin: 0 0 0 0;
         padding: 0 0 0 0;
         font-size: 1vmin;
@@ -67,14 +66,10 @@
 
             border-radius: 15px;
             /* box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
-            background-color: var(--card-3);
+            background-color: var(--main-cd-color);
             /*background-color: brown;*/
             
             overflow:hidden;
-            font-family: 'Roboto';
-            font-size: 15pt;
-            text-decoration: none;
-            color: black;
         }
 
         .card.long { height: auto;}
@@ -90,7 +85,7 @@
 
         .card div, .card p {
             display: inline;
-            
+            font-family: 'Roboto';
             font-size: 12pt;
             color: var(--main-txt-color);
             margin: 5vh 5vw;
@@ -142,7 +137,7 @@
 <body>
     <div class="container">
         
-        <div class="card" style="height: 87vh;">
+        <div class="card">
         <p>
             Hi, this is Lichao. This website is designed and coded by me from <code>&lt;!DOCTYPE html&gt;;</code>, hopefully it can help.
             <br><br><br><br>
@@ -151,9 +146,11 @@
             All Rights Reserved. 2018
         </p>
             </div>
+            
+        <div href="index.html" class="button">
+            <p>Back</p>
+            </div>
         
-        <a href="#" class="card" style="height: 10vh; background-color: coral; position: fixed;z-index: 1; bottom: 0;">Back
-        </a>
 
 
         <div class="card">

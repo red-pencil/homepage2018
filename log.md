@@ -203,7 +203,7 @@ Another trick is to use the `line-height` property with a value that is equal to
 ```css
 .center {
     line-height: 200px;
-    height: 200px; /* optional */
+    height: 200px; /* optional? */
     border: 3px solid green;
     text-align: center;
 }
