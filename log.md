@@ -389,3 +389,21 @@ window.addEventListener('scroll', function(){
 /* css: .main-nav small -> .main-nav small up */
 ```
 
+# 2018-7-3
+
+## icons
+
+https://www.w3schools.com/icons/icons_reference.asp
+
+| Set                         | Awesome | Bootstrap | Google |
+| --------------------------- | ------- | --------- | ------ |
+| Mail/envelop                | 1       | 1         | 1      |
+| User/person/people          | 1       | 1         | 1      |
+| Share/@                     | 1       | 1         | 1      |
+| Pen/book                    | 1       | 1         | 1      |
+| Info                        | 1       | 1         | 1      |
+| Setting/gear                | 1       | Cog       | 1      |
+| Global /translate           | 1       | 1         | 1      |
+| camera                      | 1       | 1         | 1      |
+| Photo/album/collection/case | 1       | case      | 1      |
+

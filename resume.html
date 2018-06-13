@@ -16,6 +16,11 @@
     <style>
         
         * {box-sizing: border-box;}
+        
+        :root {
+            --main-bg-color: coral;
+            --main-txt-color: white;
+        }
     
         html {
             margin: 0;
@@ -23,21 +28,20 @@
             font-size: 1vmin; 
         }
         
+        /*
+        @media only screen and (min-device-width: 768px) {
+            html {font-size: 0.6vmin;}
+        }*/
+        
+        @media only screen and (min-width: 768px) {
+            html {font-size: 0.6vmin;}
+        }
+        
         body {
             margin: 0;
             padding: 0;
             background-color: #020322;
             font-family: 'Mako';
-        }
-        
-        @media only screen and (min-device-width: 768px) {
-            html {
-                font-size: 0.6vmin;}
-        }
-            
-        :root {
-            --main-bg-color: coral;
-            --main-txt-color: white;
         }
         
         .wrapper { 
@@ -54,12 +58,11 @@
             grid-auto-rows: auto;
             grid-gap: 2vh;
             
-            padding: 1vh;
             max-width: 100vh;
             width: 100%;
-
-            margin-left: auto;
-            margin-right: auto;
+            
+            padding: 1vh;
+            margin: 0 auto 0;
             
             justify-content: center;
             align-content: center;
@@ -71,7 +74,7 @@
         .cell {
             position: relative;
             margin: 0;
-            /*width: 100%;*/
+            width: 100%;
             height: 100%;
             /*cursor: pointer;*/
 
@@ -89,20 +92,21 @@
             align-items: center;
             flex-wrap: wrap;
             
-             overflow:hidden;
-            padding: 20% 5%;
+            overflow: hidden;
+            padding: 20% 5%; /*?*/
+            
+            position: relative;
         }
         
         .card>p {
-            display: inline;
-            
+            display: inline;     
             font-size: 2rem;
             color: var(--main-txt-color);
             margin: 5vh 5vw;
         }
         
         p>a {
-color: var(--main-txt-color);            
+            color: var(--main-txt-color);            
         }
         
         .back {
@@ -125,11 +129,11 @@ color: var(--main-txt-color);
             height: 20rem;
             text-align: center;
             text-decoration: none;
+            color: var(--main-txt-color); 
         }
         
         .back>p {
             
-            color: var(--main-txt-color); 
             margin: 0;
             font-size: 5rem;
             
@@ -137,7 +141,7 @@ color: var(--main-txt-color);
         
         .download {
             
-            left: 10%;;
+            left: 10%;
             
         }
         .back.download> p{
@@ -175,23 +179,24 @@ color: var(--main-txt-color);
                   background-color: white;
                   "></iframe>
             
+            <a href="index.html" class="fa fa-arrow-left back" style="margin: 0; font-size: 9rem;"></a>
             
+            <a href="https://red-pencil.github.io/cv" class="fa fa-external-link back download" style="margin: 0; font-size: 9rem;">
+        </a>
         
         </div>
+        
+        
+        
     </div>
     
-    <a href="index.html" class="back">
-    <p>Back</p> <!-- &larr; -->
-    </a>
     
     <!--
     <a href="https://red-pencil.github.io/cv/pdf/cv.pdf" class="back download">
     <p>Download<br>.pdf</p>
     </a>
     -->
-    <a href="https://red-pencil.github.io/cv" class="back download">
-    <p><i class="fa fa-external-link"></i></p>
-        </a>
+    
 </body>
     
 </html>

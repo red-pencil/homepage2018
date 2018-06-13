@@ -12,15 +12,32 @@
     
     <link href='https://fonts.googleapis.com/css?family=Mako' rel='stylesheet'>
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
     <style>
         
         * {box-sizing: border-box;}
-    
+      
+        :root {
+            --main-bg-color: coral;
+            --main-txt-color: white;
+        }
+        
         html {
             margin: 0;
             padding: 0;
             font-size: 1vmin; 
         }
+        
+        /*
+        @media only screen and (min-device-width: 768px) {
+            html {font-size: 0.6vmin;}
+        }*/
+        
+        @media only screen and (min-width: 768px) {
+            html {font-size: 0.6vmin;}
+        } 
         
         body {
             margin: 0;
@@ -29,16 +46,6 @@
             font-family: 'Mako';
         }
 
-        @media only screen and (min-device-width: 768px) {
-            html {
-                font-size: 0.6vmin;}
-        }
-            
-        :root {
-            --main-bg-color: coral;
-            --main-txt-color: white;
-        }
-        
         .wrapper { 
             /* color *//*
             border: 2px solid #f76707;
@@ -53,12 +60,11 @@
             grid-auto-rows: auto;
             grid-gap: 2vh;
             
-            padding: 1vh;
             max-width: 100vh;
             width: 100%;
 
-            margin-left: auto;
-            margin-right: auto;
+            padding: 1vh;
+            margin: 0 auto 0;
             
             justify-content: center;
             align-content: center;
@@ -70,7 +76,7 @@
         .cell {
             position: relative;
             margin: 0;
-            /*width: 100%;*/
+            width: 100%;
             height: 100%;
             /*cursor: pointer;*/
 
@@ -88,32 +94,26 @@
             align-items: center;
             flex-wrap: wrap;
             
-             overflow:hidden;
+            overflow:hidden;
+            
+            position: relative;
         }
         
         .card>p {
             display: inline;
-            
-            font-size: 4rem;
+            font-size: 4rem; /*?*/
             color: var(--main-txt-color);
             margin: 5vh 5vw;
         }
         
-        @media only screen and (max-device-width: 768px) {
-         .card>p {
-            font-size: 4rem;
-        }
-        } 
-        
-        
         code {font-family: monospace;}
         
         p>a {
-color: var(--main-txt-color);            
+            color: var(--main-txt-color);            
         }
         
         .back {
-            position: fixed;
+            position: absolute;
             bottom: 10%;
             right: 10%;
             background-color: coral;
@@ -133,7 +133,16 @@ color: var(--main-txt-color);
             
         }
         
-
+        .fa {
+            font-size: 17rem;
+            width: 20rem;
+            height: 20rem;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 5px;
+            color: #ffffff;      
+            /*background-color: antiquewhite;*/
+        }
 
     
     </style>
@@ -146,21 +155,21 @@ color: var(--main-txt-color);
     <div class="wrapper">
         
         <div class="cell card" style="background-color: rgba(68,145,130,1);">
+            
         <p>Hi, this is Lichao.<br>This website is designed and coded by me from <code>&lt;!DOCTYPE html&gt;</code>, hopefully it can help &#x263A. The source files are avaliable at <a href="https://github.com/red-pencil/homepage2018">GitHub</a>.
             <br><br><br><br><br><br><br><br><br>
             Icon credits: ProSymbols from the Noun Project
             <br><br>
             All Rights Reserved. Lichao &copy; 2018 
             
-            </p></div>
+            </p>
+        <a href="index.html" class="fa fa-arrow-left back" style="margin: 0; font-size: 9rem;"></a>
+        
+        </div>
         
         
         
         </div>
-    
-    <a href="index.html" class="back">
-    <p>Back</p>
-    </a>
     
 </body>
     
