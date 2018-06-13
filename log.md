@@ -407,3 +407,17 @@ https://www.w3schools.com/icons/icons_reference.asp
 | camera                      | 1       | 1         | 1      |
 | Photo/album/collection/case | 1       | case      | 1      |
 
+## padding-top aspect ratio
+
+Need to set the height to 0, or will be auto in some browsers.
+
+Also it will collapse in Firefox, need to add a extra layer of <div>
+
+```html
+<a href="#">
+    <div class="16-9-container">
+        <div class="text">16:9 Aspect ratio</div> 
+    </div>
+</a>
+```
+
