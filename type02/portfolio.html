@@ -10,8 +10,6 @@
     <title>Resume</title>
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Sarpanch' rel='stylesheet'>
-
         
     <style>
         
@@ -27,7 +25,6 @@
             margin: 0;
             padding: 0;
             font-size: 1vmin;
-            font-family: 'Sarpanch';
         }
         
         /*
@@ -72,10 +69,7 @@
         
         .full {
             padding: 0;
-            overflow: hidden;
-        
-            -webkit-overflow-scrolling: touch;
-
+            overflow: auto;
         }
 
         .card.long { height: auto; }
@@ -115,7 +109,6 @@
             }
         
         .buttonX {
-            
             position: absolute;
             bottom: 10%;
             right: 50%;
@@ -135,18 +128,6 @@
 
         }
         
-        .card>iframe {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            top: 0;
-            width: 100%;
-            border: none; 
-            background-color: white;
-            
-        }
-        
         #back {
             opacity: 1;
             margin: 0; font-size: 9rem;
@@ -155,110 +136,23 @@
             right: 20%;
         }
         
-        #download {
-            margin: 0; font-size: 9rem;
-            color: white;
-            bottom: 12rem;
-            right: 80%;
-            
-            
-        }
-        
         p>a {
             color: black;            
         }
-        
-        .cardson {
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
-            
-            background-color: var(--main-txt-color);
-            color: white;
-            font-size: 5rem;
-            height: 35rem;
-             width: 35rem;
-            text-align: center;
-            padding: 0;
-             margin: 3rem;
-             /* font-family: 'Keania One'; */
-             text-decoration: none;
-             position: relative;
-        }
-        
-        .cardson>img{
-
-            object-fit: cover;
-            width: 100%;
-            height: 100%;
-            vertical-align: middle;
-            position:absolute;
-            top: 0;
-            left: 0;
-        }
-        
-        .cardson:hover {
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            /*
-            background-color: transparent;
-            color: rgba(0,0,0,0.2);
-            */
-        }
-        
-        .cardson>img:hover {
-            opacity: 0;
-        }
-        
-        .cardson>h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        
-        .cardson>p { 
-            margin-bottom: 0;
-        }
-        
 
 
     </style>
 </head>
 
 <body>
-    <div class="container">
+    
+    <div class="container" style="width: 100vw; height: 100vh;">
         
-        <a href="index2.html" id="back" class="fa fa-arrow-left buttonX"></a>
+        <a href="index.html" id="back" class="fa fa-arrow-left buttonX"></a>
         
-        <div class="card full container">
+        <div class="card full">
             
-            <a href="index.html" class="cardson">
-                <img src="img/type01.png">
-                <p>TYPE</p>
-                <h1><b>01</b></h1>
-            </a>
-            
-            <a href="index2.html" class="cardson">
-                <img src="img/type02.png">
-                <p>TYPE</p>
-                <h1><b>02</b></h1>
-            </a>
-            
-            <a href="index3.html" class="cardson">
-                <img src="img/type03.png" style="object-position: left;">
-                <p>TYPE</p>
-                <h1><b>03</b></h1>
-            </a>
-            
-            <a href="index6.html" class="cardson">
-                <img src="img/type06.png" style="object-position: right;">
-                <p>TYPE</p>
-                <h1><b>06</b></h1>
-            </a>
-            
-            <a href="index-old-remake.html" class="cardson">
-                <p>TYPE</p>
-                <h1><b>00</b></h1>
-            </a>
-            
-            
+            <iframe style="width:100%; height:100%;" src="//e.issuu.com/embed.html#8269283/31529558" frameborder="0" allowfullscreen scrolling="no"></iframe>
         
             
         </div>

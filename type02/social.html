@@ -44,7 +44,7 @@
             padding: 0;
         }
         
-        .container{
+        .container { /* center inside items */
             display: flex;
             vertical-align: middle;
             justify-content: center;
@@ -66,6 +66,17 @@
            /* overflow:hidden; */
             position: relative;
         }
+        
+        .onepage {width: 100vw; height: 100vh;}
+        .long {height: auto}
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            /* width*/
+        }
         /*.card div {
             padding: 100px;
             max-height: 500px;
@@ -86,7 +97,7 @@
                       /*background-color: antiquewhite;*/
             }
         
-          .fa.inactive {
+        .fa.inactive {
               color: #ffffff;
               border-radius: 50%;
               box-shadow: inset 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -99,9 +110,7 @@
         .fa.inactive:hover {
             opacity: 1;
         }
-        
-        
-        
+
         .buttonX {
             position: absolute;
             bottom: 10%;
@@ -118,7 +127,7 @@
             text-decoration: none; 
             
             z-index: 1;
-
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
         }
         
         #back {
@@ -137,35 +146,48 @@
     
     
     <div class="container">
+        
         <div class="card container">
             <div class="container">
                 
                 <a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-twitter inactive"></a>
                 <a href="https://www.flickr.com/photos/130358568@N07/" class="fa fa-flickr"></a>
-                
                 <a href="#" class="fa fa-tumblr inactive"></a>
                 <a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a>
                 <a href="https://500px.com/hx470000" class="fa fa-500px"></a>
-                
                 <a href="#" class="fa fa-linkedin inactive"></a>
                 <a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a>
                 <a href="https://github.com/red-pencil" class="fa fa-github"></a>
-                </div>
-            
-            <a href="index2.html" id="back" class="fa fa-arrow-left buttonX"></a>
-            
+                
             </div>
+            
+            <a href="index.html" id="back" class="fa fa-arrow-left buttonX"></a>
+            
+        </div>
 
         
-        <div class="card container" style="height: auto;">
+        <div class="card container long">
+
+
+            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/Biyd9b0FYY3/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:50.0% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/Biyd9b0FYY3/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">~濑户内海~ #setonaikai #cola #blue #naoshima #sea #art #museum #summer #瀬戸内海 #直島 #夏</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/leonchaos/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Leon Shen</a> (@leonchaos) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-05-15T06:47:28+00:00">May 14, 2018 at 11:47pm PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
+
+        </div>
         
-        <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/BjYGiYPlTmE/" data-instgrm-version="8" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:8px;"> <div style=" background:#F8F8F8; line-height:0; margin-top:40px; padding:62.5% 0; text-align:center; width:100%;"> <div style=" background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;"></div></div> <p style=" margin:8px 0 0 0; padding:0 4px;"> <a href="https://www.instagram.com/p/BjYGiYPlTmE/" style=" color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word;" target="_blank">::海天一色:: #setonaikai #naoshima #tree #sea #island #sky #瀬戸内海 #直島</a></p> <p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;">A post shared by <a href="https://www.instagram.com/leonchaos/" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px;" target="_blank"> Leon Shen</a> (@leonchaos) on <time style=" font-family:Arial,sans-serif; font-size:14px; line-height:17px;" datetime="2018-05-29T21:33:56+00:00">May 29, 2018 at 2:33pm PDT</time></p></div></blockquote> <script async defer src="//www.instagram.com/embed.js"></script>
-            
+        <div class="card container long">
+            <div class='pixels-photo'>
+              <p>
+                <img src='https://drscdn.500px.org/photo/250016733/m%3D900/v2?user_id=5407580&webp=true&sig=1ff15e3229bb45dca4c1095964c5d7942ce908c18b2941a0946d847947e5c94e' alt='Snowcapped Mountains, La Raya Pass, Peru by Chao S on 500px.com'>
+              </p>
+              <a href='https://500px.com/photo/250016733/snowcapped-mountains-la-raya-pass-peru-by-chao-s' alt='Snowcapped Mountains, La Raya Pass, Peru by Chao S on 500px.com'></a>
+            </div>
+            <script type='text/javascript' src='https://500px.com/embed.js'></script>
+        
+        
         </div>
         
         
-        </div>
+</div>
 
     
     </body>
