@@ -80,8 +80,11 @@
             grid-auto-rows: 148px 235px;
             grid-gap: 5px; 
             max-width: 730px;*/
+            -ms-grid-columns: 32vh 32vh 32vh;
             grid-template-columns: repeat(3, 32vh);     /* |1vh |32vh|1vh|32vh|1vh|32vh 1vh| */
-            grid-auto-rows: 48vh;                       /* |1vh |48vh|2vh|48vh| 1vh| */
+            -ms-grid-rows: 48vh;
+            grid-auto-rows: 48vh;  
+            /* |1vh |48vh|2vh|48vh| 1vh| */
             grid-gap: 2vh;
             
             padding: 1vh;
@@ -92,6 +95,9 @@
             
             justify-content: center;
             align-content: center;
+            
+            -ms-grid-column-align: center;
+            -ms-grid-row-align: center;
 
             
         
@@ -331,7 +337,7 @@
         
         <a href="index_cn.html" class="cell" style="background-color: #554866"><i class="iconfont">&#xe654;</i><p>中文</p></a>
         
-        <a href="#" class="cell" style="background-color: #f36d64"></a>
+        <a href="#" class="cell" style="background-color: #f36d64"><p>From China with &hearts;<br>&copy; 2018 Lichao</p></a>
 
     </div>
 
