@@ -29,15 +29,28 @@ h6 {
   color: #343a40;
 }
 
+h1 {
+    font-size: 0;
+}
+
+@media (min-width: 768px) {
+    
+    h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
+   
+}
+
 p {
     max-width: 900px;
 }
-
+/*
 h1 {
   font-size: 6rem;
   line-height: 5.5rem;
 }
-
+*/
 h2 {
   font-size: 3.5rem;
 }
@@ -58,7 +71,13 @@ h2 {
 }
 
 .list-social-icons a .fa-lg {
-  font-size: 1.75rem;
+  /*font-size: 1.75rem;*/
+   font-size: 2.5rem 
+}
+
+@media (min-width: 768px) {
+    .list-social-icons a .fa-lg {
+        font-size: 1.75rem;}
 }
 
 .list-icons {
@@ -116,7 +135,8 @@ h2 {
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
+  /* padding-top: 5rem !important; */
+  padding-top: 4rem !important;
   padding-bottom: 5rem !important;
 }
 
@@ -155,4 +175,37 @@ a {
 
 a:hover, a:focus, a:active {
   color: var(--main-color-inactive);
+}
+
+
+.linklist>li {
+    background: var(--main-color);
+    margin: 1pt 0 2pt;
+    padding: 1pt 5pt;
+    
+}
+
+.linklist i, .linklist a {
+   color: white;
+}
+
+.imgicon {
+    object-fit: cover;
+    object-position: top;
+    width: 30vw;
+    max-width: 200px;
+    height: 30vw;
+    max-height: 200px;
+}
+
+.resume-item {
+    position: relative;
+}
+
+@media (min-width: 768px) {
+.resume-item .resume-date {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 }
