@@ -1,6 +1,6 @@
 :root {
     /* --main-color: #BD5D38; default */
-    --main-color: rgb(129,199,212);
+    --main-color: rgb(30,136,168); /*rgb(58,143,183);*/
     --main-color-inactive: #824027;
 }
 
@@ -149,5 +149,5 @@ a {
 }
 
 a:hover, a:focus, a:active {
-  color: black;
+  color: var(--main-color-inactive);
 }
