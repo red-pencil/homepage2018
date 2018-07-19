@@ -1,13 +1,32 @@
 :root {
     /* --main-color: #BD5D38; default */
-    --main-color: rgb(30,136,168); /*rgb(58,143,183);*/
-    --main-color-inactive: #824027;
+    --main-color: rgb(30,136,168); /* 
+    rgb(88,178,220)
+    rgb(81,168,221)
+    rgb(125,185,222)
+    rgb(0,92,175)
+    #24936E
+    #336774
+    #FC9F4D
+    rgb(64,91,85)
+    rgb(30,136,168)
+    rgb(58,143,183);*/
+    --main-color-inactive: #FC9F4D;
+    /*
+    #824027
+    --heading-font: 'Saira Extra Condensed', serif;
+    */
+    --main-background: rgb(58,143,183);
+    --main-font: 'Open Sans', serif;
+    
+    --heading-font: 'Raleway', serif;
 }
 
 body {
-  font-family: 'Open Sans', serif;
+  font-family: var(--main-font);
   padding-top: 54px;
   color: #868e96;
+  
 }
 
 @media (min-width: 992px) {
@@ -23,7 +42,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: var(--heading-font);
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -35,7 +54,7 @@ h1 {
 
 @media (min-width: 768px) {
     
-    h1 {
+h1 {
   font-size: 6rem;
   line-height: 5.5rem;
 }
@@ -58,7 +77,7 @@ h2 {
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: var(--heading-font);
   font-size: 1.35rem;
 }
 
@@ -140,6 +159,12 @@ section.resume-section {
   padding-bottom: 5rem !important;
 }
 
+section.cover {
+  
+  padding-top: 2rem !important;
+    
+}
+
 section.resume-section .resume-item .resume-date {
   min-width: none;
 }
@@ -181,8 +206,11 @@ a:hover, a:focus, a:active {
 .linklist>li {
     background: var(--main-color);
     margin: 1pt 0 2pt;
-    padding: 1pt 5pt;
-    
+    padding: 1pt 5pt;  
+}
+
+.linklist>li:hover {
+    background: var(--main-color-inactive);
 }
 
 .linklist i, .linklist a {
@@ -208,4 +236,32 @@ a:hover, a:focus, a:active {
     top: 0;
     right: 0;
 }
+}
+
+.full {
+    
+    height: 85vh;
+    max-height: 150vw;
+    width: 100vw;
+    max-width:100%;
+    
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+iframe {
+    
+    width: 100%;
+    max-width: 700px;
+    height: 50vh;
+            
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    background-color: var(--main-color-inactive);
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    background-color: rgba(0,0,0,.1);
 }
