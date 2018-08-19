@@ -15,11 +15,11 @@
     /*
     #824027
     --heading-font: 'Saira Extra Condensed', serif;
+    --heading-font: 'Raleway', serif;
     */
     --main-background: rgb(58,143,183);
     --main-font: 'Open Sans', serif;
-    
-    --heading-font: 'Raleway', serif;
+    --heading-font: 'Saira Extra Condensed', serif;
 }
 
 body {
