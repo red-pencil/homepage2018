@@ -1,6 +1,6 @@
 :root {
     /* --main-color: #BD5D38; default */
-    --main-color: rgb(30,136,168); /* 
+    --main-color: rgb(81,168,221); /* 
     rgb(88,178,220)
     rgb(81,168,221)
     rgb(125,185,222)
@@ -9,17 +9,22 @@
     #336774
     #FC9F4D
     rgb(64,91,85)
-    rgb(30,136,168)
+    rgb(30,136,168)!
     rgb(58,143,183);*/
     --main-color-inactive: #FC9F4D;
+    --heading-color: #343a40;
+    /*
+     #343a40
+    */
     /*
     #824027
     --heading-font: 'Saira Extra Condensed', serif;
     --heading-font: 'Raleway', serif;
+    --main-font: 'Open Sans', serif;
     */
     --main-background: rgb(58,143,183);
     --main-font: 'Open Sans', serif;
-    --heading-font: 'Saira Extra Condensed', serif;
+    --heading-font: 'Saira Extra Condensed';
 }
 
 body {
@@ -43,9 +48,10 @@ h4,
 h5,
 h6 {
   font-family: var(--heading-font);
-  font-weight: 700;
+  /* font-weight: 700; */
+  font-weight: 600;
   text-transform: uppercase;
-  color: #343a40;
+  color: var(--heading-color);
 }
 
 h1 {
@@ -75,7 +81,7 @@ h2 {
 }
 
 .subheading {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 500;
   font-family: var(--heading-font);
   font-size: 1.35rem;
@@ -224,6 +230,7 @@ a:hover, a:focus, a:active {
     max-width: 200px;
     height: 30vw;
     max-height: 200px;
+    opacity: 0.7;
 }
 
 .resume-item {
