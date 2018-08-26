@@ -248,7 +248,7 @@ a:hover, a:focus, a:active {
 .full {
     
     height: 85vh;
-    max-height: 150vw;
+    max-height: 700px;
     width: 100vw;
     max-width:100%;
     
@@ -257,12 +257,13 @@ a:hover, a:focus, a:active {
     
 }
 
-iframe {
+iframe, video {
     
     width: 100%;
     max-width: 700px;
-    height: 50vh;
-            
+    /* height: 50vh; */
+    height: 50vw;
+    max-height: 400px;
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
