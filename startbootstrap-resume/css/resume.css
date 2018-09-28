@@ -320,15 +320,16 @@ iframe {
     background-color: var(--main-color-inactive);
     color: white;
 }
+
 .navbar-dark .navbar-nav .nav-link.active {
     background-color: rgba(0,0,0,.1);
+    color: white;
 }
 
 .fa-bars:hover {
     
-    color: white;
-    
-    transform: rotate(90deg);
+    color: white; 
+    transform: scale(0.9);
     
 }
 
