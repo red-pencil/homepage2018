@@ -34,6 +34,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.css" rel="stylesheet">
+          
 
   </head>
     
@@ -41,18 +42,37 @@
 <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Lichao's Research</span>
+        
+        <!--
+
+        <button class="btn active" onclick="langSwitch('eng')">English</button>
+        
+        <button class="btn active" onclick="langSwitch('chn')">中文</button>
+
+
+        
+        <div class="nav-link">
+                   
+              <a class="lang-s active" onclick="langSwitch('eng')">English</a> • <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+                   
+            </div>
+        -->
+      <a class="navbar-brand js-scroll-trigger" href="">
+          <span class="d-block d-lg-none">Lichao's Research</span>
         <span class="d-none d-lg-block">
             <p>Lichao's Research</p>
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/portrait1.jpg" alt="portrait">
         </span>
       </a>
+        
+        
+        
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
+            
           
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#design1">•</a>
@@ -81,6 +101,25 @@
               <i class="fa fa-home" style="font-size: 3rem;"></i>
             </a>
           </li>
+        
+            <!--
+        <li class="nav-item" style="display: inline-block;">
+                
+                <a class="lang-switch nav-link" style="display: inline;"  onclick="langSwitch('eng')">English </a><a style="color: aliceblue;"> / </a><a class="lang-switch nav-link active" style="display: inline;" onclick="langSwitch('chn')">中文</a>
+            
+            </li>
+            -->
+            <li class="nav-item" id="lang-switch">
+                
+               <div class="nav-link">
+                   
+              <a class="lang-s active" onclick="langSwitch('eng')">English</a> • <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+                   
+            </div> 
+                
+            
+            
+            </li>
             
         </ul>
 
@@ -201,11 +240,14 @@
               <h2 class="mb-5">Limitless Oculus</h2>
               <div class="subheading mb-3">Visual Expansion by Animal-Inspired Visuomotor Modification</div>
                 
+                
+                
                 <img src="img/thesis-1.jpg" class="full-pic">
                 <img src="img/thesis-2.png" class="full-pic">
                 
-              <p><br>Humans are trapped in their limited senses. The human vision was relatively narrow and weak, comparing to the variety of animal superior abilities. Through my investigation, it was figured out that the human musculoskeletal systems, especially the neck, were a factor limiting the spatial range of vision. In order to help human overcome part of those limitations, I proposed the animal-inspired concept called Limitless Oculus. That was to substitute or modify the original visuomotor coordination of human, with a certain artificial mechanism. The mechanism, orienting the vision, was modified and designed to be programmable and customizable. The benefits aimed to promote the flexibility of the spatial orientation of vision, and hence achieve visual expansion and substitution. Besides, the concept had more possible applications with a variety of modifications and mechanisms. The method had physiological and cognitive influence, so it can not only be a tool but also change human mind. Two prototypes were presented. Then I conducted experiments to evaluate the performance of the prototypes, and prove the feasibility of the concept. The result indicated that the spatial range of vision was expanded, while the speed of the scan and response could also be augmented in a certain range.</p>
-              <p><b>Supervisor: Kouta Minamizawa, Sub-supervisor: Kai Kunze, Co-viewer: Ishido Nanako</b></p>
+              <p class="lang eng"><br>Humans are trapped in their limited senses. The human vision was relatively narrow and weak, comparing to the variety of animal superior abilities. Through my investigation, it was figured out that the human musculoskeletal systems, especially the neck, were a factor limiting the spatial range of vision. In order to help human overcome part of those limitations, I proposed the animal-inspired concept called Limitless Oculus. That was to substitute or modify the original visuomotor coordination of human, with a certain artificial mechanism. The mechanism, orienting the vision, was modified and designed to be programmable and customizable. The benefits aimed to promote the flexibility of the spatial orientation of vision, and hence achieve visual expansion and substitution. Besides, the concept had more possible applications with a variety of modifications and mechanisms. The method had physiological and cognitive influence, so it can not only be a tool but also change human mind. Two prototypes were presented. Then I conducted experiments to evaluate the performance of the prototypes, and prove the feasibility of the concept. The result indicated that the spatial range of vision was expanded, while the speed of the scan and response could also be augmented in a certain range.<br><br><b>Supervisor: Kouta Minamizawa, Sub-supervisor: Kai Kunze, Co-viewer: Ishido Nanako</b></p>
+                
+            <p class="lang chn"><br>人类被自身的感觉所困。与非人类生物多样的超常能力相比，人类的视觉相对狭窄和微弱。根据我的调研，以颈部为代表的人的肌肉骨骼系统是限制视觉空间范围的一个因素。受非人类生物的启发，本文提出Limitless Oculus概念，以期帮助人类突破一部分生理限制。即是用特定的人造机制或者人造映射来代替人类原本的视觉-运动协调机制。这类协调机制控制着视觉的朝向，经过此概念的修改和设定，则成为可编程的和可定制的。此概念的积极意义在于提高视觉空间朝向的灵活性，并因此实现视觉扩张和视觉代替。采用不同机制会让这个概念有更多的可能性和应用。此外，此方法影响生理层面和认知层面，故可以改变人类的思维方式。此处展示两个原型设备。然后本文使用实验来评估这些原型设备的性能，证明此概念的可行性。结果表面视觉可达到的空间范围得以扩大，同时在特定范围内扫视速度和反应速度得到提高。<br><br><b>指导: Kouta Minamizawa, 副指导: Kai Kunze, 副审查: Ishido Nanako</b></p>
               <!-- 
               <ul class="fa-ul mb-0">
                   <li>
@@ -471,6 +513,58 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+    
+    <script>
+        langSwitch("chn");
+        function langSwitch(c) {
+          var x, i;
+          x = document.getElementsByClassName("lang");
+          //if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3AddClass(x[i], "hidden");
+              if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "hidden");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+        
+        var btnContainer = document.getElementById("lang-switch");
+            var btns = btnContainer.getElementsByClassName("lang-s");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+        
+        $(document).ready(function(){
+          $(".navbar-toggler").click(function(){
+            $(".navbar-toggler > .fa-bars, .navbar-toggler > .fa-times").toggleClass("fa-bars fa-times");
+          });
+        });
+
+
+</script>
 
   </body>
 

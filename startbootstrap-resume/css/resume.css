@@ -300,6 +300,7 @@ iframe {
 .half-pic {
     width: 100%;
     max-width: 700px;
+    max-width: 60vw;
     height: auto;
 }
     
@@ -308,11 +309,18 @@ iframe {
 /* content: "-"; */
 
 }
+    
 #navbarSupportedContent a {
     
     padding-left: 30px;
-    width: 15rem;
+    /* width: 15rem;
     /* text-indent:30px; */
+    }
+    
+    .nav-item {
+        
+        width: 15rem;
+        
     }
 }
 
@@ -330,12 +338,12 @@ iframe {
     
     color: white; 
     transform: scale(0.9);
-    
 }
 
 
-.fa-bars:active {
+.fa-bars.active {
     
+    color: white;
     /* color: var(--main-color-inactive); */
     /* transform: rotate(90deg); */
 }
@@ -343,6 +351,51 @@ iframe {
 .navbar-toggler {
     
     font-size: 2rem;
-    
     border: 0px;
+    width: 52px;
+
 }
+
+/* language switch button */
+
+#lang-switch :hover {
+    
+    background: none;
+    
+}
+
+#lang-switch > div {
+    
+    /* background: rgb(255,255,255,0.1); */
+
+}
+ 
+#lang-switch > div > a {
+    
+    font-weight: 200;
+    
+    margin: 1pt 0 2pt;
+    padding: 2pt 5pt;  
+    background: rgb(255,255,255,0.1);
+    /* border-radius: 3px; */
+    
+}
+
+#lang-switch .active {
+    
+    color: white;
+    font-weight: bold;
+    
+    border-bottom: 1px solid white;
+}
+
+#lang-switch > div > a:hover {
+    
+    display: inline;
+    background: var(--main-color-inactive);
+    
+}
+
+.hidden {
+                display: none;
+            }
