@@ -31,6 +31,7 @@ body {
   font-family: var(--main-font);
   padding-top: 54px;
   color: #868e96;
+  background-color: rgba(240, 248, 255, 0.2);
   
 }
 
@@ -303,23 +304,28 @@ iframe {
     max-width: 60vw;
     height: auto;
 }
-    
+
+/*    
 #navbarSupportedContent a::before {
 
 /* content: "-"; */
-
+/*
 }
     
 #navbarSupportedContent a {
     
     padding-left: 30px;
     /* width: 15rem;
-    /* text-indent:30px; */
+    /* text-indent:30px; *//*
     }
+    
+    */
     
     .nav-item {
         
-        width: 15rem;
+        width: 20rem;
+        margin: 0 auto;
+        text-align: center;
         
     }
 }
@@ -358,42 +364,51 @@ iframe {
 
 /* language switch button */
 
+#lang-switch {
+    
+    /* background-color: transparent; */
+    
+    margin-top: 1rem;
+    
+}
+
 #lang-switch :hover {
     
-    background: none;
+     background-color: transparent; 
     
 }
 
 #lang-switch > div {
     
     /* background: rgb(255,255,255,0.1); */
+    color: rgba(255, 255, 255, 0.9);
 
 }
  
-#lang-switch > div > a {
+.lang-s {
     
     font-weight: 200;
-    
+
     margin: 1pt 0 2pt;
-    padding: 2pt 5pt;  
-    background: rgb(255,255,255,0.1);
+    padding: 5pt 8pt;  
+    background: rgba(255, 255, 255, 0.2);
+    
     /* border-radius: 3px; */
+    
+}
+
+#lang-switch .lang-s:hover {
+    
+    display: inline;
+    background-color: var(--main-color-inactive);
     
 }
 
 #lang-switch .active {
     
     color: white;
-    font-weight: bold;
-    
-    border-bottom: 1px solid white;
-}
-
-#lang-switch > div > a:hover {
-    
-    display: inline;
-    background: var(--main-color-inactive);
-    
+    font-weight: bold;  
+    border-bottom: 2px solid white;
 }
 
 .hidden {
