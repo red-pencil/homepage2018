@@ -122,12 +122,11 @@
             -->
             
             <li class="nav-item" id="lang-switch">
+                <div class="nav-link">
+                   
+                  <a class="lang-s active" onclick="langSwitch('eng')">English</a> • <a class="lang-s" onclick="langSwitch('chn')">中文</a>
                 
-               <div class="nav-link">
-                   
-              <a class="lang-s active" onclick="langSwitch('eng')">English</a> • <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-                   
-            </div> 
+                </div> 
             
             </li>
             
@@ -524,10 +523,13 @@
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- Custom scripts for this template  <script src="js/lang.js"></script>-->
     <script src="js/resume.min.js"></script>
     
+   
+    
     <script>
+        
         langSwitch("chn");
         function langSwitch(c) {
           var x, i;
