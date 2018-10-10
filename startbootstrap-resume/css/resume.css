@@ -212,8 +212,8 @@ a:hover, a:focus, a:active {
 
 .linklist>li {
     background: var(--main-color);
-    margin: 1pt 0 2pt;
-    padding: 1pt 5pt;  
+    margin: 1px 0 2px;
+    padding: 1px 5px;  
 }
 
 .linklist>li:hover {
@@ -389,9 +389,11 @@ iframe {
     
     font-weight: 200;
 
-    margin: 1pt 0 2pt;
-    padding: 5pt 8pt;  
+    margin: 1px 0 2px;
+    padding: 5px 8px;  
     background: rgba(255, 255, 255, 0.2);
+    
+    color: white;
     
     /* border-radius: 3px; */
     
@@ -401,6 +403,9 @@ iframe {
     
     display: inline;
     background-color: var(--main-color-inactive);
+    
+    color: white;
+    text-decoration: none;
     
 }
 
@@ -412,5 +417,5 @@ iframe {
 }
 
 .hidden {
-                display: none;
-            }
+    display: none;
+}
