@@ -81,6 +81,10 @@ h2 {
   font-size: 3.5rem;
 }
 
+em {
+    color: var(--main-color);
+}
+
 .subheading {
   /* text-transform: uppercase; */
   font-weight: 500;
