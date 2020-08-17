@@ -31,7 +31,8 @@ body {
   font-family: var(--main-font);
   padding-top: 54px;
   color: #868e96;
-  background-color: rgba(240, 248, 255, 0.2);
+  /*background-color: rgba(240, 248, 255, 0.2);*/
+    background-color: rgba(250, 250, 250, 1)
   
 }
 
@@ -97,7 +98,7 @@ em {
 }
 
 .list-social-icons a:hover {
-  color: var(--main-color);
+  color: var(--main-color-inactive);
 }
 
 .list-social-icons a .fa-lg {
