@@ -84,7 +84,9 @@ h2 {
 
 em {
     color: var(--main-color);
+    font-weight: 700;
 }
+
 
 .subheading {
   /* text-transform: uppercase; */
@@ -122,6 +124,11 @@ em {
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
   text-transform: uppercase;
+}
+
+#smalltitle {
+    font-family: var(--heading-font); font-size: 1.5em; line-height:1em;
+    
 }
 
 @media (min-width: 992px) {
@@ -332,7 +339,7 @@ iframe {
     
     */
     
-    .nav-item {
+.nav-item {
         
         width: 20rem;
         margin: 0 auto;
