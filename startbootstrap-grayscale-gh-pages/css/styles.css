@@ -10210,6 +10210,11 @@ body {
     outline: none;
     border-bottom: 0.25rem solid #64a19d;
   }
+    #mainNav.navbar-shrink .nav-link-active {
+    color: #64a19d;
+    outline: none;
+    border-bottom: 0.25rem solid #64a19d;
+  }
 }
 
 .btn {
