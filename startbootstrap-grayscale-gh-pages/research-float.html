@@ -29,6 +29,96 @@
         <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
 
         <link href="vendor/konpa-devicons/devicon.min.css" rel="stylesheet">
+        
+        <style>
+            .card-container-outer {           
+                padding: 5vh 5vw;
+                border: 1px solid;
+                border-color: black;
+                position: relative;
+
+            }
+            
+            .card-container {
+
+                border: 3px solid;
+                border-color: black;
+                position: relative;
+                top: 50%;
+                transform: translate(0, -50%);
+                
+            }
+            
+            .card-body {
+                position: relative;
+                border: 2px solid;
+                border-color: blueviolet;
+                padding: 0;
+                margin: 0 15px;
+            }
+            
+            .card-note-main {
+                position: relative;
+                font-size: 20px;
+                line-height: 30px;
+                margin: 5px 0 0 15px;
+                color: blueviolet;
+            }
+            
+            .card-note-sub {
+                position: relative;
+                font-size: 20px;
+                line-height: 30px;
+                margin: 0 15px 5px 0;
+                text-align: right;
+                color: blueviolet;
+                
+            }
+            
+            .card-container .overlay {
+                position: absolute;
+                height: 100%;
+                width: 100;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                /*margin: 1rem 0.5rem 1.5rem 0.5rem;*/
+                z-index: 1;
+            
+                opacity: 0;
+                transition: .3s ease;
+                background: blueviolet;
+
+                /*max-width: 350px;*/
+                /*margin:  1rem auto;*/
+                cursor: pointer;
+    
+            }
+            
+            .card-container:hover .overlay{
+                opacity: 0.95;
+            }
+            
+            .overlay h4{
+                font-size: 1em;
+                color: white;
+            }
+            
+            .overlay p{
+                font-size: 0.5em;
+                color: white;
+            }
+            
+            .overlay i{
+                font-size: 1em;
+                color: white;
+            }
+            
+            .project-text {
+                
+            }
+        </style>
       
     </head>
     <body id="page-top">
@@ -51,7 +141,6 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
         
         <!-- About-->
         <section class="about-section text-center" id="about">
@@ -67,38 +156,126 @@
                
             </div>
         </section>
+        
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
             <div class="container">
                 
-                <!-- Project 10 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-md-6">
-                        <img class="img-fluid" src="img/uneck-1.jpg" alt="" />
+                <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0"> -->
+                <div class="row justify-content-center mb-5 mb-lg-0">
+                    <!-- Project 10 -->
+                    <div class="col-md-5 card-container-outer">
+                    <div class="card-container">
+        
                     
+                    <div class="card-note-sub">
+                        10
                     </div>
-                    <div class="col-md-6 overlay">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Visuomotor Influence of<br>Neck Augmentation</h4>
-                                    <p class="mb-0 text-black-50">SUI 2020</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                    <div class="card-body">
+                        <div>
+                            <img class="img-fluid" src="img/uneck-1.jpg" alt="" />
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h4>Visuomotor Influence of<br>Neck Augmentation</h4>
+                                        <p class="mb-0">SUI 2020</p>
+                                        <br>
+                                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                                        <br>
+                                       
+                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        </div>
+                    <div class="card-note-main">
+                        Visuomotor
                     </div>
+                    </div>
+                    </div>
+      
+                    <!-- Project 9 -->
+                    <div class="col-md-5 card-container-outer">
+                    <div class="card-container">
+                    <div class="card-note-main">
+                        Unconstranined Neck
+                    </div>
+                    <div class="card-note-sub">
+                        09.Project
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <img class="img-fluid" src="img/uneck-2%20big.jpg" alt="" />
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h4>Unconstrained Neck</h4>
+                                        <p class="mb-0">AH 2018 Best Demo</p>
+                                        <br>
+                                        <hr class="d-none d-lg-block mb-0 ml-0" />
+                                        <br>
+                                        <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
+                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <!-- Project 8 -->
+                    <div class="col-md-5 card-container-outer">
+                    <div class="card-container">
+                    <div class="card-note-main">
+                        Ambient
+                    </div>
+                    <div class="card-note-sub">
+                        08.Project
+                    </div>
+                    <div class="card-body">
+                        <div>
+                            <img class="img-fluid" src="img/chi2018-1%20big.jpg" alt="" />
+
+                        </div>
+                        <div class="overlay">
+                            <div class="text-center h-100 project">
+                                <div class="d-flex h-100">
+                                    <div class="project-text w-100 my-auto text-center text-lg-right">
+                                        <h4>Ambient</h4>
+                                        <p class="mb-0">CHI 2018</p>
+                                        <hr class="d-none d-lg-block mb-0 mr-0" />
+                                        <br>
+                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                <!-- end of projects -->
                 </div>
                 
                 <!-- Project 10 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+                <div class="row justify-content-center mb-5 mb-lg-0">
                     <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-white text-center h-100 project">
