@@ -32,7 +32,7 @@
         
         <style>
             .card-container-outer {           
-                padding: 5vh 5vw;
+                padding: 5vh 3vw;
                 border: 0px solid;
                 border-color: black;
                 position: relative;
@@ -49,12 +49,17 @@
             
             .card-body {
                 position: relative;
-                border: 2px solid;
+                border: 0px solid;
                 border-color: blueviolet;
                 padding: 0;
                 margin: 0 15px;
+                z-index: 4;
             }
             
+            .card-body img {
+                border: 2px solid;
+                border-color: blueviolet;
+            }
             .card-note-main {
                 position: relative;
                 font-size: 20px;
@@ -76,22 +81,20 @@
                 position: absolute;
                 top: 45px;
                 left: 0;
-                padding: 3px 0;
+                padding: 5px 0;
                 font-size: 15px;
                 color: white;
                 background-color: blueviolet;
                 z-index: 5;
                 -webkit-writing-mode: vertical-rl;
-13              writing-mode: vertical-rl;
+                writing-mode: vertical-rl;
             }
             
-            .card-note-side>p{
-            }
             
             .card-container .overlay {
                 position: absolute;
-                height: 100%;
-                width: 100;
+                /*height: 100%;
+                width: 100;*/
                 top: 0;
                 bottom: 0;
                 left: 0;
@@ -103,29 +106,42 @@
                 transition: .3s ease;
                 background: blueviolet;
 
+
                 /*max-width: 350px;*/
                 /*margin:  1rem auto;*/
                 cursor: pointer;
-    
+                
+                padding: 10px 1rem;     
+                text-align: center;       
+                font-size: 10px;
+
+            }
+            
+            .overlay>div {
+                margin: 0 auto;
             }
             
             .card-container:hover .overlay{
                 opacity: 0.95;
             }
             
+            
             .overlay h4{
-                font-size: 1em;
+                font-size: 18px;
                 color: white;
+                margin: 0;
             }
             
             .overlay p{
-                font-size: 0.5em;
+                font-size: 12px;
                 color: white;
+                margin: 0;
             }
             
             .overlay i{
-                font-size: 1em;
+                font-size: 12px;
                 color: white;
+                margin: 0;
             }
             
             .project-text {
@@ -186,25 +202,19 @@
                         </div>
                         
                         <div class="card-body">
-                            <div>
-                                <img class="img-fluid" src="img/uneck-1.jpg" alt="" />
-                            </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">SUI 2020</p>
-                                            <br>
-                                            <h4>Visuomotor Influence of Attached Robotic Neck Augmentation</h4>
-                                            <br>                                       
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                            <img class="img-fluid" src="../public/research/uneck/uneck-1.jpg" alt="" />
+                        </div>
+                        <div class="overlay d-flex text-center">
+                            <div class="my-auto text-center">
+                                <p class="mb-0">SUI 2020</p>
+                                <br>
+                                <h4>
+                                    Visuomotor Influence of Attached Robotic Neck Augmentation
+                                </h4>
+
+                            </div>   
+                        </div>
                         </div>
                         
                         <div class="card-note-side">
@@ -226,25 +236,24 @@
                         </div>
                         
                         <div class="card-body">
-                            <div>
-                                <img class="img-fluid" src="img/uneck-2%20big.jpg" alt="" />
-                            </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">AH 2018 Best Demo</p>
-                                            <br>
-                                            <h4>Omnidirectional Observation from an Extra Robotic Neck</h4>
-                                            <br>                                       
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div>
+                            <img class="img-fluid" src="../public/research/uneck/uneck-2%20big.jpg" alt="" />
+                        </div>
+                        <div class="overlay d-flex text-center">
+                            <div class="my-auto text-center">
+                                <p class="mb-0">AH 2018 Best Demo</p>
+                                <br>
+                                <h4>
+                                    Omnidirectional Observation from an Extra Robotic Neck
+                                </h4>
+                                <br>
+                                <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                <a href="../public/research/uneck/unconstrained%20neck.pdf"><i class="fa fa-book"></i></a>
+                                <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+
+                            </div>   
+                        </div>
                         </div>
                         
                         <div class="card-note-side">
@@ -266,25 +275,22 @@
                         </div>
                         
                         <div class="card-body">
-                            <div>
-                                <img class="img-fluid" src="img/chi2018-1%20big.jpg" alt="" />
+                        <div>
+                            <img class="img-fluid" src="../public/research/ambient/chi2018-1%20big.jpg" alt="" />
+                        </div>
+                        <div class="overlay d-flex text-center">
+                            <div class="my-auto text-center">
+                                <p class="mb-0">CHI 2018</p>
+                                <br>
+                                <h4>Facial Thermal Feedback in Remotely Operated Applications</h4>
+                                <br>
+                                <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">CHI 2018</p>
-                                            <br>
-                                            <h4>Facial Thermal Feedback in Remotely Operated Applications</h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                         </div>
                         
                         <div class="card-note-side">
@@ -307,30 +313,22 @@
                         
                         <div class="card-body">
                             <div>
-                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                                <img class="img-fluid" src="../public/research/xr/IMG_0045%20copy.jpg" alt="" />
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">@Empathic Computing Lab</p>
-                                            <br>
-                                            <h4>
-                                                Prototypes Series with Depth Camera 
-                                            </h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                            <div class="overlay d-flex text-center">
+                                <div class="my-auto text-center">
+                                    <p class="mb-0">@Empathic Computing Lab</p>
+                                    <br>
+                                    <h4>
+                                        Prototypes of Depth Camera Array
+                                    </h4>
+
                                 </div>
                             </div>
                         </div>
                         
                         <div class="card-note-side">
-                            Lab Work
+                            Empathic Computing Lab
                         </div>
                         <div class="card-note-main">
                             XR PROTOTYPES
@@ -349,30 +347,21 @@
                         
                         <div class="card-body">
                             <div>
-                                <img class="img-fluid" src="img/chi2018-2.jpg" alt="" />
+                                <img class="img-fluid" src="../public/research/labinvr/labinvr-2.jpg" alt="" />
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">@Empathic Computing Lab</p>
-                                            <br>
-                                            <h4>
-                                                Virtual Preview of Floor Plan Design
-                                            </h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                            <div class="overlay d-flex text-center">
+                                <div class="my-auto text-center">
+                                    <p class="mb-0">@Empathic Computing Lab</p>
+                                    <br>
+                                    <h4>
+                                        Virtual Preview for Floor Plan Design
+                                    </h4>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="card-note-side">
-                            Lab Work
+                            Empathic Computing Lab
                         </div>
                         <div class="card-note-main">
                             LAB IN VR
@@ -391,24 +380,15 @@
                         
                         <div class="card-body">
                             <div>
-                                <img class="img-fluid" src="img/chi2018-2.jpg" alt="" />
+                                <img class="img-fluid" src="../public/research/eih/eih-0.jpg" alt="" />
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">Work in Progress</p>
-                                            <br>
-                                            <h4>
-                                                Virtual Preview of Floor Plan Design
-                                            </h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                            <div class="overlay d-flex text-center">
+                                <div class="my-auto text-center">
+                                    <p class="mb-0">Work in Progress</p>
+                                    <br>
+                                    <h4>
+                                        "Snail Sight", Vision Oriented by Hands, Observe Dual Scenes Simultaneously
+                                    </h4>
                                 </div>
                             </div>
                         </div>
@@ -433,24 +413,20 @@
                         
                         <div class="card-body">
                             <div>
-                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                                <img class="img-fluid" src="../public/research/oculus/thesis-2.png" alt="" />
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">Master Thesis</p>
-                                            <br>
-                                            <h4>
-                                                Visual Expansion by Animal-Inspired Visuomotor Modification
-                                            </h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                            <div class="overlay d-flex text-center">
+                                <div class="my-auto text-center">
+                                    <p class="mb-0">Master Thesis</p>
+                                    <br>
+                                    <h4>
+                                        Visual Expansion by Animal-Inspired Visuomotor Modification
+                                    </h4>
+                                    <br>
+                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -465,34 +441,26 @@
                     </div>
                     </div>
                     
-                    <!-- Project 2 -->
+                    <!-- Project 1 -->
                     <div class="col-md-6 card-container-outer">
                     <div class="card-container">
                     
                         <div class="card-note-sub">
-                            02.
+                            01.
                         </div>
                         
                         <div class="card-body">
                             <div>
-                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                                <img class="img-fluid" src="../public/research/spider/spider-2%20big.jpg" alt="" />
                             </div>
-                            <div class="overlay">
-                                <div class="text-center h-100 project">
-                                    <div class="d-flex h-100">
-                                        <div class="project-text w-100 my-auto text-center text-lg-right">
-                                            <p class="mb-0">Course Work</p>
-                                            <br>
-                                            <h4>
-                                                "Being a Spider", Telexistence from Human to a Spider Robot
-                                            </h4>
-                                            <br>
-                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                        </div>
-                                    </div>
+                            <div class="overlay d-flex text-center">
+                                <div class="my-auto text-center">
+                                    <p class="mb-0">Course Work</p>
+                                    <br>
+                                    <h4>
+                                        "Being a Spider", Telexistence from Human to a Spider Robot
+                                    </h4>
+
                                 </div>
                             </div>
                         </div>
@@ -510,223 +478,7 @@
                 <!-- end of projects -->
                 </div>
                 
-                <!-- Project 10 -->
-                <div class="row justify-content-center mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Visuomotor Influence of<br>Neck Augmentation</h4>
-                                    <p class="mb-0 text-black-50">SUI 2020</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 9 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-black">Unconstrained Neck</h4>
-                                    <p class="mb-0 text-black-50">AH 2018 Best Demo</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 8 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/chi2018-1%20big.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Ambient</h4>
-                                    <p class="mb-0 text-black-50">CHI 2018</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-           
-                <!-- Project 7 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-black">Depth Camera Prototypes Series</h4>
-                                    <p class="mb-0 text-black-50">Lab Work</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                    <br>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            
-                <!-- Project 6 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Smartphone Type in Virtual Environment</h4>
-                                    <p class="mb-0 text-black-50">Lab Work</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 5 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/uneck-1.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-black">Lab in VR</h4>
-                                    <p class="mb-0 text-black-50">Lab Work</p>
-                                    <br>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                    <br>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 4 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/thesis-1.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">ThermoVR</h4>
-                                    <p class="mb-0 text-black-50">Lab Work</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                     
-                                    <br>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 3 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/eih/eih-0.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-black">Eye In Hand</h4>
-                                    <p class="mb-0 text-black-50">Work In Progress</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                     
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 2 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/thesis-1.jpg" alt="" /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-black">Limitless Oculus</h4>
-                                    <p class="mb-0 text-black-50">Master's Thesis</p>
-                                    <hr class="d-none d-lg-block mb-0 mr-0" />
-                                     
-                                    <br>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Project 1 -->
-                <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
-                    <div class="col-lg-6"><img class="img-fluid" src="img/spider/spider-2%20big.jpg" alt="" /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-white text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-black">Bug View</h4>
-                                    <p class="mb-0 text-black-50">Coursework</p>
-                                    <hr class="d-none d-lg-block mb-0 ml-0" />
-                                    <br>
-                                    <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                    <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                
+
                 
             </div>
         </section>
