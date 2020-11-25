@@ -10384,6 +10384,11 @@ body {
     align-items: center;
 }
 
+.card-container-outer>a:hover {
+    text-decoration: none;
+    
+}
+
 .card-container {
     border: 0px solid;
     border-color: black;
