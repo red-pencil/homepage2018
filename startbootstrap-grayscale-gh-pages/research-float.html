@@ -33,20 +33,18 @@
         <style>
             .card-container-outer {           
                 padding: 5vh 5vw;
-                border: 1px solid;
+                border: 0px solid;
                 border-color: black;
                 position: relative;
 
             }
             
             .card-container {
-
-                border: 3px solid;
+                border: 0px solid;
                 border-color: black;
                 position: relative;
                 top: 50%;
-                transform: translate(0, -50%);
-                
+                transform: translate(0, -50%);                
             }
             
             .card-body {
@@ -61,7 +59,7 @@
                 position: relative;
                 font-size: 20px;
                 line-height: 30px;
-                margin: 5px 0 0 15px;
+                margin: 5px 15px 0;
                 color: blueviolet;
             }
             
@@ -69,10 +67,25 @@
                 position: relative;
                 font-size: 20px;
                 line-height: 30px;
-                margin: 0 15px 5px 0;
+                margin: 0 15px 5px;
                 text-align: right;
                 color: blueviolet;
-                
+            }
+            
+            .card-note-side {
+                position: absolute;
+                top: 45px;
+                left: 0;
+                padding: 3px 0;
+                font-size: 15px;
+                color: white;
+                background-color: blueviolet;
+                z-index: 5;
+                -webkit-writing-mode: vertical-rl;
+13              writing-mode: vertical-rl;
+            }
+            
+            .card-note-side>p{
             }
             
             .card-container .overlay {
@@ -84,7 +97,7 @@
                 left: 0;
                 right: 0;
                 /*margin: 1rem 0.5rem 1.5rem 0.5rem;*/
-                z-index: 1;
+                z-index: 3;
             
                 opacity: 0;
                 transition: .3s ease;
@@ -116,7 +129,7 @@
             }
             
             .project-text {
-                
+                padding: 1rem!important;
             }
         </style>
       
@@ -163,113 +176,336 @@
                 
                 <!-- <div class="row justify-content-center no-gutters mb-5 mb-lg-0"> -->
                 <div class="row justify-content-center mb-5 mb-lg-0">
-                    <!-- Project 10 -->
-                    <div class="col-md-5 card-container-outer">
-                    <div class="card-container">
-        
                     
-                    <div class="card-note-sub">
-                        10
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <img class="img-fluid" src="img/uneck-1.jpg" alt="" />
-
+                    <!-- Project 10 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            10.
                         </div>
-                        <div class="overlay">
-                            <div class="text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4>Visuomotor Influence of<br>Neck Augmentation</h4>
-                                        <p class="mb-0">SUI 2020</p>
-                                        <br>
-                                        <hr class="d-none d-lg-block mb-0 mr-0" />
-                                        <br>
-                                       
-                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/uneck-1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">SUI 2020</p>
+                                            <br>
+                                            <h4>Visuomotor Influence of Attached Robotic Neck Augmentation</h4>
+                                            <br>                                       
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="card-note-side">
+                            SUI 2020
                         </div>
-                    <div class="card-note-main">
-                        Visuomotor
-                    </div>
+                        <div class="card-note-main">
+                            VISUOMOTOR INFLUENCE
+                        </div>
+                        
                     </div>
                     </div>
       
                     <!-- Project 9 -->
-                    <div class="col-md-5 card-container-outer">
+                    <div class="col-md-6 card-container-outer">
                     <div class="card-container">
-                    <div class="card-note-main">
-                        Unconstranined Neck
-                    </div>
-                    <div class="card-note-sub">
-                        09.Project
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <img class="img-fluid" src="img/uneck-2%20big.jpg" alt="" />
-
+                    
+                        <div class="card-note-sub">
+                            09.
                         </div>
-                        <div class="overlay">
-                            <div class="text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4>Unconstrained Neck</h4>
-                                        <p class="mb-0">AH 2018 Best Demo</p>
-                                        <br>
-                                        <hr class="d-none d-lg-block mb-0 ml-0" />
-                                        <br>
-                                        <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
-                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/uneck-2%20big.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">AH 2018 Best Demo</p>
+                                            <br>
+                                            <h4>Omnidirectional Observation from an Extra Robotic Neck</h4>
+                                            <br>                                       
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="card-note-side">
+                            AH 2018 Best Demo
                         </div>
+                        <div class="card-note-main">
+                            UNCONSTRAINED NECK
+                        </div>
+                        
                     </div>
-                </div>
+                    </div>
                     
                     <!-- Project 8 -->
-                    <div class="col-md-5 card-container-outer">
+                    <div class="col-md-6 card-container-outer">
                     <div class="card-container">
-                    <div class="card-note-main">
-                        Ambient
-                    </div>
-                    <div class="card-note-sub">
-                        08.Project
-                    </div>
-                    <div class="card-body">
-                        <div>
-                            <img class="img-fluid" src="img/chi2018-1%20big.jpg" alt="" />
-
+                    
+                        <div class="card-note-sub">
+                            08.
                         </div>
-                        <div class="overlay">
-                            <div class="text-center h-100 project">
-                                <div class="d-flex h-100">
-                                    <div class="project-text w-100 my-auto text-center text-lg-right">
-                                        <h4>Ambient</h4>
-                                        <p class="mb-0">CHI 2018</p>
-                                        <hr class="d-none d-lg-block mb-0 mr-0" />
-                                        <br>
-                                        <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
-                                        <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
-                                        <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
-                                        <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/chi2018-1%20big.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">CHI 2018</p>
+                                            <br>
+                                            <h4>Facial Thermal Feedback in Remotely Operated Applications</h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        
+                        <div class="card-note-side">
+                            CHI 2018
                         </div>
+                        <div class="card-note-main">
+                            AMBIENT
+                        </div>
+                        
                     </div>
-                </div>
+                    </div>
+                    
+                    <!-- Project 7 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            07.
+                        </div>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">@Empathic Computing Lab</p>
+                                            <br>
+                                            <h4>
+                                                Prototypes Series with Depth Camera 
+                                            </h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-note-side">
+                            Lab Work
+                        </div>
+                        <div class="card-note-main">
+                            XR PROTOTYPES
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            06.
+                        </div>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/chi2018-2.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">@Empathic Computing Lab</p>
+                                            <br>
+                                            <h4>
+                                                Virtual Preview of Floor Plan Design
+                                            </h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-note-side">
+                            Lab Work
+                        </div>
+                        <div class="card-note-main">
+                            LAB IN VR
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            05.
+                        </div>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/chi2018-2.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">Work in Progress</p>
+                                            <br>
+                                            <h4>
+                                                Virtual Preview of Floor Plan Design
+                                            </h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-note-side">
+                            Work-In-Progress
+                        </div>
+                        <div class="card-note-main">
+                            EYE IN HAND
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            02.
+                        </div>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">Master Thesis</p>
+                                            <br>
+                                            <h4>
+                                                Visual Expansion by Animal-Inspired Visuomotor Modification
+                                            </h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-note-side">
+                            Master Thesis
+                        </div>
+                        <div class="card-note-main">
+                            LIMITLESS OCULUS
+                        </div>
+                        
+                    </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="col-md-6 card-container-outer">
+                    <div class="card-container">
+                    
+                        <div class="card-note-sub">
+                            02.
+                        </div>
+                        
+                        <div class="card-body">
+                            <div>
+                                <img class="img-fluid" src="img/thesis-1.jpg" alt="" />
+                            </div>
+                            <div class="overlay">
+                                <div class="text-center h-100 project">
+                                    <div class="d-flex h-100">
+                                        <div class="project-text w-100 my-auto text-center text-lg-right">
+                                            <p class="mb-0">Course Work</p>
+                                            <br>
+                                            <h4>
+                                                "Being a Spider", Telexistence from Human to a Spider Robot
+                                            </h4>
+                                            <br>
+                                            <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                                            <a href="docs/a38-shen.pdf"><i class="fa fa-book"></i></a>
+                                            <a href="videos/ah2018.mp4"><i class="fa fa-film"></i></a>
+                                            <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="card-note-side">
+                            Course Work
+                        </div>
+                        <div class="card-note-main">
+                            BUG VIEW
+                        </div>
+                        
+                    </div>
+                    </div>
                     
                 <!-- end of projects -->
                 </div>
