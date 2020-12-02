@@ -10445,8 +10445,8 @@ body {
 
 .card-container .overlay {
     position: absolute;
-    /*height: 100%;
-    width: 100;*/
+    height: 100%;
+    width: 100;
     top: 0;
     bottom: 0;
     left: 0;
@@ -10546,6 +10546,8 @@ body {
     transform: translate(-50%, 0);
     -ms-transform: translate(-50%, 0);
     z-index: 1;
+    border: 0.5px solid;
+    
 }
 
 .square-container .card-note-main {
@@ -10595,10 +10597,15 @@ body {
 
 }
 
+.square-container-outer {
+    border: 0px;
+    padding: 0;
+}
+
 .square-container .overlay {
     position: absolute;
-    /*height: 100%;
-    width: 100;*/
+    height: 100%;
+    width: 100;
     top: 0;
     bottom: 0;
     left: 0;
@@ -10607,7 +10614,7 @@ body {
     z-index: 10;
 
     opacity: 1;
-    transition: .3s ease;
+    transition: .5s ease;
     background: rgba(138,43,226,0.7);
 
 
@@ -10623,4 +10630,20 @@ body {
 
 .square-container:hover .overlay {
     opacity: 0;
+}
+
+video {
+    width: 100%;
+}
+
+#project p {
+    margin: 2rem 0;
+}
+
+.link {
+    display: flex;
+}
+
+#project a {
+    margin: 2rem 0;
 }
