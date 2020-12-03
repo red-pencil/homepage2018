@@ -10377,7 +10377,7 @@ body {
 
 .card-container-outer {           
     padding: 5vh 3vw;
-    border: 0px solid;
+    border: 2px solid;
     border-color: black;
     position: relative;
     display: flex;
@@ -10390,7 +10390,7 @@ body {
 }
 
 .card-container {
-    border: 0px solid;
+    border: 1px solid;
     border-color: black;
     position: relative;
     /*top: 50%;
