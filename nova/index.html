@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+-->
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+      <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
+  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="jqueryui/style.css">
+    
+    <style>
+        
+        :root{
+            --debug-border: 2px pink solid;
+        } 
+        body {
+            background: hsla(16, 100%, 65.7%, 100%);
+        }
+        .banner {
+            height: calc(100vh - 56px);
+        }
+        
+        .section {
+            height: 500px;
+        }
+        .footer {
+            min-height: 100px;
+        }
+        .footer p{
+            margin: 0;
+        }
+        .banner>.row, .footer>.row {
+            max-width: 960px;
+            /*background: #f0f0f0;*/
+            margin: 0 auto;
+            height: 100%;
+            padding: 20px;
+            color: white;
+            border: var(--debug-border);
+            
+        }
+        .section>.row {
+            height: 100%;
+            max-width: 960px;
+            margin: 0px auto;
+            padding: 20px;
+            border: solid gray;
+            border-width: 0 1px;
+            
+            /*background: #f0f0f0; */
+            background: white;
+        }
+        
+        div:nth-last-child(2) .row {
+             border-width: 0 1px 1px;
+        }
+        
+        
+        nav {
+            max-width: 960px;
+            margin: 0px auto;
+            border: solid gray;
+            border-width: 1px 1px 0;
+            
+            background: #f0f0f0;
+            color: black;
+
+        }
+        
+        .navbar {
+            /*padding: auto 20px;*/
+
+        }
+        
+        .navbar-nav {
+            text-align: center;
+        }
+        
+        .list-inline {
+            padding-left: 0;
+            margin: 0;
+        }
+        
+        .list-inline>li {
+            display: inline-flex;
+            align-items: center;
+            margin: 0 1em;
+        }
+        
+        .social-list a {
+            font-size: 2rem;
+            color: white;
+            text-decoration: none;
+        }
+        .social-list a:hover {
+            font-size: 2rem;
+            color: orange;
+            text-decoration: none;
+        }
+        
+    /* pallette */
+        #hue, #sat, #lig {
+            float: left;
+            clear: left;
+            width: 300px;
+            margin: 15px;
+          }
+        #swatch {
+            width: 120px;
+            height: 100px;
+            margin-top: 18px;
+            margin-left: 350px;
+            background-image: none;
+        }
+        #hue .ui-slider-range { background: #ef2929; }
+        #hue .ui-slider-handle { border-color: #ef2929; }
+        #sat .ui-slider-range { background: #8ae234; }
+        #sat .ui-slider-handle { border-color: #8ae234; }
+        #lig .ui-slider-range { background: #729fcf; }
+        #lig .ui-slider-handle { border-color: #729fcf; }
+    
+    </style>
+    
+
+      <script>
+          /* pallette */
+          function hexFromHSL(h, s, l) {
+            var hex = [
+              h.toString(),
+              s.toString(),
+              l.toString()
+            ];
+            $.each( hex, function( nr, val ) {
+              if ( val.length === 1 ) {
+                hex[ nr ] = "0" + val;
+              }
+            });
+            return hex.join( "" ).toUpperCase();
+          }
+          function refreshSwatch() {
+            var hue = $( "#hue" ).slider( "value" ),
+              sat = $( "#sat" ).slider( "value" ),
+              lig = $( "#lig" ).slider( "value" )
+            $( "#swatch" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
+            $( "body" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
+          }
+          $(function() {
+            $( "#hue, #sat, #lig" ).slider({
+              orientation: "horizontal",
+              range: "min",
+              max: 255,
+              value: 127,
+              slide: refreshSwatch,
+              change: refreshSwatch
+            });
+            $( "#hue" ).slider( "value", 16 );
+            $( "#sat" ).slider( "value", 0 );
+            $( "#lig" ).slider( "value", 0 );
+          });
+      </script>
+    
+</head>
+<body>
+
+
+<div class="container-fluid banner">
+    <div class="row">
+        <div class="m-auto">
+          <h3>Sticky Navbar</h3>
+          <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
+          <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+        </div>
+    </div>
+</div>
+
+    <div class="container-fluid sticky-top">
+<nav class="navbar navbar-default navbar-expand-md bg-light navbar-light">
+
+  <a class="navbar-brand" href="#page-top">Lichao</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="research.html">Research</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="design.html">Design</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cv.html">Vitae</a>
+      </li>    
+    </ul>
+
+  </div>
+
+</nav>
+    </div>
+
+
+<div class="container-fluid section">
+    <div class="row">
+        <h3>Content 1</h3>
+        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+    
+    </div>
+  
+</div>
+    
+<div class="container-fluid section">
+    <div class="row">
+      <h3>Content 2</h3>
+      <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+      <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+      <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+    </div>
+</div>
+    
+<div class="container-fluid section">
+    <div class="row">
+      <h3>Content 3</h3>
+      <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
+      <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+      <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
+        
+        
+            <div id="hue"></div>
+ 
+            <div id="swatch" class="ui-widget-content ui-corner-all"></div>
+        
+    </div>
+</div>
+    
+<div class="container-fluid footer">
+    <div class="row contacts">
+    <div class="col-md-6 col-sm-12 col-xs-12 text-center m-auto">
+        <p><b>lichao (dot) shen (at) hotmail.com</b></p>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+    <ul class="fa-ul list-inline social-list">
+        <li><a href="https://www.facebook.com/profile.php?id=100008869660041"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/leonchaos/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+        <li><a href="#" class="fa fa-linkedin"></a></li>
+
+        <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+        <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+    </ul>
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p>Lichao &copy; All Rights Reserved.</p>
+        </div>
+    
+    </div>
+</div>
+
+</body>
+</html>
+
+
