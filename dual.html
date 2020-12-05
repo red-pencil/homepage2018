@@ -152,7 +152,73 @@
           }
         }
 
-   
+        .sidebar {
+            width: 25vw;
+            height: 100vh;
+            background-color: red;
+            position: fixed;
+            
+            overflow: auto;
+        }
+        
+        .main {
+            margin: 0 0 0 25vw;
+            width: 75vw;
+        }
+        
+        
+        .sidebar>.container-fluid>.row {
+             max-width: 960px;
+            /*background: #f0f0f0;*/
+            margin: 0px auto;
+            height: 100%;
+            padding: 20px;
+            color: black;
+            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        .sidebar>.container-fluid {
+            
+            padding: var(--global-gap) 0 var(--global-gap) var(--global-gap);
+            height: 100vh;
+            background: red;
+        }
+        
+        @media screen and (max-width: 700px) {
+          .sidebar {
+            width: 100%;
+            height: 10vh;
+            position: fixed;
+            margin: 0;
+              top: 0;
+
+          }
+        .sidebar>.container-fluid {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: var(--global-gap) var(--global-gap) 0;
+            background: red;
+        }
+      .sidebar>.container-fluid>.row {
+        margin: 0;
+
+        }
+          .sidebar a {float: left;}
+          div.main {
+              margin-left: 0;
+              width: 100vw;
+              margin-top: 10vh;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+          .sidebar a {
+            text-align: center;
+            float: none;
+          }
+        }
+        
     
     </style>
     
@@ -160,7 +226,20 @@
 </head>
 <body>
 
-
+<div class="sidebar">
+    <div class="container-fluid">
+        <div class="row">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        </div>
+    </div>
+    
+</div>
+    
+<div class="main">
+    
 <div class="container-fluid banner">
     <div class="row">
         <div class="m-auto">
@@ -171,32 +250,31 @@
     </div>
 </div>
 
-    <div class="container-fluid navi sticky-top">
+<div class="container-fluid navi sticky-top">
         <!-- <div class="container-fluid navbar sticky-top"> -->
-<nav class="navbar navbar-default navbar-expand-md bg-light navbar-light">
+    <nav class="navbar navbar-default navbar-expand-md bg-light navbar-light">
 
-  <a class="navbar-brand" href="#page-top">Lichao</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="research.html">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="design.html">Design</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cv.html">Vitae</a>
-      </li>    
-    </ul>
+      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="design.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">Vitae</a>
+          </li>    
+        </ul>
 
-  </div>
+      </div>
 
-</nav>
-    </div>
-
+    </nav>
+</div>
 
 <div class="container-fluid section">
     <div class="row">
@@ -260,6 +338,11 @@
     </div>
     </div>
 </div>
+    
+</div>
+    
+    
+
 
 </body>
 </html>
