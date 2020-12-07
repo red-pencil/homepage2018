@@ -7,12 +7,12 @@ body {
     background: var(--global-color);
 }
 .banner {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 57px - 1rem);
 }
 
 .section {
     min-height: 80px;
-
+    
 }
 .footer {
     min-height: 100px;
@@ -30,7 +30,7 @@ body {
     border: var(--debug-border);    
 }
 
-.section>.row {
+.section>.row, .navi>.row {
     height: 100%;
     max-width: 960px;
     margin: 0px auto;
@@ -41,6 +41,8 @@ body {
     background: white;
     z-index: 1;
 }
+
+
 .row.empty {
     background: transparent;
 }
@@ -81,10 +83,6 @@ body {
 
 }
 
-#content img {
-
-}
-
 .sticky-mark {
     position: -webkit-sticky;
     position: sticky;
@@ -97,7 +95,11 @@ body {
     z-index: 5;
 }
 .navi {
-    background-color: var(--global-color);
+    background: var(--global-color);
+}
+
+.navi>.row {
+    padding: 0 5vw 1px;
 }
 
 nav {
@@ -111,16 +113,26 @@ nav {
 }
 
 .navbar {
-    /*padding: auto 20px;*/
+    padding: auto 15px;
     background-color: var(--global-color);
     z-index: 3;
+    
 }
 
-
+.navbar-brand {color: rgba(0,0,0,0.5)!important;}
 .navbar-nav {
     text-align: center;
 }
-
+h5>a {
+    text-decoration: none;
+    color: black;
+}
+h5>a:hover {
+    text-decoration: underline;
+    text-underline-position: alphabetic;
+    text-decoration-style: dotted;
+    color: dimgrey;
+}
 .list-inline {
     padding-left: 0;
     margin: 0;
@@ -178,6 +190,14 @@ nav {
 
 .row>div>div {
     padding: 0!important;
+}
+
+.hline-t {
+    border-top: 1px solid grey;
+}
+
+.hline-b {
+    border-bottom: 1px solid grey;
 }
 
 .logo {
@@ -254,11 +274,10 @@ nav {
     margin: 15px;
   }
 #swatch {
-    width: 120px;
+    width: 100px;
     height: 100px;
-    margin-top: 18px;
-    margin-left: 350px;
     background-image: none;
+    margin: 15px;
 }
 #hue .ui-slider-range { background: #ef2929; }
 #hue .ui-slider-handle { border-color: #ef2929; }
