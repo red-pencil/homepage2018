@@ -1,0 +1,242 @@
+
+:root {
+    --debug-border: 0px pink solid;
+    --global-color: hsla(16, 100%, 65.7%, 100%);
+} 
+body {
+    background: var(--global-color);
+}
+.banner {
+    height: calc(100vh - 56px);
+}
+
+.section {
+    min-height: 100px;
+
+}
+.footer {
+    min-height: 100px;
+}
+.footer p{
+    margin: 0;
+}
+.banner>.row, .footer>.row {
+    max-width: 960px;
+    /*background: #f0f0f0;*/
+    margin: 0 auto;
+    height: 100%;
+    padding: 15px 10vw;
+    color: white;
+    border: var(--debug-border);    
+}
+
+.section>.row {
+    height: 100%;
+    max-width: 960px;
+    margin: 0px auto;
+    padding: 15px 8vw 0;
+    border: solid gray;
+    border-width: 0 1px;
+    /*background: #f0f0f0; */
+    background: white;
+    z-index: 1;
+}
+#title {
+    /*padding-top: 15px;*/
+}
+#title>.row:first-child {
+    /*border-top: 2px solid black;*/
+    padding-top:1px;
+    padding-bottom:1px;
+
+}
+
+#content>.row:last-child {
+    border-bottom: 1px solid black;
+    padding-bottom: 5rem;
+
+}
+
+.sticky-mark {
+    position: -webkit-sticky;
+    position: sticky;
+
+    padding-bottom: 0px!important;
+
+    top: 72px;
+    margin-top: 0px;
+    border-top-width: 2px!important;
+    z-index: 5;
+}
+.navi {
+    background-color: var(--global-color);
+}
+
+nav {
+    max-width: 960px;
+    margin: 0px auto;
+    border: solid gray;
+    border-width: 1px 1px 0;
+
+    background-color: #f0f0f0;
+    color: black;
+
+}
+
+.navbar {
+    /*padding: auto 20px;*/
+    background-color: var(--global-color);
+    z-index: 3;
+}
+
+
+.navbar-nav {
+    text-align: center;
+}
+
+.list-inline {
+    padding-left: 0;
+    margin: 0;
+}
+
+.list-inline>li {
+    display: inline-flex;
+    align-items: center;
+
+}
+.link-list>li {
+    background-color: darkgray;
+    text-decoration: none;
+    text-align: left;
+    padding: 0 10px;
+    margin: 2px 0px;
+    margin-right: 0px!important;
+    border-radius: 2px;
+    font-size: small;
+}
+.link-list a{
+    color: white;
+
+}
+.tag-list>li {
+    background-color: #f0f0f0;
+    margin: 2px 0px;
+    padding: 0 5px;
+    font-size: small;
+}
+
+.social-list li {
+    margin: 0.5rem;
+}
+.social-list a {
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+.social-list a:hover {
+    font-size: 2rem;
+    color: orange;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    /* customize own style*/
+    border-radius: 0;
+    border: 0px
+}
+
+.row>div {
+    padding: 0!important;
+}
+
+.row>div>div {
+    padding: 0!important;
+}
+
+.logo {
+    width: 20vw;
+    height: 20vh;
+    position: relative;
+}
+.logo>svg {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.logo>svg>path {
+    /*
+    fill-opacity: 0.2;
+    fill: white;*/
+    stroke: white;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width: 21;
+    stroke-dasharray: 2500;
+    stroke-dashoffset: 2500;
+    animation: draw 8s infinite linear;
+}
+
+.logo>object {   
+    animation: shiftlogo 8s infinite linear; width: 90%;
+    height: 90%;
+    opacity:1;
+}
+/* animation */
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes shiftlogo {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+/* Standard syntax */
+@keyframes shiftlogo {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    60% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
+}
+@-webkit-keyframes draw {
+    20% {stroke-dashoffset:10px; stroke-opacity:1;}
+    40% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+
+@keyframes draw {
+    20% {stroke-dashoffset:10px; stroke-opacity:1;}
+    40% {opacity:1;}
+    50% {opacity:0;}
+    100% {opacity:0;}
+}
+
+
+/* pallette */
+#hue, #sat, #lig {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+  }
+#swatch {
+    width: 120px;
+    height: 100px;
+    margin-top: 18px;
+    margin-left: 350px;
+    background-image: none;
+}
+#hue .ui-slider-range { background: #ef2929; }
+#hue .ui-slider-handle { border-color: #ef2929; }
+#sat .ui-slider-range { background: #8ae234; }
+#sat .ui-slider-handle { border-color: #8ae234; }
+#lig .ui-slider-range { background: #729fcf; }
+#lig .ui-slider-handle { border-color: #729fcf; }
+
