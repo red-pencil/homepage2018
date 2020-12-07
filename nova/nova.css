@@ -26,7 +26,7 @@ body {
     margin: 0 auto;
     height: 100%;
     padding: 15px 10vw;
-    color: white;
+    color: black;
     border: var(--debug-border);    
 }
 
@@ -77,6 +77,17 @@ body {
     font-size: 1em;
 }
 
+h5>a {
+    text-decoration: none;
+    color: black;
+}
+h5>a:hover {
+    text-decoration: underline;
+    text-underline-position: alphabetic;
+    text-decoration-style: dotted;
+    color: dimgrey;
+}
+
 #content>.row:last-child {
     border-bottom: 1px solid black;
     padding-bottom: 5rem;
@@ -123,16 +134,7 @@ nav {
 .navbar-nav {
     text-align: center;
 }
-h5>a {
-    text-decoration: none;
-    color: black;
-}
-h5>a:hover {
-    text-decoration: underline;
-    text-underline-position: alphabetic;
-    text-decoration-style: dotted;
-    color: dimgrey;
-}
+
 .list-inline {
     padding-left: 0;
     margin: 0;

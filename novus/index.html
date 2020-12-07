@@ -12,109 +12,17 @@
     </script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- core -->
+  <link rel="stylesheet" href="novus.css">
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
-    
-      <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="jqueryui/style.css">
-    
-    <style>
-        
-        :root{
-            --debug-border: 0px pink solid;
-            --global-radius: 10px;
-            --global-gap: 20px;
-        } 
-        body {
-            background: white;
-        }
-        
-        .banner {
-            height: calc(100vh - 56px - 2*var(--global-gap));
-            padding: var(--global-gap) var(--global-gap) 0;
-        }
-        .banner>.row, .footer>.row {
-            max-width: 960px;
-            /*background: #f0f0f0;*/
-            margin: 0px auto;
-            height: 100%;
-            padding: 20px;
-            color: black;
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        .container-fluid>.row, .container-fluid>nav {
-            border: var(--debug-border);
-            border-radius: var(--global-radius);
-            background: white;
-            
-        }
-        .navi {
-            padding: var(--global-gap);  
-        }
-        nav {
-            max-width: 960px;
-            margin: 0px auto;
-            color: black;
-            box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-        }
-        
-        .navbar-nav {
-            text-align: center;
-        }
-        
-        .section {
-            height: 500px;
-            padding: 0 var(--global-gap) var(--global-gap);
-            
-        }
-        .section>.row {
-            height: 100%;
-            max-width: 960px;
-            margin: 0px auto;
-            padding: 20px;
-            background-color: transparent;
-        }
-        
-        .footer {
-            min-height: 100px;
-            padding: 0 var(--global-gap) var(--global-gap);
-        }
-        .footer p {
-            margin: 0;
-        }
-        
-        .copyright p {
-            margin: 30px;
-        }
-        
-        .list-inline {
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        .list-inline>li {
-            display: inline-flex;
-            align-items: center;
-            margin: 0 1em;
-        }
-        
-        .social-list a {
-            font-size: 2rem;
-            color: black;
-            text-decoration: none;
-        }
-        .social-list a:hover {
-            font-size: 2rem;
-            color: orange;
-            text-decoration: none;
-        }
-        
-   
-    
-    </style>
+
     
     
 </head>
@@ -122,11 +30,14 @@
 
 
 <div class="container-fluid banner">
-    <div class="row">
+    <div class="row bg-light">
         <div class="m-auto">
-          <h3>Sticky Navbar</h3>
-          <p>A sticky navigation bar stays fixed at the top of the page when you scroll past it.</p>
-          <p>Scroll this page to see the effect. <strong>Note:</strong> sticky-top does not work in IE11 and earlier.</p>
+            <a href="#title-top" class="stretched-link"></a>
+            <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
+            <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+                </svg>
+            </div>
         </div>
     </div>
 </div>
@@ -141,7 +52,7 @@
   </button>
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="research.html">Research</a>
       </li>
       <li class="nav-item">
@@ -158,13 +69,20 @@
     </div>
 
 
-<div class="container-fluid section">
-    <div class="row">
-        <h3>Content 1</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
-    
+<div class="container-fluid section" id="title" style="height: calc(110vh);">
+    <div id="title-top"></div>
+    <div class="row m-auto">   
+        <div class="mt-auto">
+            <h5 class="lang eng">
+                Which side of me do you want to kown?
+                <br>
+                <br>
+                <a href="/nova/research.html">> Research / Researcher</a>
+                <br>
+                <a href="/nova/design.html">> Design / Designer</a>
+            </h5>
+        </div>
+        <div class="col-12 hline-b"></div>
     </div>
   
 </div>
