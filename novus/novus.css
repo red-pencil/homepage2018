@@ -14,22 +14,9 @@ body {
     padding: var(--global-gap) var(--global-gap) 0;
 }
 
-.navi {
-    padding: var(--global-gap);
-}
-nav {
-    max-width: 960px;
-    margin: 0px auto;
-    color: black;
-    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-}
-
-.navbar-nav {
-    text-align: center;
-}
-
 .section {
-    height: 500px;
+    /*height: 500px;*/
+    min-height: 80px;
     padding: 0 var(--global-gap) var(--global-gap);
 
 }
@@ -45,12 +32,6 @@ nav {
     margin: 30px;
 }
 
-.container-fluid>.row, .container-fluid>nav {
-    border: var(--debug-border);
-    border-radius: var(--global-radius);
-    background: white;
-}
-
 .banner>.row, .footer>.row {
     max-width: 960px;
     /*background: #f0f0f0;*/
@@ -62,6 +43,12 @@ nav {
     background-color: var(--global-grey);
 }
 
+.container-fluid>.row, .container-fluid>nav {
+    border: var(--debug-border);
+    border-radius: var(--global-radius);
+    background: white;
+}
+
 .section>.row {
     height: 100%;
     max-width: 960px;
@@ -69,9 +56,9 @@ nav {
     padding: 20px;
     background-color: transparent;
 }
-
-.row.empty {
-    background: transparent;
+.section.empty>.row {
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    background-color: var(--global-grey);
 }
 .row.empty p{
     color: white;
@@ -115,6 +102,44 @@ h5>a:hover {
     color: dimgrey;
 }
 
+#content>.row:last-child {
+    /*border-bottom: 1px solid black;*/
+    padding-bottom: 5rem;
+
+}
+
+.sticky-mark {
+    position: -webkit-sticky;
+    position: sticky;
+
+    padding-bottom: 0px!important;
+
+    top: 72px;
+    margin-top: 0px;
+    border-top-width: 2px!important;
+    z-index: 5;
+}
+
+.navi {
+    padding: var(--global-gap);
+}
+
+.navi>.row {
+    padding: 0 5vw 1px;
+}
+
+nav {
+    max-width: 960px;
+    margin: 0px auto;
+    color: black;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+
 .list-inline {
     padding-left: 0;
     margin: 0;
@@ -123,7 +148,30 @@ h5>a:hover {
 .list-inline>li {
     display: inline-flex;
     align-items: center;
-    margin: 0 1em;
+
+}
+
+.link-list>li {
+    background-color: darkgray;
+    text-align: left;
+    padding: 0 10px;
+    margin: 2px 0px;
+    /*margin-right: 0px!important;*/
+    border-radius: 2px;
+    font-size: small;
+}
+.link-list>li:hover {
+    background: orange;
+}
+
+.link-list i, .link-list a {
+   color: white;
+}
+.tag-list>li {
+    background-color: #f0f0f0;
+    margin: 2px 0px;
+    padding: 0 5px;
+    font-size: small;
 }
 
 .social-list a {

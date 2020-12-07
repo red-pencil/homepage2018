@@ -6,6 +6,7 @@
 body {
     background: var(--global-color);
 }
+
 .banner {
     height: calc(100vh - 57px - 1rem);
 }
@@ -19,6 +20,7 @@ body {
 }
 .footer p{
     margin: 0;
+    color: white;
 }
 .banner>.row, .footer>.row {
     max-width: 960px;
@@ -41,7 +43,6 @@ body {
     background: white;
     z-index: 1;
 }
-
 
 .row.empty {
     background: transparent;
@@ -140,13 +141,8 @@ nav {
     margin: 0;
 }
 
-.list-inline>li {
-    display: inline-flex;
-    align-items: center;
-
-}
 .link-list>li {
-    background-color: darkgray;
+    background: darkgray;
     text-decoration: none;
     text-align: left;
     padding: 0 10px;
@@ -155,9 +151,12 @@ nav {
     border-radius: 2px;
     font-size: small;
 }
+
+.link-list>li:hover {
+    background: orange;
+}
 .link-list a{
     color: white;
-
 }
 .tag-list>li {
     background-color: #f0f0f0;
