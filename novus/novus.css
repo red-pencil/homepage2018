@@ -28,8 +28,9 @@ body {
     margin: 0;
 }
 
-.copyright p {
+.copyright {
     margin: 30px;
+    font-size: small;
 }
 
 .banner>.row, .footer>.row {
@@ -37,7 +38,7 @@ body {
     /*background: #f0f0f0;*/
     margin: 0px auto;
     height: 100%;
-    padding: 20px;
+    padding: 20px 15px;
     color: black;
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--global-grey);
@@ -74,7 +75,7 @@ body {
 }
 #title h5.eng {
     font-family: 'Roboto Condensed';
-    font-size: 2.5em;
+    font-size: 2em;
 }
 #title h5.chn {
     font-family: 'Noto Sans SC';
@@ -88,7 +89,7 @@ body {
 }
 .eng {
     font-family: 'Open Sans';
-    font-size: 1em;
+    font-size: 0.85em;
 }
 
 h5>a {
@@ -139,7 +140,6 @@ nav {
     text-align: center;
 }
 
-
 .list-inline {
     padding-left: 0;
     margin: 0;
@@ -148,7 +148,6 @@ nav {
 .list-inline>li {
     display: inline-flex;
     align-items: center;
-
 }
 
 .link-list>li {
@@ -178,6 +177,7 @@ nav {
     font-size: 2rem;
     color: black;
     text-decoration: none;
+    margin: 2px 10px;
 }
 .social-list a:hover {
     font-size: 2rem;

@@ -22,12 +22,15 @@ body {
     margin: 0;
     color: white;
 }
+.copyright {
+    font-size: small;
+}
 .banner>.row, .footer>.row {
     max-width: 960px;
     /*background: #f0f0f0;*/
     margin: 0 auto;
     height: 100%;
-    padding: 15px 10vw;
+    padding: 15px 5vw;
     color: black;
     border: var(--debug-border);    
 }
@@ -135,10 +138,14 @@ nav {
 .navbar-nav {
     text-align: center;
 }
-
 .list-inline {
     padding-left: 0;
     margin: 0;
+}
+
+.list-inline>li {
+    display: inline-flex;
+    align-items: center;
 }
 
 .link-list>li {
