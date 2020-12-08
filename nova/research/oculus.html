@@ -53,8 +53,8 @@
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">English</a>
-                <a class="dropdown-item" href="#">中文</a>
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
               </div>
           </li>
             
@@ -84,6 +84,7 @@
 
             </ul>    
         </div>
+        
         <div class="col-12 mt-2 mb-1">
             <h5 class="lang eng">Limitless Oculus: Visual Expansion by Animal-Inspired Visuomotor Modification</h5>
             <h5 class="lang chn">无尽之眼：基于仿生灵感修改视觉运动协调实现的视觉扩张</h5>
@@ -92,7 +93,7 @@
         <div class="col-12 hline-t mb-1">
         </div>
         
-        <div class="col-6 text-left">
+        <div class="col-6">
             <div id="lang-switch">
                 <div class="mb-0">
                 <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
@@ -102,7 +103,7 @@
         </div>
         
         <div class="col-6 text-right">
-            <a id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
         </div>
         
         <div class="col-12 hline-b mt-1"></div>
@@ -128,7 +129,6 @@
     </div>
     
     <div class="row justify-content-center no-gutters">
-
         <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/oculus/thesis-1.jpg">
         <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/oculus/thesis-2.png">
     </div>
@@ -150,7 +150,6 @@
     
     <div class="row justify-content-center no-gutters">
         <video class="col-12 mb-3" src="../../public/research/oculus/thesis.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
-
     </div>
     
     <div class="row justify-content-center no-gutters">
@@ -200,12 +199,6 @@
 <script>
         
     langSwitch("eng");
-
-    $(document).ready(function(){
-      $(".navbar-toggler").click(function(){
-        $(".navbar-toggler > .fa-bars, .navbar-toggler > .fa-times").toggleClass("fa-bars fa-times");
-      });
-    });
 
 </script>
 

@@ -85,14 +85,15 @@ h7 {
 }
 
 h5>a,p>a {
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
     color: black;
 }
-h5>a:hover,p>a:hover {
+h5>a:hover {
     text-decoration: underline;
-    text-underline-position: alphabetic;
-    text-decoration-style: dotted;
+    text-decoration-style: wavy;
     color: dimgrey;
+    text-underline-position: alphabetic;
 }
 
 #content>.row:last-child {
@@ -207,7 +208,11 @@ a:hover {
     line-height: 1rem;
 }
 #sticky-switch.active>i, #sticky-switch:hover>i {color: orangered;}
-.lang-s {color: lightgray;}
+.lang-s {
+    color: lightgray;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
 .lang-s.active {color: black;}
 .lang-s:hover {color: orangered;}
 
