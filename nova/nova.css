@@ -81,11 +81,11 @@ body {
     font-size: 1em;
 }
 
-h5>a {
+h5>a,p>a {
     text-decoration: none;
     color: black;
 }
-h5>a:hover {
+h5>a:hover,p>a:hover {
     text-decoration: underline;
     text-underline-position: alphabetic;
     text-decoration-style: dotted;
@@ -185,6 +185,16 @@ nav {
     color: orange;
     text-decoration: none;
 }
+
+a:hover {
+    cursor: pointer;
+}
+#sticky-switch>i {color: black;}
+#sticky-switch.active>i, #sticky-switch:hover>i {color: orangered;}
+.lang-s {color: lightgray;}
+.lang-s.active {color: black;}
+.lang-s:hover {color: orangered;}
+
 
 .navbar-toggler {
     /* customize own style*/
@@ -294,3 +304,6 @@ nav {
 #lig .ui-slider-range { background: #729fcf; }
 #lig .ui-slider-handle { border-color: #729fcf; }
 
+.hidden {
+    display: none;
+}
