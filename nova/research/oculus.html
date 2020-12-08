@@ -16,6 +16,7 @@
     
   <!-- core -->
   <link rel="stylesheet" href="../nova.css">
+  <script src="../nova.js"></script>
 
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
@@ -44,38 +45,54 @@
             <a class="nav-link" href="design.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">Vitae</a>
+            <a class="nav-link" href="cv.html">Vitæ</a>
           </li>
             
-            <!-- Lang Switch -->
-            <li class="nav-item dropdown">
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
               </a>
               <div class="dropdown-menu">
                 <a class="dropdown-item" href="#">English</a>
                 <a class="dropdown-item" href="#">中文</a>
               </div>
-            </li>
+          </li>
+            
         </ul>
-          <hr style="margin: 0; height: 8px">
       </div>
-        
     </nav>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 hline-b"></div>
+    </div>
     
 </div>
 
 
 <div class="container-fluid section sticky-mark" id="title">
-    <div class="row justify-content-center no-gutters">
+    <div class="row justify-content-center no-gutters pt-1">
         
-        <div class="col-12" style="border-top: 2px dashed grey;"></div>
+        <div class="col-4">
+            <span>Master Thesis</span>
+        </div>
         
-        <div class="col-md-10 col-sm-12 mt-3">
+        <div class="col-8 text-right">
+            <ul class="list-inline icon-list">
+                <li><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i></a></li>
+                <li><a href="../../public/research/oculus/thesis.mp4"><i class="fa fa-film"></i></a></li>
+                <li><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i></a></li>
+
+            </ul>    
+        </div>
+        <div class="col-12 mt-2 mb-1">
             <h5 class="lang eng">Limitless Oculus: Visual Expansion by Animal-Inspired Visuomotor Modification</h5>
             <h5 class="lang chn">无尽之眼：基于仿生灵感修改视觉运动协调实现的视觉扩张</h5>
         </div>
         
-        <div class="col-md-2 col-sm-12 mt-0 text-right">
+        <div class="col-12 hline-t mb-1">
+        </div>
+        
+        <div class="col-6 text-left">
             <div id="lang-switch">
                 <div class="mb-0">
                 <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
@@ -84,31 +101,19 @@
             </div>
         </div>
         
-        <div class="col-10 mb-3 mt-0">
-            <ul class="list-inline linklist link-list">
-                <li class="list-inline-item"><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i> PDF</a> </li>
-                <li class="list-inline-item"><a href="../../public/research/oculus/thesis.mp4"><i class="fa fa-film"></i> Video</a></li>
-                <li class="list-inline-item"><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i> Video</a></li>
-
-            </ul>    
+        <div class="col-6 text-right">
+            <a id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
         </div>
         
-        
-        <div class="col-2 mb-3 mt-0 text-right">
-            <a id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
-        </div>
-    
-        <div class="col-12" style="border-bottom: 2px dashed grey;"></div>
+        <div class="col-12 hline-b mt-1"></div>
         
     </div>  
 </div>
 
 <div class="container-fluid section" id="content">
     <div class="row justify-content-center no-gutters">
-        <div class="col-md-4 mb-3">
-        <h7 class="mb-3">Master Thesis</h7>
-        </div>
-        <div class="col-md-8 mb-3">
+
+        <div class="col-md-12 mb-3">
             <ul class="list-inline linklist tag-list">
                 <li>@Embodied Media Projecct</li>
                 
@@ -124,8 +129,8 @@
     
     <div class="row justify-content-center no-gutters">
 
-        <img class="col-8 img-fluid m-auto" src="../../public/research/oculus/thesis-1.jpg">
-        <img class="col-8 img-fluid m-auto" src="../../public/research/oculus/thesis-2.png">
+        <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/oculus/thesis-1.jpg">
+        <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/oculus/thesis-2.png">
     </div>
     
     <div class="row justify-content-center no-gutters">
@@ -146,6 +151,17 @@
     <div class="row justify-content-center no-gutters">
         <video class="col-12 mb-3" src="../../public/research/oculus/thesis.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
 
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 my-auto">
+            <ul class="list-inline linklist link-list">
+                <li class="list-inline-item"><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i> PDF</a> </li>
+                <li class="list-inline-item"><a href="../../public/research/oculus/thesis.mp4"><i class="fa fa-film"></i> Video</a></li>
+                <li class="list-inline-item"><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i> Video</a></li>
+
+            </ul>    
+        </div>
     </div>
    
     
@@ -181,68 +197,15 @@
     </div>
 </div>
     
-     <script>
+<script>
         
-        langSwitch("eng");
-        function langSwitch(c) {
-          var x, i;
-          x = document.getElementsByClassName("lang");
-          //if (c == "all") c = "";
-          for (i = 0; i < x.length; i++) {
-            w3AddClass(x[i], "hidden");
-              if (x[i].className.indexOf(c) > -1) w3RemoveClass(x[i], "hidden");
-          }
-        }
-         
-        function stickySwitch() {
-          var x, btn;
-          x = document.getElementById("title");
-          btn = document.getElementById("sticky-switch")
-            if (x.className.indexOf("sticky-mark") > -1) {
-                w3RemoveClass(x, "sticky-mark");
-                w3RemoveClass(btn, "active");}
-            else {
-                w3AddClass(x, "sticky-mark");
-                w3AddClass(btn, "active");}
-        }
+    langSwitch("eng");
 
-        function w3AddClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-          }
-        }
-
-        function w3RemoveClass(element, name) {
-          var i, arr1, arr2;
-          arr1 = element.className.split(" ");
-          arr2 = name.split(" ");
-          for (i = 0; i < arr2.length; i++) {
-            while (arr1.indexOf(arr2[i]) > -1) {
-              arr1.splice(arr1.indexOf(arr2[i]), 1);     
-            }
-          }
-          element.className = arr1.join(" ");
-        }
-        
-        var btnContainer = document.getElementById("lang-switch");
-            var btns = btnContainer.getElementsByClassName("lang-s");
-            for (var i = 0; i < btns.length; i++) {
-              btns[i].addEventListener("click", function(){
-                var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
-              });
-            }
-        
-        $(document).ready(function(){
-          $(".navbar-toggler").click(function(){
-            $(".navbar-toggler > .fa-bars, .navbar-toggler > .fa-times").toggleClass("fa-bars fa-times");
-          });
-        });
-
+    $(document).ready(function(){
+      $(".navbar-toggler").click(function(){
+        $(".navbar-toggler > .fa-bars, .navbar-toggler > .fa-times").toggleClass("fa-bars fa-times");
+      });
+    });
 
 </script>
 

@@ -66,6 +66,9 @@ body {
     font-family: 'Stint Ultra Condensed';
     font-size: 2.5em;
 }
+h7 {
+    font-family: 'Slabo 27px','Noto Serif SC';
+}
 #title h5.chn {
     font-family: 'Noto Serif SC';
     font-size: 1.5em;
@@ -148,6 +151,14 @@ nav {
     align-items: center;
 }
 
+.icon-list>li>a {
+    color: darkgrey;
+    margin: 0 0.3rem;
+}
+.icon-list>li>a:hover {
+    color: orange;
+}
+
 .link-list>li {
     background: darkgray;
     text-decoration: none;
@@ -157,6 +168,7 @@ nav {
     /*margin-right: 0px!important;*/
     border-radius: 2px;
     font-size: small;
+    line-height: 1rem;
 }
 
 .link-list>li:hover {
@@ -189,7 +201,11 @@ nav {
 a:hover {
     cursor: pointer;
 }
-#sticky-switch>i {color: black;}
+
+#sticky-switch>i {
+    color: black;
+    line-height: 1rem;
+}
 #sticky-switch.active>i, #sticky-switch:hover>i {color: orangered;}
 .lang-s {color: lightgray;}
 .lang-s.active {color: black;}
