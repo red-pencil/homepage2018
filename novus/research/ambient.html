@@ -16,6 +16,7 @@
 
   <!-- core -->
   <link rel="stylesheet" href="../novus.css">
+  <script src="../novus.js"></script>
 
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
@@ -35,60 +36,78 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../research.html">Research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="../design.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="design.html">Design</a>
+            <a class="nav-link" href="../cv.html">Vitæ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">Vitae</a>
-          </li>    
+            
+                        
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
         </ul>
       </div>
         
-    </nav> 
-
+    </nav>
 </div>
 
 
-<div class="container-fluid section sticky-mark empty pt-2" id="title">
+<div class="container-fluid section empty header sticky-mark" id="header">
     <div class="row justify-content-center no-gutters">
+        
+        <div class="col-4">
+            <span class="type">CHI '18</span>
+        </div>
+        
+        <div class="col-8 text-right">
+            <ul class="list-inline icon-list">
+                <li><a href="https://dl.acm.org/citation.cfm?doid=3170427.3186483"><i class="fa fa-quote-left"></i></a></li>
+                <li><a href="../../public/research/ambient/ambient.pdf"><i class="fa fa-book"></i></a>
+                </li>
+                <li>
+                <a href="../../public/research/ambient/chi2018.mp4"><i class="fa fa-film"></i></a>
+                </li>
+                <li>
+                <a href="https://youtu.be/Ewe2X663NNE"><i class="fa fa-youtube-play"></i></a>
+                </li>
+            </ul>    
+        </div>
         
         <div class="col-12 mt-3">
             <h5 class="lang eng">Ambient: Facial Thermal Feedback in Remotely Operated Applications</h5>
             <h5 class="lang chn">氛围：远程操作应用中的面部温度反馈</h5>
         </div>
         
-        <div class="col-12 m-auto mx-auto">
-            <ul class="list-inline linklist link-list mb-3 mt-3">
-                <li class="list-inline-item">
-                  <a href="https://dl.acm.org/citation.cfm?doid=3170427.3186483"><i class="fa fa-quote-left"></i> DOI</a>
-                </li>
-                <li class="list-inline-item">
-                <a href="../../public/research/ambient/ambient.pdf"><i class="fa fa-book"></i> PDF</a>
-                </li>
-                <li class="list-inline-item">
-                <a href="../../public/research/ambient/chi2018.mp4"><i class="fa fa-film"></i> Video</a>
-                </li><li class="list-inline-item">
-                <a href="https://youtu.be/Ewe2X663NNE"><i class="fa fa-youtube-play"></i> Video</a>
-                </li>
-
-            </ul>    
+        <div class="col-6">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
         </div>
-        <!--<div class="col-12 text-center"><a class="fa fa-arrow-up hide">Hide</a></div>-->
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+        </div>
         
     </div>  
 </div>
 
-<div class="container-fluid section" id="content">
+<div class="container-fluid section body" id="content">
     <div class="row justify-content-center no-gutters">
-        <div class="col-md-4 mb-3">
-        <h7 class="mb-3">CHI '18</h7>
-        </div>
-        <div class="col-md-8 mb-3">
+
+        <div class="col-md-12">
             <ul class="list-inline linklist tag-list">
                 <li>@Embodied Media Projecct</li>
                 
@@ -104,8 +123,8 @@
     
     <div class="row justify-content-center no-gutters">
 
-        <img class="col-8 img-fluid m-auto" src="../../public/research/ambient/chi2018-1.jpg">
-        <img class="col-8 img-fluid m-auto" src="../../public/research/ambient/chi2018-2.jpg">
+        <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/ambient/chi2018-1.jpg">
+        <img class="col-md-8 col-sm-12 img-fluid m-auto" src="../../public/research/ambient/chi2018-2.jpg">
     </div>
     
     <div class="row justify-content-center no-gutters">
@@ -131,6 +150,21 @@
         <i class="fa fa-book text-warning"></i>
         MHD Yamen Saraiji, Roshan Lalintha Peiris, <b>Lichao Shen</b>, Kouta Minamizawa, and Susumu Tachi. 2018. Ambient: Facial Thermal Feedback in Remotely Operated Applications. In <em>Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems</em> (CHI EA 's18). ACM, New York, NY, USA, Paper D321, 4 pages. DOI: <a href=https://doi.org/10.1145/3170427.3186483>https://doi.org/10.1145/3170427.3186483</a>
         </p>
+        <div class="col-12 m-auto">
+            <ul class="list-inline linklist link-list mb-3 mt-3">
+                <li class="list-inline-item">
+                  <a href="https://dl.acm.org/citation.cfm?doid=3170427.3186483"><i class="fa fa-quote-left"></i> DOI</a>
+                </li>
+                <li class="list-inline-item">
+                <a href="../../public/research/ambient/ambient.pdf"><i class="fa fa-book"></i> PDF</a>
+                </li>
+                <li class="list-inline-item">
+                <a href="../../public/research/ambient/chi2018.mp4"><i class="fa fa-film"></i> Video</a>
+                </li><li class="list-inline-item">
+                <a href="https://youtu.be/Ewe2X663NNE"><i class="fa fa-youtube-play"></i> Video</a>
+                </li>
+            </ul>    
+        </div>
     </div>
     
 </div>
@@ -161,6 +195,12 @@
 
         </div>
 </div>
+    
+<script>
+        
+    langSwitch("eng");
+
+</script>
 
 </body>
 </html>

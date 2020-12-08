@@ -28,11 +28,6 @@ body {
     margin: 0;
 }
 
-.copyright {
-    margin: 30px;
-    font-size: small;
-}
-
 .banner>.row, .footer>.row {
     max-width: 960px;
     /*background: #f0f0f0;*/
@@ -47,15 +42,14 @@ body {
 .container-fluid>.row, .container-fluid>nav {
     border: var(--debug-border);
     border-radius: var(--global-radius);
-    background: white;
+    background: transparent;
 }
 
 .section>.row {
     height: 100%;
     max-width: 960px;
     margin: 0px auto;
-    padding: 20px;
-    background-color: transparent;
+    padding: 1rem;
 }
 .section.empty>.row {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -64,20 +58,44 @@ body {
 .row.empty p{
     color: white;
 }
+.header {
+    padding-top: 0px;
+}
+#header>.row {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#header>.row>div:nth-last-child(3) {
+    margin: 1rem;
+}
+
+#contacts {
+    padding: 20px;
+    margin-bottom: var(--global-gap);
+    color: dimgray;
+}
+
+#copyright {
+    padding: 20px;
+    font-size: small;
+}
+
+/*
 #title {
     /*padding-top: 15px;*/
-}
+/*}
 #title>.row:first-child {
-    /*border-top: 2px solid black;*/
+    /*border-top: 2px solid black;*//*
     padding-top:1px;
     padding-bottom:1px;
 
-}
-#title h5.eng {
+}*/
+#header h5.eng {
     font-family: 'Roboto Condensed';
     font-size: 2em;
 }
-#title h5.chn {
+#header h5.chn {
     font-family: 'Noto Sans SC';
     font-size: 1.5em;
 }
@@ -91,18 +109,28 @@ body {
     font-family: 'Open Sans';
     font-size: 0.85em;
 }
-
-h5>a {
-    text-decoration: none;
+.section p {
+    font-family: 'Open Sans','Noto Sans SC';
+    font-size: 0.85em;
+}
+.section b {
+    font-family: 'Noto Sans SC';
+}
+h5>a,p>a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    
     color: black;
 }
 h5>a:hover {
     text-decoration: underline;
     text-underline-position: alphabetic;
-    text-decoration-style: dotted;
+    text-decoration-style: wavy; 
     color: dimgrey;
 }
-
+#content>.row:first-child {
+    padding-top: 0;
+}
 #content>.row:last-child {
     /*border-bottom: 1px solid black;*/
     padding-bottom: 5rem;
@@ -113,9 +141,7 @@ h5>a:hover {
     position: -webkit-sticky;
     position: sticky;
 
-    padding-bottom: 0px!important;
-
-    top: 72px;
+    top: 75px;
     margin-top: 0px;
     border-top-width: 2px!important;
     z-index: 5;
@@ -140,6 +166,8 @@ nav {
     text-align: center;
 }
 
+/*----- LIST -----*/
+
 .list-inline {
     padding-left: 0;
     margin: 0;
@@ -150,6 +178,16 @@ nav {
     align-items: center;
 }
 
+.icon-list>li>a {
+    color: darkgrey;
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    line-height: 1rem;
+}
+.icon-list>li>a:hover {
+    color: orange;
+}
+
 .link-list>li {
     background-color: darkgray;
     text-align: left;
@@ -157,8 +195,9 @@ nav {
     margin: 2px 0px;
     /*margin-right: 0px!important;*/
     border-radius: 2px;
-    font-size: small;
+    /*font-size: small;*/
 }
+
 .link-list>li:hover {
     background: orange;
 }
@@ -175,7 +214,7 @@ nav {
 
 .social-list a {
     font-size: 2rem;
-    color: black;
+    color: dimgray;
     text-decoration: none;
     margin: 2px 10px;
 }
@@ -184,6 +223,33 @@ nav {
     color: orange;
     text-decoration: none;
 }
+
+/*----- GENERAL -----*/
+
+a:hover {
+    cursor: pointer;
+}
+.hidden {
+    display: none;
+}
+
+/*----- SWITCH -----*/
+
+.sticky-s>i {
+    color: black;
+    line-height: 1rem;
+}
+.sticky-s.active>i, .sticky-s:hover>i {
+    color: orangered;
+}
+.lang-s {
+    color: darkgray;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+}
+.lang-s.active {color: black;}
+.lang-s:hover {color: orangered;}
+
 .navbar-toggler {
     /* customize own style*/
     border-radius: 5px;
@@ -219,4 +285,160 @@ nav {
     right: 0;
     bottom: 0;
     margin: auto;
+}
+
+
+
+/*----- CARD -----*/
+
+.card-container-outer {           
+    /*padding: 5vh 3vw;*/
+    border: 0px solid red;
+    
+    position: relative;
+    display: flex;
+    align-items: center;
+    align-content: space-around;
+
+}
+
+.card-container {
+    border: 0px solid black;
+    
+    position: relative;
+    margin: 5vw
+}
+
+.card-body {
+    border: 0px solid blueviolet;
+    
+    position: relative;
+    padding: 0;
+    margin: 0 15px;
+    z-index: 4;
+    
+    background: white;
+    border-radius: 15px;
+}
+.card-body img {
+    border: 0px solid aqua;
+    border-radius: 15px;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    -webkit-filter: opacity(0.7);
+    filter: opacity(0.7);
+}
+      
+.card-note-main {
+    position: relative;
+    margin: 5px 15px 0;
+    
+    color: black;
+    font-size: 1.5rem;
+    line-height: 30px;
+    font-family: 'Roboto Condensed';
+    font-weight: 300;
+}
+
+.card-note-sub {
+    position: relative;
+    margin: 0 15px 5px;
+    
+    color: lightgray;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+    font-family: 'Roboto Condensed';
+    font-weight: 100;
+}
+
+.card-note-side {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 5px 0;
+    z-index: 5;
+    
+    color: white;
+    font-size: 1rem;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-family: 'Open Sans';
+    
+    background-color: grey;
+    box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+      
+.card-container:hover .overlay {
+    opacity: 0.95;
+}
+
+.card-container .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /*margin: 1rem 0.5rem 1.5rem 0.5rem;*/
+    padding: 1rem;
+    z-index: 3;
+    
+    border-radius: 15px;
+
+    opacity: 0;
+    transition: .3s ease;
+    background: dimgrey;
+
+    color: white;  
+    text-align: center;       
+    font-size: 0.7rem;
+    font-family: 'Open Sans';
+    
+    cursor: pointer;
+
+}
+
+.overlay h4{
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.overlay p{
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+.overlay a{
+    font-size: 1rem;
+    margin: 0 0.2rem;
+    color: white;
+}
+
+/*----- CARD -----*/
+
+.float-background {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0px solid red;
+    overflow: hidden;
+    display: flex;
+    
+}
+
+.float-background>span {
+    margin: auto;
+    font-size: 3rem;
+    color: lightgray;
+    /*text-shadow: 5px 5px 5px #f0f0f0;*/
+    font-family: "Open Sans";
+    font-weight: 900;
+    letter-spacing: 0.3rem;
+
 }

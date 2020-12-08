@@ -10385,8 +10385,7 @@ body {
 }
 
 .card-container-outer>a:hover {
-    text-decoration: none;
-    
+    text-decoration: none;  
 }
 
 .card-container {
@@ -10453,7 +10452,6 @@ body {
     right: 0;
     /*margin: 1rem 0.5rem 1.5rem 0.5rem;*/
     z-index: 3;
-
     opacity: 0;
     transition: .3s ease;
     background: blueviolet;
