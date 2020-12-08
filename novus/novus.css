@@ -6,7 +6,9 @@
     --global-grey: #f0f0f0;
 } 
 body {
-    background: white;
+    background: #f8f9fa;
+    /*background: red;*/
+    background: var(--global-grey);
 }
 
 .banner {
@@ -34,15 +36,18 @@ body {
     margin: 0px auto;
     height: 100%;
     padding: 20px 15px;
-    color: black;
+    
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     background-color: var(--global-grey);
+    color: black;
+    background: white;
 }
 
 .container-fluid>.row, .container-fluid>nav {
     border: var(--debug-border);
     border-radius: var(--global-radius);
-    background: transparent;
+    /*background: transparent;*/
+    /*background: white;*/
 }
 
 .section>.row {
