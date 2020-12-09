@@ -53,16 +53,16 @@ body {
 .row.empty p{
     color: white;
 }
-#title {
+.header {
     /*padding-top: 15px;*/
 }
-#title>.row:first-child {
+.header>.row:first-child {
     /*border-top: 2px solid black;*/
     padding-top:1px;
     padding-bottom:1px;
 
 }
-#title h5.eng {
+.header h5.eng {
     font-family: 'Stint Ultra Condensed';
     font-size: 2.5em;
 }
@@ -518,6 +518,49 @@ a:hover {
     padding: 0;
 }
 
-.overlay-content {
-    margin: auto 0;
+/* */
+.mycard-content {
+    display: flex;
+    align-items: center; 
+    border: 0px solid black;
+}
+
+.mycard-text {
+    padding: 1rem;
+    border-right: 10px solid coral;
+}
+.mycard-text p {
+    font-family: 'Slabo 27px','Noto Serif SC';
+    margin: 0;
+    color: dimgray;
+}
+.mycard-text h4 {
+    font-family: 'Stint Ultra Condensed';
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    line-height: 2.5rem;
+}
+.mycard-img {
+    border: 1px solid black;
+}
+.mycard-img>div {
+    width:100%;
+    padding-top: 60%;
+}
+
+.mycard-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+.portfolio:nth-child(odd) .mycard-text {
+    text-align: right;
+}
+.portfolio:nth-child(even) .mycard-text {
+    text-align: left;
 }
