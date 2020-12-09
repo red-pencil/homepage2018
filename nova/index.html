@@ -53,11 +53,12 @@
         $( "body" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
         $( ".navi" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
       }
+      
       $(function() {
         $( "#hue, #sat, #lig" ).slider({
           orientation: "horizontal",
           range: "min",
-          max: 255,
+          max: 360,
           value: 127,
           slide: refreshSwatch,
           change: refreshSwatch
@@ -95,9 +96,7 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
+
           <li class="nav-item">
             <a class="nav-link" href="research.html">Research</a>
           </li>
@@ -138,6 +137,7 @@
     
 <div class="container-fluid section" id="content">
     <div class="row justify-content-center no-gutters pt-3 pb-3">
+
         <div id="hue" class="col-lg-7 col-sm-7 m-auto"></div>
         <div id="swatch" class="ui-widget-content ui-corner-all col-lg-3 col-sm-3"></div>
     </div>

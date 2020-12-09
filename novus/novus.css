@@ -8,7 +8,7 @@
 body {
     background: #f8f9fa;
     /*background: red;*/
-    background: var(--global-grey);
+    /*background: var(--global-grey);*/
 }
 
 .banner {
@@ -20,6 +20,7 @@ body {
     /*height: 500px;*/
     min-height: 80px;
     padding: 0 var(--global-gap) var(--global-gap);
+    z-index: 2;
 
 }
 .footer {
@@ -79,8 +80,13 @@ body {
     padding: 20px;
     margin-bottom: var(--global-gap);
     color: dimgray;
+    font-size: 0.9rem;
 }
 
+#contacts>div:first-child {
+    padding-bottom: 1rem;
+    
+}
 #copyright {
     padding: 20px;
     font-size: small;
@@ -98,29 +104,25 @@ body {
 }*/
 #header h5.eng {
     font-family: 'Roboto Condensed';
-    font-size: 2em;
+    font-size: 1.6rem;
 }
 #header h5.chn {
     font-family: 'Noto Sans SC';
-    font-size: 1.5em;
+    font-size: 1.7rem;
+    font-weight: 400;
 }
 
 .chn {
     font-family: 'Noto Sans SC';
     font-weight: 200;
     letter-spacing: 0.01em;
+    font-size: 1rem;
 }
 .eng {
     font-family: 'Open Sans';
     font-size: 0.85em;
 }
-.section p {
-    font-family: 'Open Sans','Noto Sans SC';
-    font-size: 0.85em;
-}
-.section b {
-    font-family: 'Noto Sans SC';
-}
+
 h5>a,p>a {
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -141,7 +143,9 @@ h5>a:hover {
     padding-bottom: 5rem;
 
 }
-
+.quote {
+    font-size: small;
+}
 .sticky-mark {
     position: -webkit-sticky;
     position: sticky;
@@ -221,7 +225,8 @@ nav {
     font-size: 2rem;
     color: dimgray;
     text-decoration: none;
-    margin: 2px 10px;
+    margin: 2px 0.5rem;
+
 }
 .social-list a:hover {
     font-size: 2rem;
@@ -311,7 +316,7 @@ a:hover {
     border: 0px solid black;
     
     position: relative;
-    margin: 5vw
+    margin: 0 5vw 5vh
 }
 
 .card-body {
@@ -319,7 +324,7 @@ a:hover {
     
     position: relative;
     padding: 0;
-    margin: 0 15px;
+    margin: 0;
     z-index: 4;
     
     background: white;
@@ -335,18 +340,18 @@ a:hover {
       
 .card-note-main {
     position: relative;
-    margin: 5px 15px 0;
+    margin: 5px 0 0;
     
     color: black;
     font-size: 1.5rem;
     line-height: 30px;
     font-family: 'Roboto Condensed';
-    font-weight: 300;
+    font-weight:600;
 }
 
 .card-note-sub {
     position: relative;
-    margin: 0 15px 5px;
+    margin: 0 0 5px;
     
     color: lightgray;
     font-size: 30px;
@@ -356,6 +361,22 @@ a:hover {
     font-weight: 100;
 }
 
+.card-note-side {
+    position: absolute;
+    top: 50px;
+    left: calc(-1rem - 10px);
+    padding: 0;
+    z-index: 2;
+    
+    color: black;
+    font-size: 1rem;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+    font-family: 'Open Sans';
+    font-style: italic;
+}
+
+/*
 .card-note-side {
     position: absolute;
     top: 55px;
@@ -373,6 +394,7 @@ a:hover {
     box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 }
+*/
       
 .card-container:hover .overlay {
     opacity: 0.95;
@@ -434,16 +456,19 @@ a:hover {
     border: 0px solid red;
     overflow: hidden;
     display: flex;
-    
+    z-index: -1;
 }
 
 .float-background>span {
     margin: auto;
-    font-size: 3rem;
-    color: lightgray;
+    font-size: 12vw;
+    letter-spacing: 5vw;
+    color: #f0f0f0;
+    color: white;
+    text-shadow: 1px 5px 5px #f0f0f0;
     /*text-shadow: 5px 5px 5px #f0f0f0;*/
     font-family: "Open Sans";
     font-weight: 900;
-    letter-spacing: 0.3rem;
-
+    
+    z-index: -1;
 }

@@ -11,7 +11,7 @@ function langSwitch(c) {
     }
 }
 
-    function stickySwitch() {
+function stickySwitch() {
     var x, btn;
     x = document.getElementById("header");
     btn = document.getElementById("sticky-switch")
@@ -23,7 +23,7 @@ function langSwitch(c) {
         w3AddClass(btn, "active");}
     }
 
-    function w3AddClass(element, name) {
+function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
@@ -32,7 +32,7 @@ function langSwitch(c) {
     }
     }
 
-    function w3RemoveClass(element, name) {
+function w3RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
@@ -53,3 +53,5 @@ function langSwitch(c) {
         this.className += " active";
       });
     }
+
+

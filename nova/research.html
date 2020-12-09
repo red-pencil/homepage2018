@@ -1,281 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Lichao</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!--
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 -->
-  <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js">
-    </script>
+  <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     
-    
-      <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="jqueryui/style.css">
-    
-    <style>
-        
-        :root {
-            --debug-border: 0px pink solid;
-            --global-color: hsla(16, 100%, 65.7%, 100%);
-        } 
-        body {
-            background: var(--global-color);
-        }
-        .banner {
-            height: calc(100vh - 56px);
-        }
-        
-        .section {
-            min-height: 500px;
-            
-        }
-        .footer {
-            min-height: 100px;
-        }
-        .footer p{
-            margin: 0;
-        }
-        .banner>.row, .footer>.row {
-            max-width: 960px;
-            /*background: #f0f0f0;*/
-            margin: 0 auto;
-            height: 100%;
-            padding: 20px;
-            color: white;
-            border: var(--debug-border);    
-        }
-        .mypt-5 {
-            
-        }
-        .section>.row {
-            height: 100%;
-            max-width: 960px;
-            margin: 0px auto;
-            padding: 20px;
-            border: solid gray;
-            border-width: 0 2px;
-            /*background: #f0f0f0; */
-            background: white;
-        }
-        
-        div:nth-last-child(2) .row {
-             border-width: 0 1px 1px;
-        }
-        .sticky-box {
-            position: -webkit-sticky;
-            position: sticky;
-            height: 100px;
-            margin-bottom: 30px;
-            background: blue;
-            top: 20px;
-        }
-        .navi {
-            background-color: var(--global-color);
-        }
-        
-        nav {
-            max-width: 960px;
-            margin: 0px auto;
-            border: solid gray;
-            border-width: 1px 1px 0;
-            
-            background-color: #f0f0f0;
-            color: black;
+  <!-- core -->
+  <link rel="stylesheet" href="nova.css">
+  <script src="nova.js"></script>
 
-        }
-        
-        .navbar {
-            /*padding: auto 20px;*/
-            background-color: var(--global-color);
-
-        }
-        
-        
-        .navbar-nav {
-            text-align: center;
-        }
-        
-        .list-inline {
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        .list-inline>li {
-            display: inline-flex;
-            align-items: center;
-            margin: 0 1em;
-        }
-        
-        .social-list a {
-            font-size: 2rem;
-            color: white;
-            text-decoration: none;
-        }
-        .social-list a:hover {
-            font-size: 2rem;
-            color: orange;
-            text-decoration: none;
-        }
-        
-        .navbar-toggler {
-            /* customize own style*/
-            border-radius: 0;
-            border: 0px
-        }
-
-        .logo {
-            width: 20vw;
-            height: 20vh;
-            position: relative;
-        }
-        .logo>svg {
-            max-width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            margin: auto;
-        }
-        
-        .logo>svg>path {
-            /*
-            fill-opacity: 0.2;
-            fill: white;*/
-            stroke: white;
-            stroke-linecap:round;
-            stroke-linejoin:round;
-            stroke-width: 21;
-            stroke-dasharray: 2500;
-            stroke-dashoffset: 2500;
-            animation: draw 8s infinite linear;
-        }
-        
-        .logo>object {   
-            animation: shiftlogo 8s infinite linear; width: 90%;
-            height: 90%;
-            opacity:1;
-        }
-        /* animation */
-        /* Safari 4.0 - 8.0 */
-        @-webkit-keyframes shiftlogo {
-            0% {opacity: 0;}
-            50% {opacity: 0;}
-            60% {opacity: 1;}
-            90% {opacity: 1;}
-            100% {opacity: 0;}
-        }
-        /* Standard syntax */
-        @keyframes shiftlogo {
-            0% {opacity: 0;}
-            50% {opacity: 0;}
-            60% {opacity: 1;}
-            90% {opacity: 1;}
-            100% {opacity: 0;}
-        }
-        @-webkit-keyframes draw {
-            20% {stroke-dashoffset:10px; stroke-opacity:1;}
-            40% {opacity:1;}
-            50% {opacity:0;}
-            100% {opacity:0;}
-        }
-
-        @keyframes draw {
-            20% {stroke-dashoffset:10px; stroke-opacity:1;}
-            40% {opacity:1;}
-            50% {opacity:0;}
-            100% {opacity:0;}
-        }
-
-        
-    /* pallette */
-        #hue, #sat, #lig {
-            float: left;
-            clear: left;
-            width: 300px;
-            margin: 15px;
-          }
-        #swatch {
-            width: 120px;
-            height: 100px;
-            margin-top: 18px;
-            margin-left: 350px;
-            background-image: none;
-        }
-        #hue .ui-slider-range { background: #ef2929; }
-        #hue .ui-slider-handle { border-color: #ef2929; }
-        #sat .ui-slider-range { background: #8ae234; }
-        #sat .ui-slider-handle { border-color: #8ae234; }
-        #lig .ui-slider-range { background: #729fcf; }
-        #lig .ui-slider-handle { border-color: #729fcf; }
-    
-    </style>
-    
-
-      <script>
-          /* pallette */
-          function hexFromHSL(h, s, l) {
-            var hex = [
-              h.toString(),
-              s.toString(),
-              l.toString()
-            ];
-            $.each( hex, function( nr, val ) {
-              if ( val.length === 1 ) {
-                hex[ nr ] = "0" + val;
-              }
-            });
-            return hex.join( "" ).toUpperCase();
-          }
-          function refreshSwatch() {
-            var hue = $( "#hue" ).slider( "value" ),
-              sat = $( "#sat" ).slider( "value" ),
-              lig = $( "#lig" ).slider( "value" )
-            $( "#swatch" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
-            $( ".container-fluid" ).css( "background-color", "hsla(" + hue + ", 100%, 65.7%, 100%)" );
-
-          }
-          $(function() {
-            $( "#hue, #sat, #lig" ).slider({
-              orientation: "horizontal",
-              range: "min",
-              max: 255,
-              value: 127,
-              slide: refreshSwatch,
-              change: refreshSwatch
-            });
-            $( "#hue" ).slider( "value", 16 );
-            $( "#sat" ).slider( "value", 0 );
-            $( "#lig" ).slider( "value", 0 );
-          });
-      </script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
 </head>
 <body>
-
-<!--
-<div class="container-fluid banner">
-    <div class="row">
-        <div class="m-auto">
-            <a href="#first" class="stretched-link"></a>
-            <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" height="100%" id="logosvg"  x="0px" y="0px" viewBox="0 0 540 660">
-                <path fill="none" stroke="black" stroke-width="5" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
-            </svg>
-            <object data="logo/logo-1-3-new.svg">Your browser does not support SVGs</object>
-            </div>
-        </div>
-    </div>
-</div>
 
 <div class="container-fluid navi sticky-top pt-3">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
@@ -289,42 +38,97 @@
           <li class="nav-item home">
             <a class="nav-link" href="research.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="design.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">Vitae</a>
-          </li>    
+            <a class="nav-link" href="cv.html">Vitæ</a>
+          </li>
+            
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
         </ul>
-          <hr style="margin: 0; height: 8px">
       </div>
-        
     </nav>
     
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 hline-b"></div>
+    </div>
+    
 </div>
--->
 
-<div class="container-fluid section" id="first">
-    <div class="row sticky-box">
+
+<div class="container-fluid section sticky-mark" id="title">
+    <div class="row justify-content-center no-gutters pt-1">
         
-        
-        <div class="col-lg-12 col-xs-12 mb-3 mt-3">
-        <h5>AH '18 Best Demo</h5>
+        <div class="col-12">
+            <h5 class="lang eng">Research:</h5>
+            <h5 class="lang chn">研究：</h5>
         </div>
         
-        <div class="col-lg-12 col-xs-12 mb-4">
-         <h1>Unconstrained Neck</h1>
+        <div class="col-12 mb-2">
+            <span class="lang eng type">My research focus on <b>Human-Computer Interaction</b> (HCI), while including Human Augmentation, Virtual Reality/Augmented Reality, Robotics, Haptics, User Interface, etc.</span>
+            <span class="lang chn type">我的研究围绕人机交互(HCI)开展，具体方向包括人类增强、虚拟现实、增强现实、机器人、触觉、用户界面等。</span>            
         </div>
-        <hr>
-        <div class="col-lg-6 col-sm-6 m-auto mx-auto">
-            <ul class="list-inline linklist mb-3 mt-3">
+
+        <div class="col-12 hline-t mb-1">
+        </div>
+        
+        <div class="col-6">
+            <div id="lang-switch">
+                <div class="mb-0">
+                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
+        </div>
+        
+        <div class="col-12 hline-b mt-1"></div>
+        
+    </div>  
+</div>
+
+<div class="container-fluid section" id="content">
+    
+    <div class="row justify-content-center no-gutters">
+
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        
+   </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <video class="col-12 mv-3" src="../../public/research/uneck/ah2018.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
+
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <p class="col-12">
+        <i class="fa fa-book text-warning"></i>
+        <b>Lichao Shen</b>, Mhd Yamen Saraji, Kai Kunze, and Kouta Minamizawa. 2018. Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck. In <i>Proceedings of the 9th Augmented Human International Conference</i> (<i>AH '18</i>). Association for Computing Machinery, New York, NY, USA, Article 38, 1–2. DOI:<a href="https://doi.org/10.1145/3174910.3174955">https://doi.org/10.1145/3174910.3174955</a>
+            
+        </p>
+        <div class="col-12 my-auto">
+            <ul class="list-inline linklist link-list mb-3 mt-3">
                 <li class="list-inline-item">
                 <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i> Best Demo Award</a>
                 </li>
-                <br>
                 <li class="list-inline-item">
                     <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i> DOI</a>
                 </li>
@@ -332,89 +136,20 @@
                     <a href="../../public/research/uneck/unconstrained%20neck.pdf"><i class="fa fa-book"></i> PDF</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="videos/ah2018.mp4"><i class="fa fa-film"></i> Video</a>
+                    <a href="../../public/research/uneck/ah2018.mp4"><i class="fa fa-film"></i> Video</a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="videos/ah2018.mp4"><i class="fa fa-youtube-play"></i> Video</a>
+                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube-play"></i> Video</a>
                 </li>
 
-            </ul>
+            </ul>    
         </div>
-        
-        <div class="col-lg-6 col-sm-6 m-auto mx-auto">
-            <p class="mb-3 mt-3">
-                @Embodied Media Projecct
-                <br>
-                #human-computer-interaction
-                #robotics
-                #augmented-reality
-                #visuomotor-coordination
-                #wearable
-            </p>
-        </div>
-
-        <h3>Research</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p> 
-    
     </div>
-    <div class="row sticky-box">
-
-        <h3>Content 1-2</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p> 
     
-    </div>
-</div>
-    
-<div class="container-fluid section" id="first">
-    <div class="row sticky-box">
-
-        <div class="col-md-12 content">
-        <h3>Content 1</h3>
-        <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-        <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-        <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
-        
-        </div>
-        
-    
-    </div>
-  
-</div>
-    
-<div class="container-fluid section">
-    <div class="row sticky-box">
-        <div class="position-relative">
-      <h3>Content 2 </h3>
-      <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-      <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-      <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
-        
-        <a href="#" class="btn btn-primary stretched-link">See Profile</a>
-            </div>
-    </div>
-</div>
-    
-<div class="container-fluid section">
-    <div class="row">
-      <h3>Content 3</h3>
-      <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).</p>
-      <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-      <p>Tip: You can also remove the .navbar-expand-md class to ALWAYS hide navbar links and display the toggler button.</p>
-        
-        
-            <div id="hue"></div>
- 
-            <div id="swatch" class="ui-widget-content ui-corner-all"></div>
-        
-    </div>
 </div>
     
 <div class="container-fluid footer">
-    <div class="row contacts">
+    <div class="row pb-0 contacts">
     <div class="col-md-6 col-sm-12 col-xs-12 text-center m-auto">
         <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
     </div>
@@ -439,7 +174,14 @@
     </div>
 </div>
 
+ <script>
+        
+    langSwitch("eng");
+
+</script>
+
 </body>
 </html>
+
 
 
