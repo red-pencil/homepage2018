@@ -1,4 +1,4 @@
-function langSwitch(c) {
+function langSwitchOld(c) {
     var x, i;
     x = document.getElementsByClassName("lang");
     btn = document.getElementsByClassName("lang-s")
@@ -11,7 +11,7 @@ function langSwitch(c) {
     }
 }
 
-    function stickySwitch() {
+function stickySwitchOld() {
     var x, btn;
     x = document.getElementById("header");
     btn = document.getElementById("sticky-switch")
@@ -21,31 +21,51 @@ function langSwitch(c) {
     else {
         w3AddClass(x, "sticky-mark");
         w3AddClass(btn, "active");}
-    }
+}
 
-    function w3AddClass(element, name) {
+
+
+function langSwitch() {
+    var langswitchs = document.getElementsByClassName("lang-s");
+        for (var i = 0; i < langswitchs.length; i++) {
+            langswitchs[i].classList.toggle('active');
+        }
+}
+
+
+
+function stickySwitch() {
+    var stickyswitchs = document.getElementsByClassName("sticky-s");
+    var headers = document.getElementsByClassName("header");
+        for (var i = 0; i < stickyswitchs.length; i++) {
+            stickyswitchs[i].classList.toggle('active');
+            headers[i].classList.toggle('sticky-mark');                                   
+        }
+}
+    
+function w3AddClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
     for (i = 0; i < arr2.length; i++) {
     if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
     }
-    }
+}
 
-    function w3RemoveClass(element, name) {
+function w3RemoveClass(element, name) {
     var i, arr1, arr2;
     arr1 = element.className.split(" ");
     arr2 = name.split(" ");
     for (i = 0; i < arr2.length; i++) {
     while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
     }
     }
     element.className = arr1.join(" ");
-    }
+}
 
-    var btnContainer = document.getElementById("lang-switch");
-    var btns = btnContainer.getElementsByClassName("lang-s");
+var btnContainer = document.getElementById("lang-switch");
+var btns = btnContainer.getElementsByClassName("lang-s");
     for (var i = 0; i < btns.length; i++) {
       btns[i].addEventListener("click", function(){
         var current = document.getElementsByClassName("active");

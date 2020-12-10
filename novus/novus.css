@@ -221,17 +221,29 @@ nav {
     font-size: small;
 }
 
+.footer .social-list {
+    margin: 1rem auto 1rem;
+}
+
 .social-list a {
     font-size: 2rem;
     color: dimgray;
     text-decoration: none;
     margin: 2px 0.5rem;
-
 }
+
 .social-list a:hover {
-    font-size: 2rem;
     color: orange;
-    text-decoration: none;
+}
+
+.header .social-list span {
+    font-size: 1rem;
+}
+.header .social-list a{
+    display: block;
+    text-align: center;
+    justify-content: center;
+    
 }
 
 /*----- GENERAL -----*/

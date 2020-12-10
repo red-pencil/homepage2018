@@ -526,9 +526,21 @@ a:hover {
 }
 
 .mycard-text {
-    padding: 1rem;
-    border-right: 10px solid coral;
+    width: 100%;
+    padding: 1rem;   
 }
+.portfolio>.row:nth-child(odd) .mycard-text {
+    border-right: 10px solid coral;
+    text-align: right;
+}
+
+.portfolio>.row:nth-child(even) .mycard-text {
+    border-left: 10px solid coral;
+    text-align: left;
+}
+
+
+
 .mycard-text p {
     font-family: 'Slabo 27px','Noto Serif SC';
     margin: 0;
