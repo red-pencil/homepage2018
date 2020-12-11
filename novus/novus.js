@@ -23,25 +23,38 @@ function stickySwitchOld() {
         w3AddClass(btn, "active");}
 }
 
-
-
-function langSwitch() {
+function langIntiate(targetLang) {
+    var x = document.getElementsByClassName("lang");
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.toggle('hidden');
+        if (x[i].classList.contains(targetLang)){
+            x[i].classList.toggle('hidden');
+        }
+        
+    }
+}
+function langSwitch(targetLang) {
+    var x = document.getElementsByClassName("lang");
+    for (var i = 0; i < x.length; i++) {
+        x[i].classList.toggle('hidden');   
+    }
     var langswitchs = document.getElementsByClassName("lang-s");
-        for (var i = 0; i < langswitchs.length; i++) {
-            langswitchs[i].classList.toggle('active');
+    for (var i = 0; i < langswitchs.length; i++) {
+        langswitchs[i].classList.toggle('active');
         }
 }
 
 
 
 function stickySwitch() {
-    var stickyswitchs = document.getElementsByClassName("sticky-s");
-    var headers = document.getElementsByClassName("header");
-        for (var i = 0; i < stickyswitchs.length; i++) {
-            stickyswitchs[i].classList.toggle('active');
-            headers[i].classList.toggle('sticky-mark');                                   
+    var stickySwitchs = document.getElementsByClassName("sticky-s");
+    var headers = document.getElementById("header");
+    for (var i = 0; i < stickySwitchs.length; i++) {
+        stickySwitchs[i].classList.toggle('active');
+        headers.classList.toggle('sticky-mark');
         }
 }
+
     
 function w3AddClass(element, name) {
     var i, arr1, arr2;
