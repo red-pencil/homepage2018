@@ -32,6 +32,7 @@ function langIntiate(targetLang) {
         }
         
     }
+    
 }
 function langSwitch(targetLang) {
     var x = document.getElementsByClassName("lang");
