@@ -38,11 +38,11 @@
           <li class="nav-item home">
             <a class="nav-link" href="../index.html">Home</a>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="../research.html">Research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" href="#">Design</a>
+            <a class="nav-link active" href="../design.html">Design</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../cv.html">Vitæ</a>
@@ -69,20 +69,22 @@
     <div class="row justify-content-center no-gutters">
         
         <div class="col-4">
-            <span class="type">CHI '18</span>
+            <span class="type">Product</span>
         </div>
         
         <div class="col-8 text-right">
             <ul class="list-inline icon-list">
-                <li><a href="https://dl.acm.org/citation.cfm?doid=3170427.3186483"><i class="fa fa-quote-left"></i></a></li>
-                <li><a href="../../public/research/ambient/ambient.pdf"><i class="fa fa-book"></i></a>
-                </li>
-                <li>
-                <a href="../../public/research/ambient/chi2018.mp4"><i class="fa fa-film"></i></a>
-                </li>
-                <li>
-                <a href="https://youtu.be/Ewe2X663NNE"><i class="fa fa-youtube-play"></i></a>
-                </li>
+                <li >
+                    <a href="https://www.kickstarter.com/projects/332555363/1830982200?ref=454281&token=0cc2d35a"><i class="fa fa-link"></i></a>
+                  </li>
+
+                  <li>
+                    <a href="videos/tpscreamer.mp4"><i class="fa fa-film"></i> </a>
+                  </li>
+
+                  <li>
+                    <a href="docs/tps.pdf"><i class="fa fa-book"></i></a>
+                  </li>
             </ul>    
         </div>
         
@@ -118,10 +120,15 @@
     </div>
     
     <div class="row justify-content-center no-gutters">
-        <div class="col-md-12">
+        <div class="col-12">
         <p class="lang eng">
             TP/Screamer (Toilet Paper Screamer), is a new eco-friendly toilet paper dispenser designed to reduce the waste of toilet paper. Every time when the sheets are pulled out over the limit (for instance, the length of 30 inches), it will let out voice warning to notify users to stop consuming more than necessity. It is good for both education and fun, and suitable for both public and home. The product is prepared for online crowdfunding.
             </p>
+        <p class="lang chn">
+        制纸工业消耗了大量森林，给地球生态带来压力。TP/Screamer（尖叫卷纸架）是一个环保的卫生纸发放器设计，旨在减少卫生纸的浪费。每当抽出超过一定长度（如5张）的卫生纸后，它便会发出尖叫警告来提醒用户停止不必要的浪费。它可用于严肃教育或者是搞怪娱乐，适用于公共场合或者家庭等场景。
+        </p>
+        </div>
+        <div class="col-12">
         <ul class="fa-ul lang eng">
           <li><i class="fa-li fa fa-check"></i>
               Designed the product independently, and fabricated an appearance prototype and a functional prototype.
@@ -130,9 +137,7 @@
               Finished branding materials including a pictured story and a promotional video.
           </li>
         </ul>
-        <p class="lang chn">
-        制纸工业消耗了大量森林，给地球生态带来压力。TP/Screamer（尖叫卷纸架）是一个环保的卫生纸发放器设计，旨在减少卫生纸的浪费。每当抽出超过一定长度（如5张）的卫生纸后，它便会发出尖叫警告来提醒用户停止不必要的浪费。它可用于严肃教育或者是搞怪娱乐，适用于公共场合或者家庭等场景。
-        </p>
+        
         <ul class="fa-ul lang chn">
           <li><i class="fa-li fa fa-check"></i>
               独立设计，并制作了外观原型和功能原型。
@@ -155,6 +160,11 @@
         <img class="col-lg-6 col-md-8 col-sm-12 img-fluid m-auto" src="../../public/design/tps/tps-9.jpg">
         <img class="col-lg-6 col-md-8 col-sm-12 img-fluid m-auto" src="../../public/design/tps/tps-10.jpg">
         
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <video class="col-12 mb-3" src="../../public/design/tps/tpscreamer.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
+
     </div>
     
 
@@ -207,14 +217,7 @@
     
 <script>
         
-    langSwitch("eng");
-    var switchs = document.getElementsByClassName("lang-s");
-    $('.lang-s').on('click',function(){
-        for (var i = 0; i < switchs.length; i++)
-        {
-          switchs[i].classList.toggle('active');
-        }
-    })
+    langInitiate("eng");
 
 </script>
 

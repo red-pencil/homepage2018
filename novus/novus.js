@@ -23,7 +23,7 @@ function stickySwitchOld() {
         w3AddClass(btn, "active");}
 }
 
-function langIntiate(targetLang) {
+function langInitiate(targetLang) {
     var x = document.getElementsByClassName("lang");
     for (var i = 0; i < x.length; i++) {
         x[i].classList.toggle('hidden');

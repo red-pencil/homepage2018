@@ -199,7 +199,7 @@ nav {
 
 .icon-list>li>a {
     color: darkgrey;
-    margin: 0 0.3rem;
+    margin: 0 0 0 0.3rem;
     font-size: 1.2rem;
     line-height: 1rem;
 }
@@ -270,6 +270,7 @@ a:hover {
 .sticky-s>i {
     color: black;
     line-height: 1rem;
+    font-size: 1.2rem;
 }
 .sticky-s.active>i, .sticky-s:hover>i {
     color: orangered;

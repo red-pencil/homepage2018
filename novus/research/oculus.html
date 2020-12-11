@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Lichao</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -15,12 +15,13 @@
   
     
   <!-- core -->
-  <link rel="stylesheet" href="../nova.css">
+  <link rel="stylesheet" href="../novus.css">
+  <script src="../novus.js"></script>
 
   <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
 </head>
 <body>
@@ -35,56 +36,74 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../research.html">Research</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="../design.html">Design</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="design.html">Design</a>
+            <a class="nav-link" href="../cv.html">Vitæ</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cv.html">Vitae</a>
-          </li>    
+            
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
         </ul>
-          <hr style="margin: 0; height: 8px">
       </div>
         
     </nav>
-    
 </div>
 
 
-<div class="container-fluid section sticky-mark" id="title">
+<div class="container-fluid section empty header sticky-mark" id="header">
     <div class="row justify-content-center no-gutters">
+
+        <div class="col-4">
+            <span>Master Thesis</span>
+        </div>
         
-        <div class="col-12" style="border-top: 2px dashed grey;"></div>
+        <div class="col-8 text-right">
+            <ul class="list-inline icon-list">
+                <li><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i></a> </li>
+                <li><a href="videos/thesis.mp4"><i class="fa fa-film"></i></a></li>
+                <li><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i></a></li>
+
+            </ul>    
+        </div>
         
-        <div class="col-12 mt-3">
+        <div class="col-12">
             <h5 class="lang eng">Limitless Oculus: Visual Expansion by Animal-Inspired Visuomotor Modification</h5>
             <h5 class="lang chn">无尽之眼：基于仿生灵感修改视觉运动协调实现的视觉扩张</h5>
         </div>
         
-        <div class="col-12 m-auto mx-auto">
-            <ul class="list-inline linklist link-list mb-3 mt-3">
-                <li class="list-inline-item"><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i> PDF</a> </li>
-                <li class="list-inline-item"><a href="videos/thesis.mp4"><i class="fa fa-film"></i> Video</a></li>
-                <li class="list-inline-item"><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i> Video</a></li>
 
-            </ul>    
-        </div>
     
-        <div class="col-12" style="border-bottom: 2px dashed grey;"></div>
+        <div class="col-6" id="lang-switch">
+                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
+        </div>
         
     </div>  
 </div>
 
-<div class="container-fluid section" id="content">
+<div class="container-fluid section body" id="content">
     <div class="row justify-content-center no-gutters">
-        <div class="col-md-4 mb-3">
-        <h7 class="mb-3">Master Thesis</h7>
-        </div>
-        <div class="col-md-8 mb-3">
+
+        <div class="col-md-12">
             <ul class="list-inline linklist tag-list">
                 <li>@Embodied Media Projecct</li>
                 
@@ -100,8 +119,8 @@
     
     <div class="row justify-content-center no-gutters">
 
-        <img class="col-8 img-fluid m-auto" src="../../public/research/oculus/thesis-1.jpg">
-        <img class="col-8 img-fluid m-auto" src="../../public/research/oculus/thesis-2.png">
+        <img class="col-sm-12 col-md-8 img-fluid m-auto" src="../../public/research/oculus/thesis-1.jpg">
+        <img class="col-sm-12 col-md-8 img-fluid m-auto" src="../../public/research/oculus/thesis-2.png">
     </div>
     
     <div class="row justify-content-center no-gutters">
@@ -120,8 +139,19 @@
    </div>
     
     <div class="row justify-content-center no-gutters">
-        <video class="col-12 mb-3" src="../../public/research/ambient/" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
+        <video class="col-12 mb-3" src="../../public/research/oculus/thesis.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
 
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 m-auto">
+            <ul class="list-inline linklist link-list mb-3 mt-3">
+                <li class="list-inline-item"><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i> PDF</a> </li>
+                <li class="list-inline-item"><a href="videos/thesis.mp4"><i class="fa fa-film"></i> Video</a></li>
+                <li class="list-inline-item"><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i> Video</a></li>
+
+            </ul>    
+        </div>
     </div>
    
     
@@ -132,30 +162,35 @@
 
     
 <div class="container-fluid footer">
-    <div class="row pb-0 contacts">
-    <div class="col-md-6 col-sm-12 col-xs-12 text-center m-auto">
-        <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+    <div class="row" id="contacts">
+        <div class="col-md-6 col-sm-12 col-xs-12 text-center m-auto">
+            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+        <ul class="fa-ul list-inline social-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100008869660041"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/leonchaos/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+        </ul>
+        </div>
     </div>
-    <div class="col-md-6 col-sm-12 col-xs-12 text-center">
-    <ul class="fa-ul list-inline social-list">
-        <li><a href="https://www.facebook.com/profile.php?id=100008869660041"><i class="fa fa-facebook"></i></a></li>
-        <li><a href="https://www.instagram.com/leonchaos/"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
-        <li><a href="#" class="fa fa-linkedin"></a></li>
-
-        <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
-        <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
-
-    </ul>
-    </div>
-    </div>
-    <div class="row">
+    
+    <div class="row" id="copyright">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
         <p>Lichao &copy; All Rights Reserved.</p>
         </div>
-    
+
     </div>
 </div>
+
+<script>
+        
+    langInitiate('eng');
+
+</script>
 
 </body>
 </html>

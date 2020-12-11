@@ -51,6 +51,16 @@
           <li class="nav-item active">
             <a class="nav-link" href="#">Vitæ</a>
           </li>
+        
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
             
             
         </ul>
@@ -72,11 +82,11 @@
                 <p>Last Updated: Aug 23, 2020</p>
                 <ul class="fa-ul list-inline link-list">
                     <li>
-                        <a class="mybutton" href="../public/docs/cv.pdf"><i class="fa fa-download "></i><span>  One-Page Resume</span></a>
+                        <a class="mybutton" href="../public/docs/cv.pdf"><i class="fa fa-download "></i><span> One-Page Resume</span></a>
                     
                     </li>
                     <li>
-                    <a class="mybutton" href="../public/docs/academic_cv.pdf"><i class="fa fa-download"></i><span>  Academic CV</span></a>
+                    <a class="mybutton" href="../public/docs/academic_cv.pdf"><i class="fa fa-download"></i><span> Academic CV</span></a>
                     </li>
                 </ul>
                 
@@ -385,7 +395,7 @@
     
 <script>
         
-    langSwitch("eng");
+    langInitiate("eng");
 
 </script>
 
