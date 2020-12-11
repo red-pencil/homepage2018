@@ -76,6 +76,16 @@ body {
     margin: 1rem;
 }
 
+#header>#control {
+    margin-top: 0.5rem;
+    width:200px;
+    margin-right: 0;
+}
+
+#header>#control>div {
+    margin-left:1rem;
+}
+
 #contacts {
     padding: 20px;
     margin-bottom: var(--global-gap);
