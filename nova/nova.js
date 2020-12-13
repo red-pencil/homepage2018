@@ -13,7 +13,7 @@ function langSwitch(c) {
 
 function stickySwitch() {
     var x, btn;
-    x = document.getElementById("header");
+    x = document.getElementById("title");
     btn = document.getElementById("sticky-switch")
     if (x.className.indexOf("sticky-mark") > -1) {
         w3RemoveClass(x, "sticky-mark");

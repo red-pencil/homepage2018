@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Lichao</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -16,6 +16,7 @@
     
   <!-- core -->
   <link rel="stylesheet" href="nova.css">
+  <script src="nova.js"></script>
 
   <!-- Google fonts-->
   <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
@@ -74,7 +75,7 @@
 
 
 <div class="container-fluid banner">
-    <div class="row">
+    <div class="row h-100">
         <div class="m-auto">
             <a href="#title-top" class="stretched-link"></a>
             <div class="logo">
@@ -117,12 +118,29 @@
 </div>
 
 
-<div class="container-fluid section" id="title" style="height: calc(100vh - 57px - 2rem);">
+<!--<div class="container-fluid section" id="title" style="height: calc(100vh - 57px - 2rem);">-->
+<div class="container-fluid section header" id="title">
     <div id="title-top"></div>
-    <div class="row m-auto">   
-        <div class="mt-auto">
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 text-right">
+            <div id="lang-switch">
+                <div class="mb-0">
+                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+    
+<div class="container-fluid section header" id="content">
+    <div class="row justify-content-center no-gutters"  style="height: 100vh;">
+        
+        <div class="my-auto">
             <h5 class="lang eng">
-                Which side of <a href="/nova/cv.html"> me</a> do you want to kown?!
+                Which side of <a href="/nova/cv.html">me</a> do you want to kown?!
                 <!--‽-->
                 <br>
                 <br>
@@ -130,12 +148,21 @@
                 <br>
                 > <a href="/nova/design.html">Design-er </a>
             </h5>
+            <h5 class="lang chn">
+                想要了解<a href="/nova/cv.html">我</a>的哪一面？！
+                <!--‽-->
+                <br>
+                <br>
+                > <a href="/nova/research.html">研究(员)</a>
+                <br>
+                > <a href="/nova/design.html">设计(师)</a>
+            </h5>
         </div>
+    </div>
+    <div class="row justify-content-center no-gutters">
         <div class="col-12 hline-b"></div>
     </div>
-</div>
-    
-<div class="container-fluid section" id="content">
+
     <div class="row justify-content-center no-gutters pt-3 pb-3">
 
         <div id="hue" class="col-lg-7 col-sm-7 m-auto"></div>
@@ -168,6 +195,12 @@
 
         </div>
 </div>
+    
+<script>
+        
+    langSwitch("eng");
+
+</script>
 
 </body>
 </html>

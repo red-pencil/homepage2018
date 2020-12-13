@@ -12,7 +12,7 @@ body {
 }
 
 .section {
-    min-height: 80px;
+    /*min-height: 80px;*/
     
 }
 .footer {
@@ -29,14 +29,14 @@ body {
     max-width: 960px;
     /*background: #f0f0f0;*/
     margin: 0 auto;
-    height: 100%;
+    /*height: 100%;*/
     padding: 15px 5vw;
     color: black;
     border: var(--debug-border);    
 }
 
 .section>.row, .navi>.row {
-    height: 100%;
+
     max-width: 960px;
     margin: 0px auto;
     padding: 15px 5vw 0;
@@ -62,16 +62,17 @@ body {
     padding-bottom:1px;
 
 }
-.header h5.eng {
+.header h5.eng, #title h5.eng {
     font-family: 'Stint Ultra Condensed';
     font-size: 2.5em;
 }
 h7 {
     font-family: 'Slabo 27px','Noto Serif SC';
 }
-#title h5.chn {
+.header h5.chn, #title h5.chn {
     font-family: 'Noto Serif SC';
     font-size: 1.5em;
+    font-weight: 700;
 }
 
 .chn {
@@ -142,6 +143,7 @@ nav {
 .navbar-nav {
     text-align: center;
 }
+
 
 /*----- LIST -----*/
 
@@ -224,11 +226,11 @@ a:hover {
     border-radius: 0;
     border: 0px
 }
-/*
+
 .row>div {
     padding: 0!important;
 }
-
+/*
 .row>div>div {
     padding: 0!important;
 }

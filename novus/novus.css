@@ -189,6 +189,15 @@ nav {
     display: flex;
     align-items: center;
 }
+
+/*----- CONTROL -----*/
+
+.control {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 0px;
+}
+
 /*----- LIST -----*/
 
 .list-inline {
@@ -233,10 +242,6 @@ nav {
     margin: 2px 0px;
     padding: 0 5px;
     font-size: small;
-}
-
-.footer .social-list {
-    margin: 1rem auto 1rem;
 }
 
 .social-list a {
