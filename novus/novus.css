@@ -102,6 +102,10 @@ body {
     font-size: small;
 }
 
+.video-fluid {
+    width: 100%;
+}
+
 /*
 #title {
     /*padding-top: 15px;*/
@@ -112,24 +116,28 @@ body {
     padding-bottom:1px;
 
 }*/
+h1, h2, h3, h4, h5 {
+    font-family: 'Roboto Condensed','Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+    font-display: optional;
+}
+p {
+    font-family: 'Open Sans','Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+    font-display: optional;
+}
 #header h5.eng {
-    font-family: 'Roboto Condensed';
     font-size: 1.6rem;
 }
 #header h5.chn {
-    font-family: 'Noto Sans SC';
     font-size: 1.7rem;
     font-weight: 400;
 }
 
 .chn {
-    font-family: 'Noto Sans SC';
     font-weight: 200;
     letter-spacing: 0.01em;
     font-size: 1rem;
 }
 .eng {
-    font-family: 'Open Sans';
     font-size: 0.85em;
 }
 
@@ -377,7 +385,8 @@ a:hover {
     color: black;
     font-size: 1.5rem;
     line-height: 30px;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
+    font-display: optional;
     font-weight:600;
 }
 
@@ -389,7 +398,8 @@ a:hover {
     font-size: 30px;
     line-height: 35px;
     text-align: right;
-    font-family: 'Roboto Condensed';
+    font-family: 'Roboto Condensed', sans-serif;
+    font-display: optional;
     font-weight: 100;
 }
 
@@ -404,7 +414,8 @@ a:hover {
     font-size: 1rem;
     -webkit-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    font-display: optional;
     font-style: italic;
 }
 
@@ -453,7 +464,8 @@ a:hover {
     color: white;  
     text-align: center;       
     font-size: 0.7rem;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
+    font-display: optional;
     
     cursor: pointer;
 
