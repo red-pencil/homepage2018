@@ -349,15 +349,23 @@ a:hover {
     position: relative;
     display: flex;
     align-items: center;
-    align-content: space-around;
-
+    justify-content: center;
+    
 }
 
 .card-container {
+    max-width: calc(100% - 2rem);
     border: 0px solid black;
-    
     position: relative;
-    margin: 0 5vw 5vh
+    margin-bottom: 8vh;
+}
+
+.portfolio>.row>.card-container-outer:nth-child(odd)>.card-container {
+    margin: 0 3vw 8vh 2vw;
+}
+
+.portfolio>.row>.card-container-outer:nth-child(even)>.card-container {
+    margin: 0 2vw 8vh 3vw;
 }
 
 .card-body {
@@ -370,6 +378,8 @@ a:hover {
     
     background: white;
     border-radius: 15px;
+    
+    
 }
 .card-body img {
     border: 0px solid aqua;
@@ -377,6 +387,9 @@ a:hover {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     -webkit-filter: opacity(0.7);
     filter: opacity(0.7);
+    
+    max-height: 50vh;
+    
 }
       
 .card-note-main {
@@ -488,7 +501,7 @@ a:hover {
     color: white;
 }
 
-/*----- CARD -----*/
+/*----- BACKGROUND -----*/
 
 .float-background {
     position: fixed;
@@ -508,10 +521,12 @@ a:hover {
     margin: auto;
     font-size: 12vw;
     letter-spacing: 5vw;
+    text-indent: 5vw;
+        
     color: #f0f0f0;
     color: white;
-    text-shadow: 1px 5px 5px #f0f0f0;
-    /*text-shadow: 5px 5px 5px #f0f0f0;*/
+    /*text-shadow: 1px 5px 5px #f0f0f0;*/
+    text-shadow: 5px 5px 15px #e0e0e0;
     font-family: "Noto Sans SC";
     font-weight: 900;
     
