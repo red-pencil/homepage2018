@@ -73,7 +73,7 @@ body {
 }
 
 #header>.row>div:nth-last-child(3) {
-    margin: 1rem;
+    /*margin: 1rem;*/
 }
 
 #header>#control {
@@ -117,14 +117,15 @@ body {
 
 }*/
 h1, h2, h3, h4, h5 {
-    font-family: 'Roboto Condensed','Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
+    font-family: 'Roboto Condensed', 'Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
     font-display: optional;
 }
-p {
+p,ul {
     font-family: 'Open Sans','Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
     font-display: optional;
 }
 #header h5.eng {
+
     font-size: 1.6rem;
 }
 #header h5.chn {

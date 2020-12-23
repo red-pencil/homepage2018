@@ -23,6 +23,7 @@ function stickySwitchOld() {
         w3AddClass(btn, "active");}
 }
 
+
 function langInitiate(targetLang) {
     var x = document.getElementsByClassName("lang");
     for (var i = 0; i < x.length; i++) {
@@ -34,6 +35,7 @@ function langInitiate(targetLang) {
     }
     
 }
+
 function langSwitch(targetLang) {
     var x = document.getElementsByClassName("lang");
     for (var i = 0; i < x.length; i++) {
@@ -44,8 +46,6 @@ function langSwitch(targetLang) {
         langswitchs[i].classList.toggle('active');
         }
 }
-
-
 
 function stickySwitch() {
     var stickySwitchs = document.getElementsByClassName("sticky-s");

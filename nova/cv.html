@@ -13,19 +13,15 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
-
+    
   <!-- core -->
-  <link rel="stylesheet" href="novus.css">
-  <script src="novus.js"></script>
+  <link rel="stylesheet" href="nova.css">
+  <script src="nova.js"></script>
 
   <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
-    
-  <style>
-    
-  </style>
+  <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
 </head>
 <body>
@@ -40,18 +36,18 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="research.html">Home</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="research.html">Research</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="design.html">Design</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Vitæ</a>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">Vitæ</a>
           </li>
-        
+            
           <!-- Lang Switch -->
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
@@ -62,18 +58,22 @@
               </div>
           </li>
             
-            
         </ul>
       </div>
-        
     </nav>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 hline-b"></div>
+    </div>
+    
 </div>
 
-<div class="container-fluid section empty header" id="header">
+
+<div class="container-fluid section header sticky-mark" id="header">
     <div class="row justify-content-center no-gutters">
         
-        <div class="col-12 mt-2">
-            <h5 class="lang eng">Curriculum Vitae</h5>
+        <div class="col-12">
+           <h5 class="lang eng">Curriculum Vitae</h5>
             <h5 class="lang chn">履历</h5>
         </div>
         
@@ -99,13 +99,10 @@
                 </ul>
             </div>
             
-            <div class="lang chn type">
-                
-                <ul class="fa-ul list-inline link-list">
-                   
-                </ul>
-            </div>
-            
+     
+        </div>
+
+        <div class="col-12 hline-t mb-1">
         </div>
         
         <div class="col-6">
@@ -114,15 +111,16 @@
         </div>
         
         <div class="col-6 text-right">
-            <a class="sticky-s" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
         </div>
+        
+        <div class="col-12 hline-b mt-1"></div>
         
     </div>  
 </div>
 
-<!-- Projects-->
 <div class="container-fluid section">
-   
+    
     <div class="row justify-content-center no-gutters">
         <div class="col-sm-12 col-md-10 mt-5">
         <div class="lang eng resume mx-auto">
@@ -432,44 +430,44 @@
         </div>
         </div>
     </div>
+
     
 </div>
-
-   
-  
+    
 <div class="container-fluid footer">
-    
-    <div class="row" id="contacts">
-        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
-            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
-        </div>
-        <div class="col-md-6 col-sm-12 text-center">
-        <ul class="fa-ul list-inline social-list">
-            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
-            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
-            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
-            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+    <div class="row pb-0 contacts">
+    <div class="col-md-6 col-sm-12 col-xs-12 text-center m-auto">
+        <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+    </div>
+    <div class="col-md-6 col-sm-12 col-xs-12 text-center">
+    <ul class="fa-ul list-inline social-list">
+        <li><a href="https://www.facebook.com/profile.php?id=100008869660041"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/leonchaos/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+        <li><a href="#" class="fa fa-linkedin"></a></li>
 
-        </ul>
-        </div>
+        <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+        <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+    </ul>
     </div>
-    
-    <div class="row mt-3" id="copyright">
+    </div>
+    <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
+        <p>Lichao &copy; All Rights Reserved.</p>
         </div>
+    
     </div>
-    
 </div>
-    
-<script>
+
+ <script>
         
-    langInitiate("eng");
+    langSwitch("eng");
 
 </script>
 
 </body>
 </html>
+
+
 

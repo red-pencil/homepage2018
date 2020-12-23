@@ -62,26 +62,31 @@ body {
     padding-bottom:1px;
 
 }
-.header h5.eng, #title h5.eng {
-    font-family: 'Stint Ultra Condensed';
-    font-size: 2.5em;
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Stint Ultra Condensed', 'Noto Serif SC', serif;
+    font-display: optional;
 }
-h7 {
-    font-family: 'Slabo 27px','Noto Serif SC';
+
+p,ul {
+    font-family: 'Slabo 27px', 'Noto Serif SC', serif;
+    font-display: optional;
 }
-.header h5.chn, #title h5.chn {
-    font-family: 'Noto Serif SC';
-    font-size: 1.5em;
+h5.eng {
+    font-size: 2.5rem;
+}
+
+h5.chn {
+    font-size: 2rem;
     font-weight: 700;
+    line-height: 150%;
 }
 
 .chn {
-    font-family: 'Noto Serif SC';
     font-weight: 200;
     letter-spacing: 0.01em;
 }
 .eng {
-    font-family: 'Slabo 27px';
     font-size: 1.05em;
 }
 
@@ -89,6 +94,9 @@ h5>a,p>a {
     text-decoration: underline;
     text-decoration-style: dotted;
     color: black;
+}
+p>a:hover {
+    color: red;
 }
 h5>a:hover {
     text-decoration: underline;
@@ -207,11 +215,14 @@ a:hover {
     cursor: pointer;
 }
 
-#sticky-switch>i {
+.sticky-s>i {
     color: black;
     line-height: 1rem;
+    font-size: 1.2rem;
 }
-#sticky-switch.active>i, #sticky-switch:hover>i {color: orangered;}
+.sticky-s.active>i, .sticky-s:hover>i {
+    color: orangered;
+}
 .lang-s {
     color: lightgray;
     text-decoration-line: underline;
