@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="container-fluid navi sticky-top pt-3">
+<div class="container-fluid navi pt-3">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
       <a class="navbar-brand" href="#page-top">Lichao</a>
@@ -49,16 +49,6 @@
           <li class="nav-item">
             <a class="nav-link" href="../cv.html">Vitæ</a>
           </li>       
-                        
-          <!-- Lang Switch -->
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
-                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
-              </div>
-          </li>
             
         </ul>
       </div>
@@ -73,7 +63,7 @@
         <div class="col-4">
             <span class="type">SUI '20</span>
         </div>
-
+        
         <div class="col-8 text-right">
             <ul class="list-inline icon-list">
                 <li><a href="https://dl.acm.org/doi/10.1145/3385959.3418460"><i class="fa fa-quote-left"></i></a></li>
@@ -87,28 +77,18 @@
                 </li>
             </ul>    
         </div>
-    
+
         <div class="col-12">
             <h5 class="lang eng">Visuomotor Influence of Attached Robotic Neck Augmentation</h5>
             <h5 class="lang chn">穿戴式机械增强颈部对人体视觉动作协调的影响</h5>
         </div>
-        
-        <div class="col-6">
-            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-        </div>
-        
-        <div class="col-6 text-right">
-            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
-        </div>
-        
-    </div>  
+
+    </div>
 </div>
-
 <div class="container-fluid section body" id="content">
+    
     <div class="row justify-content-center no-gutters">
-
-        <div class="col-md-12">
+        <div class="col-md-9">
             <ul class="list-inline linklist tag-list">
                 <li>@Altered Reality Group</li>
                 <li>Human-Computer Interaction</li>
@@ -119,6 +99,14 @@
                 <li>Wearable</li>
             </ul>
         </div>
+        <div class="col-md-3 text-right" id="control">
+                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+            
+                <span style="padding-left: 0.5em;"></span>
+            
+                <a class="sticky-s active" style="padding-right: 1em;" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+            </div>
     </div>
     
     <div class="row justify-content-center no-gutters">
@@ -137,15 +125,17 @@
     <div class="row justify-content-center no-gutters">
         <div class="col-md-12">
         <p class="lang eng">
+
         The combination of eye and head movements plays a major part in our visual process. The neck provides mobility for the head motion and also limits the range of visual motion in space. In this paper, a robotic neck augmentation system is designed to surmount the physical limitations of the neck. It applies in essential a visuomotor modification to the vision-neck relationship. We conducted two experiments to measure and verify the performance of the neck alternation. The multiple test results indicate the system has a positive effect to augment the motions of vision. Specifically, the robotic neck can enlarge the range of neck motion to 200%, and influence the response motion, by overall 22% less in time and 28% faster in speed.
         </p>
         <p class="lang chn">
         ?
         </p>
         </div>
-   </div>
+    </div>
     
     <div class="row justify-content-center no-gutters">
+        
         <div class="col-12">
             <video class="img-fluid" src="../../public/research/visuomotor/ah2018-exp.MOV" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
         </div>
@@ -153,6 +143,7 @@
     </div>
     
     <div class="row justify-content-center no-gutters">
+        
         <p class="col-12 quote">
         <i class="fa fa-book text-warning"></i>
         <b>Lichao Shen</b>, MHD Yamen Saraiji, Kai Kunze, Kouta Minamizawa, and Roshan Lalintha Peiris. 2020. Visuomotor Influence of Attached Robotic Neck Augmentation. In <i>Symposium on Spatial User Interaction</i> (<i>SUI '20</i>). Association for Computing Machinery, New York, NY, USA, Article 14, 1–10. DOI:<a href="https://doi.org/10.1145/3385959.3418460">https://doi.org/10.1145/3385959.3418460</a>
