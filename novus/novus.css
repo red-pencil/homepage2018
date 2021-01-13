@@ -73,7 +73,7 @@ body {
 }
 
 #header>.row>div:nth-last-child(3) {
-    /*margin: 1rem;*/
+    margin: 1rem;
 }
 
 #header>#control {
