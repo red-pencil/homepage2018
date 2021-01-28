@@ -28,7 +28,7 @@
 </head>
 <body>
 
-<div class="container-fluid navi pt-3">
+<div class="container-fluid navi sticky-top pt-3">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
       <a class="navbar-brand" href="#page-top">Lichao</a>
@@ -85,10 +85,22 @@
 
     </div>
 </div>
+    
 <div class="container-fluid section body" id="content">
+    <div class="row justify-content-center no-gutters center">
+        <div class="col-12" id="control">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+
+            <span style="padding-left: 0.5em;"></span>
+
+            <a class="sticky-s active" style="padding-right: 1em;" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+        </div>
+    </div>
     
     <div class="row justify-content-center no-gutters">
-        <div class="col-md-9">
+        
+        <div class="col-12">
             <ul class="list-inline linklist tag-list">
                 <li>@Altered Reality Group</li>
                 <li>Human-Computer Interaction</li>
@@ -99,17 +111,10 @@
                 <li>Wearable</li>
             </ul>
         </div>
-        <div class="col-md-3 text-right" id="control">
-                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-            
-                <span style="padding-left: 0.5em;"></span>
-            
-                <a class="sticky-s active" style="padding-right: 1em;" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
-            </div>
+
     </div>
     
-    <div class="row justify-content-center no-gutters">
+    <div class="row justify-content-center no-gutters center">
         <div class="col-12 m-auto">
             <img class="img-fluid" src="../../public/research/visuomotor/setup.jpg">
         </div>
@@ -134,7 +139,7 @@
         </div>
     </div>
     
-    <div class="row justify-content-center no-gutters">
+    <div class="row justify-content-center no-gutters center">
         
         <div class="col-12">
             <video class="img-fluid" src="../../public/research/visuomotor/ah2018-exp.MOV" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>

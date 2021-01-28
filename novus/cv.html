@@ -35,26 +35,51 @@
 <div class="container-fluid navi sticky-top pt-3">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
-      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <a class="navbar-brand pt-0 pb-0" href="#page-top">
+          <!--
+          <svg xmlns="http://www.w3.org/2000/svg" height="40px" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
+            <path fill="none" stroke="#606060" stroke-width="22" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
+                </svg>
+-->
+          Lichao
+        </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="index.html">
+                <span class="lang eng">Home</span>
+                <span class="lang chn">主页</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="research.html">Research</a>
+            <a class="nav-link" href="research.html">
+                <span class="lang eng">Research</span>
+                <span class="lang chn">研究</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="design.html">Design</a>
+            <a class="nav-link" href="design.html">
+                <span class="lang eng">Design</span>
+                <span class="lang chn">设计</span>
+              </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Vitæ</a>
+            <a class="nav-link" href="#">
+                <span class="lang eng">Vitæ</span>
+                <span class="lang chn">履历</span>
+              </a>
           </li>
-        
+            
           <!-- Lang Switch -->
+          <li class="nav-item">
+            <a class="lang eng nav-link" onclick="langSwitch()">[中文]</a>
+            <a class="lang chn nav-link" onclick="langSwitch()">[English]</a>
+          </li>
+            
+          <!--  
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
               </a>
@@ -63,7 +88,7 @@
                 <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
               </div>
           </li>
-            
+        -->
             
         </ul>
       </div>

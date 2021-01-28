@@ -19,7 +19,7 @@ body {
 .section {
     /*height: 500px;*/
     min-height: 80px;
-    padding: 0 var(--global-gap) var(--global-gap);
+    padding: calc(0.5*var(--global-gap)) var(--global-gap) ;
     z-index: 2;
 
 }
@@ -173,6 +173,7 @@ h5>a:hover {
 }
 #content>.row:first-child {
     padding-top: 0;
+    padding-bottom: 0;
 }
 #content>.row:last-child {
     /*border-bottom: 1px solid black;*/
@@ -196,6 +197,7 @@ h5>a:hover {
 .navi {
     padding: var(--global-gap);
     padding-bottom: calc(0.5*var(--global-gap));
+    z-index: 3;
 }
 
 .navi>.row {
@@ -555,6 +557,12 @@ a:hover {
     z-index: -1;
 }
 
-.bdoy .img-fluid {
+.body .img-fluid {
     padding: 3px;
+    max-height: 50vh;
+}
+
+.body>.row.center {
+    display: flex;
+    text-align: center;
 }
