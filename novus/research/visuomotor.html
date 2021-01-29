@@ -37,18 +37,36 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home">
-            <a class="nav-link" href="../index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+                <span class="lang eng">Home</span>
+                <span class="lang chn">序</span>
+              </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="../research.html">Research</a>
+            <a class="nav-link" href="../research.html">
+                <span class="lang eng">Research</span>
+                <span class="lang chn">研究</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../design.html">Design</a>
+            <a class="nav-link" href="../design.html">
+                <span class="lang eng">Design</span>
+                <span class="lang chn">设计</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../cv.html">Vitæ</a>
-          </li>       
+            <a class="nav-link" href="../cv.html">
+                <span class="lang eng">Vitæ</span>
+                <span class="lang chn">履历</span>
+              </a>
+          </li>
+            
+          <!-- Lang Switch -->
+          <li class="nav-item">
+            <a class="lang eng nav-link" onclick="langSwitch()">[中文]</a>
+            <a class="lang chn nav-link" onclick="langSwitch()">[English]</a>
+          </li>
             
         </ul>
       </div>
@@ -60,11 +78,16 @@
 <div class="container-fluid section empty header sticky-mark" id="header">
     <div class="row justify-content-center no-gutters">
         
-        <div class="col-4">
+        <div class="col-12">
             <span class="type">SUI '20</span>
         </div>
+
+        <div class="col-12">
+            <h5 class="lang eng">Visuomotor Influence of Attached Robotic Neck Augmentation</h5>
+            <h5 class="lang chn">穿戴式机械增强颈部对人体视觉动作协调的影响</h5>
+        </div>
         
-        <div class="col-8 text-right">
+        <div class="col-10">
             <ul class="list-inline icon-list">
                 <li><a href="https://dl.acm.org/doi/10.1145/3385959.3418460"><i class="fa fa-quote-left"></i></a></li>
                 <li><a href="../../public/research/visuomotor/visuomotor.pdf"><i class="fa fa-book"></i></a>
@@ -77,10 +100,9 @@
                 </li>
             </ul>    
         </div>
-
-        <div class="col-12">
-            <h5 class="lang eng">Visuomotor Influence of Attached Robotic Neck Augmentation</h5>
-            <h5 class="lang chn">穿戴式机械增强颈部对人体视觉动作协调的影响</h5>
+        
+        <div class="col-6 text-right" id="control">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
         </div>
 
     </div>
@@ -181,14 +203,14 @@
     
     <div class="row" id="contacts">
         <div class="col-md-6 col-sm-12 text-center">
-            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+            <p><b>lichao.shen [at] hotmail.com</b></p>
         </div>
         <div class="col-md-6 col-sm-12 text-center">
         <ul class="fa-ul list-inline social-list">
             <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
             <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
             <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.linkedin.com/in/lichao-shen/" class="fa fa-linkedin"></a></li>
             <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
             <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
 
@@ -196,7 +218,7 @@
         </div>
     </div>
     
-    <div class="row mt-3" id="copyright">
+    <div class="row mt-1" id="copyright">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
         <p class="copyright">Lichao &copy; All Rights Reserved.</p>
         </div>
@@ -212,6 +234,4 @@
 
 </body>
 </html>
-
-
 

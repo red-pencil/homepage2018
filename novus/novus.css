@@ -24,7 +24,7 @@ body {
 
 }
 .footer {
-    min-height: 100px;
+    min-height: 20px; /*100px*/
     padding: 0 var(--global-gap) var(--global-gap);
 }
 .footer p {
@@ -74,14 +74,18 @@ body {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
 }
+#header h5 {
+    margin: 0.5rem 0;
+}
 /*
 #header>.row>div:nth-last-child(3) {
     margin: 1rem;
 }
-*/
+
 #header>.row>div:nth-child(3) {
     margin-top: 1rem;
 }
+*/
 /*
 #header>#control {
     display: flex;
@@ -133,6 +137,9 @@ body {
     padding-bottom:1px;
 
 }*/
+
+/*----- FONT -----*/
+
 h1, h2, h3, h4, h5 {
     font-family: 'Roboto Condensed', 'Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
     font-display: optional;
@@ -141,28 +148,36 @@ p,ul {
     font-family: 'Open Sans','Noto Sans SC', -apple-system, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft Yahei', sans-serif;
     font-display: optional;
 }
-#header h5.eng {
 
-    font-size: 1.6rem;
-}
-#header h5.chn {
-    font-size: 1.7rem;
-    font-weight: 400;
-}
-
-.chn {
+.section .chn {
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.01em;
     
 }
-.eng {
-    font-size: 1em;
+.section .eng {
+    font-size: 1rem;
 }
 
-h5>a,p>a {
+.section h5.eng {
+
+    font-size: 1.6rem;
+}
+.section h5.chn {
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.quote {
+    font-size: small;
+}
+
+h5 a,p a {
     text-decoration: underline;
     text-decoration-style: dotted;
+    
+}
+h5>a{
     color: black;
 }
 h5>a:hover {
@@ -180,9 +195,9 @@ h5>a:hover {
     padding-bottom: 3rem;
 
 }
-.quote {
-    font-size: small;
-}
+
+/*----- NAVBAR -----*/
+
 .sticky-mark {
     position: -webkit-sticky;
     position: sticky;
