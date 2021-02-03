@@ -196,6 +196,9 @@ h5>a:hover {
 
 }
 
+.stretched-link {
+    border: var(--debug-border);
+}
 /*----- NAVBAR -----*/
 
 .sticky-mark {
@@ -257,9 +260,9 @@ nav {
 
 .icon-list>li>a {
     color: darkgrey;
-    margin: 0 0 0 0.3rem;
-    font-size: 1.2rem;
-    line-height: 1rem;
+    margin: 0 0 0 0.3em;
+    font-size: 1.2em;
+    line-height: 1em;
 }
 .icon-list>li>a:hover {
     color: orange;
@@ -324,8 +327,16 @@ a:hover {
 .sticky-s>i {
     color: black;
     line-height: 1rem;
+}
+
+.fa-thumb-tack {
     font-size: 1.2rem;
 }
+
+.fa-angle-up {
+    font-size: 1.5rem;
+}
+
 .sticky-s.active>i, .sticky-s:hover>i {
     color: orangered;
 }
@@ -391,9 +402,11 @@ a:hover {
 
 .card-container {
     max-width: calc(100% - 2rem);
-    border: 0px solid black;
+    border: var(--debug-border);
     position: relative;
     margin-bottom: 8vh;
+    
+    position: relative;
 }
 
 .portfolio>.row>.card-container-outer:nth-child(odd)>.card-container {

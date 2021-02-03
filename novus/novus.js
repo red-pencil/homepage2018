@@ -51,7 +51,7 @@ function stickySwitch() {
     var stickySwitchs = document.getElementsByClassName("sticky-s");
     var headers = document.getElementById("header");
     for (var i = 0; i < stickySwitchs.length; i++) {
-        stickySwitchs[i].classList.toggle('active');
+        stickySwitchs[i].children[0].classList.toggle('fa-angle-up');
         headers.classList.toggle('sticky-mark');
         }
 }
