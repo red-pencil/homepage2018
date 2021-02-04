@@ -58,7 +58,12 @@ body {
     padding: 1rem;
 }
 .section.body>.row {
-    padding: 1rem 5px;
+    /*padding: 1rem 5px;*/
+    padding: 0 5px;
+}
+
+.body p{
+    padding-top: 1rem;
 }
 .section.empty>.row {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
@@ -67,6 +72,7 @@ body {
 .row.empty p{
     color: white;
 }
+
 .header {
     padding-top: 0px;
 }
@@ -188,7 +194,7 @@ h5>a:hover {
 }
 #content>.row:first-child {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 1rem;
 }
 #content>.row:last-child {
     /*border-bottom: 1px solid black;*/
@@ -196,9 +202,6 @@ h5>a:hover {
 
 }
 
-.stretched-link {
-    border: var(--debug-border);
-}
 /*----- NAVBAR -----*/
 
 .sticky-mark {
@@ -209,7 +212,7 @@ h5>a:hover {
     top: 1em;
     margin-top: 0px;
     border-top-width: 2px!important;
-    z-index: 5;
+    z-index: 6;
 }
 
 .navi {
@@ -442,7 +445,7 @@ a:hover {
 }
       
 .card-note-main {
-    position: relative;
+    /*position: relative;*/
     margin: 5px 0 0;
     
     color: black;
@@ -454,7 +457,7 @@ a:hover {
 }
 
 .card-note-sub {
-    position: relative;
+    /*position: relative;*/
     margin: 0 0 5px;
     
     color: lightgray;
@@ -548,6 +551,16 @@ a:hover {
     font-size: 1rem;
     margin: 0 0.2rem;
     color: white;
+}
+
+.stretched-link {
+    border: var(--debug-border);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
 }
 
 /*----- BACKGROUND -----*/
