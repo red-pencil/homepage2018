@@ -32,7 +32,7 @@
 </head>
 <body>
 
-<div class="container-fluid navi pt-3">
+<div class="container-fluid navi sticky-top pt-3">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
       <a class="navbar-brand" href="#page-top">Lichao</a>
@@ -41,19 +41,36 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home">
-            <a class="nav-link" href="index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+                <span class="lang eng">Home</span>
+                <span class="lang chn">序</span>
+              </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">Research</a>
+            <a class="nav-link" href="../research.html">
+                <span class="lang eng">Research</span>
+                <span class="lang chn">研究</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="design.html">Design</a>
+            <a class="nav-link" href="../design.html">
+                <span class="lang eng">Design</span>
+                <span class="lang chn">设计</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="cv.html">Vitæ</a>
+            <a class="nav-link" href="../cv.html">
+                <span class="lang eng">Vitæ</span>
+                <span class="lang chn">履历</span>
+              </a>
           </li>
             
+          <!-- Lang Switch -->
+          <li class="nav-item" id="langSwith">
+            <a class="lang eng nav-link" onclick="langSwitch()">[中文]</a>
+            <a class="lang chn nav-link" onclick="langSwitch()">[English]</a>
+          </li>
         </ul>
       </div>
         
@@ -72,16 +89,11 @@
         </div>
         
         <div class="col-12">
-            <p class="lang eng type">My research focus on <b>Human-Computer Interaction</b> (HCI), while including Human Augmentation, Virtual Reality/Augmented Reality, Robotics, Haptics, User Interface, etc.</p>
-            <p class="lang chn type">我的研究围绕<b>人机交互</b>(HCI)开展，具体方向包括人类增强、虚拟现实、增强现实、机器人、触觉、用户界面等。</p>            
+            <span class="lang eng type">My research focus on <b>Human-Computer Interaction</b> (HCI), while including Human Augmentation, Virtual Reality/Augmented Reality, Robotics, Haptics, User Interface, etc.</span>
+            <span class="lang chn type">我的研究围绕<b>人机交互</b>(HCI)开展，具体方向包括人类增强、虚拟现实、增强现实、机器人、触觉、用户界面等。</span>            
         </div>
         
-        <div class="col-6">
-            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-        </div>
-        
-        <div class="col-6 text-right">
+        <div class="col-12 text-right">
             <a class="sticky-s" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack fa-angle-up "></i></a>
         </div>
         
