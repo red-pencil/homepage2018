@@ -129,6 +129,10 @@ body {
     font-size: small;
 }
 
+#copyright a {
+    color: black;
+}
+
 .video-fluid {
     width: 100%;
 }
@@ -283,10 +287,12 @@ nav {
 
 .link-list>li:hover {
     background: orange;
+    
 }
 
 .link-list i, .link-list a {
    color: white;
+   text-decoration-line: none;
 }
 .tag-list>li {
     background-color: #f0f0f0;
@@ -295,6 +301,10 @@ nav {
     font-size: small;
 }
 
+#copyright .social-list a {
+    
+    font-size: 1rem;
+}
 .social-list a {
     font-size: 2rem;
     color: dimgray;
