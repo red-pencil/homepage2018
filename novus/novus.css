@@ -340,14 +340,8 @@ a:hover {
 .sticky-s>i {
     color: black;
     line-height: 1rem;
-}
-
-.fa-thumb-tack {
-    font-size: 1.2rem;
-}
-
-.fa-angle-up {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    padding-right: 0em;
 }
 
 .sticky-s.active>i, .sticky-s:hover>i {

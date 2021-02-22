@@ -37,9 +37,9 @@ function langInitiate(targetLang) {
 }
 
 function langSwitch(targetLang) {
-    var x = document.getElementsByClassName("lang");
-    for (var i = 0; i < x.length; i++) {
-        x[i].classList.toggle('hidden');   
+    var langContent = document.getElementsByClassName("lang");
+    for (var i = 0; i < langContent.length; i++) {
+        langContent[i].classList.toggle('hidden');   
     }
     var langswitchs = document.getElementsByClassName("lang-s");
     for (var i = 0; i < langswitchs.length; i++) {
@@ -51,7 +51,10 @@ function stickySwitch() {
     var stickySwitchs = document.getElementsByClassName("sticky-s");
     var headers = document.getElementById("header");
     for (var i = 0; i < stickySwitchs.length; i++) {
-        stickySwitchs[i].children[0].classList.toggle('fa-angle-up');
+         stickySwitchs[i].children[0].classList.toggle('fa-thumb-tack');
+        stickySwitchs[i].children[0].classList.toggle('fa-chevron-up');
+         stickySwitchs[i].classList.toggle('active');
+        
         headers.classList.toggle('sticky-mark');
         }
 }
