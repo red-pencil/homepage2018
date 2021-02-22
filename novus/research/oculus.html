@@ -37,27 +37,35 @@
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home">
-            <a class="nav-link" href="../index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+                <span class="lang eng">Home</span>
+                <span class="lang chn">序</span>
+              </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="../research.html">Research</a>
+            <a class="nav-link" href="../research.html">
+                <span class="lang eng">Research</span>
+                <span class="lang chn">研究</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../design.html">Design</a>
+            <a class="nav-link" href="../design.html">
+                <span class="lang eng">Design</span>
+                <span class="lang chn">设计</span>
+              </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../cv.html">Vitæ</a>
+            <a class="nav-link" href="../cv.html">
+                <span class="lang eng">Vitæ</span>
+                <span class="lang chn">履历</span>
+              </a>
           </li>
             
           <!-- Lang Switch -->
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
-              </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
-                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
-              </div>
+          <li class="nav-item">
+            <a class="lang eng nav-link" onclick="langSwitch()">[中文]</a>
+            <a class="lang chn nav-link" onclick="langSwitch()">[English]</a>
           </li>
             
         </ul>
@@ -70,33 +78,25 @@
 <div class="container-fluid section empty header sticky-mark" id="header">
     <div class="row justify-content-center no-gutters">
 
-        <div class="col-4">
+        <div class="col-12 type">
             <span>Master Thesis</span>
         </div>
         
-        <div class="col-8 text-right">
-            <ul class="list-inline icon-list">
-                <li><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i></a> </li>
-                <li><a href="videos/thesis.mp4"><i class="fa fa-film"></i></a></li>
-                <li><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i></a></li>
-
-            </ul>    
-        </div>
-        
-        <div class="col-12">
+        <div class="col-12 title">
             <h5 class="lang eng">Limitless Oculus: Visual Expansion by Animal-Inspired Visuomotor Modification</h5>
             <h5 class="lang chn">无尽之眼：基于仿生灵感修改视觉运动协调实现的视觉扩张</h5>
         </div>
         
-
-    
-        <div class="col-6" id="lang-switch">
-                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        <div class="col-10">
+            <ul class="list-inline icon-list">
+                <li><a href="../../public/research/oculus/Thesis_KMD_Leon_180219last.pdf"><i class="fa fa-book"></i></a> </li>
+                <li><a href="videos/thesis.mp4"><i class="fa fa-film"></i></a></li>
+                <li><a href="https://youtu.be/avNxTB573vA"><i class="fa fa-youtube-play"></i></a></li>
+            </ul>    
         </div>
         
-        <div class="col-6 text-right">
-            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
+        <div class="col-2 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-chevron-up"></i></a>
         </div>
         
     </div>  
@@ -132,8 +132,8 @@
         <div class="col-md-12">
         <p class="lang eng">
         Humans are trapped in their limited senses. The human vision was relatively narrow and weak, comparing to the variety of animal superior abilities. Through my investigation, it was figured out that the human musculoskeletal systems, especially the neck, were a factor limiting the spatial range of vision. In order to help human overcome part of those limitations, I proposed the animal-inspired concept called Limitless Oculus. That was to substitute or modify the original visuomotor coordination of human, with a certain artificial mechanism. The mechanism, orienting the vision, was modified and designed to be programmable and customizable. The benefits aimed to promote the flexibility of the spatial orientation of vision, and hence achieve visual expansion and substitution. Besides, the concept had more possible applications with a variety of modifications and mechanisms. The method had physiological and cognitive influence, so it can not only be a tool but also change human mind. Two prototypes were presented. Then I conducted experiments to evaluate the performance of the prototypes, and prove the feasibility of the concept. The result indicated that the spatial range of vision was expanded, while the speed of the scan and response could also be augmented in a certain range.
-            <br>
-            <b>Supervisor: Prof. Kouta Minamizawa, Sub-supervisor: Prof. Kai Kunze, Co-viewer: Prof. Ishido Nanako</b>
+        <br>
+        <b>Supervisor: Prof. Kouta Minamizawa, Sub-supervisor: Prof. Kai Kunze, Co-viewer: Prof. Ishido Nanako</b>
         </p>
         <p class="lang chn">
         人类被自身的感觉所困。与非人类生物多样的超常能力相比，人类的视觉相对狭窄和微弱。根据我的调研，以颈部为代表的人的肌肉骨骼系统是限制视觉空间范围的一个因素。受非人类生物的启发，本文提出Limitless Oculus概念，以期帮助人类突破一部分生理限制。即是用特定的人造机制或者人造映射来代替人类原本的视觉-运动协调机制。这类协调机制控制着视觉的朝向，经过此概念的修改和设定，则成为可编程的和可定制的。此概念的积极意义在于提高视觉空间朝向的灵活性，并因此实现视觉扩张和视觉代替。采用不同机制会让这个概念有更多的可能性和应用。此外，此方法影响生理层面和认知层面，故可以改变人类的思维方式。此处展示两个原型设备。然后本文使用实验来评估这些原型设备的性能，证明此概念的可行性。结果表面视觉可达到的空间范围得以扩大，同时在特定范围内扫视速度和反应速度得到提高。
@@ -143,7 +143,7 @@
         </div>
    </div>
     
-    <div class="row justify-content-center no-gutters">
+    <div class="row justify-content-center no-gutters center">
         <div class="col-12">
             <video class="img-fluid" src="../../public/research/oculus/thesis.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
         </div>
@@ -166,32 +166,12 @@
         
 
 
-    
 <div class="container-fluid footer">
-    
-    <div class="row" id="contacts">
-        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
-            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
-        </div>
-        <div class="col-md-6 col-sm-12 text-center">
-        <ul class="fa-ul list-inline social-list">
-            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
-            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
-            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
-            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
-
-        </ul>
+    <div class="row mt-1" id="copyright">
+        <div class="col-12 text-center">
+        <a class="copyright" href="../index.html">Lichao &copy; All Rights Reserved.</a>
         </div>
     </div>
-    
-    <div class="row mt-3" id="copyright">
-        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
-        </div>
-    </div>
-    
 </div>
 
 <script>

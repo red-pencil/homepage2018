@@ -73,6 +73,13 @@ body {
     color: white;
 }
 
+.type-note {
+    /*position: absolute;
+    top: 70px;*/
+    margin-top: 0.3rem;
+    margin-left: 0.5rem;
+}
+
 .header {
     padding-top: 0px;
 }
@@ -83,6 +90,8 @@ body {
 #header h5 {
     margin: 0.5rem 0;
 }
+
+
 /*
 #header>.row>div:nth-last-child(3) {
     margin: 1rem;
@@ -170,9 +179,9 @@ p,ul {
 }
 
 .section h5.eng {
-
     font-size: 1.6rem;
 }
+
 .section h5.chn {
     font-size: 1.7rem;
     font-weight: 400;
@@ -263,16 +272,28 @@ nav {
 .list-inline>li {
     display: inline-flex;
     align-items: center;
+
+    margin: 0 0.3em 0 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+.link-list>li {
+    color: white;
 }
 
 .icon-list>li>a {
-    color: darkgrey;
-    margin: 0 0 0 0.3em;
     font-size: 1.2em;
-    line-height: 1em;
+    color: darkgrey;
 }
 .icon-list>li>a:hover {
     color: orange;
+}
+
+.li-item-type {
+    background-color: darkgrey;
+    color: white;
+    padding: 0rem 0.3rem 0rem;
+    border-radius: 0.3rem;
 }
 
 .link-list>li {
@@ -287,13 +308,13 @@ nav {
 
 .link-list>li:hover {
     background: orange;
-    
 }
 
 .link-list i, .link-list a {
-   color: white;
-   text-decoration-line: none;
+    color: white;
+    text-decoration-line: none;
 }
+
 .tag-list>li {
     background-color: #f0f0f0;
     margin: 2px 0px;
@@ -488,6 +509,8 @@ a:hover {
     font-display: optional;
     font-style: italic;
 }
+
+
 
 /*
 .card-note-side {
