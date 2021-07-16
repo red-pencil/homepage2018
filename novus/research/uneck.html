@@ -32,6 +32,7 @@
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
       <a class="navbar-brand" href="#page-top">Lichao</a>
+
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -71,15 +72,52 @@
       </div>
         
     </nav>
+    
+    
+        
+    
+    <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light hidden">
+        
+      <a class="navbar-brand" href="#page-top">Unconstrained Neck</a>
+        
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleContent">
+        <span><a class="fa fa-chevron-down" style="line-height: 30px; width: 30px;"></a></span>
+      </button>
+        
+        <div class="collapse navbar-collapse bg-white" id="collapsibleContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" style="height: 40px; font-size: small;">
+            <a class="nav-link">AH '18 BEST DEMO</a>
+          </li>
+          <li class="nav-item" style="padding: 8px;">
+              <ul class="list-inline icon-list">
+                <li>
+                <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
+                </li>
+                <li><a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                </li>
+                <li><a href="../../public/research/uneck/unconstrained%20neck.pdf"><i class="fa fa-book"></i></a>
+                </li>
+                <li><a href="../../public/research/uneck/ah2018.mp4"><i class="fa fa-film"></i></a>
+                </li>
+                <li><a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube-play"></i></a>
+                </li>
+            </ul>
+              
+          </li>
+
+        </ul>
+      </div>
+      
+    </nav>
 </div>
 
 
-<div class="container-fluid section empty header sticky-mark" id="header">
+<div class="container-fluid section empty header" id="header">
     <div class="row justify-content-center no-gutters">
         
-        <div class="col-md-7 col-sm-12 title">
-            <h5 class="lang eng">Unconstrained Neck
-                <span class="tag-solo">AH '18 Best Demo</span></h5>
+        <div class="col-md-7 col-sm-12">
+            <h5 class="lang eng">Unconstrained Neck</h5>
             <h5 class="lang chn">无拘束颈部</h5>
     </div>
         
@@ -93,7 +131,7 @@
             -->
             <ul class="list-inline icon-list">
                 <li class="tag-solo">
-                AH '18 Best Demo
+                AH '18 BEST DEMO
                 </li>
                 <li>
                 <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
@@ -240,6 +278,11 @@
 <script>
         
     langInitiate('eng');
+    
+    window.onscroll = function() {
+        $('.collapse').collapse('hide')
+        scrollSwitch();
+    }
 
 </script>
 

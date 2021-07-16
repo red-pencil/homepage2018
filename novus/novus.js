@@ -59,6 +59,25 @@ function stickySwitch() {
         }
 }
 
+function scrollSwitch() {
+    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+    console.log("滚动距离1:" + document.documentElement.scrollTop);
+    var titles = document.getElementsByClassName("navbar");
+    if (scrollTop>100 && !(titles[0].classList.contains('hidden'))) {
+        titles[0].classList.toggle('hidden')
+        titles[1].classList.toggle('hidden')
+    } else if (scrollTop<100 && titles[0].classList.contains('hidden')) {
+        titles[0].classList.toggle('hidden')
+        titles[1].classList.toggle('hidden')   
+    }
+}
+
+function navCollapse() {
+    var buttons = document.getElementsByClassName("navbar-togger");
+    buttons[0].collapse('hide');
+    buttons[1].collapse('hide');
+}
+
     
 function w3AddClass(element, name) {
     var i, arr1, arr2;
