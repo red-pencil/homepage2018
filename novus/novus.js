@@ -60,8 +60,8 @@ function stickySwitch() {
 }
 
 function scrollSwitch() {
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    console.log("滚动距离1:" + document.documentElement.scrollTop);
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+    console.log("滚动距离1:" + document.documentElement.scrollTop +"滚动距离2:" + window.pageYOffset);
     var titles = document.getElementsByClassName("navbar");
     if (scrollTop>100 && !(titles[0].classList.contains('hidden'))) {
         titles[0].classList.toggle('hidden')

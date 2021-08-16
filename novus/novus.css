@@ -378,6 +378,13 @@ a:hover {
     display: none;
 }
 
+button .fa {
+    text-decoration: none;
+    color: dimgray;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 /*----- SWITCH -----*/
 
 .sticky-s>i {
