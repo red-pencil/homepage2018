@@ -244,7 +244,7 @@ h5>a:hover {
     /*top: 75px;*/
     top: 1em;
     margin-top: 0px;
-    border-top-width: 2px!important;
+
     z-index: 6;
 	
 	opacity: 0.95;
@@ -259,10 +259,6 @@ h5>a:hover {
     top: 0;
 	
 	opacity: 0.95;
-}
-
-.sticky-clear {
-    position: relative !important;
 }
 
 .navi>.row {
@@ -711,14 +707,10 @@ button .fa {
 }
 
 
-#gallary {
-
-}
-
-.gallary { /* width and position */
+.row>.gallary { /* width and position */
     background: ;
     border: 0px solid aqua;
-	padding: 30px !important; /*useless*/
+	padding: 30px ; /*useless*/
 	
 }
 
@@ -738,16 +730,16 @@ button .fa {
 	
 }
 
-.ratio-169{
-	padding-bottom: 60% !important;
+.gallary .ratio-169{
+	padding-bottom: 60%; /* 0.618, 16:9 */
 }
 
-.ratio-11{
-	padding-bottom: 100% !important;
+.gallary .ratio-11{
+	padding-bottom: 100%;
 }
 
-.ratio-34{
-	padding-bottom: 133% !important;
+.gallary .ratio-34{
+	padding-bottom: 133%;
 }
 
 .gallary-content { /* padding and content */
@@ -806,7 +798,14 @@ video {
 	width: 100%;
 	height: auto;
 	z-index: 10; 
+	
+	text-decoration: none;
+	/*
 	background: yellow; 
 	opacity: 0.5;
-	text-decoration: none;
+	*/
+}
+
+#page-top-navbar {
+    position: relative;
 }
