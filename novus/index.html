@@ -28,11 +28,12 @@
 </head>
 <body>
 
-
+<a id="page-top"></a>
+	
 <div class="container-fluid banner">
     <div class="row">
         <div class="m-auto">
-            <a href="#title-top" class="stretched-link"></a>
+            <a href="#navbar-text" class="stretched-link"></a>
             <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
             <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
@@ -42,9 +43,10 @@
     </div>
 </div>
 
-<div class="container-fluid navi sticky-top" id="navbar">
+	
+<div class="container-fluid navi sticky-top" id="navbar" >
         <!-- <div class="container-fluid navbar sticky-top"> -->
-<nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
+<nav class="navbar navbar-default navbar-expand-md bg-white navbar-light" id="navbar-text">
 
   <a class="navbar-brand" href="#page-top">Lichao</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -53,14 +55,23 @@
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="research.html">Research</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="design.html">Design</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="cv.html">Vitæ</a>
-      </li>
+		<a class="nav-link" href="research.html">
+			<span class="lang eng">Research</span>
+			<span class="lang chn">研究</span>
+		  </a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="design.html">
+			<span class="lang eng">Design</span>
+			<span class="lang chn">设计</span>
+		  </a>
+	  </li>
+	  <li class="nav-item">
+		<a class="nav-link" href="cv.html">
+			<span class="lang eng">Vitæ</span>
+			<span class="lang chn">履历</span>
+		  </a>
+	  </li>
     
         
     </ul>
@@ -70,15 +81,16 @@
 </nav>
 </div>
 
+<!--
 <div class="container-fluid section header" id="title-top" style="height: 86px;">
 </div>
-    
+-->
 
-<div class="container-fluid section body" id="content">
+<div class="container-fluid section body">
     <div class="row justify-content-center no-gutters">
         <div class="col-12 text-right">
             <div id="lang-switch">
-                <div class="mb-0">
+                <div class="mb-0 mt-3">
                 <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
                 <a class="lang-s" onclick="langSwitch('chn')">中文</a>
                 </div>
