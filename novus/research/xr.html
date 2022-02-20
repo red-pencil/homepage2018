@@ -21,14 +21,14 @@
   <script src="../novus.js"></script>
 
   <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
 </head>
 <body>
 
-<div class="container-fluid navi pt-3 sticky-clear">
+<div class="container-fluid navi pt-3 sticky-clear" id="page-top">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
        <a class="navbar-brand" href="#page-top">Lichao</a>
@@ -36,27 +36,28 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		  
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../index.html">
+            <a class="nav-link" href="index.html">
                 <span class="lang eng">Home</span>
                 <span class="lang chn">序</span>
               </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="../research.html">
+            <a class="nav-link" href="research.html">
                 <span class="lang eng">Research</span>
                 <span class="lang chn">研究</span>
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../design.html">
+            <a class="nav-link" href="design.html">
                 <span class="lang eng">Design</span>
                 <span class="lang chn">设计</span>
               </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../cv.html">
+            <a class="nav-link" href="cv.html">
                 <span class="lang eng">Vitæ</span>
                 <span class="lang chn">履历</span>
               </a>
@@ -74,9 +75,27 @@
     </nav>
 </div>
 
+	
+		
+		<div class="container-fluid section empty header sticky-mark" id="header">
+			<div class="row justify-content-center no-gutters">
+				<a href="#page-top" id="backtotop">
+					<div class="col-12 title">
+            <h5 class="lang eng">Extended Reality Product Prototypes</h5>
+            <h5 class="lang chn">扩展现实产品原型</h5>
+        </div>
+					</a>
+				
+			</div>
+		</div>
+		
+		
+
+	
 <div class="container-fluid section empty header sticky-mark" id="header">
+	
     <div class="row justify-content-center no-gutters">
-        
+		
         <div class="col-12 type">
             <span class="lang eng">Lab Research</span>
             <span class="lang chn">实验室研究</span>
@@ -91,8 +110,9 @@
             <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-chevron-up"></i></a>
         </div>
 		-->
-        
+		
     </div>  
+		
 </div>
 
 	
@@ -115,22 +135,6 @@
 				</div>
             </div>
         </div>
-        
-        <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-169">
-				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0024.JPG">
-				</div>
-            </div>
-        </div>
-        
-        <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-169">
-				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0025.JPG">
-				</div>
-            </div>
-        </div>
 		
 		<div class="col-md-6 col-12 gallary">
             <div class="gallary-placeholder ratio-169">
@@ -143,30 +147,15 @@
         <div class="col-md-6 col-12 gallary">
             <div class="gallary-placeholder ratio-169">
 				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0026.JPG">
+					<img class="gallary-fit" src="../../public/research/xr/IMG_0027%20copy.jpg">
 				</div>
             </div>
         </div>
 		
-		<div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-169">
-				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0027.JPG">
-				</div>
-            </div>
-        </div>
-		
-		<div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-169">
-				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0053.JPG">
-				</div>
-            </div>
-        </div>
-		
+
 	</div>
 	<div class="row justify-content-center no-gutters">
-		<div class="col-md-12">
+		<div class="col-md-12 p-1">
 		<p class="lang eng">
 		I designed and fabricated several prototypes, and for example, products series consisting of 2 to 8 depth camera array for monitor, security, and automation. The prototypes, rebuilding real-time 3D environment, have the functions of object and behavior recognition with a machine learning interface. 
 		</p>
@@ -178,23 +167,20 @@
 		
 	<div class="row justify-content-center no-gutters center">
 		
-		<div class="col-12 m-auto">
+		<div class="col-12 m-auto p-1">
 			<img class="img-fluid" src="../../public/research/xr/IMG_0031.JPG">
         </div>
 		
-		<div class="col-12 m-auto pt-2 pb-2">
-            <video class="img-fluid" src="../../public/research/xr/XR_2019-08-08.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video></div>
+		<div class="col-12 m-auto p-1">
+            <video class="video-fluid" src="../../public/research/xr/XR_2019-08-08.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video></div>
 		
-		<div class="col-12 m-auto">
-			<img class="img-fluid" src="../../public/research/xr/IMG_0031.JPG">
-        </div>
 	</div>
 	
 	
 	<div class="row justify-content-center no-gutters center">
 
         <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-11">
+            <div class="gallary-placeholder ratio-169">
 				<div class="gallary-content">
                 	<img class="gallary-fit" src="../../public/research/xr/IMG_0041.JPG">
 				</div>
@@ -202,7 +188,7 @@
         </div>
         
         <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-11">
+            <div class="gallary-placeholder ratio-169">
 				<div class="gallary-content">
 					<img class="gallary-fit" src="../../public/research/xr/IMG_0042.JPG">
 				</div>
@@ -210,7 +196,7 @@
         </div>
         
         <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-11">
+            <div class="gallary-placeholder ratio-169">
 				<div class="gallary-content">
 					<img class="gallary-fit" src="../../public/research/xr/IMG_0043.JPG">
 				</div>
@@ -218,9 +204,9 @@
         </div>
         
         <div class="col-md-6 col-12 gallary">
-            <div class="gallary-placeholder ratio-11">
+            <div class="gallary-placeholder ratio-169">
 				<div class="gallary-content">
-					<img class="gallary-fit" src="../../public/research/xr/IMG_0054.JPG">
+					<img class="gallary-fit" src="../../public/research/xr/IMG_0055%20copy.jpg">
 				</div>
             </div>
         </div>
