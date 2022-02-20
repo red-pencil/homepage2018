@@ -276,15 +276,15 @@ nav {
     text-align: center;
 }
 
-#navbar .navbar .navbar-brand {
+.navi .navbar .navbar-brand {
 	color: var(--dark-text);
 }
 
-#navbar .navbar-nav .nav-link {
+.navi .navbar-nav .nav-link {
 	color: var(--neutral-text);
 }
 
-#navbar .navbar-nav .nav-link:hover{
+.navi .navbar-nav .nav-link:hover{
 	color: var(--dark-text);
 }
 
@@ -375,7 +375,8 @@ nav {
 }
 
 .tag-list>li {
-    background-color: #f0f0f0;
+    background-color: var(--darkgrey);
+	color: white;
     margin: 2px 0px;
     padding: 0 5px;
     font-size: small;
@@ -808,4 +809,9 @@ video {
 
 #page-top-navbar {
     position: relative;
+}
+
+#page-top {
+	height: 0;
+	width: 0;
 }
