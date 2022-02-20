@@ -33,7 +33,7 @@
 <div class="container-fluid banner">
     <div class="row">
         <div class="m-auto">
-            <a href="#navbar-text" class="stretched-link"></a>
+            <a href="#navbar" class="stretched-link"></a>
             <div class="logo">
             <svg xmlns="http://www.w3.org/2000/svg" height="50%" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
             <path fill="none" stroke="#e0e0e0" stroke-width="15" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
@@ -86,9 +86,9 @@
 </div>
 -->
 
-<div class="container-fluid section body">
-    <div class="row justify-content-center no-gutters">
-        <div class="col-12 text-right">
+<div class="container-fluid section body" style="height: calc(100vh - 3.5rem - 1.5*var(--global-gap));">
+    <div class="row justify-content-center no-gutters" s>
+        <div class="col-12 text-right" style="position: absolute; top: 100vh; right: 0; margin-right: var(--global-gap);">
             <div id="lang-switch">
                 <div class="mb-0 mt-3">
                 <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
@@ -98,7 +98,7 @@
         </div>
     
     </div>
-    <div class="row justify-content-center no-gutters" style="height: 90vh;">
+    <div class="row justify-content-center no-gutters" style="height:100%;">
         <div class="my-auto">
             <h5 class="lang eng">
                 Which side of <a href="cv.html">me</a> do you want to know?
