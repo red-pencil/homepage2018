@@ -24,8 +24,8 @@ body {
 .banner {
     height: calc(100vh - (3.5rem) - 2*var(--global-gap));
     padding: var(--global-gap) var(--global-gap) 0;
-	background: yellow;
-	/* 3.5rem (56px) = 1.25*1.5 (navi-font-size*inline, 30px) + 0.625 (padding, 10px) + 1 (padding, 16px)
+	background: ;
+	/* 3.5rem (56px) = 1.25*1.5 (navi-font-size*inline, 30px) + 0.625 (padding, 10px) + 1 (padding, 16px)*/
 }
 
 .section {
@@ -687,7 +687,7 @@ button .fa {
     max-width: 960px;
     margin: auto;
     
-    font-size: 10vw;
+    font-size: min(10vw, 120px);
     letter-spacing: 5vw;
     text-indent: 1vw;
         
