@@ -21,14 +21,16 @@
   <script src="../novus.js"></script>
     
   <!-- Google fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
     
 </head>
 <body>
 
-<div class="container-fluid navi sticky-top pt-3">
+<a id="page-top"></a>
+	
+<div class="container-fluid navi" id="page-top-navbar">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
       <a class="navbar-brand" href="#page-top">Lichao</a>
@@ -36,28 +38,37 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		  
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item home">
-            <a class="nav-link" href="../index.html">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">
+                <span class="lang eng">Home</span>
+                <span class="lang chn">序</span>
+              </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="../research.html">Research</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../design.html">Design</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../cv.html">Vitæ</a>
-          </li>       
-                        
-          <!-- Lang Switch -->
-          <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+            <a class="nav-link" href="../research.html">
+                <span class="lang eng">Research</span>
+                <span class="lang chn">研究</span>
               </a>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
-                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
-              </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../design.html">
+                <span class="lang eng">Design</span>
+                <span class="lang chn">设计</span>
+              </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cv.html">
+                <span class="lang eng">Vitæ</span>
+                <span class="lang chn">履历</span>
+              </a>
+          </li>
+            
+          <!-- Lang Switch -->
+          <li class="nav-item">
+            <a class="lang eng nav-link" onclick="langSwitch()">[中文]</a>
+            <a class="lang chn nav-link" onclick="langSwitch()">[ENG]</a>
           </li>
             
         </ul>
@@ -68,36 +79,69 @@
 
 
 <div class="container-fluid section empty header sticky-mark" id="header">
+	
     <div class="row justify-content-center no-gutters">
-        
-        <div class="col-4">
-            <span class="type">Couse Work</span>
-        </div>
-
-        <div class="col-8 text-right">
-            <ul class="list-inline icon-list">
-            </ul>    
-        </div>
+		
+		<a href="#page-top" class="wholebutton">
+       
+		<div class="col-12 type">
+			<span class="lang eng">Course Work</span>
+			<span class="lang chn">课程作业</span>
+			</div>
     
-        <div class="col-12">
+        <div class="col-12 title">
             <h5 class="lang eng">Metamorphosis: Telexistence into a Robotic Spider</h5>
             <h5 class="lang chn">变形记: 从人体到蜘蛛机器人的远程存在</h5>
         </div>
-        
-        <div class="col-6">
-            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-        </div>
-        
-        <div class="col-6 text-right">
-            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
-        </div>
+			
+        </a>
         
     </div>  
 </div>
 
 <div class="container-fluid section body" id="content">
+	
+	<div class="row justify-content-center no-gutters pb-0">
+        <div class="col-12 text-right">
+            <div id="lang-switch">
+                <div class="mb-0 mt-0">
+                <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+                <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+	<div class="row justify-content-center no-gutters">
+        <div class="col-md-12">
+			
+        <p class="lang eng">
+        (<a class="lang-s active" onclick="langSwitch('eng')">English</a> / <a class="lang-s" onclick="langSwitch('chn')">中文</a>)
+		Past telepresence and telexistence research focus on humanoid and duplicating human sensation. Different from those, <em>Metamorphosis</em> focus on mapping the human bodily consciousness to a non-human subject with totally different body schema, and here it is a spider robot. Its proposal is to provide an immersive experience of "being a spider", and smooth operation of the robot. The human-robot mapping consists of sensory mapping and kinematic mapping. We provide several feasible methods and build prototypes. Then we plan to conduct the experiment to find out the best way to provide the highest degree of presence. At last, the potential application of this concept has been discussed.
+        </p>
+        <p class="lang chn">
+		(<a class="lang-s" onclick="langSwitch('eng')">English</a> / <a class="lang-s active" onclick="langSwitch('chn')">中文</a>)
+        现有的远程存在技术多集中研究人形机器人和复制重现人类的感觉。“变形记”出心裁地关注将人类身体意识映射到非人类对象，而非人类地对象往往具有和人类完全不同的身体构造。本项目采用仿生蜘蛛机器人作为对象，目标是实现对仿生蜘蛛机器人的无缝操控，进一步产生“成为一只蜘蛛”的浸入式体验。这其中人机映射可分为感觉器官映射和运动器官映射。我们提出了几种可行的方法并且制作了交互原型。然后我们计划用实验寻找能够提供最高程度存在意识的最优解决方案。最后讨论了此类技术的潜在的应用。
+        </p>
+        </div>
+   </div>
+	
+	
     <div class="row justify-content-center no-gutters">
+        <div class="col-12 col-md-7 m-auto">
+            <img class="img-fluid" src="../../public/research/spider/spider-1%20big.jpg">
+        </div>
+        <div class="col-12 col-md-7 m-auto">
+            <img class="img-fluid" src="../../public/research/spider/spider-2%20big.jpg">
+        </div>
+        
+    </div>
+    
+    
+	
+	<div class="row justify-content-center no-gutters">
 
         <div class="col-md-12">
             <ul class="list-inline linklist tag-list">
@@ -112,57 +156,24 @@
         </div>
     </div>
     
-    <div class="row justify-content-center no-gutters">
-        <div class="col-sm-12 col-md-6 m-auto">
-            <img class="img-fluid" src="../../public/research/spider/spider-1%20big.jpg">
-        </div>
-        <div class="col-sm-12 col-md-6 m-auto">
-            <img class="img-fluid" src="../../public/research/spider/spider-2%20big.jpg">
-        </div>
-        
-    </div>
-    
-    <div class="row justify-content-center no-gutters">
-        <div class="col-md-12">
-        <p class="lang eng">
-        Past telepresence and telexistence research focus on humanoid and duplicating human sensation. Different from those, <em>Metamorphosis</em> focus on mapping the human bodily consciousness to a non-human subject with totally different body schema, and here it is a spider robot. Its proposal is to provide an immersive experience of "being a spider", and smooth operation of the robot. The human-robot mapping consists of sensory mapping and kinematic mapping. We provide several feasible methods and build prototypes. Then we plan to conduct the experiment to find out the best way to provide the highest degree of presence. At last, the potential application of this concept has been discussed.
-        </p>
-        <p class="lang chn">
-        现有的远程存在技术多集中研究人形机器人和复制重现人类的感觉。“变形记”出心裁地关注将人类身体意识映射到非人类对象，而非人类地对象往往具有和人类完全不同的身体构造。本项目采用仿生蜘蛛机器人作为对象，目标是实现对仿生蜘蛛机器人的无缝操控，进一步产生“成为一只蜘蛛”的浸入式体验。这其中人机映射可分为感觉器官映射和运动器官映射。我们提出了几种可行的方法并且制作了交互原型。然后我们计划用实验寻找能够提供最高程度存在意识的最优解决方案。最后讨论了此类技术的潜在的应用。
-        </p>
-        </div>
-   </div>
-    
     
 </div>
         
 
 
     
-<div class="container-fluid footer">
-    
-    <div class="row" id="contacts">
-        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
-            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
-        </div>
-        <div class="col-md-6 col-sm-12 text-center">
-        <ul class="fa-ul list-inline social-list">
-            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
-            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
-            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
-            <li><a href="#" class="fa fa-linkedin"></a></li>
-            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
-            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
-
-        </ul>
-        </div>
-    </div>
-    
-    <div class="row mt-3" id="copyright">
-        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+<div class="container-fluid section footer">
+	
+	
+    <div class="row" id="copyright" >
+		<a class="wholebutton" href="#page-top">
+        <div class="col-12 text-center">
         <p class="copyright">Lichao &copy; All Rights Reserved.</p>
         </div>
+			
+		</a>
     </div>
+		
     
 </div>
 
