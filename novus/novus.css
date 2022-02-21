@@ -630,7 +630,7 @@ button .fa {
     transition: .3s ease;
     background: var(--darkgrey);
 
-    color: white;  
+    color: white;
     text-align: center;       
     font-size: 0.7rem;
     font-family: 'Open Sans', sans-serif;
@@ -643,6 +643,7 @@ button .fa {
 .overlay h4{
     font-size: 1.25rem;
     margin: 0;
+	color: white;
 }
 
 .overlay p{
