@@ -304,6 +304,10 @@ h5>a:hover {
 	opacity: 0.95;
 }
 
+.navi.secondary-navbar {
+	top: var(--global-gap);
+}
+
 .navi>.row {
     padding: 0 5vw 1px;
 }
@@ -516,6 +520,7 @@ button .fa {
     color: darkgray;
     text-decoration-line: underline;
     text-decoration-style: dotted;
+	
 }
 .lang-s.active {color: black;}
 .lang-s:hover {color: orangered;}
@@ -892,6 +897,10 @@ a.wholebutton {
     position: relative;
 }
 
+.container-fluid.navi.no-shadow-navbar {
+	padding-top: 0;
+	padding-bottom: 0;
+}
 .container-fluid.navi.no-shadow-navbar>nav {
 	box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }

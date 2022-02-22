@@ -30,7 +30,7 @@
 
 <a id="page-top"></a>
 	
-<div class="container-fluid navi pt-gap pb-0 page-top-navbar no-shadow-navbar">
+<div class="container-fluid navi pt-0 pb-0 page-top-navbar no-shadow-navbar">
 
     <nav class="navbar navbar-default navbar-expand-md navbar-light">
 
@@ -78,10 +78,12 @@
     </div>
     
 
-  <div class="container-fluid navi pt-0 pb-0">
+<div class="container-fluid navi pt-0 pb-0 secondary-navbar">
 	  <nav class="navbar navbar-default navbar-expand-md bg-white">
 		  <div class="navbar-brand-center">
-		  <a class="navbar-brand mx-auto" href="#page-top"><h5>Unconstrained Neck</h5></a>
+			  <a class="navbar-brand mx-auto" href="#page-top">
+				  <h5 class="lang eng">Unconstrained Neck</h5>
+				  <h5 class="lang chn">无拘束颈部</h5></a>
 		  </div>
 		  
         
@@ -165,15 +167,18 @@
     
     <div class="row justify-content-center no-gutters center">
 		
-		<div class="col-12 type">
-				<span class="lang eng">Lab Research</span>
-				<span class="lang chn">实验室研究</span>
-			</div>
-        
-        <div class="col-12 title">
-            <h5 class="lang eng">Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck</h5>
-            <h5 class="lang chn">无拘束颈部：全向观察的附加机械颈部</h5>
+		<div class="col-12 title">
+            <h5 class="lang eng">Omnidirectional Observation from an Extra Robotic Neck</h5>
+            <h5 class="lang chn">全向观察的附加机械颈部</h5>
         </div>
+		
+		
+		<div class="col-12 type">
+			<span class="lang eng">Lab Research</span>
+			<span class="lang chn">实验室研究</span>
+		</div>
+        
+        
         
         <div class="col-10">
             <ul class="list-inline icon-list" style="font-size: 30px;">
@@ -200,12 +205,18 @@
     
     <div class="row justify-content-center no-gutters">
         <div class="col-md-12">
-        <p class="lang eng">
+			
+		<span class="bg-white">
+		[ <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+		<a class="lang-s" onclick="langSwitch('chn')">中文</a> ]
+		</span>
+			
+        <span class="lang eng">
         Due to the narrow range of motion of the neck and the small visual field of the eyes, the human visual sense is limited in terms of the spatial range. We address this visual limitation by proposing a programmable neck that can leverage the range of motion limits. Unconstrained Neck, a head-mounted robotic neck, is a substitution neck system which provides a wider range of motion enabling humans to overcome the physical constraints of the neck. Using this robotic neck, it is also possible to control the visual/motor gain, which allows the user to thus control the range and speed of his effective neck motion or visual motion.
-        </p>
-        <p class="lang chn">
+        </span>
+        <span class="lang chn">
         由于颈部狭窄的活动范围和眼睛狭小的视场，人类的视觉在空间方面受到限制。我们提出用能够改变活动范围的可编程颈部来解决此问题。名为Unconstrained Neck头戴机械颈部是一套颈部代替系统，此系统拥有更加宽广的活动范围，让人类得以克服颈部的生理极限。使用这个机械颈部的时候，调整视觉-运动增益可以被调节，正因此用户可以控制实际颈部动作的范围和速度，进一步影响引发的视觉运动。
-        </p>
+        </span>
         </div>
     </div>
     
@@ -268,13 +279,13 @@
   
 <div class="container-fluid footer">
     <div class="row mt-1" id="copyright">
-        <div class="col-4 text-center">
+        <div class="col-0 col-md-4 text-center">
         <p><b>lichao.shen [at] hotmail.com</b></p>
         </div>
-        <div class="col-4 text-center">
+        <div class="col-12 col-md-4 text-center">
         <p class="copyright">Lichao &copy; All Rights Reserved.</p>
         </div>
-        <div class="col-4 text-center">
+        <div class="col-0 col-md-4 text-center">
         <ul class="fa-ul list-inline social-list" >
             <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
             <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
