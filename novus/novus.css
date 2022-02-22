@@ -317,8 +317,17 @@ nav {
 
 .navbar-nav {
     text-align: center;
+	
 }
 
+.navbar-brand-center {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	background: yellow;
+	text-align: center;
+	opacity: 50%;
+}
 .navi .navbar .navbar-brand {
 	color: var(--dark-text);
 }
