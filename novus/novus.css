@@ -426,11 +426,11 @@ font-size: 1.6rem;
 	margin: 0;
 	padding: 0;
 	position: relative;
-	top: -0.2rem;
+	top: 0;
 	font-weight: bold;
 
 }
-.body .icon-list>li>a>i {font-size: 2rem;}
+.body .icon-list>li>a>i {font-size: 3rem;}
 .navi .icon-list>li>a>i {font-size: 1.3rem;}
 .icon-list>li>a:hover {
     color: orange;
@@ -443,7 +443,7 @@ font-size: 1.6rem;
     border-radius: 0.3rem;
 }
 
-.list-inline.link-list {
+.list-inline.link-list, .list-inline.tag-list {
 	justify-content: flex-start;
 }
 .link-list>li {
@@ -468,8 +468,9 @@ font-size: 1.6rem;
 }
 
 .tag-list>li {
-    background-color: var(--darkgrey);
-	color: white;
+    /*background-color: var(--lightgrey);*/
+	border: 1px solid black;
+	color: var(--dark-text);
     margin: 2px 2px;
     padding: 0 5px;
     font-size: small;
