@@ -324,9 +324,8 @@ nav {
 	position: absolute;
 	width: 100%;
 	left: 0;
-	background: yellow;
+	background: ;
 	text-align: center;
-	opacity: 50%;
 }
 .navi .navbar .navbar-brand {
 	color: var(--dark-text);
@@ -339,7 +338,6 @@ nav {
 .navi .navbar-nav .nav-link:hover{
 	color: var(--dark-text);
 }
-
 
 .firstpage {
     display: flex;
@@ -471,8 +469,7 @@ a:hover {
 button .fa {
     text-decoration: none;
     color: var(--darkgrey);
-    width: 1.5rem;
-    height: 1.5rem;
+    font-size: 1.5rem;
 }
 
 /*----- SWITCH -----*/
@@ -498,6 +495,7 @@ button .fa {
 .navbar-toggler {
     /* customize own style*/
     border-radius: 5px;
+	z-index: 5;
 }
 .row>div {
     /* padding: 0!important; */
