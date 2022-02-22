@@ -323,12 +323,23 @@ nav {
 .navbar-brand-center {
 	position: absolute;
 	width: 100%;
+	
 	left: 0;
+	
+	top: 0.5rem;
+	
 	background: ;
 	text-align: center;
+	z-index: 0;
 }
+
 .navi .navbar .navbar-brand {
 	color: var(--dark-text);
+	
+}
+.navi .navbar .navbar-brand>h5{
+font-size: 1.6rem;
+	
 }
 
 .navi .navbar-nav .nav-link {
@@ -393,6 +404,7 @@ nav {
 .icon-list>li>a {
     font-size: 1.5em;
     color: var(--darkgrey);
+	margin: 0 .25rem;
 }
 .icon-list>li>a:hover {
     color: orange;
@@ -432,15 +444,21 @@ nav {
     font-size: small;
 }
 
-#copyright .social-list a {
-    font-size: 1rem;
-}
 
 .social-list a {
     font-size: 2rem;
     color: var(--neutral-text);
     text-decoration: none;
     margin: 2px 0.5rem;
+}
+
+.footer .social-list a {
+    font-size: 1rem;
+}
+
+.navbar .icon-list a {
+	color: var(--darkgrey);
+	z-index: 3;
 }
 
 .social-list a:hover {
@@ -469,7 +487,8 @@ a:hover {
 button .fa {
     text-decoration: none;
     color: var(--darkgrey);
-    font-size: 1.5rem;
+    font-size: 1.5em;
+	width: 1em;
 }
 
 /*----- SWITCH -----*/
@@ -496,6 +515,7 @@ button .fa {
     /* customize own style*/
     border-radius: 5px;
 	z-index: 5;
+	border: 0px;
 }
 .row>div {
     /* padding: 0!important; */
@@ -859,8 +879,13 @@ a.wholebutton {
 	*/
 }
 
-#page-top-navbar {
+.container-fluid.navi.page-top-navbar {
     position: relative;
+}
+
+.container-fluid.navi.no-shadow-navbar>nav {
+	box-shadow: 0 0 0 0 rgba(0,0,0,0);
+}
 }
 
 #page-top {
