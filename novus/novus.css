@@ -149,12 +149,12 @@ body {
     text-transform: capitalize;
 }
 
-.header .type {
+.type {
     color: var(--neutral-text);
     font-weight: 300;
 }
 
-.header .title>h5 {
+.title>h5 {
     color: var(--dark-text);
     font-weight: 500;
 }
@@ -371,7 +371,7 @@ font-size: 1.6rem;
 }
 
 .header .list-inline{
-    display: inline-flex;
+    /*display: inline-flex;*/
     justify-content: flex-end; /*horizontal*/
     align-items: center; /*vertical*/
     padding-right: 0.5rem;
@@ -383,7 +383,7 @@ font-size: 1.6rem;
 
     margin: 0;
     font-size: 1em;
-    line-height: 1.5em;
+
 }
 
 .tag-solo {
@@ -402,10 +402,20 @@ font-size: 1.6rem;
 }
 
 .icon-list>li>a {
-    font-size: 1.5em;
     color: var(--darkgrey);
 	margin: 0 .25rem;
 }
+
+.icon-list>li>a>p {
+	font-size: 0.8rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: -0.2rem;
+	font-weight: bold;
+}
+.body .icon-list>li>a>i {font-size: 2rem;}
+.navi .icon-list>li>a>i {font-size: 1.3rem;}
 .icon-list>li>a:hover {
     color: orange;
 }
@@ -443,7 +453,6 @@ font-size: 1.6rem;
     padding: 0 5px;
     font-size: small;
 }
-
 
 .social-list a {
     font-size: 2rem;
