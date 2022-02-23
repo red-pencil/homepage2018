@@ -595,14 +595,16 @@ font-size: 1.6rem;
 
 .tag-list>li {
     /*background-color: var(--lightgrey);*/
-	border: 1px dotted var(--neutral-text);
+	/*border: 1px dotted var(--neutral-text);*/
 	color: var(--neutral-text);
     margin: 2px 2px;
     padding: 0 5px;
     font-size: small;
 }
 .tag-list>li::before{
-	 content: "";
+	content: ">";
+	margin: 0 1em;
+	font-weight: bold;
 }
 
 .social-list a {
@@ -663,15 +665,22 @@ button .fa {
 .sticky-s.active>i, .sticky-s:hover>i {
     color: orangered;
 }
+
 .lang-s {
     color: darkgray;
     text-decoration-line: underline;
     text-decoration-style: dotted;
-	
 }
-.lang-s.active {color: black;}
+.lang-s.active {color: var(--dark-text);}
 .lang-s:hover {color: orangered;}
 
+.lang-combo {
+	background: white;
+	
+	border-radius: 5px;
+	margin-right: 1em;
+	padding: 0 .5em;
+}
 .navbar-toggler {
     /* customize own style*/
     border-radius: 5px;
