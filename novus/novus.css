@@ -196,7 +196,7 @@ navi/section + (body/header/footer)
 	
 }
 .navi .navbar .navbar-brand>h5{
-font-size: 1.6rem;
+	font-size: 1.6rem;
 	
 }
 
@@ -230,6 +230,10 @@ font-size: 1.6rem;
 	padding-top: 0;
 }
 
+.navi.secondary-navbar>nav {
+	background: white;
+}
+
 
 
 
@@ -252,7 +256,7 @@ font-size: 1.6rem;
 
 .section.body-shadow>.row {
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
-    background-color: white;
+    background: white;
 }
 
 
