@@ -113,7 +113,7 @@ h5>a:hover {
 }
 
 .section h5.eng {
-    font-size: 1.6rem;
+    font-size:2rem;
 }
 
 .section h5.chn {
@@ -225,7 +225,7 @@ navi/section + (body/header/footer)
 	box-shadow: 0 0 0 0 rgba(0,0,0,0);
 }
 
-.navi.secondary-navbar {
+.navi.secondary-navbar, .header.secondary-navbar{
 	top: var(--global-gap);
 	padding-top: 0;
 }
@@ -244,7 +244,7 @@ navi/section + (body/header/footer)
     min-height: 80px;
     padding: calc(0.5*var(--global-gap)) var(--global-gap) ;
     z-index: 2;
-	margin: 0px auto;
+	margin: 0 auto;
 }
 
 
@@ -344,8 +344,19 @@ navi/section + (body/header/footer)
     box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
     background: var(--global-white);
     color: var(--dark-text);
-	align-items: center;
+
+	text-align: center;
 }
+
+.header>.row {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+    background: var(--global-white);
+    color: var(--dark-text);
+}
+
 
 .banner {
     height: calc(100vh - var(--navbar-height-observed));
@@ -366,12 +377,6 @@ navi/section + (body/header/footer)
     /*padding-top: 0px;*/
 }
 
-.header>.row {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    text-align: center;
-    background-color: var(--global-white);
-}
 
 .header h5 {
     margin: 0.3rem 0;
@@ -491,7 +496,7 @@ navi/section + (body/header/footer)
 
 .control {
     border-radius: 5px;
-    background-color: whitesmoke;
+    background: whitesmoke;
     padding: 0px;
 }
 
@@ -570,7 +575,7 @@ navi/section + (body/header/footer)
 }
 
 .li-item-type {
-    background-color: darkgrey;
+    background: darkgrey;
     color: white;
     padding: 0rem 0.3rem 0rem;
     border-radius: 0.3rem;
@@ -581,7 +586,7 @@ navi/section + (body/header/footer)
 }
 
 .link-list>li {
-    background-color: darkgray;
+    background: darkgray;
     text-align: left;
     padding: 0 10px;
     margin: 2px 0px;
@@ -630,7 +635,7 @@ navi/section + (body/header/footer)
 }
 
 .tag-list>li {
-    /*background-color: var(--lightgrey);*/
+    /*background: var(--lightgrey);*/
 	/*border: 1px dotted var(--neutral-text);*/
 	color: var(--neutralgrey);
     margin: 2px 2px;
@@ -716,6 +721,13 @@ button .fa {
 	border-radius: 5px;
 	margin-right: 1em;
 	padding: 0 .5em;
+}
+
+.lang-icon::before {
+	content: "\00B6";
+	background: white;
+	font-size: 2em;
+	
 }
 .navbar-toggler {
     /* customize own style*/
@@ -869,7 +881,7 @@ button .fa {
     writing-mode: vertical-rl;
     font-family: 'Open Sans';
     
-    background-color: grey;
+    background: grey;
     box-shadow: 3px 0px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 3px;
 }
