@@ -102,18 +102,18 @@ h5>a:hover {
     color: var(--neutral-text);
 }
 
-.section .chn {
+.section p.chn, .section span.chn {
     font-size: 1rem;
     font-weight: 200;
     letter-spacing: 0.01em;
     
 }
-.section .eng {
+.section p.eng, .section span.eng {
     font-size: 1rem;
 }
 
 .section h5.eng {
-    font-size:2rem;
+    font-size: 2rem;
 }
 
 .section h5.chn {
@@ -234,6 +234,9 @@ navi/section + (body/header/footer)
 	background: white;
 }
 
+.header.secondary-navbar>.row {
+	margin: 0 auto;
+}
 
 
 
