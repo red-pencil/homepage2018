@@ -568,13 +568,16 @@ navi/section + (body/header/footer)
 .body .icon-list>li {
 	text-align: center;
 	justify-content: center;
-	padding: 0.5em;
+	padding: 0.5em 1em;
+	padding-left: 0;
 	margin: 0;
 }
 
+.body .icon-list.small-icon {
+	justify-content: flex-start;
+}
 .icon-list>li>a {
     color: var(--neutralgrey);
-	margin: 0 .25em;
 }
 
 .icon-list>li>a>p {
@@ -587,6 +590,7 @@ navi/section + (body/header/footer)
 
 }
 
+.body .icon-list.small-icon>li>a>i {font-size: 1.25rem;}
 .body .icon-list>li>a>i {font-size: 3.5rem;}
 .navi .icon-list>li>a>i {font-size: 1.3rem;}
 .icon-list>li>a:hover {
@@ -606,16 +610,35 @@ navi/section + (body/header/footer)
 }
 
 .link-list>li {
-    background: darkgray;
-    text-align: left;
-    padding: 0 10px;
-    margin: 2px 0px;
+    
+    
+    padding: 0.5em;
+    margin: 0;
     /*margin-right: 0px!important;*/
     border-radius: 2px;
+	
+	text-align: left;
     font-size: 1em;
-	color: white;
+	font-weight: bolder;
+	
+	background: rgb(238,238,238);
+	
 	
 }
+.link-list>li:hover {
+    background: orange;
+}
+
+.link-list i, .link-list a {
+    color: rgb(106,106,106);
+    text-decoration-line: none;
+}
+
+.link-list i::after{
+	content: "";
+	margin-right: 0.5em;
+}
+
 
 .link-list-2 {
 	justify-content: flex-start;
@@ -668,14 +691,6 @@ navi/section + (body/header/footer)
 	
 }
 
-.link-list>li:hover {
-    background: orange;
-}
-
-.link-list i, .link-list a {
-    color: white;
-    text-decoration-line: none;
-}
 
 .tag-list>li {
     /*background: var(--lightgrey);*/
@@ -780,19 +795,34 @@ button .fa {
 }
 
 
-.hline-t::before {
+.hline-t-80::before {
 	content:"";
 	padding: 0 40%;
 	margin: 0 10%;
 	border-top: 1px solid var(--light-text);
 }
 
-.hline-b::after {
+.hline-b-80::after {
     content:"";
 	padding: 0 40%;
 	margin: 0 10%;
 	border-bottom: 1px solid var(--light-text);
 }
+
+.hline-t-100::before {
+	content:"";
+	padding: 0 50%;
+	margin: 0;
+	border-top: 1px solid var(--light-text);
+}
+
+.hline-b-100::after {
+    content:"";
+	padding: 0 50%;
+	margin: 0;
+	border-bottom: 1px solid var(--light-text);
+}
+
 
    
 .logo {
