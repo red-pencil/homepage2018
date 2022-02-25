@@ -168,7 +168,6 @@ navi/section + (body/header/footer)
     max-width: var(--content-width);
     margin: 0px auto;
     color: black;
-    box-shadow: var(--global-shadow);
 }
 
 
@@ -216,14 +215,6 @@ navi/section + (body/header/footer)
     position: relative;
 }
 
-.navi.no-shadow-navbar {
-	padding-top: 0;
-	padding-bottom: 0;
-}
-.navi.no-shadow-navbar>nav {
-	box-shadow: 0 0 0 0 rgba(0,0,0,0);
-}
-
 .navi.secondary-navbar, .header.secondary-navbar{
 	top: var(--global-gap);
 	padding-top: 0;
@@ -237,7 +228,10 @@ navi/section + (body/header/footer)
 	margin: 0 auto;
 }
 
-
+.shadow-on {
+	box-shadow: var(--global-shadow);
+	background: white;
+}
 
 /*----- SECTION -----*/
 
@@ -250,7 +244,6 @@ navi/section + (body/header/footer)
 	margin: 0 auto;
 }
 
-
 .section>.row {
     max-width: var(--content-width);
     padding: 1em;
@@ -260,7 +253,7 @@ navi/section + (body/header/footer)
 }
 
 .section.body-shadow>.row {
-    box-shadow: var(--global-shadow);
+    
     background: white;
 }
 
@@ -426,7 +419,7 @@ navi/section + (body/header/footer)
 #contacts {
     padding: 20px;
     color: var(--neutralgrey);
-	margin-bottom: 1em;
+	margin-bottom: var(--global-gap);
 }
 
 #contacts p {
@@ -490,10 +483,11 @@ navi/section + (body/header/footer)
 	position: relative;
 	height: 100vh;
 	top: calc( -3.5rem - 1.5*var(--global-gap)) ;*/
+
 	position: relative;
 	height: calc(100vh - var(--navbar-height));
-	padding-bottom: calc(0.5 * var(--global-gap) + var(--navbar-height));
-
+	padding-top: 0;
+	padding-bottom: var(--navbar-height);
 	background:;
 	
 }
@@ -502,13 +496,14 @@ navi/section + (body/header/footer)
 	position: absolute;
 	top: 0;
 	right: 0;
+	margin: 0;
+	padding: 0;
 	margin-right: max(var(--global-gap), calc(0.5 * (100vw - var(--content-width))));
 }
 
 #center-content {
-	
 	height: calc(100vh - 2 * var(--navbar-height));
-	
+	margin: 0 auto;
 	background:;
 	/*height:100%;*/
 }
