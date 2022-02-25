@@ -332,27 +332,25 @@ navi/section + (body/header/footer)
     margin: 0;
 }
 
+.banner>.row, .footer>.row, .header>.row {
+	box-shadow: var(--global-shadow);
+    background: var(--global-white);
+    color: var(--dark-text);
+	text-align: center;
+}
+
 .banner>.row, .footer>.row {
     max-width: var(--content-width);
     /*background: #f0f0f0;*/
     margin: 0px auto;
     height: 100%;
     padding: 20px 15px;
-    
-    box-shadow: var(--global-shadow);
-    background: var(--global-white);
-    color: var(--dark-text);
-
-	text-align: center;
 }
 
 .header>.row {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    text-align: center;
-    box-shadow: var(--global-shadow);
-    background: var(--global-white);
-    color: var(--dark-text);
+    
 }
 
 
@@ -1106,5 +1104,3 @@ video {
 	width: 100%;
 	height: auto;
 }
-
-
