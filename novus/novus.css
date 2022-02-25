@@ -611,9 +611,8 @@ navi/section + (body/header/footer)
 
 .link-list>li {
     
-    
     padding: 0.5em;
-    margin: 0;
+    margin: 0.25em 0;
     /*margin-right: 0px!important;*/
     border-radius: 2px;
 	
@@ -622,11 +621,14 @@ navi/section + (body/header/footer)
 	font-weight: bolder;
 	
 	background: rgb(238,238,238);
-	
-	
 }
+
 .link-list>li:hover {
     background: orange;
+}
+
+.link-list>li:hover i, .link-list>li:hover a {
+	color: white;
 }
 
 .link-list i, .link-list a {
