@@ -68,7 +68,9 @@ a.wholebutton {
 	opacity: 0.5;
 	*/
 }
-
+a.wholebutton.row>div {
+	padding: 0;
+}
 #page-top {
 	height: 0;
 	width: 0;
@@ -215,7 +217,7 @@ navi/section + (body/header/footer)
     position: relative;
 }
 
-.navi.secondary-navbar, .header.secondary-navbar{
+.navi.secondary-navbar{
 	top: var(--global-gap);
 	padding-top: 0;
 }
@@ -235,84 +237,6 @@ navi/section + (body/header/footer)
 
 /*----- SECTION -----*/
 
-.section {
-    /*height: 500px;*/
-    min-height: 80px;
-    padding: var(--global-gap);
-	padding-top: 0;
-    z-index: 2;
-	margin: 0 auto;
-}
-
-.section>.row {
-    max-width: var(--content-width);
-    padding: 1em;
-	margin: var(--global-gap) auto; /*horiontal center*/
-	/* margin collapse, take easy */
-
-}
-
-.section.body-shadow>.row {
-    
-    background: white;
-}
-
-
-.row.empty p{
-    color: white;
-}
-
-.section.body {
-	padding-top: 1em;
-	padding-bottom: 5em;
-}
-
-/*
-.body .img-fluid {
-    padding: 3px;
-    max-height: 50vh;
-}*/
-
-
-.body>.row.center {
-    display: flex;
-    text-align: center;
-}
-
-
-.section.body>.row {
-	
-    padding: 0 5px 1em;
-    /*padding: 0 5px;*/
-}
-
-.section.body>.row>div {
-	padding: 1em 0;
-}
-
-.row>div {
-    /* padding: 0!important; */
-    padding: 0;
-}
-
-.row>div>div {
-    /* padding: 0!important; */
-    padding: 0;
-}
-
-
-
-.section.body>.row:first-child {
-    /*padding-top: 0;
-    padding-bottom: 1rem;*/
-}
-.section.body>.row:last-child {
-    /*border-bottom: 1px solid black;*/
-    /*padding-bottom: 3rem;*/
-
-}
-
-
 .container-fluid>.row, .container-fluid>nav {
     border: var(--debug-border);
     border-radius: var(--global-radius);
@@ -320,37 +244,103 @@ navi/section + (body/header/footer)
     /*background: white;*/
 }
 
-
-
-
-.footer {
-    min-height: 20px; /*100px*/
-    padding: 0 var(--global-gap) var(--global-gap);
+.section {
+    /*height: 500px;*/
+    min-height: 50px;
+    padding: var(--global-gap);
+	padding-top: 0;
+    z-index: 2;
+	margin: 0 auto;
 }
 
-.footer p {
-    margin: 0;
+.section.main {
+	padding-top: 5em;
+	padding-bottom: 5em;
+}
+
+.row.empty p{
+    color: white;
+}
+
+.section>.row {
+    max-width: var(--content-width);
+    padding: 1em;
+	margin: var(--global-gap) auto; /*horiontal center*/
+	/* margin collapse, take easy */
+	margin-top: 0;
+	box-shadow: var(--global-shadow);
+	justify-content: flex-start;
+}
+
+.section>.row>div {
+    /* padding: 0!important; */
+    padding: 1em 0;
+}
+
+.section>.row:first-child {
+    /*padding-top: 0;
+    /*padding-bottom: 1rem;*/
+	margin-top: 0;
+}
+.section>.row:last-child {
+    /*border-bottom: 1px solid black;*/
+    /*padding-bottom: 3rem;*/
+	margin-bottom: 0;
+}
+
+.section>.row>div>div {
+    /* padding: 0!important; */
+    padding: 0;
+}
+
+
+.main>.row {
+    padding: 0 0 2em;
+    /*padding: 0 5px;*/
+}
+
+.main>.row.center {
+    display: flex;
+    text-align: center;
 }
 
 .banner>.row, .footer>.row, .header>.row {
 	box-shadow: var(--global-shadow);
     background: var(--global-white);
     color: var(--dark-text);
-	text-align: center;
+	justify-content: center;
+	
 }
 
 .banner>.row, .footer>.row {
-    max-width: var(--content-width);
+    /*max-width: var(--content-width);*/
     /*background: #f0f0f0;*/
-    margin: 0px auto;
-    height: 100%;
-    padding: 20px 15px;
+    /*margin: 0px auto;*/
+    /*height: 100%;*/
+	padding: 1em;
+	text-align: center;
 }
 
 .header>.row {
-    padding-top: 0.5rem;
+	padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    
+	text-align: center;
+}
+
+
+.header.sticky-mark {
+    top: var(--global-gap);
+}
+
+.footer {
+	/*
+    min-height: 20px;
+    padding: 0 var(--global-gap) var(--global-gap);
+	*/
+}
+
+.footer p {
+    margin: 0;
 }
 
 
@@ -367,10 +357,6 @@ navi/section + (body/header/footer)
     top: 70px;*/
     margin-top: 0.3rem;
     margin-left: 0.5rem;
-}
-
-.header {
-    /*padding-top: 0px;*/
 }
 
 
@@ -440,22 +426,20 @@ navi/section + (body/header/footer)
     color: black;
 }
 
-#footer-content::before{
+
+#footer-contact::before, #footer-copyright::after {
+    font-size: small;
+	color: var(--dark-text);
+	margin: 0 auto;
+}
+	
+#footer-contact::before {
 	content: "lichao [at] cim.mcgill.ca";
-	padding: 20px;
-    font-size: small;
-	color: black;
-	margin: 0 auto;
 }
 
-#footer-content::after{
+#footer-copyright::after {
 	content: "Lichao © All Rights Reserved.";
-	padding: 20px;
-    font-size: small;
-	color: black;
-	margin: 0 auto;
 }
-
 
 
 /*
@@ -565,7 +549,7 @@ navi/section + (body/header/footer)
 	margin: 0;
 }
 
-.body .icon-list>li {
+.main .icon-list>li {
 	text-align: center;
 	justify-content: center;
 	padding: 0.5em 1em;
@@ -573,7 +557,7 @@ navi/section + (body/header/footer)
 	margin: 0;
 }
 
-.body .icon-list.small-icon {
+.main .icon-list.small-icon {
 	justify-content: flex-start;
 }
 .icon-list>li>a {
@@ -590,8 +574,8 @@ navi/section + (body/header/footer)
 
 }
 
-.body .icon-list.small-icon>li>a>i {font-size: 1.25rem;}
-.body .icon-list>li>a>i {font-size: 3.5rem;}
+.main .icon-list.small-icon>li>a>i {font-size: 1.25rem;}
+.main .icon-list>li>a>i {font-size: 3.5rem;}
 .navi .icon-list>li>a>i {font-size: 1.3rem;}
 .icon-list>li>a:hover {
     color: coral;
