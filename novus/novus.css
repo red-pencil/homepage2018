@@ -215,6 +215,8 @@ navi/section + (body/header/footer)
 
 .navi.page-top-navbar {
     position: relative;
+	padding-top:0;
+	padding-bottom: 0;
 }
 
 .navi.page-top-navbar>nav {
@@ -231,16 +233,16 @@ navi/section + (body/header/footer)
 	background: white;
 }
 
-.shadow-on {
+.shadow-on>.navbar, .shadow-on>.row {
 	box-shadow: var(--global-shadow);
-	background: white;
+	background: var(--global-white);
 }
 
 
 
 /*----- SECTION -----*/
 
-.container-fluid>.row, .container-fluid>nav {
+.container-fluid>.row, .container-fluid>.navbar {
     border: var(--debug-border);
     border-radius: var(--global-radius);
     /*background: transparent;*/
@@ -266,12 +268,12 @@ navi/section + (body/header/footer)
 }
 
 .section>.row {
+	/*box-shadow: var(--global-shadow);*/
     max-width: var(--content-width);
     padding: 1em 0;
 	margin: var(--global-gap) auto; /*horiontal center*/
 	/* margin collapse, take easy */
 	margin-top: 0;
-	box-shadow: var(--global-shadow);
 	justify-content: flex-start;
 }
 
@@ -308,7 +310,7 @@ navi/section + (body/header/footer)
 }
 
 .banner>.row, .footer>.row, .header>.row {
-	box-shadow: var(--global-shadow);
+	/*box-shadow: var(--global-shadow);*/
     background: var(--global-white);
     color: var(--dark-text);
 	justify-content: center;
