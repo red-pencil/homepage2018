@@ -217,6 +217,10 @@ navi/section + (body/header/footer)
     position: relative;
 }
 
+.navi.page-top-navbar>nav {
+	padding-left: 0;
+}
+
 .navi.secondary-navbar{
 	top: var(--global-gap);
 	padding-top: 0;
@@ -264,7 +268,7 @@ navi/section + (body/header/footer)
 
 .section>.row {
     max-width: var(--content-width);
-    padding: 1em;
+    padding: 1em 0;
 	margin: var(--global-gap) auto; /*horiontal center*/
 	/* margin collapse, take easy */
 	margin-top: 0;
