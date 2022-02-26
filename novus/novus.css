@@ -169,7 +169,7 @@ navi/section + (body/header/footer)
 .navi nav {
     max-width: var(--content-width);
     margin: 0px auto;
-    color: black;
+    color: var(--dark-text);
 }
 
 
@@ -218,7 +218,8 @@ navi/section + (body/header/footer)
 }
 
 .navi.page-top-navbar>nav {
-	padding-left: 0;
+	padding-left: 0.5em;
+	padding-right: 0.5em;
 }
 
 .navi.secondary-navbar{
@@ -230,14 +231,12 @@ navi/section + (body/header/footer)
 	background: white;
 }
 
-.header.secondary-navbar>.row {
-	margin: 0 auto;
-}
-
 .shadow-on {
 	box-shadow: var(--global-shadow);
 	background: white;
 }
+
+
 
 /*----- SECTION -----*/
 
@@ -299,7 +298,7 @@ navi/section + (body/header/footer)
 
 
 .main>.row {
-    padding: 0 0 2em;
+    padding: 0 0.5em 2em;
     /*padding: 0 5px;*/
 }
 
