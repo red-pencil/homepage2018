@@ -332,6 +332,9 @@ navi/section + (body/header/footer)
 	text-align: center;
 }
 
+.banner>.row {
+	height: 100%;
+}
 .header>.row {
 	padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -360,8 +363,9 @@ navi/section + (body/header/footer)
     padding: var(--global-gap) var(--global-gap) 0;
 	background: ;
 	/* 3.5rem (56px) = 1.25*1.5 (navi-font-size*inline, 30px) + 0.625 (padding, 10px) + 1 (padding, 16px)*/
+	
 }
-
+.banner h5 { font-size: 2rem;}
 
 .type-note {
     /*position: absolute;
@@ -482,7 +486,12 @@ navi/section + (body/header/footer)
 	padding-top: 0;
 	padding-bottom: var(--navbar-height);
 	background:;
-	
+}
+
+
+#center-content-father h5 {
+	font-size: 1.5rem;
+	margin: 0;
 }
 
 #conner-content {
@@ -497,6 +506,7 @@ navi/section + (body/header/footer)
 #center-content {
 	height: calc(100vh - 2 * var(--navbar-height));
 	margin: 0 auto;
+	padding: 2em;
 	background:;
 	/*height:100%;*/
 }
@@ -784,12 +794,14 @@ button .fa {
 	padding: 0 .5em;
 }
 
-.lang-icon::before {
-	content: "\00B6";
+/*
+.main .lang:before {
+	content: "\f1ab";
 	background: white;
-	font-size: 2em;
+	font-size: 1em;
 	
 }
+*/
 .navbar-toggler {
     /* customize own style*/
     border-radius: 5px;
@@ -827,7 +839,6 @@ button .fa {
 }
 
 
-   
 .logo {
     width: 20vw;
     height: 20vh;
