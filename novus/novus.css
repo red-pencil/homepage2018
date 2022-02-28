@@ -1,6 +1,6 @@
 
 :root{
-    --debug-border: 1px pink solid;
+    --debug-border: 0px pink solid;
     --global-radius: 10px;
     --global-gap: 20px;
 	--navbar-height: calc(3.5rem + 2 * var(--global-gap));
@@ -301,7 +301,7 @@ navi/section + (body/header/footer)
 
 .section>.row>div>div {
     /* padding: 0!important; */
-    padding: 0;
+    /*padding: 0;*/
 }
 
 
@@ -1157,10 +1157,6 @@ button .fa {
 	
 }
 
-.gallary-padding {
-	padding: 5px;
-}
-
 .gallary-fit {/* img fit option */
 	width: 100%;
 	height: 100%;
@@ -1182,4 +1178,51 @@ video {
 .video-fluid {
 	width: 100%;
 	height: auto;
+}
+
+#test {
+	
+	background: yellow;
+	
+}
+
+#test>div.row {
+	border: 1px solid blue;
+	padding: 1em;
+	
+	width: calc(min((50vw - var(--global-gap)), 0.5 * var(--content-width)) );
+	height: calc(min((50vw - var(--global-gap)), 0.5 * var(--content-width)) );
+	
+	flex-direction: column;
+	flex-wrap: wrap-reverse;
+	align-content: flex-end;
+	justify-content: center;
+	align-items: flex-end;
+	
+
+}
+#test1 {
+	
+	display: flex;
+	flex-direction: column;
+	
+	justify-content: center; /*h to h distribution*/
+	align-content: space-between; /*v to v distribution*/
+	justify-items: flex-start; /*h to h align*/
+	align-items: center; /*v to h align*/
+}
+
+#test img {
+	
+	width: 100%;
+	border: 1px solid red;
+	padding: 1em;
+	
+}
+
+@media screen and (max-width:768px) {
+#test img {
+	width: calc(min((100vw - 2 * var(--global-gap)),var(--content-width)) );
+	height: calc(min((100vw - 2 * var(--global-gap)),var(--content-width)) );
+	}
 }
