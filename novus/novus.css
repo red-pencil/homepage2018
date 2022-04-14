@@ -470,7 +470,7 @@ navi/section + (body/header/footer)
 }
 
 #footer-contact::before {
-	content: "lichao [at] cim.mcgill.ca";
+	content: "lichao.prime [at] gmail.com";
 }
 
 #footer-copyright::after {
@@ -587,24 +587,13 @@ navi/section + (body/header/footer)
     /*width: 50px;*/
 }
 
-.navi .icon-list>li {
-	margin: 0;
-}
 
-.main .icon-list>li {
+.icon-list>li {
 	text-align: center;
 	justify-content: center;
 	padding: 0.5em 1em;
 	margin: 0;
 	color: var(--neutralgrey);
-}
-
-.main .icon-list.small-icon>li {
-	padding-left: 0;
-}
-
-.main .icon-list.small-icon {
-	justify-content: flex-start;
 }
 
 .icon-list>li>a {
@@ -618,13 +607,21 @@ navi/section + (body/header/footer)
 	position: relative;
 	top: 0;
 	font-weight: 600;
+}
+.icon-list>li>a>i {font-size: 3.5rem;}
+.icon-list>li i {font-size: 3.5rem;}
 
+.icon-list.small-icon>li {
+	padding-right: 0;
 }
 
-.main .icon-list.small-icon>li>a>i {font-size: 1.25rem;}
-.main .icon-list>li i {font-size: 3.5rem;}
-.main .icon-list>li>a>i {font-size: 3.5rem;}
-.navi .icon-list>li>a>i {font-size: 1.3rem;}
+.icon-list.small-icon {
+	justify-content: flex-end;
+	padding: 0;
+}
+
+.icon-list.small-icon>li>a>i {font-size: 1.25rem;}
+
 
 .icon-list>li a:hover {
     color: coral;
@@ -792,10 +789,6 @@ navi/section + (body/header/footer)
     font-size: 2em;
 }
 
-.navbar .icon-list a {
-	color: var(--darkgrey);
-	z-index: 3;
-}
 
 .social-list a:hover {
     color: var(--global-highlight);
