@@ -163,10 +163,11 @@ navi/section + (body/header/footer)
 	background-image: url(../logo/logo-2-3.svg);
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 1.5em;
-	width: 1.5em;
+	height: 2.5rem;
+	width: 2rem;
 	margin: 0 12px;
 	opacity: 0.5;
+	padding: 0;
 
 }
 
