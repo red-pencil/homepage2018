@@ -168,7 +168,10 @@ navi/section + (body/header/footer)
 	margin: 0 12px;
 	opacity: 0.5;
 	padding: 0;
+}
 
+.navbar-brand:hover{
+	opacity: 0.9;
 }
 
 
@@ -949,8 +952,12 @@ button .fa {
     right: 0;
     bottom: 0;
     margin: auto;
+	
 }
 
+.logo svg>path {
+	animation: draw 8s infinite linear;
+}
 
 
 /*----- CARD -----*/
