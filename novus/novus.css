@@ -612,6 +612,12 @@ navi/section + (body/header/footer)
 .icon-list>li i {font-size: 3.5rem;}
 
 .icon-list.small-icon>li {
+	padding: 0 0.5em;
+}
+.icon-list.small-icon>li:first-child {
+	padding-left: 0;
+}
+.icon-list.small-icon>li:last-child {
 	padding-right: 0;
 }
 
