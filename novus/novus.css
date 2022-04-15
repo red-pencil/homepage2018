@@ -1093,11 +1093,11 @@ button .fa {
 }
 */
       
-.card-container:hover .overlay {
+.card-body:hover .overlay {
     opacity: 0.95;
 }
 
-.card-container .overlay {
+.card-body .overlay {
     position: absolute;
     height: 100%;
     width: 100;
