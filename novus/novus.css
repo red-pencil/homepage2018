@@ -102,6 +102,9 @@ p,ul,span {
     font-display: optional;
 }
 
+b {
+	font-weight: 800;
+}
 h5>a, p>a {
     text-decoration: underline;
     text-decoration-style: dotted;
@@ -300,7 +303,7 @@ navi/section + (body/header/footer)
 
 .section.main {
 	padding-top: 5em;
-	padding-bottom: 5em;
+	padding-bottom: 0em;
 }
 
 .row.empty p{
@@ -310,7 +313,7 @@ navi/section + (body/header/footer)
 .section>.row {
 	/*box-shadow: var(--global-shadow);*/
     max-width: var(--content-width);
-    padding: 1em 0;
+    padding: 1rem 0;
 	margin: var(--global-gap) auto; /*horiontal center*/
 	/* margin collapse, take easy */
 	margin-top: 0;
@@ -365,7 +368,7 @@ navi/section + (body/header/footer)
     /*background: #f0f0f0;*/
     /*margin: 0px auto;*/
     /*height: 100%;*/
-	padding: 1em;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -452,7 +455,7 @@ navi/section + (body/header/footer)
 }
 
 #contacts {
-    padding: 20px;
+    /* padding: 20px; */
     color: var(--neutralgrey);
 	margin-bottom: var(--global-gap);
 }
@@ -469,7 +472,7 @@ navi/section + (body/header/footer)
 }
 
 #copyright {
-    padding: 20px;
+    /* padding: 20px; */
     font-size: small;
 }
 
@@ -487,6 +490,11 @@ navi/section + (body/header/footer)
 #footer-contact::before {
 	content: "lichao.prime [at] gmail.com";
 }
+
+#footer-copyright {
+	display: none;
+}
+
 
 #footer-copyright::after {
 	content: "Lichao © All Rights Reserved.";
@@ -584,8 +592,7 @@ navi/section + (body/header/footer)
 	/* display: inline-flex; */
     align-items: center;
 	
-    padding: 0.1em;
-    font-size: 1em;
+    padding: 0 0.1em;
 	
 	flex: initial;
 
@@ -803,7 +810,7 @@ navi/section + (body/header/footer)
     font-size: 2rem;
     color: var(--neutral-text);
     text-decoration: none;
-    margin: 2px 0.5rem;
+    margin: 0px 0.5rem;
 }
 
 .footer .social-list a {
@@ -1159,7 +1166,7 @@ button .fa {
     background: var(--darkgrey);
 
     color: white;
-    text-align: center;       
+    text-align: center;
     font-size: 0.7rem;
     font-family: 'Open Sans', sans-serif;
     font-display: optional;
