@@ -1136,7 +1136,7 @@ button .fa {
 }
 */
       
-.card-body:hover .overlay {
+.card-container:hover .overlay {
     opacity: 0.95;
 }
 
