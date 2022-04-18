@@ -632,7 +632,7 @@ navi/section + (body/header/footer)
 	padding: 0.25em;
 	position: relative;
 	top: 0;
-	font-weight: 600;
+	font-weight: 500;
 }
 .icon-list>li>a>i {font-size: 3.5rem;}
 .icon-list>li i {font-size: 3.5rem;}
