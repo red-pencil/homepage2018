@@ -1,7 +1,7 @@
 
 :root{
     --debug-border: 0px pink solid;
-    --global-radius: 15px;
+    --global-radius: 10px;
     --global-gap: 20px;
 	--navbar-height: calc(3.5rem + 2 * var(--global-gap));
 	--navbar-height-observed: calc(3.5rem + 2 * var(--global-gap));
@@ -9,29 +9,27 @@
 	
     --global-grey: #f0f0f0;
 	--global-white: #ffffff; /* rgb(255,255,255) */
-    --background: rgb(239,244,248);
-		/* #f1f2f6; /* rgb(241,242,246) */
+    --background: #f1f2f6; /* rgb(241,242,246) */
 	--lightgrey: #c5c5cb; /* rgb(197,197,203) */
 	--light-text: #c5c5c5; /* rgb(197,197,197) */
-	--darkgrey: rgb(139,145,165);
-		/*#8d8d92; /* rgb(141,141,146) */
+	--darkgrey: #8d8d92; /* rgb(141,141,146) */
 	--neutral-text: #7f7f7f; /* rgb(127，127，127) */
 	--neutralgrey: dimgrey; /* rgb(105,105,105) */
-	--dark-text: rgb(110,110,130);
-	/*#2d2d2d; /* rgba(45,45,45) */
+	--dark-text: #2d2d2d; /* rgba(45,45,45) */
 	
 	--global-highlight: orange;
 	
 	/* embeded shadow: 0 .5rem 1rem rgba(0,0,0,.15) */
 	/* inset */
 	
-	/* --global-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2); */
-	/* --global-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); */
-	
+	--global-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.2);
+	/*--global-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);*/
+	/*
 	--global-shadow:
-		-5px -5px 0.4rem rgba(255,255,255,1),
-		3px 3px 0.4rem rgba(0,0,100,0.15);
-	
+		-2px -2px 0.5rem rgba(255,255,255,1),
+		0 0 0.5rem rgba(0,0,0,.05),
+		0 0 0.8rem rgba(0,0,0,.01);
+	*/
 	
 } 
 
@@ -178,7 +176,6 @@ navi/section + (body/header/footer)
 	margin: 4px 12px;
 	opacity: 0.5;
 	padding: 0;
-	z-index: 10;
 }
 
 .navbar-brand:hover{
@@ -286,7 +283,7 @@ navi/section + (body/header/footer)
 
 .shadow-on>.navbar, .shadow-on>.row {
 	box-shadow: var(--global-shadow);
-	/* background: var(--global-white); */
+	background: var(--global-white);
 }
 
 
@@ -310,7 +307,8 @@ navi/section + (body/header/footer)
 }
 
 .section.main {
-	margin: 5rem 0;
+	padding-top: 5em;
+	padding-bottom: 0em;
 }
 
 .row.empty p{
@@ -365,8 +363,7 @@ navi/section + (body/header/footer)
 
 .banner>.row, .footer>.row, .header>.row {
 	/*box-shadow: var(--global-shadow);*/
-    /* background: var(--global-white); */
-	background: var(--background);
+    background: var(--global-white);
     color: var(--dark-text);
 	justify-content: center;
 }
