@@ -17,7 +17,7 @@
 	--neutralgrey: dimgrey; /* rgb(105,105,105) */
 	--dark-text: #2d2d2d; /* rgba(45,45,45) */
 	
-	--global-highlight: orange;
+	--global-highlight: orangered;
 	
 	/* embeded shadow: 0 .5rem 1rem rgba(0,0,0,.15) */
 	/* inset */
@@ -102,14 +102,20 @@ p,ul,span {
     font-display: optional;
 }
 
-b {
-	font-weight: 800;
+b, strong {
+	font-weight: 700;
 }
-h5>a, p>a {
+
+h5>a, p a, .resume li a {
     text-decoration: underline;
     text-decoration-style: dotted;
 	color: var(--dark-text);
     
+}
+
+p a:hover, .resume li a:hover {
+	color: var(--global-highlight);
+	text-decoration-style: solid;
 }
 
 h5>a:hover {
@@ -120,7 +126,6 @@ h5>a:hover {
 }
 
 .section .chn {
-
     font-weight: 300;
     letter-spacing: 0.01em;
     
@@ -377,8 +382,7 @@ navi/section + (body/header/footer)
 }
 
 .header>.row {
-	padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+	padding: 0.5em 0.5em;
 	text-align: center;
 }
 
@@ -740,12 +744,16 @@ navi/section + (body/header/footer)
 	background: var(--global-highlight);
 }
 
+
+
 @media screen and (max-width:768px) {
+	
+	.link-list { margin: 0; }
 
 	.link-list>li{
 		flex: 0 0 50%;
 		margin: 0;
-		padding: 0.5em 0em;
+		padding: 0.5em 0;
 	}
 
 	.link-list>li.full{
