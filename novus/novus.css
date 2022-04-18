@@ -307,8 +307,7 @@ navi/section + (body/header/footer)
 }
 
 .section.main {
-	padding-top: 5em;
-	padding-bottom: 0em;
+	margin: 5em 0;
 }
 
 .row.empty p{
