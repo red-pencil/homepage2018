@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lichao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+  <!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://s1.pstatp.com/cdn/expire-1-M/jquery/3.4.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+-->
+    
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- core -->
+  <link rel="stylesheet" href="novus.css">
+  <script src="novus.js"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
+    
+  <style>
+    
+  </style>
+    
+</head>
+<body>
+
+<div class="container-fluid navi sticky-top pt-3">
+    <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
+
+      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item home">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cv.html">Vitæ</a>
+          </li>
+            
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+        
+    </nav>
+</div>
+
+<div class="container-fluid section empty header" id="header">
+    <div class="row justify-content-center no-gutters">
+        
+        <div class="col-12 mt-2">
+            <h5 class="lang eng">Design</h5>
+            <h5 class="lang chn">设计</h5>
+        </div>
+        
+        <div class="col-12">
+            <p class="lang eng type">As a designer, I mainly do Industrial Design, Media Design, Interaction Design and User Experience Design, and sometimes code for my own website.</p>
+            <p class="lang chn type">作为一个设计师，我主要从事工业设计、媒体设计、交互设计和用户体验设计，有时候直接为我的网站写代码。</p> 
+        </div>
+        
+        <div class="col-6">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+        </div>
+        
+    </div>  
+</div>
+
+<div class="float-background"><span>LICHAO</span></div>
+<!-- Projects-->
+<div class="container-fluid section portfolio">
+<!--    
+    <div class="row justify-content-center no-gutters mb-0 pb-0">
+        <div class="col-md-12">
+            <ul class="list-inline linklist tag-list">
+                <li>@Altered Reality Group</li>
+                <li>#human-computer-interaction</li>
+                <li>#augmented-reality</li>
+                <li>#robotics</li>
+                <li>#visuomotor-coordination</li>
+                <li>#interaction-design</li>
+                <li>#wearable</li>
+            </ul>
+        </div>
+    </div>
+ -->   
+    
+    <div class="row justify-content-center px-0">
+                    
+        <!-- Project 8 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+            <a href="design/website.html" class="stretched-link"></a>
+            
+            <div class="card-note-sub">
+                08.
+            </div>
+
+            <div class="card-body">
+            <div>
+                <img class="img-fluid" src="../public/design/website/tyall.jpg" alt="" />
+            </div>
+            <div class="overlay d-flex text-center" >   
+                <div class="m-auto">
+                    <p class="mb-0">IxD, GUI, Web Design</p>
+                    <br>
+                    <h4>
+                        Responsive Navigation Pages
+                    </h4>
+                </div>   
+            </div>
+            </div>
+
+            <div class="card-note-side">
+                Web
+            </div>
+            
+            <div class="card-note-main">
+                XANADU
+            </div>
+
+        </div>
+        </div>
+        
+        <!-- Project 7 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+            <a href="design/livevr.html" class="stretched-link"></a>
+            
+            <div class="card-note-sub">
+                07.
+            </div>
+
+            <div class="card-body">
+            <div>
+                <img class="img-fluid" src="../public/design/livevr/mr-demo2%20copy.jpg" alt="" />
+            </div>
+            <div class="overlay d-flex text-center">
+                <div class="m-auto">
+                    <p class="mb-0">IxD, UI, App Design</p>
+                    <br>
+                    <h4>
+                        Live-Stream Anime
+                    </h4>
+                </div>   
+            </div>
+            </div>
+
+            <div class="card-note-side">
+                App
+            </div>
+            
+            <div class="card-note-main">
+                LIVE!VR
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                06.
+            </div>
+
+            <div class="card-body">
+            <div>
+                <img class="img-fluid" src="../public/design/tps/tps-2.jpg" alt="" />
+            </div>
+            <div class="overlay d-flex text-center">
+                <a href="design/tps.html" class="stretched-link"></a>
+                <div class="m-auto">
+                    <p class="mb-0">Product Design, User Experience, Crowdfunding</p>
+                    <br>
+                    <h4>Toilet Paper Dispenser</h4>
+                </div>
+            </div>
+            </div>
+
+            <div class="card-note-side">
+                Product
+            </div>
+            <div class="card-note-main">
+                TP/SCEAMER
+            </div>
+
+        </div>
+        </div>
+        
+        <!-- Project 5 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                05.
+            </div>
+
+            <div class="card-body">
+                <div>
+                    <img class="img-fluid" src="../public/design/hahaki/hahaki-0s.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    <a href="design/hahaki.html" class="stretched-link"></a>
+                    <div class="m-auto">
+                        <p class="mb-0">Interactive Design, Product Design</p>
+                        <br>
+                        <h4>
+                            Postcard Customization System
+                        </h4>
+                        <br>
+                        <p class="mb-0">City, Museum, Tokyo Design Show</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Product + Mobile App
+            </div>
+            <div class="card-note-main">
+                HAHAKI
+            </div>
+
+        </div>
+        </div>
+        
+        <!-- Project 4 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                04.
+            </div>
+
+            <div class="card-body">
+                <div>
+                    <img class="img-fluid" src="../public/design/dododo/dododo-2s.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    <a href="design/dododo.html" class="stretched-link"></a>
+                    <div class="m-auto">
+                        <p class="mb-0">GUI, UE, IxD, App Design</p>
+                        <br>
+                        <h4>
+                            To-Do List
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Mobile App
+            </div>
+            <div class="card-note-main">
+                DODODO
+            </div>
+
+        </div>
+        </div>
+    
+        <!-- Project 3 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                03.
+            </div>
+
+            <div class="card-body">
+                <div>
+                    <img class="img-fluid" src="../public/design/aero/aero-0s.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    <a href="design/aero.html" class="stretched-link"></a>
+                    <div class="m-auto">
+                        <p class="mb-0">Industrial Design, Vehicle Design</p>
+                        <br>
+                        <h4>
+                            Formula Student Racing Car
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Vehicle
+            </div>
+            <div class="card-note-main">
+                AERO
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                02.
+            </div>
+
+            <div class="card-body">
+                <div>
+                     <img class="img-fluid" src="../public/design/watcher/watcher-1s.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    <a href="design/watch.html" class="stretched-link"></a>
+                    <div class="m-auto">
+                        <p class="mb-0">Product Design, Industrial Design, User Experience</p>
+                        <br>
+                        <h4>
+                            Health Monitor Smart Watch
+                        </h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Product
+            </div>
+            <div class="card-note-main">
+                HEALTH WATCHER
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Project 1 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+
+            <div class="card-note-sub">
+                01.
+            </div>
+
+            <div class="card-body">
+                <div>
+                    <img class="img-fluid" src="../public/design/studio/studio-1s.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    <a href="design/studio.html" class="stretched-link"></a>
+                    <div class="m-auto">
+                        <p class="mb-0">Interior Design</p>
+                        <br>
+                        <h4>
+                            Design Studio
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Interior
+            </div>
+            <div class="card-note-main">
+                HIVE STUDIO
+            </div>
+
+        </div>
+        </div>
+        
+        <!-- Project 0 -->
+        <div class="col-md-6 card-container-outer">
+        <div class="card-container">
+            
+            <a href="../public/design/shen_lichao%20portfolio.pdf" class="stretched-link"></a>
+
+            <div class="card-note-sub">
+                00.
+            </div>
+
+            <div class="card-body">
+                <div>
+                    <img class="img-fluid" src="../public/design/portfolio.jpg" alt="" />
+                </div>
+                <div class="overlay d-flex text-center">
+                    
+                    <div class="m-auto">
+                        <p class="mb-0">More Works</p>
+                        <br>
+                        <h4>
+                            More Design
+                        </h4>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-note-side">
+                Portfolio
+            </div>
+            <div class="card-note-main">
+                PORTFOLIO
+            </div>
+
+        </div>
+        </div>
+
+
+    <!-- end of projects -->
+    </div>
+                
+</div>
+
+   
+  
+<div class="container-fluid footer">
+    
+    <div class="row" id="contacts">
+        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
+            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+        <ul class="fa-ul list-inline social-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
+            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+        </ul>
+        </div>
+    </div>
+    
+    <div class="row mt-3" id="copyright">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    
+</div>
+    
+<script>
+        
+    langInitiate("eng");
+
+</script>
+
+</body>
+</html>
+

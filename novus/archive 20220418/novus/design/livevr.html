@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lichao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  <!-- core -->
+  <link rel="stylesheet" href="../novus.css">
+  <script src="../novus.js"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
+    
+</head>
+<body>
+
+<div class="container-fluid navi sticky-top pt-3">
+    <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
+
+      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item home">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="../design.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cv.html">Vitæ</a>
+          </li>
+                        
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+        
+    </nav>
+</div>
+
+
+<div class="container-fluid section empty header sticky-mark" id="header">
+    <div class="row justify-content-center no-gutters">
+        
+        <div class="col-4">
+            <span class="type">App</span>
+        </div>
+        
+        <div class="col-8 text-right">
+            <ul class="list-inline icon-list">
+                <li>
+                <a href="../../public/design/livevr/mr-demo-long.mp4"><i class="fa fa-film"></i></a>
+                </li>
+                
+            </ul>    
+        </div>
+        
+        <div class="col-12 mt-3">
+            <h5 class="lang eng">Live!VR: VR Anime Stream Boardcast</h5>
+            <h5 class="lang chn">Live!VR 虚拟角色直播</h5>
+        </div>
+        
+        <div class="col-6">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+        </div>
+        
+    </div>  
+</div>
+
+<div class="container-fluid section body" id="content">
+    <div class="row justify-content-center no-gutters">
+
+        <div class="col-md-12">
+            <ul class="list-inline linklist tag-list">
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6 col-md-8 col-sm-12 m-auto">
+            <img class="img-fluid" src="../../public/design/livevr/mr-demo.jpg">
+        </div>
+        
+        <div class="col-lg-6 col-md-8 col-sm-12 m-auto">
+            <img class="img-fluid" src="../../public/design/livevr/mr-demo2.jpg">
+        </div>
+     
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-md-12">
+        <p class="lang eng">
+            Live!VR is a start-up project about Japanese anime industry, located in Tokyo. It is designed for new-form anime content broadcast and live-stream, with the technology of real-time mixed reality. The key figure of Live!VR is Virtual Youtuber (VTuber, usually virtual anime character), and the commericial content involves derivative, fashion, tourism, advertisement, promotion, etc. The achieved main features include motion control (by Kinect), emotion control, lip-voice sync, real-scene overlay and multi-player.
+        </p>
+           
+        <p class="lang chn">
+            Live!VR是一个日本动漫文化产业相关的创业项目，位于东京，旨在参与YouTube虚拟直播频道。主题是借助实时混合现实技术实现全新形态的动漫内容直播。Live!VR以虚拟主播（VTuber）为主角，内容涉及时尚，宣传，服饰，商业合作等内容。实现的功能包括动作控制(Kinect体感)，表情控制，唇形同步，真实场景叠加和多人模式。
+        </p>
+        </div>
+        
+        <div class="col-md-12">   
+        <ul class="fa-ul lang eng">
+          <li><i class="fa-li fa fa-check"></i>
+              Participated in commerical planning, user research, and product design.
+          </li>
+          <li><i class="fa-li fa fa-check"></i>
+              Wrote the program with <em>Unity</em> and <em>C#</em>, and Set up the device and animaiton, as the technology partner.
+          </li>
+        </ul>
+        
+        <ul class="fa-ul lang chn">
+          <li><i class="fa-li fa fa-check"></i>
+            参与商业规划，研究用户需求，构思产品。
+          </li>
+          <li><i class="fa-li fa fa-check"></i>
+            编写程序和动画，提供技术支持。
+          </li>
+        </ul>
+        </div>
+    </div>
+
+    
+
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12">
+            <video class="img-fluid" src="../../public/design/livevr/mr-demo-long.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
+        
+        </div>
+        
+
+    </div> 
+    
+    <div class="row justify-content-center no-gutters">
+    
+    <div class="col-12 m-auto">
+            <ul class="list-inline linklist link-list mb-3 mt-3">
+                <li class="list-inline-item">
+                <a href="../../public/design/livevr/mr-demo-long.mp4"><i class="fa fa-film"></i> Video</a>
+                </li>
+            </ul>    
+        </div>
+    </div>
+    
+</div>
+        
+  
+<div class="container-fluid footer">
+    
+    <div class="row" id="contacts">
+        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
+            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+        <ul class="fa-ul list-inline social-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
+            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+        </ul>
+        </div>
+    </div>
+    
+    <div class="row mt-3" id="copyright">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    
+</div>
+    
+<script>
+    
+    langInitiate('eng');
+
+</script>
+
+</body>
+</html>
+
+
+

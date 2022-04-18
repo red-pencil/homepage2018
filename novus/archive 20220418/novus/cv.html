@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lichao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+  <!-- core -->
+  <link rel="stylesheet" href="novus.css">
+  <script src="novus.js"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
+    
+  <style>
+    
+  </style>
+    
+</head>
+<body>
+
+<div class="container-fluid navi sticky-top pt-3">
+    <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
+
+      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item home">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="design.html">Design</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Vitæ</a>
+          </li>
+        
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
+            
+        </ul>
+      </div>
+        
+    </nav>
+</div>
+
+<div class="container-fluid section empty header" id="header">
+    <div class="row justify-content-center no-gutters">
+        
+        <div class="col-12 mt-2">
+            <h5 class="lang eng">Curriculum Vitae</h5>
+            <h5 class="lang chn">履历</h5>
+        </div>
+        
+        <div class="col-12 mb-3">
+            <div>
+                <p class="lang eng">Last Updated: Aug 23, 2020</p>
+                <p class="lang chn">最后更新：2020年8月23日</p>
+            </div>
+            <div>
+                <ul class="fa-ul list-inline link-list">
+                    <li>
+                    <a class="mybutton" href="../public/docs/cv.pdf"><i class="fa fa-download "></i><span> One-Page Resume</span></a>
+                    </li>
+                    <li>
+                    <a class="mybutton" href="../public/docs/academic_cv.pdf"><i class="fa fa-download"></i><span> Academic CV</span></a>
+                    </li>
+                    <li>
+                    <a class="mybutton" href="../public/docs/cv_cn.pdf"><i class="fa fa-download"></i><span> 一页简历</span></a>
+                    </li>
+                    <li>
+                    <a class="mybutton" href="http://red-pencil.github.io/cv/"><i class="fa fa-download"></i><span> GitHub Pages</span></a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="lang chn type">
+                
+                <ul class="fa-ul list-inline link-list">
+                   
+                </ul>
+            </div>
+            
+        </div>
+        
+        <div class="col-6">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
+        </div>
+        
+    </div>  
+</div>
+
+<!-- Projects-->
+<div class="container-fluid section">
+   
+    <div class="row justify-content-center no-gutters">
+        <div class="col-sm-12 col-md-10 mt-5">
+        <div class="lang eng resume mx-auto">
+
+            
+<h2>Fields of Interest</h2>
+<h3>Computer Science and Engineering</h3>
+<p>Human-Computer Interaction • User Interface</p>
+<p>Virtual Reality • Mixed Reality • Wearable Computing • Haptics</p>
+<p>Brain-Computer Interface • Skin and Musle Interface </p>
+<h3>Human Enhancement</h3>
+<p>Cognitive Science • Neuroscience</p>
+<p>Mechanical Engineering • Robotics</p>
+<h3>Design</h3>
+<p>Interaction Design • User Experience</p>
+<p>Industrial Design • Media Art</p>
+<p>&nbsp;</p>
+<h2>Education</h2>
+<h3>Master</h3>
+<p><strong>Keio University</strong></p>
+<p>Sep 2015 - Mar 2018. Tokyo, Japan.</p>
+<ul>
+<li>Human-Computer Interaction, Graudate School of Media Design.</li>
+<li><a href='https://www.keio.ac.jp/en/academics/programs-offered-in-english/index.html'>English Instruction</a>, GPA: 3.84 / 4.33.</li>
+<li>Thesis: <em>Visual Expansion by Animal-Inspired Visuomotor Modification</em>.</li>
+<li>Supervisor: Prof. Kouta Minamizawa; Co-supervisor: Prof. Kai Kunze.</li>
+
+</ul>
+<p><strong>Pratt Institute</strong> </p>
+<p>Jan 2017 - May 2017. Brooklyn, US.</p>
+<ul>
+<li><a href='http://globalinnovationdesign.org/'>Global Innovation Design</a>, School of Design. (Exchange Study.)</li>
+
+</ul>
+<p><strong>Royal College of Art &amp; Imperial College London</strong></p>
+<p>Sep 2016 - Dec 2016. London, UK.</p>
+<ul>
+<li><a href='http://globalinnovationdesign.org/'>Global Innovation Design</a>, School of Design.  (Exchange Study.)</li>
+
+</ul>
+<p>&nbsp;</p>
+<h3>Bachelor</h3>
+<p><strong>Beihang University</strong></p>
+<p>Sep 2010 - Jun 2014. Beijing, China.</p>
+<ul>
+<li>Industrial Design, School of Mechanical Engineering.</li>
+<li>Outstanding Graduate, GPA: 3.6 / 4.0.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Research Experience</h2>
+<h3>Rochester Intitute of Technology</h3>
+<p><strong>Research Intern</strong>, <a href='https://www.rit.edu/directory/rxpics-roshan-peiris'>Altered Reality Group</a>.</p>
+<p>Jul 2020 - Nov 2020. (Remotely.)</p>
+<ul>
+<li>Director: Prof. Roshan Peiris.</li>
+<li>Finalized the user study of thermal sensation and visuomotor research.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h3>University of Auckland</h3>
+<p><strong>Research Intern</strong>, <a href='http://empathiccomputing.org'>Empathic Computing Lab</a>.</p>
+<p>Mar 2019 - Jun 2019. Auckland, New Zealand.</p>
+<ul>
+<li>Director: Prof. Mark Billinghurst.</li>
+<li>Developed VR applications for remote access on standalone mobile platform.</li>
+<li>Advised, designed and fabricated the prototypes for commercialization of remoto collaboration and XR technology.</li>
+<li>Explored on new interfaces with AR goggles, machine learning, and brain-computer interface.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h3>Keio University</h3>
+<p><strong>Research Intern</strong>, <a href='http://www.embodiedmedia.org'>Embodied Media Project</a>.</p>
+<p>Feb 2018 - Jul 2018. Tokyo, Japan.</p>
+<ul>
+<li>Director: Prof. Kouta Minamizawa.</li>
+<li>Research on themes of haptic design, telexistence, virtual reality, and sensory augmentation.</li>
+<li>Developed experiments, prototypes and applications with technologies including VR/AR, EEG, EMG, EMS, eye-tracking and wearable computing.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Professional Experience</h2>
+<h3>China Mobile Shanghai Research</h3>
+<p><strong>Product Manager</strong>.</p>
+<p>Jun 2019 - present. Shanghai, China.</p>
+<ul>
+<li>Researched on solutions in communication and information technology, and transportation industry fields including internet of vehicle, autonomous driving, and vehicle to everything (V2X).</li>
+<li>Managed the product line of on-board electronics, and engaged in the process of business analysis, design refinement, factory manufacture, and software development.</li>
+<li>Designed, developed, and patented new products and applications, to business and to customer.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h3>Lenovo Research</h3>
+<p><strong>User Experience Design Intern</strong>.</p>
+<p>Sep 2013 - Feb 2014. Beijing, China.</p>
+<ul>
+<li>Conducted user research towards various types of consumer electronics, including laptop, tablet, phone, etc., in User Research Center.</li>
+<li>Developed the preliminary design of the next generation smart devices.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Publications</h2>
+<ul>
+<li><p><strong>Lichao Shen</strong>, MHD Yamen Saraiji, Kai Kunze, Kouta Minamizawa, and Roshan Lalintha Peiris. 2020. Visuomotor Influence of Attached Robotic Neck Augmentation. In<em>Symposium on Spatial User Interaction</em> <em>(<a href='https://sui.acm.org/2020'><strong>SUI &#39;20</strong></a>). Association for Computing Machinery, New York, NY, USA, Article 14, 1–10. DOI:<a href='https://doi.org/10.1145/3385959.3418460' target='_blank' class='url'>https://doi.org/10.1145/3385959.3418460</a></em></p>
+</li>
+<li><p>MHD Yamen Saraiji, Roshan Lalintha Peiris, <strong>Lichao Shen</strong>, Kouta Minamizawa, and Susumu Tachi. 2018. Ambient: Facial Thermal Feedback in Remotely Operated Applications.  In <em>Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems</em> <em>(<a href='https://chi2018.acm.org'><strong>CHI EA &#39;18</strong></a>). ACM, New York, NY, USA,  Paper D321, 4 pages. DOI: <a href='https://doi.org/10.1145/3170427.3186483' target='_blank' class='url'>https://doi.org/10.1145/3170427.3186483</a></em></p>
+</li>
+<li><p><strong>Lichao Shen</strong>, MHD Yamen Saraji, Kai Kunze, and Kouta Minamizawa. 2018. Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck. In <em>Proceedings of the 9th Augmented Human International Conference</em> <em>(<a href='http://www.sigah.org/AH2018'><strong>AH &#39;18</strong></a>). ACM, New York, NY, USA, Article 38, 2 pages. DOI: <a href='https://doi.org/10.1145/3174910.3174955' target='_blank' class='url'>https://doi.org/10.1145/3174910.3174955</a></em> </p>
+<ul>
+<li>[<strong><a href='http://www.sigah.org/AH2018/gallery'>Best Demo Award</a></strong>]</li>
+
+</ul>
+</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Patents</h2>
+<ul>
+<li>CN Patent. A System of Vehicle to Everything. (accepted)</li>
+<li>CN Patent. An On-Board Project Device. (pending)</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Exhibitions</h2>
+<ul>
+<li>Auto China 2014, 13th Beijing International Vehicle Exhibition. Work: AERO Racing Car.</li>
+<li><em>City Museum Tokyo</em> Design Show. Work: Hahaki Postcard System.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Awards</h2>
+<ul>
+<li>Best Demo Award, 2018 Augmented Human 9th International Conference (AH &#39;18). 2018</li>
+<li>Design Excellent Prize, <em>Gifts of Fuyang</em> Design Competition. 2013.</li>
+<li>Finalist, Red Dot Design Award. 2013.</li>
+<li>Second Prize, Fengru Cup Student Innovation Competition. 2011.</li>
+<li>Outstanding Graduate. 2014.</li>
+<li>Outstanding Student Leader. 2013.</li>
+<li>Merit Student. 2011.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Scholarships</h2>
+<ul>
+<li>Scholarship of Academic Performance, Beihang University. 2011-2013.</li>
+<li>Scholarship of Social Duty. 2013.</li>
+<li>Scholarship of Science and Technology Competition. 2011.</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>Skills</h2>
+<h3>Programming</h3>
+<ul>
+<li>C, C#, JavaScript, Python</li>
+<li>HTML, CSS, TeX, Git</li>
+<li>Unity, Arduino, Processing, Jupyter</li>
+
+</ul>
+<h3>Engineering</h3>
+<ul>
+<li>Technical Drawing, Mechine Processing, Mechanial Design (SolidWorks, Pro/ENGINEER, AutoCAD)</li>
+
+</ul>
+<h3>Design</h3>
+<ul>
+<li>Sketch, Paint, Graphical Editing (Photoshop, Illustrator, Premiere, Sketch)</li>
+<li>Prototyping, Fabrication (3D printer, laser cutter, wood, metal, plastic)</li>
+<li>3D modeling, Rendering (3Ds Max, Rhinoceros, Grasshopper, KeyShot, V-Ray)</li>
+
+</ul>
+<h3>Language</h3>
+<ul>
+<li>Chinese (Native)</li>
+<li>English (Proficient)</li>
+<li>Japanese (Elementary)</li>
+
+</ul>
+<p>&nbsp;</p>
+
+
+
+
+            
+
+        </div>
+        
+        
+        <div class="lang chn resume mx-auto">
+            
+<h2>兴趣领域</h2>
+<ul>
+<li><strong>人机交互</strong> (HCI)</li>
+<li>虚拟现实 (VR) • 混合现实 (MR) • 计算机图形学 (CG) • 普适计算 (可穿戴设备, 物联网)</li>
+<li><strong>人类增强</strong></li>
+<li>认知科学 • 神经科学 • 机器人学 • 机械工程</li>
+<li><strong>交互设计</strong> (IxD)</li>
+<li>用户体验设计 (UE) • 用户界面设计 (UI) • 媒体设计 • 工业设计</li>
+
+</ul>
+<h2>专业领域</h2>
+<p>车联网
+人机交互
+用户体验设计
+交互设计
+工业设计
+产品开发
+产品管理
+产品设计</p>
+<h2>教育背景</h2>
+<h3>硕士</h3>
+<ul>
+<li>人机交互</li>
+<li>媒体设计</li>
+
+</ul>
+<p><strong>庆应义塾大学</strong> (慶應義塾大学) | 日本东京</p>
+<p>Sep 2015 - Mar 2018</p>
+<p><strong>普瑞特艺术学院</strong> (Pratt Institute) | 美国纽约</p>
+<p>Jan 2017 - May 2017 (交换学习)</p>
+<p><strong>皇家艺术学院</strong> (Royal College of Art) &amp; <strong>帝国理工学院</strong> (Imperial College London) | 英国伦敦</p>
+<p>Sep 2016 - Dec 2016 (交换学习)</p>
+<p>&nbsp;</p>
+<h3>工学士</h3>
+<p><strong>北京航空航天大学</strong> | 中国北京</p>
+<p>Sep 2010 - Jun 2014</p>
+<ul>
+<li>工业设计</li>
+<li>机械工程</li>
+<li>(优秀毕业生）</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>行业经历</h2>
+<h3>产品经理</h3>
+<p><strong>中移智行</strong> | 中国北京</p>
+<p>2019/6 至今</p>
+<ul>
+<li>车联网</li>
+<li>智慧交通</li>
+
+</ul>
+<h3>用户体验实习</h3>
+<p><strong>联想研究院</strong> | 中国北京 </p>
+<p>2013/9 - 2014/2</p>
+<ul>
+<li>用户研究中心</li>
+<li>研究⽤⼾对于各种电⼦产品的⾏为习惯；</li>
+<li>进⾏下⼀代智能设备的先⾏设计。</li>
+
+</ul>
+<p>&nbsp;</p>
+<h2>学术经历</h2>
+<h3>研究员实习</h3>
+<p><strong><a href='http://empathiccomputing.org'>Empathic Computing Lab</a></strong>, 奥克兰大学 | 新西兰奥克兰</p>
+<p>2018/2 - 2018/7</p>
+<ul>
+<li>开发远程协作和远程存在的移动应用；</li>
+<li>提供设计和方案建议，为XR技术商业化原型和产品。</li>
+
+</ul>
+<h3>项目研究员</h3>
+<p><a href='http://www.embodiedmedia.org'>Embodied Media Project</a>, 庆应义塾大学 | 日本东京</p>
+<p>2018/2 - 2018/7</p>
+<ul>
+<li>研究触觉，虚拟现实，⼈类增强，远程存在等相关领域；</li>
+<li>进⾏实验，开发原型和应⽤。</li>
+
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>技能</h2>
+<h3>编程</h3>
+<p>C, C# , JavaScript, Python, HTML, CSS</p>
+<p>Unity, Arduino, Processing, TeX, Git</p>
+<h3>工程</h3>
+<p>工程制图, 机械加工</p>
+<p>工程软件 (SolidWorks, Pro/ENGINEER, AutoCAD)</p>
+<h3>设计</h3>
+<p>铅笔&amp;马克笔素描, 原型制作</p>
+<p>图形软件 (Photoshop, Illustrator, Premiere, 3Ds Max, Rhinoceros, Grasshopper, KeyShot, V-Ray, Sketch)</p>
+<h3>语言</h3>
+<p><strong>中文</strong> - 母语, <strong>英语</strong> - 学术, <strong>日本</strong> - 初级</p>
+<p>&nbsp;</p>
+<h2>出版物</h2>
+<p><strong>Lichao Shen</strong>, MHD Yamen Saraji, Kai Kunze, and Kouta Minamizawa. 2018. Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck. In <em>Proceedings of the 9th Augmented Human International Conference</em> (<a href='http://www.sigah.org/AH2018'>AH &#39;18</a>). ACM, New York, NY, USA, Article 38, 2 pages. DOI: <a href='https://doi.org/10.1145/3174910.3174955' target='_blank' class='url'>https://doi.org/10.1145/3174910.3174955</a> [<strong><a href='http://www.sigah.org/AH2018/gallery'>Best Demo Award</a></strong>]</p>
+<p>MHD Yamen Saraiji, Roshan Lalintha Peiris, Lichao Shen, Kouta Minamizawa, and Susumu Tachi. 2018. Ambient: Facial Thermal Feedback in Remotely Operated Applications.  In <em>Extended Abstracts of the 2018 CHI Conference on Human Factors in Computing Systems</em> (<a href='https://chi2018.acm.org'>CHI EA &#39;18</a>). ACM, New York, NY, USA,  Paper D321, 4 pages. DOI: <a href='https://doi.org/10.1145/3170427.3186483' target='_blank' class='url'>https://doi.org/10.1145/3170427.3186483</a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2>荣誉</h2>
+<h3>最佳原型演示奖</h3>
+<p><strong>2018 Augmented Human 国际会议 (AH &#39;18)</strong></p>
+<p>2018/2 | 韩国首尔</p>
+<h3>设计类优秀奖</h3>
+<p><strong>富阳礼物设计大赛</strong></p>
+<p>2013/1 | 中国浙江</p>
+<h3>学习优秀奖学金</h3>
+<p><strong>北京航空航天大学</strong></p>
+<p>2013/12, 2012/12, 2011/12 | 中国北京</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+        
+        
+        
+        
+        
+        </div>
+        </div>
+    </div>
+    
+</div>
+
+   
+  
+<div class="container-fluid footer">
+    
+    <div class="row" id="contacts">
+        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
+            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+        <ul class="fa-ul list-inline social-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
+            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+        </ul>
+        </div>
+    </div>
+    
+    <div class="row mt-3" id="copyright">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    
+</div>
+    
+<script>
+        
+    langInitiate("eng");
+
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lichao</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    
+  <!-- core -->
+  <link rel="stylesheet" href="../novus.css">
+  <script src="../novus.js"></script>
+
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC:200,300,400,500,600,700,900" rel="stylesheet" />
+    
+</head>
+<body>
+
+<div class="container-fluid navi sticky-top pt-3">
+    <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
+
+      <a class="navbar-brand" href="#page-top">Lichao</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item home">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="../research.html">Research</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../design.html">Design</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../cv.html">Vitæ</a>
+          </li>
+            
+          <!-- Lang Switch -->
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-globe"></i>
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" onclick="langSwitch('eng')">English</a>
+                <a class="dropdown-item" onclick="langSwitch('chn')">中文</a>
+              </div>
+          </li>
+            
+        </ul>
+      </div>
+        
+    </nav>
+</div>
+
+
+<div class="container-fluid section empty header sticky-mark" id="header">
+    <div class="row justify-content-center no-gutters">
+
+        <div class="col-4">
+            <span>AH '18 Best Demo</span>
+        </div>
+        
+        <div class="col-8 text-right">
+            <ul class="list-inline icon-list">
+                <li>
+                <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i></a>
+                </li>
+                <li><a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i></a>
+                </li>
+                <li><a href="../../public/research/uneck/unconstrained%20neck.pdf"><i class="fa fa-book"></i></a>
+                </li>
+                <li><a href="../../public/research/uneck/ah2018.mp4"><i class="fa fa-film"></i></a>
+                </li>
+                <li><a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube-play"></i></a>
+                </li>
+            </ul>    
+        </div>
+            
+        <div class="col-12">
+            <h5 class="lang eng">Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck</h5>
+            <h5 class="lang chn">无拘束颈部：全向观察的附加机械颈部</h5>
+        </div>
+
+        <div class="col-6" id="lang-switch">
+            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
+            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
+        </div>
+        
+        <div class="col-6 text-right">
+            <a class="sticky-s active" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack mr-1"></i></a>
+        </div>
+        
+    </div>  
+</div>
+
+<div class="container-fluid section body" id="content">
+    <div class="row justify-content-center no-gutters">
+
+        <div class="col-md-12">
+            <ul class="list-inline linklist tag-list">
+                <li>@ Embodied Media Projecct</li>
+                <li>Human-Computer Interaction</li>
+                <li>Robotics</li>
+                <li>Augmented Reality</li>
+                <li>Visuomotor Coordination</li>
+                <li>Wearable</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div lass="col-md-6 col-sm-12 m-auto">
+            <img class="img-fluid" src="../../public/research/uneck/uneck-1.jpg">        
+        </div>
+        <div lass="col-md-6 col-sm-12 m-auto">
+            <img class="img-fluid" src="../../public/research/uneck/uneck-2.jpg">        
+        </div>
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-md-12">
+        <p class="lang eng">
+        Due to the narrow range of motion of the neck and the small visual field of the eyes, the human visual sense is limited in terms of the spatial range. We address this visual limitation by proposing a programmable neck that can leverage the range of motion limits. Unconstrained Neck, a head-mounted robotic neck, is a substitution neck system which provides a wider range of motion enabling humans to overcome the physical constraints of the neck. Using this robotic neck, it is also possible to control the visual/motor gain, which allows the user to thus control the range and speed of his effective neck motion or visual motion.
+        </p>
+        <p class="lang chn">
+        由于颈部狭窄的活动范围和眼睛狭小的视场，人类的视觉在空间方面受到限制。我们提出用能够改变活动范围的可编程颈部来解决此问题。名为Unconstrained Neck头戴机械颈部是一套颈部代替系统，此系统拥有更加宽广的活动范围，让人类得以克服颈部的生理极限。使用这个机械颈部的时候，调整视觉-运动增益可以被调节，正因此用户可以控制实际颈部动作的范围和速度，进一步影响引发的视觉运动。
+        </p>
+        </div>
+   </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12">
+            <video class="img-fluid" src="../../public/research/uneck/ah2018.mp4" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
+        </div>
+
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <p class="col-12 quote">
+        <i class="fa fa-book text-warning"></i>
+        <b>Lichao Shen</b>, MHD Yamen Saraiji, Kai Kunze, and Kouta Minamizawa. 2018. Unconstrained Neck: Omnidirectional Observation from an Extra Robotic Neck. In <i>Proceedings of the 9th Augmented Human International Conference</i> (<i>AH '18</i>). Association for Computing Machinery, New York, NY, USA, Article 38, 1–2. DOI:<a href="https://doi.org/10.1145/3174910.3174955">https://doi.org/10.1145/3174910.3174955</a>
+            
+        </p>
+    </div>
+    
+    <div class="row justify-content-center no-gutters">
+        <div class="col-12 m-auto">
+            <ul class="list-inline linklist link-list mb-3 mt-3">
+                <li class="list-inline-item">
+                <a href="http://www.sigah.org/AH2018/gallery/"><i class="fa fa-trophy"></i> Best Demo Award</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://dl.acm.org/citation.cfm?id=3174955"><i class="fa fa-quote-left"></i> DOI</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="../../public/research/uneck/unconstrained%20neck.pdf"><i class="fa fa-book"></i> PDF</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="../../public/research/uneck/ah2018.mp4"><i class="fa fa-film"></i> Video</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://youtu.be/xq5xTcrdzXU"><i class="fa fa-youtube-play"></i> Video</a>
+                </li>
+            </ul>    
+        </div>
+        
+    </div>
+    
+</div>
+    
+  
+<div class="container-fluid footer">
+    
+    <div class="row" id="contacts">
+        <div class="col-md-6 col-sm-12 text-center my-auto mb-md-auto mb-sm-3">
+            <p><b>lichao (dot) shen (at) hotmail (dot) com</b></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-center">
+        <ul class="fa-ul list-inline social-list">
+            <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
+            <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
+            <li><a href="https://500px.com/hx470000" class="fa fa-500px"></a></li>
+            <li><a href="#" class="fa fa-linkedin"></a></li>
+            <li><a href="https://www.youtube.com/channel/UCuoYD-zYP5onkyi6cYbWcyg" class="fa fa-youtube"></a></li>
+            <li><a href="https://github.com/red-pencil" class="fa fa-github"></a></li>
+
+        </ul>
+        </div>
+    </div>
+    
+    <div class="row mt-3" id="copyright">
+        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+        <p class="copyright">Lichao &copy; All Rights Reserved.</p>
+        </div>
+    </div>
+    
+</div>
+
+<script>
+        
+    langInitiate('eng');
+
+</script>
+
+</body>
+</html>
