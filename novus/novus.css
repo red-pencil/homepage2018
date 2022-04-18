@@ -676,6 +676,7 @@ navi/section + (body/header/footer)
 	display: flex;
 	flex-direction: row;
 	*/
+	margin: 0 5rem;
 }
 
 .link-list>li{
@@ -810,7 +811,7 @@ navi/section + (body/header/footer)
     font-size: 2rem;
     color: var(--neutral-text);
     text-decoration: none;
-    margin: 0px 0.5rem;
+    padding: 0.2rem 0.5rem;
 }
 
 .footer .social-list a {

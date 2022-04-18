@@ -32,10 +32,10 @@
 </head>
 <body>
 
-<div class="container-fluid navi sticky-top pt-3">
+<div class="container-fluid navi shadow-on">
     <nav class="navbar navbar-default navbar-expand-md bg-white navbar-light">
 
-      <a class="navbar-brand pt-0 pb-0" href="#page-top">
+      <a class="navbar-brand" href="#page-top">
           <!--
           <svg xmlns="http://www.w3.org/2000/svg" height="40px" id="logosvg" x="0px" y="0px" viewBox="-20 0 550 620">
             <path fill="none" stroke="#606060" stroke-width="22" id="logopath" d="M397.47 447.49 L489.5 164.24 L56.52 164.24 L32.06 239.49 L385.92 239.49 L318.34 447.49 L397.47 447.49 M141.41 576.03 L318.34 31.5 L397.47 31.5 L220.54 576.03 L141.41 576.03"/>
@@ -66,7 +66,7 @@
               </a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="cv.html">
                 <span class="lang eng">Vitæ</span>
                 <span class="lang chn">履历</span>
               </a>
@@ -95,53 +95,38 @@
     </nav>
 </div>
 
-<div class="container-fluid section empty header" id="header">
-    <div class="row justify-content-center no-gutters">
+<div class="container-fluid section header shadow-on">
+    <div class="row">
         
         <div class="col-12 mt-2">
             <h5 class="lang eng">Curriculum Vitae</h5>
-            <h5 class="lang chn">履历</h5>
+			<h5 class="lang chn">履历</h5>
+        </div>
+		
+		<div class="col-12 type">
+			<p class="lang eng">Last Updated: Aug 23, 2020</p>
+            <p class="lang chn">最后更新：2020年8月23日</p>
+		</div>
+        
+        <div class="col-12 mb-0 text-left">
+
+			<ul class="fa-ul list-inline link-list">
+				<li>
+				<a href="../public/docs/cv.pdf"><i class="fa fa-download"></i><span>One-Page Resume</span></a>
+				</li>
+				<li>
+				<a href="../public/docs/academic_cv.pdf"><i class="fa fa-download"></i><span>Academic CV</span></a>
+				</li>
+				<li>
+				<a href="../public/docs/cv_cn.pdf"><i class="fa fa-download"></i><span>单页简历</span></a>
+				</li>
+				<li>
+				<a href="http://red-pencil.github.io/cv/"><i class="fa fa-download"></i><span>GitHub Pages</span></a>
+				</li>
+			</ul>
+
         </div>
         
-        <div class="col-12 mb-3">
-            <div>
-                <p class="lang eng">Last Updated: Aug 23, 2020</p>
-                <p class="lang chn">最后更新：2020年8月23日</p>
-            </div>
-            <div>
-                <ul class="fa-ul list-inline link-list">
-                    <li>
-                    <a class="mybutton" href="../public/docs/cv.pdf"><i class="fa fa-download "></i><span> One-Page Resume</span></a>
-                    </li>
-                    <li>
-                    <a class="mybutton" href="../public/docs/academic_cv.pdf"><i class="fa fa-download"></i><span> Academic CV</span></a>
-                    </li>
-                    <li>
-                    <a class="mybutton" href="../public/docs/cv_cn.pdf"><i class="fa fa-download"></i><span> 一页简历</span></a>
-                    </li>
-                    <li>
-                    <a class="mybutton" href="http://red-pencil.github.io/cv/"><i class="fa fa-download"></i><span> GitHub Pages</span></a>
-                    </li>
-                </ul>
-            </div>
-            
-            <div class="lang chn type">
-                
-                <ul class="fa-ul list-inline link-list">
-                   
-                </ul>
-            </div>
-            
-        </div>
-        
-        <div class="col-6">
-            <a class="lang-s active" onclick="langSwitch('eng')">English</a> /
-            <a class="lang-s" onclick="langSwitch('chn')">中文</a>
-        </div>
-        
-        <div class="col-6 text-right">
-            <a class="sticky-s" id="sticky-switch" onclick="stickySwitch()"><i class="fa fa-thumb-tack"></i></a>
-        </div>
         
     </div>  
 </div>
@@ -150,6 +135,7 @@
 <div class="container-fluid section">
    
     <div class="row justify-content-center no-gutters">
+		
         <div class="col-sm-12 col-md-10 mt-5">
         <div class="lang eng resume mx-auto">
 
@@ -462,14 +448,13 @@
 </div>
 
    
-  
-<div class="container-fluid footer">
+<div class="container-fluid section footer shadow-on">
     
     <div class="row" id="contacts">
-        <div class="col-md-6 col-sm-12 text-center">
-            <p><b>lichao.shen [at] hotmail.com</b></p>
+        <div class="col-md-6 col-12 text-center">
+            <p><b>lichao.prime [at] gmail.com</b></p>
         </div>
-        <div class="col-md-6 col-sm-12 text-center">
+        <div class="col-md-6 col--12 text-center">
         <ul class="fa-ul list-inline social-list">
             <li><a href="https://www.facebook.com/profile.php?id=100008869660041" class="fa fa-facebook"></a></li>
             <li><a href="https://www.instagram.com/leonchaos/" class="fa fa-instagram"></a></li>
@@ -482,8 +467,8 @@
         </div>
     </div>
     
-    <div class="row mt-1" id="copyright">
-        <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+    <div class="row" id="copyright">
+        <div class="col-12 text-center">
         <p class="copyright">Lichao &copy; All Rights Reserved.</p>
         </div>
     </div>
