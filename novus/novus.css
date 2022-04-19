@@ -802,6 +802,10 @@ navi/section + (body/header/footer)
 	padding: 0.25em 0.5em;
 }
 	
+.icon-list-uni>li.full {
+	flex: 0 0 100%;
+}
+	
 	
 }
 
