@@ -1577,13 +1577,17 @@ video {
 	max-width: 382px;
 	margin-right: 0;
 	
+	background: yellow;
+	
 }
 
 .mainsection {
 
-
 	margin-left: 0;
 	max-width: 1000px;
+	
+	background: pink;
+	border: 1px solid pink;
 
 }
 
