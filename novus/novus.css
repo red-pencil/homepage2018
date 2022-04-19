@@ -622,68 +622,112 @@ navi/section + (body/header/footer)
 	display: none; /* not display by default */
 }
 
-.icon-list-uni>li {
-	padding: 0.25rem 0.5rem;
-}
-
-.icon-list-uni>li a {
-	font-size: 1.25rem;
-	text-decoration: none;
+.icon-list-uni.trans-color>li a,
+.icon-list-uni.trans-color>li span{
 	color: var(--neutralgrey);
-}
-
-.icon-list-uni>li a:hover {
-	color: var(--dark-text);
-}
-
-.icon-list-uni>li i {
-	font-size: 1.1em;
-	vertical-align: middle;
-}
-
-
-.icon-list-uni.with-text>li {
-	flex: 0 0 50%;
-	padding: 0.25em 3em;
-}
-
-.icon-list-uni.with-text>li span{
-	display: inline;
-	vertical-align: middle;
-	font-weight: 400;
-}
-
-.icon-list-uni.with-text>li span:before{
-	content: "";
-	padding-left: 0.2rem;
 	
 }
 
-.icon-list-uni.with-text>li a:hover{
-	font-weight: 600;
+.icon-list-uni.trans-color>li:hover a,
+.icon-list-uni.trans-color>li:hover span{
+	color: var(--global-highlight);
+	text-decoration: none;
 }
 
-.icon-list-uni.with-text>li a:hover span {
-	/*
-	text-decoration: underline;
-	text-decoration-style: dotted;
-	*/
+
+.icon-list-uni.trans-font>li a,
+.icon-list-uni.trans-font>li span{
+	font-weight: 400;
+	color: var(--neutral-text);
+
 }
+
+.icon-list-uni.trans-font>li i {
+	color: var(--neutral-text);
+	
+}
+
+.icon-list-uni.trans-font>li:hover a,
+.icon-list-uni.trans-font>li:hover span{
+	font-weight: 700;
+	color: var(--dark-text);
+	
+}
+.icon-list-uni.trans-font>li:hover i {
+	color: var(--dark-text);
+}
+
+.icon-list-uni>li {
+	padding: 0.25rem 0.5rem;
+	
+}
+
+.icon-list-uni>li a {
+	font-size: 1rem;
+}
+
+.icon-list-uni>li i,
+.icon-list-uni>li span {
+	font-size: 1.25em;
+	text-decoration: none;
+	/* vertical-align: middle; */
+}
+
+.icon-list-uni.with-text>li {
+	flex: 0 0 50%;
+	padding: 0.25em 5em;
+}
+
+.icon-list-uni.with-text>li a,
+.icon-list-uni.with-text>li i,
+.icon-list-uni.with-text>li span {
+	font-size: 1.25rem;
+
+	text-decoration: none;
+}
+
+.icon-list-uni.with-text>li span {
+	display: inline;
+}
+
+.icon-list-uni.with-text>li i:after{
+	content: "";
+	padding-right: 0.3rem;
+}
+
+
+
+.list-inline>li .lang-s {
+	color: var(--neutral-text);
+	text-decoration: none;
+}
+
+
+.list-inline>li .lang-s:hover {
+	color: var(--dark-text);
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+}
+
+
+.list-inline>li .lang-s.active {
+	color: var(--dark-text);
+}
+
 
 
 .icon-list-uni.button-link>li {
-	padding: 0.5rem;
+	padding: 0.25em 1em;
     margin: 0.25rem 0.5rem;
 	
 	border-radius: 5px;
 	
 	background: rgb(238,238,238);
+	
 }
 
 .icon-list-uni.button-link>li a {
-	font-size: 1rem;
-	font-weight: 500;
-	color: var(--neutral-text);
+	color: var(--neutralgrey);
 }
 
 .icon-list-uni.button-link>li:hover {
@@ -691,28 +735,52 @@ navi/section + (body/header/footer)
 	cursor: pointer;
 }
 
-.icon-list-uni.button-link>li a:hover, .icon-list-uni.button-link>li:hover a{
-	font-weight: 400;
+.icon-list-uni.button-link>li:hover a {
 	color: white;
+	text-decoration: none;
 }
+
+
+.icon-list-uni.button-link>li {
+	flex: none;
+}
+
+.icon-list-uni.button-link>li a {
+	font-size: 1rem;
+}
+.icon-list-uni.button-link>li i,
+.icon-list-uni.button-link>li span {
+	font-size: 1.1em;
+	font-weight: 500;
+	text-decoration: none;
+	/* vertical-align: middle; */
+}
+
 
 .icon-list-uni.big-array>li {
 	flex: 0 0 25%;
 	text-align: center;
-	
 }
+
+
 
 .icon-list-uni.big-array>li a{
-	text-decoration: none;
-	color: red;
-}
-
-.icon-list-uni.big-array>li a:hover{
-	color: var(--global-highlight);
+	font-size: 1rem;
 }
 
 .icon-list-uni.big-array>li i{
 	font-size: 3.5em;
+}
+
+.icon-list-uni.big-array>li span{
+	font-size: 1em;
+	margin-top: 0.2em;
+	font-weight: 500;
+}
+
+.icon-list-uni.big-array.with-text>li i:after{
+	content: "";
+	padding-right: 0;
 }
 
 .icon-list-uni.big-array.with-text>li span{
@@ -730,7 +798,9 @@ navi/section + (body/header/footer)
 }
 	
 	
-	
+.icon-list-uni.with-text>li {
+	padding: 0.25em 0.5em;
+}
 	
 	
 }
@@ -1014,22 +1084,6 @@ button .fa {
 .lang-s:hover {color: var(--global-highlight);}
 
 
-.link-list>li .lang-s {
-	color: var(--neutral-text);
-	text-decoration: none;
-}
-
-
-.link-list>li .lang-s:hover {
-	color: var(--dark-text);
-	text-decoration-line: underline;
-	text-decoration-style: dotted;
-}
-
-
-.link-list>li .lang-s.active {
-	color: var(--dark-text);
-}
 
 
 /*
