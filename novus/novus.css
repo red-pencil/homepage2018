@@ -923,11 +923,13 @@ navi/section + (body/header/footer)
 
 
 .link-list>li i:after {
-	content: "";
+	content: " ";
 	/*content: "\f008";*/
-	padding-left: 0.5em;
+	margin-left: 1em;
 }
-
+.fa-fw {
+	width: 2.5em;
+}
 .link-list.inverted>li {
 	flex: none;
 	margin: 0 1rem 0 0;
@@ -1009,14 +1011,15 @@ navi/section + (body/header/footer)
     /*background: var(--lightgrey);*/
 	/*border: 1px dotted var(--neutral-text);*/
 	color: var(--neutralgrey);
-    margin: 2px 2px;
-    padding: 0 5px;
+    padding: 0.25em;
+    padding-left: 0;
+	padding-right: 1em;
     font-size: small;
 }
 
 .tag-list>li:before{
 	content: ">";
-	margin-right: 1em;
+	margin-right: 0.5em;
 	font-weight: bold;
 }
 
