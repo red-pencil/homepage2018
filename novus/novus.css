@@ -17,7 +17,7 @@
 	--neutralgrey: dimgrey; /* rgb(105,105,105) */
 	--dark-text: #2d2d2d; /* rgba(45,45,45) */
 	
-	--global-highlight: orange;
+	--global-highlight: coral;
 	
 	/* embeded shadow: 0 .5rem 1rem rgba(0,0,0,.15) */
 	/* inset */
@@ -675,7 +675,7 @@ navi/section + (body/header/footer)
 
 .icon-list-uni.with-text>li {
 	flex: 0 0 50%;
-	padding: 0.25em 5em;
+	padding: 0.25em;
 }
 
 .icon-list-uni.with-text>li a,
@@ -760,20 +760,28 @@ navi/section + (body/header/footer)
 .icon-list-uni.big-array>li {
 	flex: 0 0 25%;
 	text-align: center;
+	
 }
-
-
 
 .icon-list-uni.big-array>li a{
 	font-size: 1rem;
+	
 }
 
 .icon-list-uni.big-array>li i{
 	font-size: 3.5em;
+	/*
+	padding: 0.15em;
+	
+	border-radius: 0.35em;
+	border: 1px solid var(--lightgrey);
+	background: white;
+	*/
+	
 }
 
 .icon-list-uni.big-array>li span{
-	font-size: 1em;
+	font-size: 0.85em;
 	margin-top: 0.2em;
 	font-weight: 500;
 }
