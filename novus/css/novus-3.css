@@ -1648,8 +1648,32 @@ video, img {
 	box-shadow: 0.25em 0.25em 0 white;
 }
 
-.border-white {
-	border: 0px solid white;
+.border-uni {
+	border: 1px solid transparent;
+	/*
+	animation: scroller 2s infinite;
+	*/
+}
+
+@keyframes scroller {
+	0% {
+		border-top: 1px solid rgba(255,255,255,0.5);
+	}
+
+	25% {
+
+		border-right: 1px solid rgba(255,255,255,0.5);
+	}
+
+	50% {
+
+		border-bottom: 1px solid rgba(255,255,255,0.5);
+	}
+	
+	75% {
+
+		border-left: 1px solid rgba(255,255,255,0.5);
+	}
 }
 
 .superpage {
