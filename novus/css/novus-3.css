@@ -1560,22 +1560,34 @@ video {
 }
 
 
+
+
+
+.sidebar, .mainsection-1, mainsection-2 {min-width: 100px;}
+.sidebar {border: 10px solid yellow;}
+.mainsection {border: 10px solid pink;}
+.mainsection-1 {border: 10px solid aqua;}
+.mainsection-2 {border: 10px solid purple;}
+
+
+.sticky-on {
+	position: -webkit-sticky;
+    position: sticky;
+	top: 0;
+}
+
+/*
 .superpage {
 	
 	display: flex;
 	width: 100%;
 	flex-wrap: wrap;
-	/* max-width: 1200px; */
+	
 	margin: 0 auto;
 	
 	align-items: flex-start;
+	justify-content: flex-end;
 }
-
-
-
-
-
-
 
 .sidebar {
 	flex: 0 0 100%;
@@ -1585,50 +1597,33 @@ video {
 
 	max-width: 100vw;
 	
-	border: 10px solid yellow;
+	
 }
 	
 .mainsection {
 	flex: 0 0 100%;
+
 }
 	
 .mainsection-1 {
 	flex: 0 0 100%;
-
-	border: 10px solid aqua;
+	
 }
 
 .mainsection-2 {
 	flex: 0 0 100%;
-	border: 10px solid purple;
-	
+
 }
 
-@media screen and (min-width:768px) and (max-width:1500px) {
-
-.mainsection {
-	flex: 0 0 100%;
-}
+@media screen and (min-width:768px) {
 	
-.mainsection-1 {
-	flex: 0 0 70%;
-	position: relative;
-	border: 10px solid aqua;
+.sidebar .navbar-nav {
+	flex-direction: column;
 }
 
-.mainsection-2 {
-	flex: 0 0 70%;
-	position: relative;
-	border: 10px solid purple;
 	
-}
-	
-}
-
-@media screen and (min-width:1500px) {
-	
-	
-	.sidebar {
+.sidebar {
+	flex: 0 0 30%;
 	
 	position: -webkit-sticky;
     position: sticky;
@@ -1636,22 +1631,44 @@ video {
 	height: calc(100vh);
 	top: 0;
 	
-	margin-right: 0;
+	max-width: 382px;
+}
+
+.mainsection {
+	flex: 0 0 100%;
+}
 	
-	border: 10px solid yellow;
+.mainsection-1 {
+	flex: 0 0 70%;
+}
+
+.mainsection-2 {
+	flex: 0 0 70%;
+}
 	
+
+	
+}
+
+@media screen and (min-width:1500px) {
+	
+	
+.sidebar {
 	flex: 0 0 30%;
+	
+	position: -webkit-sticky;
+    position: sticky;
+
+	height: calc(100vh);
+	top: 0;
 
 	max-width: 382px;
 }
 	
-
-
-	.mainsection-1 {
+.mainsection-1 {
 	position: -webkit-sticky;
     position: sticky;
 	top: 0;
-	
 
 	border: 10px solid aqua;
 	
@@ -1663,13 +1680,10 @@ video {
 	
 	border: 10px solid purple;
 	
-	flex: 1 0 35%;
+	flex: 1 1 35%;
 
 }
 	
-	.sidebar .navbar-nav {
-	flex-direction: row;
-}
 
 .mainsection {
 	
@@ -1678,10 +1692,11 @@ video {
 	border: 10px solid pink;
 	
 	flex: 0 0 70%;
-	
-	/*max-width: 1000px;*/
-
-}
 
 
 }
+
+
+}
+
+*/
