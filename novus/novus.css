@@ -40,6 +40,11 @@ body {
     /*background: red;*/
 }
 
+body, html{
+	width: 100%;
+	overflow-x: hidden;
+}
+
 .pt-gap {
 	padding-top: var(--global-gap);
 }

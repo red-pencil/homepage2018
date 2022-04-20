@@ -9,13 +9,13 @@
 	
     --global-grey: #f0f0f0;
 	--global-white: #ffffff; /* rgb(255,255,255) */
-    --background: white; /* rgb(241,242,246) */
+    --background: rgb(158,167,206); /* rgb(241,242,246) */
 	--lightgrey: #c5c5cb; /* rgb(197,197,203) */
 	--light-text: #c5c5c5; /* rgb(197,197,197) */
 	--darkgrey: #8d8d92; /* rgb(141,141,146) */
-	--neutral-text: #7f7f7f; /* rgb(127，127，127) */
-	--neutralgrey: dimgrey; /* rgb(105,105,105) */
-	--dark-text: #2d2d2d; /* rgba(45,45,45) */
+	--neutral-text: white; /* rgb(127，127，127) */
+	--neutralgrey: white; /* rgb(105,105,105) */
+	--dark-text: white; /* rgba(45,45,45) */
 	
 	--global-highlight: coral;
 	
@@ -38,6 +38,7 @@ body {
     background: var(--background);
     /*background: var(--global-white);*/
     /*background: red;*/
+	color: white;
 }
 
 .pt-gap {
