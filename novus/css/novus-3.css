@@ -1578,7 +1578,7 @@ video {
 
 
 h4 {
-	margin: 0 -0.5em;
+	margin: -0.5em;
 	padding: 1em 0.5em;
 	background: rgba(255,255,255,.1);
 }
@@ -1649,27 +1649,28 @@ video, img {
 }
 
 .border-white {
-	border: 1px solid white;
+	border: 0px solid white;
 }
 
 .superpage {
 	max-width: 1800px;
 }
 
-.superpage div {
+.superpage>.row .row div {
 	padding: 0;
 	margin: 0;
 }
 
 .superpage>.row .row {
 	position:relative;
-	padding: 1em;
+	padding: 0.5em;
 	margin-bottom: 3em;
+	margin: 0;
 }
 
-.sidebar, .mainsection-1, mainsection-2 {
+.sidebar, .mainsection-1, .mainsection-2 {
 	min-width: 100px;
-	padding: 2em;
+	padding: 1.25em;
 }
 /*
 .sidebar {border: 0px solid yellow;}
