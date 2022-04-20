@@ -928,8 +928,10 @@ navi/section + (body/header/footer)
 	margin-left: 1em;
 }
 .fa-fw {
-	width: 2.5em;
+	width: 1em;
+	margin-right: 0.5em;
 }
+
 .link-list.inverted>li {
 	flex: none;
 	margin: 0 1rem 0 0;
