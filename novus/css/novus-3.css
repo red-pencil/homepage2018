@@ -1561,10 +1561,22 @@ video {
 }
 
 
+h4 {
+	background: rgba(255,255,255,.2);
+}
 
+video, img {
+	border: 1px solid white;
+	box-shadow: 0.25em 0.25em 0 white;
+}
 
+.border-white {
+	border: 1px solid white;
+}
 
-.sidebar, .mainsection-1, mainsection-2 {min-width: 100px;}
+.sidebar, .mainsection-1, mainsection-2 {
+	min-width: 100px;
+}
 .sidebar {border: 10px solid yellow;}
 .mainsection {border: 10px solid pink;}
 .mainsection-1 {border: 10px solid aqua;}
