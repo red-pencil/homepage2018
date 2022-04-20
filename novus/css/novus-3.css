@@ -8,14 +8,14 @@
 	--content-width: 960px;
 	
     --global-grey: #f0f0f0;
-	--global-white: #ffffff; /* rgb(255,255,255) */
-    --background: rgb(158,167,206); /* rgb(241,242,246) */
+	--global-white: rgb(218,218,218); /* rgb(255,255,255) */
+    --background: rgb(37,37,47); /* rgb(241,242,246) */
 	--lightgrey: #c5c5cb; /* rgb(197,197,203) */
 	--light-text: #c5c5c5; /* rgb(197,197,197) */
 	--darkgrey: #8d8d92; /* rgb(141,141,146) */
-	--neutral-text: white; /* rgb(127，127，127) */
-	--neutralgrey: white; /* rgb(105,105,105) */
-	--dark-text: white; /* rgba(45,45,45) */
+	--neutral-text: rgb(218,218,218); /* rgb(127，127，127) */
+	--neutralgrey: rgb(218,218,218); /* rgb(105,105,105) */
+	--dark-text: rgb(218,218,218); /* rgba(45,45,45) */
 	
 	--global-highlight: coral;
 	
@@ -626,12 +626,12 @@ navi/section + (body/header/footer)
 .icon-list-uni.trans-color>li a,
 .icon-list-uni.trans-color>li span{
 	color: var(--neutralgrey);
-	
+	opacity: 0.5;
 }
 
 .icon-list-uni.trans-color>li:hover a,
 .icon-list-uni.trans-color>li:hover span{
-	opacity: 0.8;
+	opacity: 1;
 	text-decoration: none;
 }
 
@@ -1569,6 +1569,9 @@ video {
 }
 
 .background-pattern {
+	opacity: 0.15;
+	background-image: radial-gradient(#ffffff 1px, var(--background) 1px);
+	background-size: 20px 20px;
 
 }
 
@@ -1604,8 +1607,8 @@ h3::after {
 
 .corner-lt,.corner-rt,.corner-lb,.corner-rb {
 	position: absolute;
-	width: 3em;
-	height: 3em;
+	width: 1em;
+	height: 1em;
 	
 }
 
@@ -1646,9 +1649,12 @@ video, img {
 }
 
 .border-white {
-	border: 0px solid white;
+	border: 1px solid white;
 }
 
+.superpage {
+	max-width: 1800px;
+}
 
 .superpage div {
 	padding: 0;
@@ -1657,20 +1663,20 @@ video, img {
 
 .superpage>.row .row {
 	position:relative;
-	padding: 2em;
-	padding-bottom: 3em;
+	padding: 1em;
 	margin-bottom: 3em;
 }
 
 .sidebar, .mainsection-1, mainsection-2 {
 	min-width: 100px;
-	
+	padding: 2em;
 }
+/*
 .sidebar {border: 0px solid yellow;}
 .mainsection {border: 0px solid pink;}
 .mainsection-1 {border: 0px solid aqua;}
 .mainsection-2 {border: 0px solid purple;}
-
+*/
 
 .sticky-on {
 	position: -webkit-sticky;
