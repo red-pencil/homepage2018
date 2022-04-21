@@ -615,8 +615,28 @@ navi/section + (body/header/footer)
 }
 
 
+.halo>* {
+	text-shadow: 0 0 10px white;
+}
 
+.halo>*:hover {
+	text-shadow: 0 0 20px white;
+}
 
+.focus a {
+	border: 1px solid transparent;
+}
+
+.focus a:hover {
+	animation: scroller 1s infinite;
+}
+
+@keyframes scale {
+	25% {
+		
+	}
+	
+}
 
 
 .icon-list-uni span{
@@ -639,7 +659,7 @@ navi/section + (body/header/footer)
 .icon-list-uni.trans-bg>li a,
 .icon-list-uni.trans-bg>li span{
 	color: white;
-	text-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+	
 }
 .icon-list-uni.trans-bg>li i{
 	
@@ -654,6 +674,7 @@ navi/section + (body/header/footer)
 .icon-list-uni.trans-bg>li:hover a,
 .icon-list-uni.trans-bg>li:hover span{
 	color: var(--background);
+	text-shadow: none;
 }
 
 
