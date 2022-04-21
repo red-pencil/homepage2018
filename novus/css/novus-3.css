@@ -656,23 +656,19 @@ navi/section + (body/header/footer)
 }
 
 
-.icon-list-uni.trans-bg>li a,
-.icon-list-uni.trans-bg>li span{
+.trans-bg>li a,
+.trans-bg>li span{
 	color: white;
 	
 }
-.icon-list-uni.trans-bg>li i{
-	
-	
-}
 
-.icon-list-uni.trans-bg>li:hover{
+.trans-bg>li:hover{
 	background: white;
 	animation: pulse 2s infinite;
 }
 
-.icon-list-uni.trans-bg>li:hover a,
-.icon-list-uni.trans-bg>li:hover span{
+.trans-bg>li:hover a,
+.trans-bg>li:hover span{
 	color: var(--background);
 	text-shadow: none;
 }
@@ -1816,14 +1812,14 @@ video, img {
 @media screen and (min-width:720px) and (max-width:1220px){
 	.sidebar {
 		position: sticky;
-		top: 1em;
+		top: 0;
 	}
 }
 
 @media screen and (min-width:1220px) {
 	.sidebar,.mainsection-1 {
 		position: sticky;
-		top: 1em;
+		top: 0;
 	}
 	
 }
