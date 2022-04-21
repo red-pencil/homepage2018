@@ -9,7 +9,7 @@
 	
     --global-grey: #f0f0f0;
 	--global-white: rgb(218,218,218); /* rgb(255,255,255) */
-    --background: rgb(37,37,47); /* rgb(241,242,246) */
+    /*--background: rgb(37,37,47); /* rgb(241,242,246) */
 	--lightgrey: #c5c5cb; /* rgb(197,197,203) */
 	--light-text: #c5c5c5; /* rgb(197,197,197) */
 	--darkgrey: #8d8d92; /* rgb(141,141,146) */
@@ -31,16 +31,42 @@
 		0 0 0.8rem rgba(0,0,0,.01);
 	*/
 	
+	/* Sci-Fi */
+	/*
+	--background: rgb(37,37,47); 
+	*/
+	/* Editior */
+	
+	--background-primary: #002b36; 
+	--content-primary: #839496;
+	--background-secondary: #073642; 
+	--content-secondary: #93a1a1;
+	
+	--line-outline: #839496;
+	--line-divider: #839496;
+	--text-primary: #839496;
+	--text-secondary: #93a1a1;
+	--background-invert: #fdf6e3;
+	--text-invert: #657b83;
+	
 } 
 
 body {
     /*background: #f8f9fa;*/
-    background: var(--background);
     /*background: var(--global-white);*/
-    /*background: red;*/
-	color: white;
+
+	background: var(--background-primary);
+	color: var(--content-primary);
 }
 
+p {
+	background: var(--background-secondary);
+	color: var(--content-secondary);
+}
+
+span {
+	color: red;
+}
 .pt-gap {
 	padding-top: var(--global-gap);
 }
@@ -455,7 +481,7 @@ navi/section + (body/header/footer)
 }
 
 .title {
-    color: var(--dark-text);
+    color: var(--content-primary);
     font-weight: 500;
 }
 
@@ -658,20 +684,33 @@ navi/section + (body/header/footer)
 
 .trans-bg>li a,
 .trans-bg>li span{
-	color: white;
-	
+	color: var(--text-primary);
 }
 
 .trans-bg>li:hover{
-	background: white;
+	background: var(--background-secondary);
 	animation: pulse 2s infinite;
 }
 
 .trans-bg>li:hover a,
 .trans-bg>li:hover span{
-	color: var(--background);
+	color: var(--text-secondary);
 	text-shadow: none;
 }
+
+.trans-bg-invert>li a,
+.trans-bg-invert>li span{
+	color: var(--text-primary);
+}
+
+.trans-bg-invert>li:hover{
+	background: var(--background-invert);
+	color: var(--text-invert);
+	text-shadow: none;
+	animation: pulse 2s infinite;
+}
+
+
 
 
 
@@ -1644,7 +1683,7 @@ video {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: black;
+	background: var(--background-primary);
 }
 
 .bg2 {
@@ -1669,7 +1708,7 @@ video {
 	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 2px, black 2px, black 30px);
 	*/
 	opacity: 1;
-	background-image: radial-gradient(transparent 0px, transparent 1px, black 1px, black 2px);
+	background-image: radial-gradient(transparent 0px, transparent 1px, var(--background-primary) 1px, var(--background-primary) 2px);
 	background-size: 20px 20px;
 	
 	color: #ff0000;
@@ -1701,38 +1740,56 @@ h3::after {
 	display: block;
 	width: 2em;
 	margin-top: 0.25em;
-	border-top: 0.2em solid white;
+	border-top: 0.2em solid var(--line-divider);
+}
+
+.square-mark, .superpage>.row .row::before {
+	content: "";
+	display: block;
+	width: 3em;
+	height: 3em;
+	background-image: repeating-linear-gradient(135deg, var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 10px);
+	margin-bottom: 1em;
+}
+
+.circle-mark, .superpage>.row .row::after {
+	content: "";
+	display: block;
+	width: 3em;
+	height: 3em;
+	background-image: repeating-radial-gradient(var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 9px);
+	margin-top: 1em;
 }
 
 
 .corner-lt,.corner-rt,.corner-lb,.corner-rb {
 	position: absolute;
-	width: 1em;
-	height: 1em;
-	
+	width: 2em;
+	height: 2em;
 }
 
 .corner-lt {
 	top: 0;
 	left: 0;
-	box-shadow: -0.2em -0.2em 0 0 var(--global-white);
+	box-shadow: -0.2em -0.2em 0 0 var(--line-outline);
 }
 
 .corner-rt {
 	top: 0;
 	right: 0;
-	box-shadow: 0.2em -0.2em 0 0 var(--global-white);
+	box-shadow: 0.2em -0.2em 0 0 var(--line-outline);
 }
 .corner-lb {
 	bottom: 0;
 	left: 0;
-	box-shadow: -0.2em 0.2em 0 0 var(--global-white);
+	box-shadow: -0.2em 0.2em 0 0 var(--line-outline);
 }
 .corner-rb {
 	bottom: 0;
 	right: 0;
-	box-shadow: 0.2em 0.2em 0 0 var(--global-white);
+	box-shadow: 0.2em 0.2em 0 0 var(--line-outline);
 }
+
 /*
 .corner-rb {
 	bottom: 0;
@@ -1743,9 +1800,9 @@ h3::after {
 }
 */
 
-video, img {
-	border: 1px solid white;
-	box-shadow: 0.25em 0.25em 0 white;
+.superpage video, .superpage img {
+	border: 1px solid var(--line-outline);
+	box-shadow: 0.25em 0.25em 0 var(--line-outline);
 }
 
 .border-uni {
@@ -1780,6 +1837,14 @@ video, img {
 	max-width: 1800px;
 }
 
+.superpage p {
+	
+	background: var(--background-secondary);
+	color: var(--text-secondary);
+	padding: 0.5em;
+	margin: 0em;
+
+}
 .superpage>.row .row div {
 	padding: 0;
 	margin: 0;
