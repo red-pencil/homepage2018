@@ -1813,6 +1813,21 @@ video, img {
 	top: 0;
 }
 
+@media screen and (min-width:720px) and (max-width:1220px){
+	.sidebar {
+		position: sticky;
+		top: 1em;
+	}
+}
+
+@media screen and (min-width:1220px) {
+	.sidebar,.mainsection-1 {
+		position: sticky;
+		top: 1em;
+	}
+	
+}
+
 /*
 .superpage {
 	
