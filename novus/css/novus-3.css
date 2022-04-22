@@ -1798,7 +1798,7 @@ h3::after {
 	width: 3em;
 	height: 3em;
 	
-	background-image: repeating-linear-gradient(135deg, var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 10px);
+	background-image: repeating-linear-gradient(135deg, var(--divider) 0, var(--divider) 3px, transparent 3px, transparent 10px);
 	box-shadow: none;
 	
 	margin-top: 3em;
