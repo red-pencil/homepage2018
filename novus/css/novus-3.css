@@ -36,18 +36,7 @@
 	--background: rgb(37,37,47); 
 	*/
 	/* Editior */
-	
-	--background-primary: #002b36; 
-	--content-primary: #839496;
-	--background-secondary: #073642; 
-	--content-secondary: #93a1a1;
-	
-	--line-outline: #839496;
-	--line-divider: #839496;
-	--text-primary: #839496;
-	--text-secondary: #93a1a1;
-	--background-invert: #fdf6e3;
-	--text-invert: #657b83;
+
 	
 	/* ELEMENTARY DEFINITION */
 	
@@ -71,7 +60,9 @@
 	
 	--navbar-text: #839496;
 	--header-text: #839496;
-	--footer-text: #839496;
+	--footer-text: #657b83;
+	--footer-bg: #fdf6e3;
+	
 	--linklist-text: #839496;
 	--iconlist-text: #839496;
 	--taglist-text: #839496;
@@ -425,8 +416,8 @@ navi/section + (body/header/footer)
 
 .banner>.row, .footer>.row, .header>.row {
 	/*box-shadow: var(--global-shadow);*/
-    background: var(--global-white);
-    color: var(--dark-text);
+    background: var(--footer-bg);
+    color: var(--footer-text);
 	justify-content: center;
 }
 
@@ -516,7 +507,7 @@ navi/section + (body/header/footer)
 }
 
 .title {
-    color: var(--content-primary);
+    color: var(--title-text);
     font-weight: 500;
 }
 
@@ -548,9 +539,10 @@ navi/section + (body/header/footer)
 
 
 #footer-contact::before, #footer-copyright::after {
-    font-size: small;
-	color: var(--dark-text);
 	margin: 0 auto;
+	font-size: small;
+	color: var(--invert-text);
+	
 }
 
 #footer-contact::before {
@@ -1724,10 +1716,10 @@ video {
 	left: 0;
 	position: absolute;
 	background-image:linear-gradient(to right bottom, red,orange,yellow,greenyellow,aqua,mediumpurple,violet);
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
-.bg3 {
+.bg {
 	z-index: -1;
 	width: 100%;
 	height: 100%;
@@ -1741,6 +1733,22 @@ video {
 	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
 	background-size: 20px 20px;
 	*/
+	opacity: 1;
+
+	color: #ff0000;
+}
+
+.bg3 {
+	z-index: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	
+	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
+	background-size: 10px 10px;
+	
 	opacity: 1;
 
 	color: #ff0000;
