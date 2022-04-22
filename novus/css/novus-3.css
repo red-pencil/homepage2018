@@ -229,7 +229,9 @@ navi/section + (body/header/footer)
 /*----- NAVBAR -----*/
 
 .navbar-brand {
-	background-image: url(../logo/logo-2-3.svg);
+	background-image:url(../../logo/logo-2-3.svg);
+	background-blend-mode: lighten;
+	/* filter: invert(100%); */
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 2.0rem; /* toggle-icon 30px + padding 4px = 38px, tag-letter 24px + padding 8px = 40px =2.5rem*/
@@ -1722,7 +1724,7 @@ video {
 	left: 0;
 	position: absolute;
 	background-image:linear-gradient(to right bottom, red,orange,yellow,greenyellow,aqua,mediumpurple,violet);
-	opacity: 0.5;
+	opacity: 0.2;
 }
 
 .bg3 {
@@ -1732,18 +1734,20 @@ video {
 	top: 0;
 	left: 0;
 	position: absolute;
+	
+	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 1px, black 2px, black 50px);
+	
 	/*
-	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 2px, black 2px, black 30px);
-	*/
-	opacity: 1;
 	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
 	background-size: 20px 20px;
-	
+	*/
+	opacity: 1;
+
 	color: #ff0000;
 }
 
 h4 {
-	margin: -0.5rem 0;
+	
 	padding: 1rem 0.5rem;
 	background: var(--title-bg);
 	color: var(--title-text);
@@ -1770,8 +1774,8 @@ h3::after {
 	margin-top: 0.25em;
 	border-top: 0.2em solid var(--line-divider);
 }
-
-.square-mark, .superpage>.row .row::before {
+/*
+.superpage>.row .row::before {
 	content: "";
 	display: block;
 	width: 3em;
@@ -1779,8 +1783,22 @@ h3::after {
 	background-image: repeating-linear-gradient(135deg, var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 10px);
 	margin-bottom: 1em;
 }
+*/
+.square-mark::after {
+	content: "";
+	display: block;
+	width: 3em;
+	height: 3em;
+	
+	background-image: repeating-linear-gradient(135deg, var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 10px);
+	box-shadow: none;
+	
+	margin-top: 3em;
+	margin-left: auto;
 
-.circle-mark, .superpage>.row .row::after {
+}
+/*
+.superpage>.row .row::after {
 	content: "";
 	display: block;
 	width: 3em;
@@ -1788,12 +1806,33 @@ h3::after {
 	background-image: repeating-radial-gradient(var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 9px);
 	margin-top: 1em;
 }
+*/
+.circle-mark::after {
+	content: "";
+	display: block;
+	width: 3em;
+	height: 3em;
+	background-image: repeating-radial-gradient(var(--line-divider) 0, var(--line-divider) 3px, transparent 3px, transparent 9px);
 
+	margin-left: auto;
+}
+
+.corner-lt-x {
+	position: relative;
+	top: -0.5em;
+	left: -0.5em;
+	
+	width: 3em;
+	height: 3em;
+	border-left: 0.2em solid var(--outline);
+	border-top: 0.2em solid var(--outline);
+	
+}
 
 .corner-lt,.corner-rt,.corner-lb,.corner-rb {
 	position: absolute;
-	width: 2em;
-	height: 2em;
+	width: 3em;
+	height: 3em;
 }
 
 .corner-lt {
@@ -1896,6 +1935,7 @@ h3::after {
 	min-width: 100px;
 	padding: 1.25em;
 }
+
 /*
 .sidebar {border: 0px solid yellow;}
 .mainsection {border: 0px solid pink;}
