@@ -51,25 +51,28 @@
 	
 	<div class="sidebar col-12 col-md-3 col-xl-2">
 		
-		<nav class="navbar navbar-default navbar-expand-md navbar-dark border-uni">
-			
+		<nav class="navbar navbar-default navbar-expand-md navbar-dark border-uni flex-wrap">
 			
 			<div class="corner-lt"></div>
 			<div class="corner-rt"></div>
 			<div class="corner-lb"></div>
 			<div class="corner-rb"></div>
 
-		  <a class="" href="#page-top">
-			  
-			  <img class="d-none d-lg-block" src="../../logo/logo-2-3.svg">
-			
-			</a>
+		  <a class="d-block col-md-12" href="#page-top">
+	      </a>
 
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"><span class="navbar-toggler-icon"></span></button>
 
-		  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+		  <div class="col-md-12 collapse navbar-collapse" id="collapsibleNavbar">
 			  
-			<ul class="navbar-nav mx-auto trans-bg" style="flex-direction: column">
+			<ul class="navbar-nav mx-auto trans-bg-invert" style="flex-direction: column; width: 100%;">
+				
+			  <li class="nav-item">
+				<a class="nav-link" href="index.html">
+					<span class="lang eng">Home</span>
+					<span class="lang chn">序</span>
+				  </a>
+			  </li>
 				
 			  <li class="nav-item active">
 				<a class="nav-link" href="../research.html">
@@ -83,6 +86,13 @@
 					<span class="lang chn">设计</span>
 				  </a>
 			  </li>
+				
+			  <li class="nav-item">
+				<a class="nav-link" href="cv.html">
+					<span class="lang eng">Vitæ</span>
+					<span class="lang chn">履历</span>
+				</a>
+			  </li>
 
 			  <!-- Lang Switch -->
 			  <li class="nav-item" id="langSwith">
@@ -92,7 +102,20 @@
 			</ul>
 			  
 		  </div>
-
+			
+			
+		</nav>
+		
+		<nav class="navbar d-md-block d-none border-uni p-4 mt-5">
+			<div class="corner-lt"></div>
+			<div class="corner-rt"></div>
+			<div class="corner-lb"></div>
+			<div class="corner-rb"></div>
+			
+			<a class="" href="#page-top">
+				 <img class="img-fluid" style="border:1px solid red;background: white; mix-blend-mode: color;" src="../../logo/logo-2-3.svg">
+			</a>
+		
 		</nav>
 	
 	</div>
@@ -121,7 +144,7 @@
 				<video class="img-fluid" src="../../public/research/visuomotor/ah2018-exp.MOV" controls="controls">Your browser does not support this embeded video. Please download to view it. 您的浏览器不支持在线播放此视频,请下载观看。</video>
 			</div>
 
-			<div class="col-12 pt-3">
+			<div class="col-12 pt-3 px-md-5 px-1">
 				<ul class="list-inline justify-content-start icon-list-uni with-text trans-font halo focus">
 					<li>
 					<a href="https://dl.acm.org/doi/10.1145/3385959.3418460"><i class="fa fa-quote-left"></i>DOI</a>
@@ -228,7 +251,7 @@
 			<div class="corner-rb"></div>
 
 			<div class="col-12 hline-t hline-b">
-				<ul class="list-inline icon-list-uni big-array with-text trans-bg halo">
+				<ul class="list-inline icon-list-uni big-array with-text trans-bg-invert halo">
 					<li class="col-lg-3 col-6">
 					<a href="https://dl.acm.org/doi/10.1145/3385959.3418460"><i class="fa fa-quote-left"></i><span>DOI</span></a>
 					</li><li class="col-lg-3 col-6">
