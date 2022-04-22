@@ -231,7 +231,7 @@ navi/section + (body/header/footer)
 .navbar-brand {
 	background-image:url(../../logo/logo-2-3.svg);
 	background-blend-mode: lighten;
-	/* filter: invert(100%); */
+	filter: invert(100%);
 	background-position: center center;
 	background-repeat: no-repeat;
 	height: 2.0rem; /* toggle-icon 30px + padding 4px = 38px, tag-letter 24px + padding 8px = 40px =2.5rem*/
@@ -1724,7 +1724,7 @@ video {
 	left: 0;
 	position: absolute;
 	background-image:linear-gradient(to right bottom, red,orange,yellow,greenyellow,aqua,mediumpurple,violet);
-	opacity: 0.2;
+	opacity: 0.5;
 }
 
 .bg3 {
@@ -1735,7 +1735,7 @@ video {
 	left: 0;
 	position: absolute;
 	
-	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 1px, black 2px, black 50px);
+	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 1px, var(--general-bg) 2px, var(--general-bg) 50px);
 	
 	/*
 	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
