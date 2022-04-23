@@ -79,31 +79,34 @@
 	--general-bg: rgb(15,17,21);
 	
 	--invert-text: rgb(15,17,21);
-	--invert-bg: rgb(155,200,201);
+	--invert-bg: rgb(169,207,209);
 	
 	--highlight-text: rgb(15,17,21);
-	--highlight-bg: rgb(155,200,201);
+	--highlight-bg: rgb(169,207,209);
 	
-	--body-text: rgb(155,200,201);
+	--body-text: rgb(169,207,209);
 	--body-bg: unset;
 	
-	--title-text: rgb(155,200,201);
+	--title-text: rgb(169,207,209);
 	--title-bg: unset;
 	
 	--navbar-text: red; /* not used */
 	--header-text: red; /* not used */
 	--footer-text: rgb(15,17,21);
-	--footer-bg: rgb(155,200,201);
+	--footer-bg: rgb(169,207,209);
 	
-	--linklist-text: rgb(155,200,201);
-	--linklist-hover-text: rgb(75,97,99);
-	--iconlist-text: rgb(155,200,201);
-	--taglist-text: rgb(75,97,99);
-	--note-text: rgb(75,97,99);
-	--quote-text: rgb(75,97,99);
+	--linklist-text: rgb(169,207,209);
+	--linklist-bg: red;
+	--linklist-hover-text: rgb(169,207,209);
+	--linklist-hover-bg: rgb(54,67,72);
 	
-	--outline: rgb(75,97,99);
-	--divider: rgb(75,97,99);
+	--iconlist-text: rgb(169,207,209);
+	--taglist-text: rgb(169,207,209);
+	--note-text: rgb(169,207,209);
+	--quote-text: rgb(169,207,209);
+	
+	--outline: rgb(72,87,92);
+	--divider: rgb(72,87,92);
 	
 } 
 
@@ -113,6 +116,12 @@ body {
 
 	background: var(--general-bg);
 	color: var(--general-text);
+	align-content: 
+}
+
+html, body {
+	width:100%;
+	overflow-x: hidden;
 }
 
 p {
@@ -785,7 +794,7 @@ navi/section + (body/header/footer)
 
 @keyframes pulse {
 	0% {
-		transform: scale(1);
+		transform: scale(.95);
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
 	}
 
@@ -795,13 +804,15 @@ navi/section + (body/header/footer)
 	}
 
 	100% {
-		transform: scale(1);
+		transform: scale(.95);
 		box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
 	}
 }
 
 
-
+.icon-list-uni.trans-font>li {
+	padding: 0em 1em;
+}
 .icon-list-uni.trans-font>li a,
 .icon-list-uni.trans-font>li span,
 .icon-list-uni.trans-font>li i {
@@ -812,11 +823,35 @@ navi/section + (body/header/footer)
 .icon-list-uni.trans-font>li:hover span{
 	font-weight: 700;
 }
+.icon-list-uni.trans-font>li:hover {
+	
+}
 .icon-list-uni.trans-font>li:hover a,
 .icon-list-uni.trans-font>li:hover span,
 .icon-list-uni.trans-font>li:hover i {
 	color: var(--linklist-hover-text);
+	background: var(--linklist-hover-bg);
 }
+
+
+.list-inline>li .lang-s {
+	color: var(--linklist-text);
+	text-decoration: none;
+}
+
+
+.list-inline>li .lang-s:hover {
+	text-decoration-line: underline;
+	text-decoration-style: dotted;
+}
+
+.list-inline>li .lang-s.active {
+	padding: 3px;
+	font-weight: 700;
+	color: var(--linklist-hover-text);
+	background:	var(--linklist-hover-bg);
+}
+
 
 
 .icon-list-uni>li {
@@ -837,46 +872,32 @@ navi/section + (body/header/footer)
 
 .icon-list-uni.with-text>li {
 	flex: 0 0 50%;
-	padding: 0.5em 0.25em;
+	padding: 0.5em 1em;
 }
 
 .icon-list-uni.with-text>li a,
 .icon-list-uni.with-text>li i,
 .icon-list-uni.with-text>li span {
-	font-size: 1.25rem;
-
+	font-size: 1.125rem;
 	text-decoration: none;
 }
 
-.icon-list-uni.with-text>li span {
+.icon-list-uni.with-text>li span,
+.icon-list-uni.with-text>li i {
 	display: inline;
+	padding: 0.1em 0.25em;
 }
 
+.icon-list-uni.with-text>li a { 
+	padding: 0.25em;
+}
 .icon-list-uni.with-text>li i:after{
 	content: "";
 	padding-right: 0.3rem;
+
 }
 
 
-
-.list-inline>li .lang-s {
-	color: var(--linklist-text);
-	text-decoration: none;
-}
-
-
-.list-inline>li .lang-s:hover {
-
-	text-decoration-line: underline;
-	text-decoration-style: dotted;
-}
-
-
-.list-inline>li .lang-s.active {
-	padding: 3px;
-	font-weight: 700;
-	color: var(--note-text)
-}
 
 
 
@@ -1737,6 +1758,7 @@ video {
 	height: 100vh;
 	font-size: 20rem;
 	position: fixed;
+	
 }
 
 .bg1 {
@@ -1747,33 +1769,69 @@ video {
 	left: 0;
 	position: absolute;
 	background: var(--general-bg);
+	opacity: 1;
 }
 
 .bg2 {
 	z-index: -2;
 	width: 100%;
 	height: 100%;
-	top: 0;
-	left: 0;
+	top: 0%;
+	left: 0%;
 	position: absolute;
-	background-image:linear-gradient(to right bottom, red,orange,yellow,greenyellow,aqua,mediumpurple,violet);
-	opacity: 0.3;
+	
+	background-image: linear-gradient(to right bottom, red, orange, yellow, greenyellow, aqua, mediumpurple, violet);
+	/*
+	 repeating-radial-gradient(circle at 0 0, transparent 0, transparent 2px, black 2px, black 50px)
+	background-blend-mode: darken;
+*/
+	opacity: 1;
+	animation: saturate 10s infinite;
+
+
 }
 
-.bg {
+@keyframes saturate {
+	0% {
+		filter: saturate(0) opacity(0.1);
+	}
+	50% {
+		filter: saturate(.5) opacity(.5);
+	}
+	80% {
+		filter: saturate(5) opacity(1);
+	}
+	100% {
+		filter: saturate(0) opacity(0.1) ;
+	}
+}
+/*
+@keyframes fluc {
+	0% {
+		transform: scale(1);
+	}
+	25% {
+		transform: scale(0.9);
+	}
+	50% {
+		transform: scale(0.5);
+	}
+}*/
+
+.bgx {
 	z-index: -1;
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	position: absolute;
-	
-	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 1px, var(--general-bg) 2px, var(--general-bg) 50px);
-	
 	/*
+	background: repeating-radial-gradient(circle at 0 0, transparent 0, transparent 1px, var(--general-bg) 2px, var(--general-bg) 50px);
+	*/
+	
 	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
 	background-size: 20px 20px;
-	*/
+	
 	opacity: 1;
 
 	color: #ff0000;
@@ -1787,8 +1845,9 @@ video {
 	left: 0;
 	position: absolute;
 	
-	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 2px);
-	background-size: 10px 10px;
+	background-image: radial-gradient(transparent 0px, transparent 1px, var(--general-bg) 1px, var(--general-bg) 10px);
+	background-size: 50px 50px;
+	
 	
 	opacity: 1;
 
