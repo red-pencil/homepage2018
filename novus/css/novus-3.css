@@ -36,7 +36,7 @@
 	--default-text: red;
 	--default-bg: yellow;
 	
-	--general-text: red; /* not used */
+	--general-text: rgb(169,207,209);
 	--general-bg: rgb(15,17,21);
 	
 	--invert-text: rgb(15,17,21);
@@ -260,14 +260,18 @@ navi/section + (body/header/footer)
 
 /*----- NAVBAR -----*/
 
-.navbar-brand {
-	background-image:url(../../logo/logo-2-3.svg);
+.logo-x{
+	/*
+	background-image:url(../../logo/logo-2-3.svg);*/
 	background-blend-mode: lighten;
 	filter: invert(100%);
 	background-position: center center;
 	background-repeat: no-repeat;
-	height: 2.0rem; /* toggle-icon 30px + padding 4px = 38px, tag-letter 24px + padding 8px = 40px =2.5rem*/
-	width: 2rem;
+	 /* toggle-icon 30px + padding 4px = 38px, tag-letter 24px + padding 8px = 40px =2.5rem*/
+	/*
+	height: 2.0rem;
+	width: 2rem;*/
+	
 	margin: 4px 12px;
 	opacity: 0.5;
 	padding: 0;
@@ -276,13 +280,49 @@ navi/section + (body/header/footer)
 .navbar-brand:hover{
 	opacity: 0.9;
 }
-.navbar-brand-big {
-	background-color: white;
-	width: 100%;
-	height: 2rem;
-	border: 1px solid white;
+.logo-s {	
+
+	background: var(--general-text);
+	-webkit-mask-image: url(../../logo/logo-2-3.svg);
+    mask-image: url(../../logo/logo-2-3.svg);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+
+	width: 2em;
+	height: 2em;
+	border: 0px solid white;
+	margin: auto;
+	
 }
 
+.logo-l {	
+	/*
+	background: 
+		linear-gradient(var(--general-text) 0 , var(--general-text) 100%),
+		url(../../public/design/tps/tps-0.png),
+		white;
+	
+	background-blend-mode: lighten normal;
+	*/
+	
+	background: var(--general-text);
+	-webkit-mask-image: url(../../logo/logo-2-3.svg);
+    mask-image: url(../../logo/logo-2-3.svg);
+	-webkit-mask-repeat: no-repeat;
+	mask-repeat: no-repeat;
+	-webkit-mask-position: center;
+	mask-position: center;
+	
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	padding-bottom: 50%;
+	border: 0px solid white;
+	margin: auto;
+	
+}
 
 .sticky-mark {
     position: -webkit-sticky;
@@ -1260,8 +1300,8 @@ a:hover {
 
 button .fa {
     text-decoration: none;
-    color: var(--darkgrey);
-    font-size: 1.5em;
+    color: var(--general-text);
+    font-size: 1em;
 	width: 1em;
 }
 
@@ -1887,15 +1927,14 @@ h5 {
 }
 */
 h3::before {
-	
-	
+
 }
 
-h3::after {
+h3::after, h4::after {
 	content: "";
 	display: block;
 	width: 2em;
-	margin-top: 0.25em;
+	margin-top: 0.5em;
 	border-top: 0.2em solid var(--divider);
 }
 /*
@@ -2073,12 +2112,21 @@ h3::after {
 	top: 0;
 }
 
+
+.sidebar { order: 1; }
+.mainsection-1 { order: 2; }
+.mainsection-2 { order: 3; }
+
 @media screen and (min-width:720px) and (max-width:1220px) {
 	.sidebar {
 		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}
+	.sidebar { order: 1; }
+	.mainsection-1 { order: 2; }
+	.mainsection-2 { order: 3; }
+	
 }
 
 @media screen and (min-width:1220px) {
