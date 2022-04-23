@@ -32,7 +32,7 @@
 	*/
 	
 	/* Sci-Fi */
-	
+	/*
 	--default-text: red;
 	--default-bg: yellow;
 	
@@ -51,8 +51,8 @@
 	--title-text: rgb(169,207,209);
 	--title-bg: unset;
 	
-	--navbar-text: red; /* not used */
-	--header-text: red; /* not used */
+	--navbar-text: red; 
+	--header-text: red; 
 	--footer-text: rgb(15,17,21);
 	--footer-bg: rgb(169,207,209);
 	
@@ -69,8 +69,9 @@
 	--outline: rgb(72,87,92);
 	--divider: rgb(72,87,92);
 	*/
+	
 	/* Editior */
-	/*
+	
 	--default-text: #000000;
 	--default-bg: #000000;
 	
@@ -102,7 +103,7 @@
 	
 	--outline: #839496;
 	--divider: #839496;
-	*/
+	
 	
 	/* ELEMENTARY DEFINITION */
 	
@@ -1994,8 +1995,8 @@ h3::after, h4::after {
 
 .corner-lt,.corner-rt,.corner-lb,.corner-rb {
 	position: absolute;
-	width: 3em;
-	height: 3em;
+	width: 2em;
+	height: 2em;
 }
 
 .corner-lt {
@@ -2029,6 +2030,9 @@ h3::after, h4::after {
 	box-shadow: 2px 2px 3px 0px white;
 }
 */
+.superpage video ~ div, .superpage img ~ div {
+	padding: 1em;
+}
 
 .superpage video, .superpage img {
 	border: 1px solid var(--outline);
