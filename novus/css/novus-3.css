@@ -199,7 +199,7 @@ b, strong {
 	font-weight: 700;
 }
 
-h5>a, p a, .resume li a {
+h5>a, p a, .resume a {
     text-decoration: underline;
     text-decoration-style: dotted;
 	color: var(--dark-text);
