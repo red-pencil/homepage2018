@@ -33,7 +33,41 @@
 	
 	/* Sci-Fi */
 	/*
-	--background: rgb(37,37,47); 
+	--default-text: red;
+	--default-bg: yellow;
+	
+	--general-text: red; /* not used */
+	--general-bg: rgb(15,17,21);
+	
+	--invert-text: rgb(15,17,21);
+	--invert-bg: rgb(169,207,209);
+	
+	--highlight-text: rgb(15,17,21);
+	--highlight-bg: rgb(169,207,209);
+	
+	--body-text: rgb(169,207,209);
+	--body-bg: unset;
+	
+	--title-text: rgb(169,207,209);
+	--title-bg: unset;
+	
+	--navbar-text: red; /* not used */
+	--header-text: red; /* not used */
+	--footer-text: rgb(15,17,21);
+	--footer-bg: rgb(169,207,209);
+	
+	--linklist-text: rgb(169,207,209);
+	--linklist-bg: red;
+	--linklist-hover-text: rgb(169,207,209);
+	--linklist-hover-bg: rgb(54,67,72);
+	
+	--iconlist-text: rgb(169,207,209);
+	--taglist-text: rgb(169,207,209);
+	--note-text: rgb(169,207,209);
+	--quote-text: rgb(169,207,209);
+	
+	--outline: rgb(72,87,92);
+	--divider: rgb(72,87,92);
 	*/
 	/* Editior */
 	/*
@@ -72,41 +106,7 @@
 	
 	/* ELEMENTARY DEFINITION */
 	
-	--default-text: red; /* not used */
-	--default-bg: yellow; /* not used */
 	
-	--general-text: red; /* not used */
-	--general-bg: rgb(15,17,21);
-	
-	--invert-text: rgb(15,17,21);
-	--invert-bg: rgb(169,207,209);
-	
-	--highlight-text: rgb(15,17,21);
-	--highlight-bg: rgb(169,207,209);
-	
-	--body-text: rgb(169,207,209);
-	--body-bg: unset;
-	
-	--title-text: rgb(169,207,209);
-	--title-bg: unset;
-	
-	--navbar-text: red; /* not used */
-	--header-text: red; /* not used */
-	--footer-text: rgb(15,17,21);
-	--footer-bg: rgb(169,207,209);
-	
-	--linklist-text: rgb(169,207,209);
-	--linklist-bg: red;
-	--linklist-hover-text: rgb(169,207,209);
-	--linklist-hover-bg: rgb(54,67,72);
-	
-	--iconlist-text: rgb(169,207,209);
-	--taglist-text: rgb(169,207,209);
-	--note-text: rgb(169,207,209);
-	--quote-text: rgb(169,207,209);
-	
-	--outline: rgb(72,87,92);
-	--divider: rgb(72,87,92);
 	
 } 
 
@@ -116,7 +116,7 @@ body {
 
 	background: var(--general-bg);
 	color: var(--general-text);
-	align-content: 
+
 }
 
 html, body {
@@ -898,6 +898,25 @@ navi/section + (body/header/footer)
 }
 
 
+.icon-list-uni.big-array.with-text>li i:after{
+	display: none;
+}
+
+.icon-list-uni.big-array.with-text>li a{
+	
+	padding: 0;
+	margin: 0;
+}
+.icon-list-uni.big-array.with-text>li i{
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+.icon-list-uni.big-array.with-text>li span {
+	display: block;
+	padding-top: 0.2em;
+}
+
 
 
 
@@ -971,14 +990,7 @@ navi/section + (body/header/footer)
 	font-weight: 500;
 }
 
-.icon-list-uni.big-array.with-text>li i:after{
-	content: "";
-	padding-right: 0;
-}
 
-.icon-list-uni.big-array.with-text>li span{
-	display: block;
-}
 
 
 
@@ -2057,15 +2069,17 @@ h3::after {
 	top: 0;
 }
 
-@media screen and (min-width:720px) and (max-width:1220px){
+@media screen and (min-width:720px) and (max-width:1220px) {
 	.sidebar {
+		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}
 }
 
 @media screen and (min-width:1220px) {
-	.sidebar,.mainsection-1 {
+	.sidebar, .mainsection-1 {
+		position: -webkit-sticky;
 		position: sticky;
 		top: 0;
 	}
