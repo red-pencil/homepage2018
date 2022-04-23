@@ -2135,9 +2135,9 @@ h3::after, h4::after {
 		position: sticky;
 		top: 0;
 	}
-	.mainsection-1 {
-		order: 3;
-	}
+	.sidebar { order: 1; }
+	.mainsection-1 { order: 3; }
+	.mainsection-2 { order: 2; }
 	
 	
 }
