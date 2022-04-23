@@ -96,13 +96,17 @@
 	--footer-bg: #fdf6e3;
 	
 	--linklist-text: #839496;
-	--iconlist-text: #839496;
-	--taglist-text: #839496;
-	--note-text: #839496;
-	--quote-text: #839496;
+	--linklist-hover-text: #93a1a1;
+	--linklist-hover-bg: #fdf6e3;
 	
-	--outline: #839496;
-	--divider: #839496;
+	--iconlist-text: #839496;
+	--taglist-text: #586e75;
+	--note-text: #586e75;
+	--quote-text: #586e75;
+	--link-text: #839496;
+	
+	--outline: #586e75;
+	--divider: #586e75;
 	
 	
 	/* ELEMENTARY DEFINITION */
@@ -202,7 +206,7 @@ b, strong {
 h5>a, p a, .resume a {
     text-decoration: underline;
     text-decoration-style: dotted;
-	color: var(--dark-text);
+	color: var(--link-text);
     
 }
 
