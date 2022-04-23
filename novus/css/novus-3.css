@@ -276,7 +276,12 @@ navi/section + (body/header/footer)
 .navbar-brand:hover{
 	opacity: 0.9;
 }
-
+.navbar-brand-big {
+	background-color: white;
+	width: 100%;
+	height: 2rem;
+	border: 1px solid white;
+}
 
 
 .sticky-mark {
@@ -872,7 +877,7 @@ navi/section + (body/header/footer)
 
 .icon-list-uni.with-text>li {
 	flex: 0 0 50%;
-	padding: 0.5em 1em;
+	padding: 0.5em 0em;
 }
 
 .icon-list-uni.with-text>li a,
@@ -1001,7 +1006,6 @@ navi/section + (body/header/footer)
 .icon-list-uni.big-array>li {
 	flex: 0 0 50%;
 }
-	
 	
 .icon-list-uni.with-text>li {
 	padding: 0.5em 0.25em;
@@ -2083,6 +2087,10 @@ h3::after {
 		position: sticky;
 		top: 0;
 	}
+	.mainsection-1 {
+		order: 3;
+	}
+	
 	
 }
 
