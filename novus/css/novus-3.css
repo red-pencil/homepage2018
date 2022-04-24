@@ -71,7 +71,7 @@
 	*/
 	
 	/* Editior */
-	
+	/*
 	--default-text: #000000;
 	--default-bg: #000000;
 	
@@ -107,9 +107,51 @@
 	
 	--outline: #586e75;
 	--divider: #586e75;
-	
+	*/
 	
 	/* ELEMENTARY DEFINITION */
+	
+	
+	--default-text: red;
+	--default-bg: yellow;
+	
+	--general-text:  hsl(219, 28%, 88%);
+	--general-bg: hsl(210, 15%, 22%);
+	
+	--invert-text: hsl(0, 0%, 20%);
+	--invert-bg: hsl(40, 94%, 68%);
+	
+	--highlight-text: red;
+	--highlight-bg: yellow;
+	
+	--body-text: hsl(219, 28%, 88%);
+	--body-bg: unset;
+	
+	--title-text: hsl(219, 28%, 88%);
+	--title-bg: unset;
+	
+	--navbar-text: red; 
+	--header-text: red; 
+	--footer-text: hsl(219, 28%, 88%);
+	--footer-bg: hsla(210, 13%, 40%, 0.7);
+	
+	--linklist-text: hsl(300, 30%, 68%);
+	--linklist-bg: red;
+	
+	--linklist-hover-text: hsl(219, 28%, 88%);
+	--linklist-hover-bg: hsla(210, 13%, 40%, 0.7);
+	--linklist-hover-border: 1px solid hsl(210, 13%, 45%);
+	
+	--iconlist-text: hsl(219, 28%, 88%);
+	
+	
+	--taglist-text: hsl(221, 12%, 69%);
+	--note-text: hsl(357, 79%, 65%);
+	--quote-text: hsl(221, 12%, 69%);
+	
+	--outline: hsla(210, 13%, 45%, 0.5);
+	--divider: hsl(210, 13%, 45%);
+	
 	
 	
 	
@@ -810,13 +852,19 @@ navi/section + (body/header/footer)
 	color: var(--text-primary);
 }
 
-.trans-bg>li:hover{
+.trans-bg>li:hover, .trans-bg>li.active{
 	background: var(--background-secondary);
 	animation: pulse 2s infinite;
 }
 
 .trans-bg>li:hover a,
 .trans-bg>li:hover span {
+	color: var(--highlight-text);
+	text-shadow: none;
+}
+
+.trans-bg>li.active a,
+.trans-bg>li.active span {
 	color: var(--highlight-text);
 	text-shadow: none;
 }
@@ -838,10 +886,6 @@ navi/section + (body/header/footer)
 }
 
 
-
-
-
-
 @keyframes pulse {
 	0% {
 		transform: scale(.95);
@@ -860,35 +904,52 @@ navi/section + (body/header/footer)
 }
 
 
-.icon-list-uni.trans-font>li {
-	padding: 0em 1em;
+.trans-font>li {
+	/* padding: 0em 1em; */
 }
-.icon-list-uni.trans-font>li a,
-.icon-list-uni.trans-font>li span,
-.icon-list-uni.trans-font>li i {
+.trans-font>li a,
+.trans-font>li span,
+.trans-font>li i {
 	font-weight: 400;
 	color: var(--linklist-text);
 }
-.icon-list-uni.trans-font>li:hover a,
-.icon-list-uni.trans-font>li:hover span{
+.trans-font>li:hover a,
+.trans-font>li:hover span{
 	font-weight: 700;
 }
-.icon-list-uni.trans-font>li:hover {
+.trans-font>li.active a,
+.trans-font>li.active span{
+	font-weight: 700;
+}
+
+.trans-font>li:hover {
 	
 }
-.icon-list-uni.trans-font>li:hover a,
-.icon-list-uni.trans-font>li:hover span,
-.icon-list-uni.trans-font>li:hover i {
+.trans-font>li:hover a,
+.trans-font>li:hover span,
+.trans-font>li:hover i {
 	color: var(--linklist-hover-text);
-	background: var(--linklist-hover-bg);
 }
+
+.trans-font>li.active a,
+.trans-font>li.active span,
+.trans-font>li.active i {
+	color: var(--linklist-hover-text);
+}
+
+
+.trans-font>li:hover a, .trans-font>li.active a {
+	background: var(--linklist-hover-bg);
+	border:var(--linklist-hover-border);
+	/*border-radius: 5px;*/
+}
+
 
 
 .list-inline>li .lang-s {
 	color: var(--linklist-text);
 	text-decoration: none;
 }
-
 
 .list-inline>li .lang-s:hover {
 	text-decoration-line: underline;
@@ -900,8 +961,13 @@ navi/section + (body/header/footer)
 	font-weight: 700;
 	color: var(--linklist-hover-text);
 	background:	var(--linklist-hover-bg);
+	border: var(--linklist-hover-border);
 }
 
+.list-inline>li:hover .lang-s.active{
+	border: none;
+	background: none;
+}
 
 
 .icon-list-uni>li {
