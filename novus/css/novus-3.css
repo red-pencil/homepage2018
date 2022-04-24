@@ -46,7 +46,7 @@
 	--highlight-bg: rgb(169,207,209);
 	
 	--body-text: rgb(169,207,209);
-	--body-bg: unset;
+	--body-bg: rgb(15,17,21);
 	
 	--title-text: rgb(169,207,209);
 	--title-bg: unset;
@@ -71,7 +71,7 @@
 	*/
 	
 	/* Editior */
-	/*
+	
 	--default-text: #000000;
 	--default-bg: #000000;
 	
@@ -107,11 +107,11 @@
 	
 	--outline: #586e75;
 	--divider: #586e75;
-	*/
+	
 	
 	/* ELEMENTARY DEFINITION */
 	
-	
+	/*
 	--default-text: red;
 	--default-bg: yellow;
 	
@@ -125,7 +125,7 @@
 	--highlight-bg: yellow;
 	
 	--body-text: hsl(219, 28%, 88%);
-	--body-bg: unset;
+	--body-bg: hsl(210, 15%, 22%);
 	
 	--title-text: hsl(219, 28%, 88%);
 	--title-bg: unset;
@@ -151,7 +151,7 @@
 	
 	--outline: hsla(210, 13%, 45%, 0.5);
 	--divider: hsl(210, 13%, 45%);
-	
+	*/
 	
 	
 	
@@ -1920,16 +1920,22 @@ video {
 
 @keyframes saturate {
 	0% {
-		filter: saturate(0) opacity(0.1);
+		filter: saturate(0) opacity(0.01);
 	}
-	50% {
+	5% {
+		filter: saturate(0) opacity(.5);
+	}
+	25% {
 		filter: saturate(.5) opacity(.5);
 	}
-	80% {
+	40% {
 		filter: saturate(5) opacity(1);
 	}
-	100% {
+	80% {
 		filter: saturate(0) opacity(0.1) ;
+	}
+	100% {
+		filter: saturate(0) opacity(0.01) ;
 	}
 }
 /*
