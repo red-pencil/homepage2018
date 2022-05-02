@@ -71,6 +71,7 @@
 	*/
 	
 	/* Editior */
+	/*
 	
 	--default-text: #000000;
 	--default-bg: #000000;
@@ -109,7 +110,7 @@
 	--divider: #586e75;
 	
 	
-	/* ELEMENTARY DEFINITION */
+	/* Editor2 */
 	
 	/*
 	--default-text: red;
@@ -152,6 +153,51 @@
 	--outline: hsla(210, 13%, 45%, 0.5);
 	--divider: hsl(210, 13%, 45%);
 	*/
+	
+	
+	/* Editor yellow */
+	
+	
+	--default-text: red;
+	--default-bg: yellow;
+	
+	--general-text: rgb(253,238,2);
+	--general-bg: rgb(35,38,40);
+	
+	--invert-text: black;
+	--invert-bg: rgb(253,238,2);
+	
+	--highlight-text: red;
+	--highlight-bg: yellow;
+	
+	--body-text: rgb(130,130,130);
+	--body-bg: rgb(35,38,40);
+	
+	--title-text: rgb(253,238,2);
+	--title-bg: unset;
+	
+	--navbar-text: red; 
+	--header-text: red; 
+	--footer-text: rgb(242,227,90);
+	--footer-bg: rgb(95,99,94);
+	
+	--linklist-text: rgb(187,172,1);
+	--linklist-bg: red;
+	
+	--linklist-hover-text: black;
+	--linklist-hover-bg: rgb(253,238,2);
+	--linklist-hover-border: 1px solid rgba(252,251,118,63);
+	
+	--iconlist-text: rgb(187,172,1);
+	
+	
+	--taglist-text: rgb(130,130,130);
+	--note-text: rgba(252,251,118,63);
+	--quote-text: rgb(130,130,130);
+	
+	--outline: rgb(95,99,94);
+	--divider: rgba(252,251,118,63);
+	
 	
 	
 	
