@@ -495,7 +495,7 @@ navi/section + (body/header/footer)
 }
 
 #footer-contact::before {
-	content: "lichao.prime [at] gmail.com";
+	content: "lichao.research [at] gmail.com";
 }
 
 #footer-copyright {
