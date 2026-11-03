@@ -1,0 +1,14 @@
+/* AI profile tools share the Novus typography, palette and spacing. */
+.ai-tools { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
+.ai-tools a, .ai-tools button, .ai-question { font:inherit; color:var(--neutralgrey); background:transparent; border:0; padding:0; text-decoration:none; cursor:pointer; }
+.ai-tools a:hover, .ai-tools button:hover, .ai-question:hover { color:var(--global-highlight); }
+.ai-tools a:focus-visible, .ai-tools button:focus-visible, .ai-question:focus-visible { outline:2px solid var(--global-highlight); outline-offset:4px; }
+.ai-tools .fa { margin-right:.4rem; }
+.ai-status { min-height:1.5em; margin:.5rem 0 0; font-size:.85rem; color:var(--neutral-text); }
+.ai-panel>.row { padding:1.5rem; }
+.ai-panel h4 { margin-bottom:1rem; }
+.ai-question { display:block; text-align:left; margin:.75rem 0; text-decoration:underline dotted; }
+.ai-preview { width:100%; min-height:18rem; margin:1rem 0; padding:1rem; border:1px solid var(--lightgrey); border-radius:var(--global-radius); background:var(--global-white); color:var(--dark-text); font: .875rem/1.6 monospace; }
+.ai-agent { color:var(--neutral-text); font-size:.85rem; margin-top:1rem; }
+.ai-agent summary { cursor:pointer; }
+.ai-agent p { margin:.75rem 0; }
