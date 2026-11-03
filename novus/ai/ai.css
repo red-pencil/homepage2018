@@ -55,3 +55,8 @@
 .ai-agent { text-align:center; }
 .ai-agent summary { display:list-item; list-style-position:inside; }
 .ai-agent p { text-align:left; }
+
+/* Research summary shortcuts use the same quiet text-link language as body links. */
+.ai-research-tools .ai-tools { font-size:.875rem; text-transform:none; gap:1.5rem; }
+.ai-research-tools .ai-tools>li a, .ai-research-tools .ai-tools>li button { font-family:inherit; font-size:inherit; font-weight:400; color:var(--neutral-text); text-decoration:underline; text-decoration-style:dotted; text-underline-offset:.2em; }
+.ai-research-tools .ai-tools>li:hover a, .ai-research-tools .ai-tools>li:hover button, .ai-research-tools .ai-tools>li:hover span { color:var(--global-highlight); font-weight:400; text-decoration-style:solid; }
