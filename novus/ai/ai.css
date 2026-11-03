@@ -1,14 +1,57 @@
-/* AI profile tools share the Novus typography, palette and spacing. */
-.ai-tools { display:flex; flex-wrap:wrap; gap:1rem; align-items:center; }
-.ai-tools a, .ai-tools button, .ai-question { font:inherit; color:var(--neutralgrey); background:transparent; border:0; padding:0; text-decoration:none; cursor:pointer; }
-.ai-tools a:hover, .ai-tools button:hover, .ai-question:hover { color:var(--global-highlight); }
-.ai-tools a:focus-visible, .ai-tools button:focus-visible, .ai-question:focus-visible { outline:2px solid var(--global-highlight); outline-offset:4px; }
-.ai-tools .fa { margin-right:.4rem; }
-.ai-status { min-height:1.5em; margin:.5rem 0 0; font-size:.85rem; color:var(--neutral-text); }
-.ai-panel>.row { padding:1.5rem; }
-.ai-panel h4 { margin-bottom:1rem; }
-.ai-question { display:block; text-align:left; margin:.75rem 0; text-decoration:underline dotted; }
-.ai-preview { width:100%; min-height:18rem; margin:1rem 0; padding:1rem; border:1px solid var(--lightgrey); border-radius:var(--global-radius); background:var(--global-white); color:var(--dark-text); font: .875rem/1.6 monospace; }
-.ai-agent { color:var(--neutral-text); font-size:.85rem; margin-top:1rem; }
+/* Resource actions extend the existing Novus link-list used by project and CV pages. */
+.ai-tools { display:flex; flex-wrap:wrap; align-items:center; margin:0; padding:0; }
+.ai-tools>li { flex:0 0 auto; padding:.25em 1.5em .25em 0; margin:.25em 0; }
+.ai-tools>li a, .ai-tools>li button { display:inline-flex; align-items:center; font-family:'Open Sans','Noto Sans SC',sans-serif; font-size:inherit; line-height:1.5; text-transform:inherit; color:var(--neutral-text); background:none; border:0; padding:0; cursor:pointer; text-decoration:none; }
+.ai-tools>li .fa { width:1.25em; font-size:1em; line-height:1; text-align:center; margin:0 .25em 0 0; }
+.ai-tools>li i:after { content:none; margin:0; }
+.ai-tools>li:hover button, .ai-tools>li button:hover { color:var(--dark-text); font-weight:700; }
+.ai-tools a:focus-visible, .ai-tools button:focus-visible, .ai-question:focus-visible, .ai-document summary:focus-visible { outline:2px solid var(--global-highlight); outline-offset:5px; }
+.ai-status { margin:.4rem 0 0; font-size:.85rem; color:var(--neutral-text); }
+.ai-status:empty { display:none; }
+.ai-research-tools .ai-agent { margin-top:.65rem; }
+.ai-document { margin:3rem auto 4rem; }
+.ai-document>.row { padding:0; border-radius:0; }
+.ai-introduction { margin-bottom:2.75rem!important; }
+.ai-introduction .title { margin:1rem 0; font-size:1.75rem; }
+.ai-introduction p { max-width:46rem; margin-bottom:1.5rem; }
+.ai-document .ai-reading-row { padding:2rem 0; margin-bottom:0; border-top:1px solid var(--lightgrey); }
+.ai-section-label { padding-right:1.5rem!important; }
+.ai-number { display:block; color:var(--lightgrey); font-family:'Roboto Condensed',sans-serif; font-size:1.5rem; font-weight:300; margin-bottom:.5rem; }
+.ai-section-label h5 { font-size:1.125rem; }
+.ai-section-content p:last-child { margin-bottom:0; }
+.ai-question { display:block; position:relative; width:100%; text-align:left; padding:.8rem 1.75rem .8rem 0; font:inherit; line-height:1.6; color:var(--dark-text); background:transparent; border:0; border-bottom:1px solid var(--global-grey); cursor:pointer; }
+.ai-question:first-child { padding-top:0; }
+.ai-question:after { content:'\f0ea'; font-family:FontAwesome; position:absolute; right:0; color:var(--lightgrey); font-size:.85em; }
+.ai-question:hover { color:var(--global-highlight); }
+.ai-publications { list-style:none; padding:0; margin:1.25rem 0 0; }
+.ai-publications li { margin-bottom:1.25rem; }
+.ai-venue { display:block; color:var(--neutral-text); font-size:.85rem; margin-top:.25rem; }
+.ai-profile-details summary { cursor:pointer; color:var(--dark-text); }
+.ai-preview { width:100%; min-height:20rem; margin:1rem 0; padding:1rem; border:1px solid var(--lightgrey); border-radius:var(--global-radius); background:var(--global-white); color:var(--dark-text); font:.875rem/1.65 monospace; }
+.ai-agent { color:var(--neutral-text); font-size:.8rem; margin-top:1.25rem; }
 .ai-agent summary { cursor:pointer; }
-.ai-agent p { margin:.75rem 0; }
+.ai-agent p { margin:.75rem 0; font-size:.85rem; }
+@media(max-width:767px) {
+ .ai-document { margin:2rem auto 3rem; }
+ .ai-introduction .title { font-size:1.5rem; }
+ .ai-section-label { display:flex; align-items:baseline; gap:.75rem; margin-bottom:1rem; }
+ .ai-number { margin-bottom:0; }
+ .ai-tools>li { padding-right:1.25em; }
+ .ai-document .ai-reading-row { padding:1.5rem 0; }
+}
+
+/* Keep the Research shortcuts balanced and the optional reading note quiet. */
+.ai-research-tools .ai-tools { justify-content:center; gap:.5rem 1.5rem; }
+.ai-research-tools .ai-tools>li { padding:.25em 0; }
+.ai-research-tools .ai-status { text-align:center; }
+.ai-agent { margin-top:.35rem; font-size:.72rem; line-height:1.35; }
+.ai-agent summary { color:var(--darkgrey); }
+.ai-agent summary:hover { color:var(--dark-text); }
+.ai-agent p { margin:.5rem 0 0; }
+.ai-agent-section { min-height:0; padding-bottom:.35rem; }
+.ai-agent-section>.row { padding:.2rem 0; margin-bottom:0; }
+.ai-agent-section .ai-agent { margin-top:0; }
+
+.ai-agent { text-align:center; }
+.ai-agent summary { display:list-item; list-style-position:inside; }
+.ai-agent p { text-align:left; }
